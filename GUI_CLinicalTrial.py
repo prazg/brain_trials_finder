@@ -41,13 +41,13 @@ def build_expr(diagnosis: str, keywords: str) -> str:
 
 # v2 API search with pagination and caching
 @st.cache_data(show_spinner=False, ttl=3600)
-def ctgov_search(expr: str, statuses, page_size=100, max_pages=5):
+def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
     base = "https://clinicaltrials.gov/api/v2/studies"
     session = requests.Session()
     session.headers.update({"User-Agent": "BrainTrialsFinder/1.0 (+https://clinicaltrials.gov)"})
     all_studies = []
     page_token = None
-    for _ in range(int(max_pages)):
+    for _ in range(int(max_pages or 0)):
         params = {
             "query.term": expr,
             "filter.overallStatus": ",".join(statuses),
@@ -111,40 +111,84 @@ def parse_age_to_int(v):
             return None
     return None
 
+def ensure_list(v):
+    if v is None:
+        return []
+    if isinstance(v, list):
+        return v
+    return [v]
+
 
 def score_trial(t, intake):
-    elig = t.get("protocolSection", {}).get("eligibilityModule", {})
-    crit_raw = elig.get("eligibilityCriteria")
-    crit = as_text(crit_raw)
-    phases = (t.get("protocolSection", {}).get("designModule", {}).get("phases") or [])
-    conds = (t.get("protocolSection", {}).get("conditionsModule", {}).get("conditions") or [])
-    title = t.get("protocolSection", {}).get("identificationModule", {}).get("briefTitle","")
+    # Use intake safely instead of globals
+    age_local = (intake or {}).get("age")
+    kps_local = (intake or {}).get("kps")
+    prior_bev_local = bool((intake or {}).get("prior_bev", False))
+    setting_local = (intake or {}).get("setting") or ""
+    keywords_local = (intake or {}).get("keywords") or ""
+
+    ps = (t or {}).get("protocolSection") or {}
+    # Eligibility may be dict, string, or missing
+    elig = ps.get("eligibilityModule")
+    crit = ""
+    min_age = None
+    max_age = None
+    if isinstance(elig, dict):
+        crit_raw = elig.get("eligibilityCriteria") or elig.get("criteria") or elig
+        crit = as_text(crit_raw)
+        min_age = parse_age_to_int(elig.get("minimumAge"))
+        max_age = parse_age_to_int(elig.get("maximumAge"))
+    elif isinstance(elig, str):
+        crit = as_text(elig)
+    # Normalize phases/conditions
+    phases_list = ensure_list(ps.get("designModule", {}).get("phases"))
+    phases_up = [str(p).upper() for p in phases_list]
+    conds_list = ensure_list(ps.get("conditionsModule", {}).get("conditions"))
+    title = (ps.get("identificationModule", {}) or {}).get("briefTitle", "")
+
     # base score
-    s = 0; reasons=[]
-    if any(mentions(c, "glioblastoma") for c in conds) or mentions(title, "glioblastoma"):
-        s += 40; reasons.append("Condition matches glioblastoma/brain tumor.")
-    if "Phase 2" in phases or "PHASE2" in phases: s += 8
-    if "Phase 3" in phases or "PHASE3" in phases: s += 12
-    # age (robust parsing)
-    min_age = parse_age_to_int(elig.get("minimumAge"))
-    max_age = parse_age_to_int(elig.get("maximumAge"))
-    if min_age is not None and age < min_age:
-        reasons.append(f"Age below minimum ({min_age})."); s -= 30
-    if max_age is not None and age > max_age:
-        reasons.append(f"Age above maximum ({max_age})."); s -= 30
+    s = 0
+    reasons = []
+    if any(mentions(c, "glioblastoma") for c in conds_list) or mentions(title, "glioblastoma"):
+        s += 40
+        reasons.append("Condition matches glioblastoma/brain tumor.")
+    # phases heuristic
+    if any("PHASE 2" in p or "PHASE2" in p for p in phases_up):
+        s += 8
+    if any("PHASE 3" in p or "PHASE3" in p for p in phases_up):
+        s += 12
+    # age checks
+    try:
+        if min_age is not None and age_local is not None and age_local < min_age:
+            reasons.append(f"Age below minimum ({min_age}).")
+            s -= 30
+        if max_age is not None and age_local is not None and age_local > max_age:
+            reasons.append(f"Age above maximum ({max_age}).")
+            s -= 30
+    except Exception:
+        pass
     # ECOG/KPS (heuristic)
-    if mentions(crit, "ECOG 0-1") and kps < 80: s -= 15; reasons.append("Requires ECOG 0–1 (KPS ~≥80).")
-    if mentions(crit, "Karnofsky") and kps < 70: s -= 10; reasons.append("Requires KPS ≥70.")
+    if mentions(crit, "ECOG 0-1") and (kps_local is None or kps_local < 80):
+        s -= 15
+        reasons.append("Requires ECOG 0–1 (KPS ~≥80).")
+    if mentions(crit, "Karnofsky") and (kps_local is None or kps_local < 70):
+        s -= 10
+        reasons.append("Requires KPS ≥70.")
     # prior bev exclusion
-    if prior_bev and mentions(crit, "no prior bevacizumab"):
-        s -= 25; reasons.append("Excludes prior bevacizumab.")
+    if prior_bev_local and mentions(crit, "no prior bevacizumab"):
+        s -= 25
+        reasons.append("Excludes prior bevacizumab.")
     # line of therapy alignment
-    if setting == "Recurrent" and mentions(crit, "recurrent"): s += 8
-    if setting == "Newly diagnosed" and (mentions(crit,"newly diagnosed") or mentions(title,"adjuvant")): s += 8
+    if setting_local == "Recurrent" and mentions(crit, "recurrent"):
+        s += 8
+    if setting_local == "Newly diagnosed" and (mentions(crit, "newly diagnosed") or mentions(title, "adjuvant")):
+        s += 8
     # bonus for keyword hits
-    for kw in [k.strip() for k in keywords.split(",") if k.strip()]:
-        if mentions(title, kw) or mentions(crit, kw): s += 3
-    return max(0,min(100,s)), reasons
+    for kw in [k.strip() for k in (keywords_local or "").split(",") if k.strip()]:
+        if mentions(title, kw) or mentions(crit, kw):
+            s += 3
+
+    return max(0, min(100, s)), reasons
 
 st.subheader("Results")
 expr = build_expr(diagnosis, keywords)
@@ -161,38 +205,62 @@ with st.spinner("Fetching trials from ClinicalTrials.gov…"):
         studies = []
 
 rows = []
+skipped = 0
 for s in studies:
-    locs = (s.get("protocolSection", {}).get("contactsLocationsModule", {}).get("locations") or [])
-    # Optional country filter (case-insensitive substring match to be forgiving)
-    if country and require_country:
-        locs = [L for L in locs if country.lower() in (L.get("locationCountry") or "").lower()]
-    if require_country and not locs:
+    try:
+        locs = ((s.get("protocolSection", {}) or {}).get("contactsLocationsModule", {}) or {}).get("locations") or []
+        # Optional country filter (case-insensitive substring match to be forgiving)
+        if country and require_country:
+            locs = [L for L in locs if country.lower() in (L.get("locationCountry") or "").lower()]
+        if require_country and not locs:
+            continue
+        sc, reasons = score_trial(
+            s,
+            dict(age=age, kps=kps, prior_bev=prior_bev, setting=setting, keywords=keywords),
+        )
+        ident = (s.get("protocolSection", {}) or {}).get("identificationModule", {}) or {}
+        title = ident.get("briefTitle", "")
+        nct = ident.get("nctId")
+        status = ((s.get("protocolSection", {}) or {}).get("statusModule", {}) or {}).get("overallStatus", "")
+        phases_list = ensure_list(((s.get("protocolSection", {}) or {}).get("designModule", {}) or {}).get("phases")) or []
+        phases = ", ".join(map(str, phases_list))
+        conds_list = ensure_list(((s.get("protocolSection", {}) or {}).get("conditionsModule", {}) or {}).get("conditions")) or []
+        conds = ", ".join(map(str, conds_list))
+        first_site = next(iter(locs), {})
+        site_str = f"{first_site.get('locationFacility','')}, {first_site.get('locationCity','')}, {first_site.get('locationCountry','')}"
+        rows.append((sc, title, nct, status, phases, conds, site_str, "; ".join(reasons)))
+    except Exception:
+        skipped += 1
         continue
-    sc, reasons = score_trial(s, dict(age=age, kps=kps))
-    ident = s.get("protocolSection", {}).get("identificationModule", {})
-    title = ident.get("briefTitle", "")
-    nct = ident.get("nctId")
-    status = s.get("protocolSection", {}).get("statusModule", {}).get("overallStatus", "")
-    phases = ", ".join(s.get("protocolSection", {}).get("designModule", {}).get("phases") or [])
-    conds = ", ".join(s.get("protocolSection", {}).get("conditionsModule", {}).get("conditions") or [])
-    first_site = next(iter(locs), {})
-    site_str = f"{first_site.get('locationFacility','')}, {first_site.get('locationCity','')}, {first_site.get('locationCountry','')}"
-    rows.append((sc, title, nct, status, phases, conds, site_str, "; ".join(reasons)))
 
 st.caption(f"Fetched {len(studies)} trials; showing {len(rows)} after filters.")
+if skipped:
+    st.caption(f"Skipped {skipped} record(s) due to unusual data format from API.")
 
 if not rows:
     st.warning("No matching trials with the current filters. Try clearing Country (Any), changing Diagnosis/keywords, or expanding statuses.")
 else:
     rows = sorted(rows, key=lambda x: -x[0])[:50]
     for sc, title, nct, status, phases, conds, site, reasons in rows:
-        with st.container(border=True):
-            if nct:
-                st.markdown(f"**[{title}](https://clinicaltrials.gov/study/{nct})**")
-            else:
-                st.markdown(f"**{title}**")
-            st.write(f"Status: {status} · Phases: {phases} · Site example: {site}")
-            st.progress(sc/100)
-            st.caption("Match reasons: " + (reasons or "—"))
+        # If your Streamlit version doesn't support border, remove it.
+        try:
+            with st.container(border=True):
+                if nct:
+                    st.markdown(f"**[{title}](https://clinicaltrials.gov/study/{nct})**")
+                else:
+                    st.markdown(f"**{title}**")
+                st.write(f"Status: {status} · Phases: {phases} · Site example: {site}")
+                st.progress(sc/100)
+                st.caption("Match reasons: " + (reasons or "—"))
+        except TypeError:
+            # fallback for older Streamlit versions
+            with st.container():
+                if nct:
+                    st.markdown(f"**[{title}](https://clinicaltrials.gov/study/{nct})**")
+                else:
+                    st.markdown(f"**{title}**")
+                st.write(f"Status: {status} · Phases: {phases} · Site example: {site}")
+                st.progress(sc/100)
+                st.caption("Match reasons: " + (reasons or "—"))
 
 st.info("Sources: ClinicalTrials.gov v2 API. This is assistive information only; discuss with your clinician.")
