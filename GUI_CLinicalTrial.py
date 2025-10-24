@@ -47,21 +47,19 @@ _DEF_TERMS = {
     "Spinal cord tumor": ["spinal cord tumor", "spinal cord neoplasm"],
 }
 
-def build_expr(diagnosis: str, keywords: str) -> str:
+def build_terms(diagnosis: str, keywords: str):
     terms = []
     if diagnosis in _DEF_TERMS:
         terms.extend(_DEF_TERMS[diagnosis])
     else:
-        # broad catch-all for Other
         terms.extend(["brain tumor", "spinal cord tumor", "CNS tumor"])
     extra = [k.strip() for k in (keywords or "").split(",") if k.strip()]
-    terms.extend(extra)
-    # Make a simple OR query; v2 tokenizes terms
-    return " OR ".join(f'"{t}"' if " " in t else t for t in terms)
+    # Prefer diagnosis terms primarily; keywords are applied in scoring and title/criteria matching
+    return terms + extra
 
-# v2 API search with pagination and caching
+# v2 API search with pagination and caching (single term)
 @st.cache_data(show_spinner=False, ttl=3600)
-def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
+def ctgov_search_one(term: str, statuses, page_size: int = 100, max_pages: int = 5):
     base = "https://clinicaltrials.gov/api/v2/studies"
     session = requests.Session()
     session.headers.update({"User-Agent": "BrainTrialsFinder/1.0 (+https://clinicaltrials.gov)"})
@@ -71,7 +69,7 @@ def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
     max_iters = max_pages or 0
     while count < max_iters:
         params = {
-            "query.term": expr,
+            "query.term": term,
             "filter.overallStatus": ",".join(statuses),
             "pageSize": page_size,
         }
@@ -90,6 +88,22 @@ def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
         count += 1
     return all_studies
 
+@st.cache_data(show_spinner=False, ttl=3600)
+def fetch_all_terms(terms, statuses, page_size=100, max_pages=5):
+    dedup = {}
+    for t in terms:
+        try:
+            for s in ctgov_search_one(t, statuses, page_size=page_size, max_pages=max_pages):
+                ident = (s.get("protocolSection", {}) or {}).get("identificationModule", {}) or {}
+                nct = ident.get("nctId")
+                key = nct or id(s)
+                # keep first occurrence
+                if key not in dedup:
+                    dedup[key] = s
+        except requests.HTTPError:
+            # Skip failing term silently; others may still succeed
+            continue
+    return list(dedup.values())
 
 def km(lat1, lon1, lat2, lon2):
     if None in [lat1, lon1, lat2, lon2]: return None
@@ -225,10 +239,10 @@ def score_trial(t, intake):
     return max(0, min(100, s)), reasons
 
 st.subheader("Results")
-expr = build_expr(diagnosis, keywords)
+expr = build_terms(diagnosis, keywords)
 with st.spinner("Fetching trials from ClinicalTrials.gov…"):
     try:
-        studies = ctgov_search(expr, status_ok, page_size=100, max_pages=5)
+        studies = fetch_all_terms(expr, status_ok, page_size=100, max_pages=5)
     except requests.HTTPError as e:
         st.error("ClinicalTrials.gov API error. Try again later or simplify your query.")
         st.exception(e)
