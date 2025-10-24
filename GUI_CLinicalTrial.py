@@ -74,19 +74,48 @@ def km(lat1, lon1, lat2, lon2):
     a=math.sin(dlat/2)**2 + math.cos(math.radians(lat1))*math.cos(math.radians(lat2))*math.sin(dlon/2)**2
     return R*2*math.atan2(math.sqrt(a), math.sqrt(1-a))
 
-# naive mention helper
+# helpers
+
 def mentions(txt, term):
     return bool(re.search(rf"\b{re.escape(term)}\b", txt or "", re.I))
 
-def _to_int(v):
-    try:
-        return int(float(v))
-    except Exception:
+def as_text(obj) -> str:
+    # Convert eligibilityCriteria or other fields to a string safely
+    if obj is None:
+        return ""
+    if isinstance(obj, dict):
+        # v2 may use 'textblock' or 'textBlock' or direct 'value'
+        for k in ("textblock", "textBlock", "value"):
+            if k in obj:
+                return str(obj.get(k) or "")
+        # fallback to joining dict values
+        return " ".join(str(v) for v in obj.values() if v is not None)
+    if isinstance(obj, list):
+        return "; ".join(as_text(x) for x in obj)
+    return str(obj)
+
+def parse_age_to_int(v):
+    # Accept dicts with value, plain strings like '18 Years', or numbers
+    if v is None:
         return None
+    if isinstance(v, dict):
+        return parse_age_to_int(v.get("value"))
+    if isinstance(v, (int, float)):
+        return int(v)
+    s = str(v)
+    m = re.search(r"(\d+)", s)
+    if m:
+        try:
+            return int(m.group(1))
+        except Exception:
+            return None
+    return None
+
 
 def score_trial(t, intake):
     elig = t.get("protocolSection", {}).get("eligibilityModule", {})
-    crit = (elig.get("eligibilityCriteria") or {}).get("textblock", "") or ""
+    crit_raw = elig.get("eligibilityCriteria")
+    crit = as_text(crit_raw)
     phases = (t.get("protocolSection", {}).get("designModule", {}).get("phases") or [])
     conds = (t.get("protocolSection", {}).get("conditionsModule", {}).get("conditions") or [])
     title = t.get("protocolSection", {}).get("identificationModule", {}).get("briefTitle","")
@@ -96,15 +125,13 @@ def score_trial(t, intake):
         s += 40; reasons.append("Condition matches glioblastoma/brain tumor.")
     if "Phase 2" in phases or "PHASE2" in phases: s += 8
     if "Phase 3" in phases or "PHASE3" in phases: s += 12
-    # age (handle numeric or string)
-    min_age_raw = elig.get("minimumAge", {}).get("value")
-    max_age_raw = elig.get("maximumAge", {}).get("value")
-    min_age = _to_int(min_age_raw)
-    max_age = _to_int(max_age_raw)
+    # age (robust parsing)
+    min_age = parse_age_to_int(elig.get("minimumAge"))
+    max_age = parse_age_to_int(elig.get("maximumAge"))
     if min_age is not None and age < min_age:
-        reasons.append(f"Age below minimum ({min_age_raw})."); s -= 30
+        reasons.append(f"Age below minimum ({min_age})."); s -= 30
     if max_age is not None and age > max_age:
-        reasons.append(f"Age above maximum ({max_age_raw})."); s -= 30
+        reasons.append(f"Age above maximum ({max_age})."); s -= 30
     # ECOG/KPS (heuristic)
     if mentions(crit, "ECOG 0-1") and kps < 80: s -= 15; reasons.append("Requires ECOG 0–1 (KPS ~≥80).")
     if mentions(crit, "Karnofsky") and kps < 70: s -= 10; reasons.append("Requires KPS ≥70.")
