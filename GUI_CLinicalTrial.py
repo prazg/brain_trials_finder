@@ -12,29 +12,60 @@ with st.sidebar:
     kps = st.slider("Karnofsky (approx)", 40, 100, 80, 10)
     prior_bev = st.checkbox("Prior bevacizumab")
     prior_ttf = st.checkbox("Prior TTFields")
-    country = st.text_input("Country (2-letter or name)", "United Kingdom")
+    country = st.text_input("Country (optional — leave blank for Any)", "")
+    require_country = st.checkbox("Require site in selected country", value=False)
     keywords = st.text_input("Extra keywords (comma-sep)", "immunotherapy,vaccine,device")
     status_ok = ["RECRUITING", "NOT_YET_RECRUITING"]
+    if st.button("Refresh data"):
+        st.cache_data.clear()
+        st.toast("Data cache cleared. Re-running…", icon="♻️")
 
-# python
-def ctgov_search(condition, country, statuses, size=50, page_token=None):
+# Build a CT.gov v2 search expression from diagnosis+keywords
+_DEF_TERMS = {
+    "Glioblastoma": ["glioblastoma", "GBM", "glioblastoma multiforme"],
+    "Diffuse midline glioma": ["diffuse midline glioma", "DMG", "H3 K27M"],
+    "Anaplastic astrocytoma": ["anaplastic astrocytoma", "grade 3 astrocytoma"],
+}
+
+def build_expr(diagnosis: str, keywords: str) -> str:
+    terms = []
+    if diagnosis in _DEF_TERMS:
+        terms.extend(_DEF_TERMS[diagnosis])
+    else:
+        # broad catch-all for Other
+        terms.extend(["brain tumor", "spinal cord tumor", "CNS tumor"])
+    extra = [k.strip() for k in (keywords or "").split(",") if k.strip()]
+    terms.extend(extra)
+    # Make a simple OR query; v2 tokenizes terms
+    return " OR ".join(f'"{t}"' if " " in t else t for t in terms)
+
+# v2 API search with pagination and caching
+@st.cache_data(show_spinner=False, ttl=3600)
+def ctgov_search(expr: str, statuses, page_size=100, max_pages=5):
     base = "https://clinicaltrials.gov/api/v2/studies"
-    params = {
-        "query.term": condition,
-        "filter.overallStatus": ",".join(statuses),  # v2 expects overallStatus
-        "pageSize": size,
-    }
-    if page_token:
-        params["pageToken"] = page_token  # for pagination if you choose to use it
-
     session = requests.Session()
     session.headers.update({"User-Agent": "BrainTrialsFinder/1.0 (+https://clinicaltrials.gov)"})
-
-    r = session.get(base, params=params, timeout=30)
-    if r.status_code == 400:
-        st.warning("ClinicalTrials.gov API rejected the request (400). Try simplifying the query.")
-    r.raise_for_status()
-    return r.json().get("studies", [])
+    all_studies = []
+    page_token = None
+    for _ in range(int(max_pages)):
+        params = {
+            "query.term": expr,
+            "filter.overallStatus": ",".join(statuses),
+            "pageSize": page_size,
+        }
+        if page_token:
+            params["pageToken"] = page_token
+        r = session.get(base, params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json()
+        studies = data.get("studies", [])
+        if not studies:
+            break
+        all_studies.extend(studies)
+        page_token = data.get("nextPageToken")
+        if not page_token:
+            break
+    return all_studies
 
 
 def km(lat1, lon1, lat2, lon2):
@@ -89,33 +120,52 @@ def score_trial(t, intake):
     return max(0,min(100,s)), reasons
 
 st.subheader("Results")
-studies = ctgov_search("brain tumor OR glioblastoma", country, status_ok)
+expr = build_expr(diagnosis, keywords)
+with st.spinner("Fetching trials from ClinicalTrials.gov…"):
+    try:
+        studies = ctgov_search(expr, status_ok, page_size=100, max_pages=5)
+    except requests.HTTPError as e:
+        st.error("ClinicalTrials.gov API error. Try again later or simplify your query.")
+        st.exception(e)
+        studies = []
+    except Exception as e:
+        st.error("Unexpected error while fetching data.")
+        st.exception(e)
+        studies = []
+
 rows = []
 for s in studies:
     locs = (s.get("protocolSection", {}).get("contactsLocationsModule", {}).get("locations") or [])
-    # rough country filter
-    locs = [L for L in locs if (L.get("locationCountry") or "").lower().startswith(country.lower())]
-    if not locs:
+    # Optional country filter (case-insensitive substring match to be forgiving)
+    if country and require_country:
+        locs = [L for L in locs if country.lower() in (L.get("locationCountry") or "").lower()]
+    if require_country and not locs:
         continue
     sc, reasons = score_trial(s, dict(age=age, kps=kps))
     ident = s.get("protocolSection", {}).get("identificationModule", {})
     title = ident.get("briefTitle", "")
     nct = ident.get("nctId")
-    status = s["protocolSection"]["statusModule"]["overallStatus"]
+    status = s.get("protocolSection", {}).get("statusModule", {}).get("overallStatus", "")
     phases = ", ".join(s.get("protocolSection", {}).get("designModule", {}).get("phases") or [])
     conds = ", ".join(s.get("protocolSection", {}).get("conditionsModule", {}).get("conditions") or [])
     first_site = next(iter(locs), {})
     site_str = f"{first_site.get('locationFacility','')}, {first_site.get('locationCity','')}, {first_site.get('locationCountry','')}"
     rows.append((sc, title, nct, status, phases, conds, site_str, "; ".join(reasons)))
 
-rows = sorted(rows, key=lambda x: -x[0])[:50]
-for sc, title, nct, status, phases, conds, site, reasons in rows:
-    with st.container(border=True):
-        if nct:
-            st.markdown(f"**[{title}](https://clinicaltrials.gov/study/{nct})**")
-        else:
-            st.markdown(f"**{title}**")
-        st.write(f"Status: {status} · Phases: {phases} · Site example: {site}")
-        st.progress(sc/100)
-        st.caption("Match reasons: " + (reasons or "—"))
+st.caption(f"Fetched {len(studies)} trials; showing {len(rows)} after filters.")
+
+if not rows:
+    st.warning("No matching trials with the current filters. Try clearing Country (Any), changing Diagnosis/keywords, or expanding statuses.")
+else:
+    rows = sorted(rows, key=lambda x: -x[0])[:50]
+    for sc, title, nct, status, phases, conds, site, reasons in rows:
+        with st.container(border=True):
+            if nct:
+                st.markdown(f"**[{title}](https://clinicaltrials.gov/study/{nct})**")
+            else:
+                st.markdown(f"**{title}**")
+            st.write(f"Status: {status} · Phases: {phases} · Site example: {site}")
+            st.progress(sc/100)
+            st.caption("Match reasons: " + (reasons or "—"))
+
 st.info("Sources: ClinicalTrials.gov v2 API. This is assistive information only; discuss with your clinician.")
