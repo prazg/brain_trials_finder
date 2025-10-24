@@ -1,6 +1,7 @@
 # Brain Trials Finder
 
 Fetch and rank actively recruiting neuro-oncology clinical trials from ClinicalTrials.gov (v2 API).
+(Currently works well with Glioblastoma)
 
 ## Local run
 
@@ -51,4 +52,5 @@ Then open the URL printed in the terminal (usually http://localhost:8501).
 ## Troubleshooting
 - If the app appears empty after a change, check the banner messages; you may have zero matches due to filters. Try clearing Country, widening Diagnosis, or clicking Refresh.
 - Check logs on Streamlit Cloud via the "More" menu > "View logs". Any skipped records count is displayed at the bottom of results.
+
 
