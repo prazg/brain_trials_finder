@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# Jupyter and cache
+.ipynb_checkpoints/
+*.ipynb-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Logs / data
+*.log
+*.csv
+*.json
+!neuro_onc_trials.csv
+!neuro_onc_trials.json
+
