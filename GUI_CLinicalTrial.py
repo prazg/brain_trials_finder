@@ -7,7 +7,21 @@ st.set_page_config(page_title="Brain Trials Finder", layout="wide")
 st.title("Brain Cancer Trials Finder (MVP)")
 with st.sidebar:
     age = st.number_input("Age", 1, 100, 55)
-    diagnosis = st.selectbox("Diagnosis", ["Glioblastoma", "Diffuse midline glioma", "Anaplastic astrocytoma", "Other"])
+    diagnosis = st.selectbox(
+        "Diagnosis",
+        [
+            "Glioblastoma",
+            "Diffuse midline glioma",
+            "Anaplastic astrocytoma",
+            "Astrocytoma",
+            "Oligodendroglioma",
+            "Meningioma",
+            "Medulloblastoma",
+            "Ependymoma",
+            "Spinal cord tumor",
+            "Other",
+        ],
+    )
     setting = st.selectbox("Disease setting", ["Newly diagnosed", "Recurrent"])
     kps = st.slider("Karnofsky (approx)", 40, 100, 80, 10)
     prior_bev = st.checkbox("Prior bevacizumab")
@@ -25,6 +39,12 @@ _DEF_TERMS = {
     "Glioblastoma": ["glioblastoma", "GBM", "glioblastoma multiforme"],
     "Diffuse midline glioma": ["diffuse midline glioma", "DMG", "H3 K27M"],
     "Anaplastic astrocytoma": ["anaplastic astrocytoma", "grade 3 astrocytoma"],
+    "Astrocytoma": ["astrocytoma", "grade 2 astrocytoma", "grade 4 astrocytoma"],
+    "Oligodendroglioma": ["oligodendroglioma", "1p19q codeleted"],
+    "Meningioma": ["meningioma"],
+    "Medulloblastoma": ["medulloblastoma"],
+    "Ependymoma": ["ependymoma"],
+    "Spinal cord tumor": ["spinal cord tumor", "spinal cord neoplasm"],
 }
 
 def build_expr(diagnosis: str, keywords: str) -> str:
@@ -47,7 +67,9 @@ def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
     session.headers.update({"User-Agent": "BrainTrialsFinder/1.0 (+https://clinicaltrials.gov)"})
     all_studies = []
     page_token = None
-    for _ in range(int(max_pages or 0)):
+    count = 0
+    max_iters = max_pages or 0
+    while count < max_iters:
         params = {
             "query.term": expr,
             "filter.overallStatus": ",".join(statuses),
@@ -65,6 +87,7 @@ def ctgov_search(expr: str, statuses, page_size: int = 100, max_pages: int = 5):
         page_token = data.get("nextPageToken")
         if not page_token:
             break
+        count += 1
     return all_studies
 
 
@@ -126,6 +149,16 @@ def score_trial(t, intake):
     prior_bev_local = bool((intake or {}).get("prior_bev", False))
     setting_local = (intake or {}).get("setting") or ""
     keywords_local = (intake or {}).get("keywords") or ""
+    diagnosis_local = (intake or {}).get("diagnosis") or ""
+
+    # derive diagnosis terms to match
+    diag_terms = []
+    if diagnosis_local in _DEF_TERMS:
+        diag_terms = _DEF_TERMS[diagnosis_local]
+    elif diagnosis_local and diagnosis_local != "Other":
+        diag_terms = [diagnosis_local]
+    else:
+        diag_terms = ["brain tumor", "CNS tumor", "spinal cord tumor"]
 
     ps = (t or {}).get("protocolSection") or {}
     # Eligibility may be dict, string, or missing
@@ -149,9 +182,10 @@ def score_trial(t, intake):
     # base score
     s = 0
     reasons = []
-    if any(mentions(c, "glioblastoma") for c in conds_list) or mentions(title, "glioblastoma"):
-        s += 40
-        reasons.append("Condition matches glioblastoma/brain tumor.")
+    # Diagnosis alignment (conditions/title contains any of the selected diagnosis terms)
+    if any(any(mentions(c, term) for term in diag_terms) for c in conds_list) or any(mentions(title, term) for term in diag_terms):
+        s += 30
+        reasons.append(f"Matches diagnosis: {diagnosis_local or 'neuro-oncology'}.")
     # phases heuristic
     if any("PHASE 2" in p or "PHASE2" in p for p in phases_up):
         s += 8
@@ -216,7 +250,7 @@ for s in studies:
             continue
         sc, reasons = score_trial(
             s,
-            dict(age=age, kps=kps, prior_bev=prior_bev, setting=setting, keywords=keywords),
+            dict(age=age, kps=kps, prior_bev=prior_bev, setting=setting, keywords=keywords, diagnosis=diagnosis),
         )
         ident = (s.get("protocolSection", {}) or {}).get("identificationModule", {}) or {}
         title = ident.get("briefTitle", "")
