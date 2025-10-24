@@ -1,56 +1,65 @@
-# Brain Trials Finder
+# Brain Cancer Trials Finder (Streamlit)
 
-Fetch and rank actively recruiting neuro-oncology clinical trials from ClinicalTrials.gov (v2 API).
-(Currently works well with Glioblastoma)
+A minimal Streamlit app that discovers actively recruiting neuro-oncology clinical trials (e.g., glioblastoma, brain tumors) from the ClinicalTrials.gov v2 API and ranks them with simple, explainable heuristics.
+
+Demo features:
+- Filters by country and basic patient factors (age, KPS, setting).
+- Pulls live data from ClinicalTrials.gov v2.
+- Scores trials with transparent reasons for the score.
 
 ## Local run
 
-Requirements: Python 3.9+ (works on 3.9–3.13), pip, internet access.
+Prereqs: Python 3.9+.
 
-1) Create and activate a virtual environment (optional but recommended)
-
-Windows (cmd):
-
-```
+```bash
 python -m venv .venv
 .venv\Scripts\activate
-```
-
-2) Install dependencies
-
-```
 pip install -r requirements.txt
-```
-
-3) Start Streamlit app
-
-```
 streamlit run streamlit_app.py
 ```
 
-Then open the URL printed in the terminal (usually http://localhost:8501).
+## Deploy to Streamlit Community Cloud
 
-## Streamlit Cloud deploy
+1) Push this folder to a new GitHub repository (see steps below).
+2) Go to https://share.streamlit.io/ and connect your GitHub account.
+3) Create a new app, select your repo, branch (e.g., `main`), and set the main file path to `streamlit_app.py`.
+4) Click Deploy. Streamlit will build from `requirements.txt` automatically.
 
-1) Push this folder to a GitHub repo (e.g. `brain_trials_finder`). Ensure these files are present at the repo root:
-- `GUI_CLinicalTrial.py` (the app)
-- `streamlit_app.py` (entrypoint that imports the app)
-- `requirements.txt`
+## GitHub repository setup (Windows, cmd.exe)
 
-2) In Streamlit Cloud, create a new app:
-- Repo: your `user/brain_trials_finder`
-- Branch: main
-- Main file: `streamlit_app.py`
+1) Create an empty repo on GitHub (e.g., `brain-trials-finder`). Do not add any files there.
+2) In this project folder, run:
 
-3) (Optional) Set Python version to 3.9–3.13. The app is version-tolerant.
+```bat
+git init
+git add .
+git commit -m "Initial commit: Streamlit Brain Cancer Trials Finder"
+git branch -M main
+REM Replace <YOUR-USERNAME> and repo name below
+git remote add origin https://github.com/<YOUR-USERNAME>/brain-trials-finder.git
+git push -u origin main
+```
 
-## Notes
-- Results are limited to overallStatus RECRUITING and NOT_YET_RECRUITING via the v2 filter `filter.overallStatus`.
-- Use the sidebar to change Diagnosis, Disease setting, Age, and filters. The app caches API responses for 1 hour; use the "Refresh data" button to clear cache.
-- The app is robust to inconsistent API data and will skip malformed studies rather than failing.
+If you prefer SSH:
 
-## Troubleshooting
-- If the app appears empty after a change, check the banner messages; you may have zero matches due to filters. Try clearing Country, widening Diagnosis, or clicking Refresh.
-- Check logs on Streamlit Cloud via the "More" menu > "View logs". Any skipped records count is displayed at the bottom of results.
+```bat
+git remote remove origin 2> NUL
+git remote add origin git@github.com:<YOUR-USERNAME>/brain-trials-finder.git
+git push -u origin main
+```
 
+## Configuration
 
+- No secrets are required. All data is pulled from the public ClinicalTrials.gov API.
+- If you want to pin Python version on Streamlit Cloud, add a `runtime.txt` (e.g., `python-3.10`), though it’s optional.
+
+## Files
+
+- `streamlit_app.py` — Streamlit entrypoint used by Streamlit Cloud.
+- `GUI_CLinicalTrial.py` — Your original app file; kept for development, but `streamlit_app.py` mirrors it for deployment.
+- `requirements.txt` — Python dependencies.
+- `.gitignore` — Ignores typical Python/venv artifacts.
+
+## Disclaimer
+
+This tool provides assistive information only and is not a substitute for professional medical advice. Always discuss clinical trials with your clinician.
