@@ -1,10 +1,10 @@
 # Brain Cancer Trials Finder 
 
-#(Desktop Application, Streamlit app and code)
+Desktop Application, Streamlit app and code
 
 # Brain Cancer Trails Finder (Desktop Application)
 
-Download the Brain Cancer Trial Finder Zip file and run the application (file : Brain Cancer Trial Finder.exe)
+The link for download is here: (Coming soon)
 
 This application uses API with Clinical Trials Registry at NIH (ClinicalTrails.gov, USA) and provides scores according to the type of brain cancer input on the GUI. 
 It also provides links directly to UK cancer registers and search is performed automatically on the type of cancer selected (CRUK, NIHR, ISRCTN(UK) ) 
@@ -77,6 +77,7 @@ git push -u origin main
 This tool provides assistive information only and is not a substitute for professional medical advice. Always discuss clinical trials with your clinician.
 
 Copyright: Prajwal Ghimire
+
 
 
 
