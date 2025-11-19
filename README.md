@@ -1,4 +1,6 @@
-# Brain Cancer Trials Finder (Desktop Application, Streamlit app and code)
+# Brain Cancer Trials Finder 
+
+#(Desktop Application, Streamlit app and code)
 
 # Brain Cancer Trails Finder (Desktop Application)
 
@@ -75,5 +77,6 @@ git push -u origin main
 This tool provides assistive information only and is not a substitute for professional medical advice. Always discuss clinical trials with your clinician.
 
 Copyright: Prajwal Ghimire
+
 
 
