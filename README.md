@@ -66,7 +66,7 @@ git push -u origin main
 ## Files
 
 - `streamlit_app.py` — Streamlit entrypoint used by Streamlit Cloud.
-- `GUI_CLinicalTrial.py` — Your original app file; kept for development, but `streamlit_app.py` mirrors it for deployment.
+- `GUI_CLinicalTrial.py` — Original app file; kept for development, but `streamlit_app.py` mirrors it for deployment.
 - `requirements.txt` — Python dependencies.
 - `.gitignore` — Ignores typical Python/venv artifacts.
 
@@ -75,4 +75,5 @@ git push -u origin main
 This tool provides assistive information only and is not a substitute for professional medical advice. Always discuss clinical trials with your clinician.
 
 Copyright: Prajwal Ghimire
+
 
