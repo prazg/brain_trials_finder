@@ -1,4 +1,4 @@
-<p align="center"> # Brain Cancer Trials Finder </p>
+<p align="center"> <b>Brain Cancer Trials Finder</b> </p>
 
 <p align="center">
   <img src="logo_precise.png" alt="PRECISE-GBM Logo">
@@ -82,6 +82,7 @@ git push -u origin main
 This tool provides assistive information only and is not a substitute for professional medical advice. Always discuss clinical trials with your clinician.
 
 Copyright: Prajwal Ghimire
+
 
 
 
