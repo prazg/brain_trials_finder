@@ -9,7 +9,7 @@ Desktop Application, Streamlit app and code
 
 # Brain Cancer Trails Finder (Desktop Application)
 
-The link for download is here: (Coming soon)
+Download the EXE file to setup
 
 This application uses API with Clinical Trials Registry at NIH (ClinicalTrails.gov, USA) and provides scores according to the type of brain cancer input on the GUI. 
 It also provides links directly to UK cancer registers and search is performed automatically on the type of cancer selected (CRUK, NIHR, ISRCTN(UK) ) 
