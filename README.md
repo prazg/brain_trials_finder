@@ -11,7 +11,7 @@ Three ways to use it:
 
 | | What it is | Data sources |
 |---|---|---|
-| **Web page** | [https://prazg.github.io/brain_trials_finder/ | ClinicalTrials.gov + ISRCTN live, EU CTIS from a daily snapshot |
+| **Web page** | https://prazg.github.io/brain_trials_finder/ | ClinicalTrials.gov + ISRCTN live, EU CTIS from a daily snapshot |
 | **Streamlit app** | `streamlit_app.py` | ClinicalTrials.gov |
 | **Desktop app** | `Brain Cancer Trial Finder.exe`, built from `GUI_CLinicalTrial.py` | ClinicalTrials.gov, plus deep links to CRUK / NIHR / ISRCTN |
 
