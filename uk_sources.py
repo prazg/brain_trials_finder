@@ -48,14 +48,20 @@ def fetch_uk_trials(
                 ps = (s.get("protocolSection", {}) or {})
                 locs = ((ps.get("contactsLocationsModule", {}) or {}).get("locations") or [])
                 # UK filter (case-insensitive contains)
-                uk_locs = [L for L in locs if "united kingdom" in (L.get("locationCountry") or "").lower()]
+                uk_locs = [L for L in locs if "united kingdom" in (L.get("country") or "").lower()]
                 if not uk_locs:
                     continue
                 sc, reasons = score_trial(s, intake)
                 base = extract_row(s)
                 # Replace site with first UK site
                 first_site = next(iter(uk_locs), {})
-                base["site"] = f"{first_site.get('locationFacility','')}, {first_site.get('locationCity','')}, {first_site.get('locationCountry','')}"
+                base["site"] = ", ".join(
+                    p for p in (
+                        first_site.get("facility", ""),
+                        first_site.get("city", ""),
+                        first_site.get("country", ""),
+                    ) if p
+                )
                 base["score"] = sc
                 base["reasons"] = "; ".join(reasons)
                 base["url"] = f"https://clinicaltrials.gov/study/{base['nct']}" if base.get("nct") else ""

@@ -209,8 +209,8 @@ def extract_row(study: dict) -> dict:
     locs = ensure_list(clm.get("locations"))
     if locs:
         first = locs[0]
-        city = (first.get("locationCity") or "").strip()
-        country = (first.get("locationCountry") or "").strip()
+        city = (first.get("city") or "").strip()
+        country = (first.get("country") or "").strip()
         parts = [p for p in [city, country] if p]
         city_country = ", ".join(parts)
 

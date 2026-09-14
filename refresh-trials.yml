@@ -1,0 +1,80 @@
+name: Refresh EU snapshot and publish Pages
+
+on:
+  schedule:
+    # 04:15 UTC daily. Cron on GitHub is best-effort and can run late under load.
+    - cron: "15 4 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/build_snapshot.py"
+      - ".github/workflows/refresh-trials.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write      # commit the refreshed snapshot
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild the EU CTIS snapshot
+        # CTIS pins its CORS header to its own origin, so the browser cannot
+        # read it. This step fetches it server-side into docs/data.
+        run: python scripts/build_snapshot.py docs/data
+
+      - name: Sanity-check the snapshot before committing
+        run: |
+          python - <<'PY'
+          import json, sys, pathlib
+          p = pathlib.Path("docs/data/eu_ctis.json")
+          snap = json.loads(p.read_text())
+          n, rec = snap["count"], snap["recruitingCount"]
+          print(f"{n} trials, {rec} recruiting, {p.stat().st_size/1024:.0f} KB")
+          # A collapse to near-zero almost always means the API changed shape
+          # rather than that every EU neuro-oncology trial closed overnight.
+          if n < 40:
+              sys.exit(f"Refusing to publish: only {n} trials found (expected 100+).")
+          if rec < 10:
+              sys.exit(f"Refusing to publish: only {rec} recruiting (expected 40+).")
+          PY
+
+      - name: Commit if the snapshot changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- docs/data/eu_ctis.json; then
+            echo "No change."
+          else
+            git add docs/data/eu_ctis.json
+            git commit -m "Refresh EU CTIS snapshot ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: snapshot
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

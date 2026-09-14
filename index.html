@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brain Trials Finder — recruiting neuro-oncology trials</title>
+<meta name="description" content="Search actively recruiting neuro-oncology clinical trials across ClinicalTrials.gov, the ISRCTN registry and the EU Clinical Trials Information System.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1f3f2;
+  --card:#ffffff;
+  --ink:#141a19;
+  --slate:#5a6866;
+  --rule:#d6dcda;
+  --rule-soft:#e6eae9;
+  --reg-us:#1f5d7a;
+  --reg-uk:#7b3358;
+  --reg-eu:#2f6b4f;
+  --warn:#8c5c0d;
+  --warn-bg:#fbf3e2;
+  --focus:#1f5d7a;
+  --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#101514;--card:#171d1c;--ink:#e6eae9;--slate:#9aa8a5;
+    --rule:#2b3433;--rule-soft:#222a29;
+    --reg-us:#63aed1;--reg-uk:#cc86ab;--reg-eu:#6fbd95;
+    --warn:#d8ab5c;--warn-bg:#2a2317;--focus:#63aed1;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:400 15px/1.5 var(--sans);
+  font-variant-numeric:tabular-nums;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- masthead ---------- */
+.masthead{
+  border-bottom:1px solid var(--rule);background:var(--card);
+  position:sticky;top:0;z-index:20;
+}
+.masthead-in{
+  max-width:1380px;margin:0 auto;padding:10px 20px;
+  display:flex;gap:20px;align-items:baseline;flex-wrap:wrap;
+}
+.wordmark{font-weight:600;font-size:16px;letter-spacing:-.01em;margin:0}
+.wordmark span{color:var(--slate);font-weight:400}
+.tally{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap;font-size:13px;color:var(--slate)}
+.tally b{font-weight:600;color:var(--ink)}
+.tally i{
+  font-style:normal;display:inline-block;width:8px;height:8px;border-radius:1px;
+  margin-right:6px;vertical-align:1px;
+}
+.t-us i{background:var(--reg-us)} .t-uk i{background:var(--reg-uk)} .t-eu i{background:var(--reg-eu)}
+
+/* ---------- shell ---------- */
+.shell{max-width:1380px;margin:0 auto;padding:22px 20px 80px;display:grid;grid-template-columns:312px minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:960px){.shell{grid-template-columns:1fr;gap:16px;padding-top:14px}}
+
+/* ---------- query rail ---------- */
+.rail{position:sticky;top:68px}
+@media (max-width:960px){.rail{position:static}}
+.rail form{background:var(--card);border:1px solid var(--rule);border-radius:3px}
+.rail-head{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:12px 16px;border-bottom:1px solid var(--rule-soft);
+}
+.rail-head h2{margin:0;font-size:14px;font-weight:600}
+.rail-toggle{display:none;border:1px solid var(--rule);background:none;color:var(--ink);border-radius:3px;font:500 13px var(--sans);padding:4px 10px;cursor:pointer}
+@media (max-width:960px){.rail-toggle{display:block}.rail-body[hidden]{display:none}}
+.rail-body{padding:4px 16px 16px}
+fieldset{border:0;margin:0;padding:14px 0 0}
+legend{font-size:12px;font-weight:600;color:var(--slate);padding:0 0 8px}
+label{display:block;font-size:13px;margin:0 0 4px;color:var(--slate)}
+input[type=text],input[type=number],select{
+  width:100%;font:400 14px var(--sans);color:var(--ink);background:var(--paper);
+  border:1px solid var(--rule);border-radius:3px;padding:7px 9px;
+}
+.field+.field{margin-top:11px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.checks{display:flex;flex-direction:column;gap:7px}
+.check{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--ink);cursor:pointer}
+.check input{margin:2px 0 0;accent-color:var(--focus)}
+.hint{font-size:12px;color:var(--slate);margin:6px 0 0;line-height:1.45}
+.rail-foot{padding:14px 16px;border-top:1px solid var(--rule-soft);display:flex;gap:9px}
+button.go{
+  flex:1;background:var(--ink);color:var(--paper);border:0;border-radius:3px;
+  font:600 14px var(--sans);padding:9px;cursor:pointer;
+}
+button.go[aria-busy=true]{opacity:.6;cursor:progress}
+button.ghost{background:none;border:1px solid var(--rule);color:var(--ink);border-radius:3px;font:500 13px var(--sans);padding:9px 12px;cursor:pointer}
+
+/* ---------- feed ---------- */
+.feed-bar{
+  display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+  padding-bottom:12px;border-bottom:1px solid var(--rule);margin-bottom:4px;
+}
+.count{font-size:14px;font-weight:600;margin:0}
+.count small{font-weight:400;color:var(--slate)}
+.feed-tools{margin-left:auto;display:flex;gap:10px;align-items:center}
+.feed-tools label{margin:0;font-size:13px}
+.feed-tools select{width:auto;padding:5px 8px;font-size:13px}
+
+.sources{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:0;list-style:none}
+.src{
+  display:flex;gap:7px;align-items:baseline;font-size:12.5px;color:var(--slate);
+  border:1px solid var(--rule);border-radius:3px;padding:5px 9px;background:var(--card);
+}
+.src b{font-weight:600;color:var(--ink)}
+.src.err{border-color:var(--warn);background:var(--warn-bg);color:var(--warn)}
+.src.err b{color:var(--warn)}
+
+.notice{
+  margin:14px 0 0;padding:10px 13px;border:1px solid var(--rule);border-left:3px solid var(--warn);
+  background:var(--warn-bg);color:var(--warn);font-size:13px;border-radius:2px;line-height:1.5;
+}
+
+ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.trial{
+  background:var(--card);border:1px solid var(--rule);border-radius:3px;
+  border-left:4px solid var(--rule);padding:14px 16px 13px;
+}
+.trial.r-CTG{border-left-color:var(--reg-us)}
+.trial.r-ISRCTN{border-left-color:var(--reg-uk)}
+.trial.r-CTIS{border-left-color:var(--reg-eu)}
+.trial h3{margin:0 0 7px;font-size:15.5px;font-weight:600;line-height:1.38;max-width:74ch}
+.trial h3 a{text-decoration:none}
+.trial h3 a:hover{text-decoration:underline}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--slate);margin:0 0 9px}
+.meta .id{font:500 12.5px var(--mono);color:var(--ink)}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:1px}
+.open .dot{background:var(--reg-eu)}
+.shut .dot{background:var(--slate)}
+
+/* score meter — the one loud element */
+.meter{display:flex;align-items:center;gap:10px;margin:0 0 9px}
+.meter-track{flex:0 0 132px;height:5px;background:var(--rule-soft);border-radius:3px;overflow:hidden}
+.meter-fill{height:100%;background:var(--ink);border-radius:3px}
+.meter-num{font:600 13px var(--mono);min-width:2.6em}
+.meter-cap{font-size:12.5px;color:var(--slate)}
+
+.reasons{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.reasons li{font-size:12.5px;border:1px solid var(--rule);border-radius:2px;padding:2px 7px;color:var(--slate);background:var(--paper)}
+.reasons li.minus{border-color:var(--warn);color:var(--warn);background:var(--warn-bg)}
+
+details.sites{margin:10px 0 0}
+details.sites summary{font-size:13px;color:var(--slate);cursor:pointer}
+details.sites ul{margin:8px 0 0;padding:0 0 0 16px;font-size:13px;color:var(--slate);line-height:1.55;max-height:230px;overflow:auto}
+
+.empty{padding:44px 20px;text-align:center;color:var(--slate);border:1px dashed var(--rule);border-radius:3px;margin-top:16px}
+.empty p{margin:0 0 4px}
+.more{margin:16px 0 0;width:100%;background:none;border:1px solid var(--rule);color:var(--ink);border-radius:3px;font:500 14px var(--sans);padding:11px;cursor:pointer}
+
+footer{max-width:1380px;margin:0 auto;padding:0 20px 40px;font-size:12.5px;color:var(--slate);line-height:1.6}
+footer p{margin:0 0 6px;max-width:78ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-in">
+    <h1 class="wordmark">Brain Trials Finder <span>— neuro-oncology</span></h1>
+    <div class="tally" id="tally" aria-live="polite"></div>
+  </div>
+</header>
+
+<div class="shell">
+
+  <!-- ===================== query rail ===================== -->
+  <aside class="rail">
+    <form id="q" autocomplete="off">
+      <div class="rail-head">
+        <h2>Search</h2>
+        <button type="button" class="rail-toggle" id="railToggle" aria-expanded="true" aria-controls="railBody">Hide</button>
+      </div>
+
+      <div class="rail-body" id="railBody">
+
+        <fieldset>
+          <legend>Condition</legend>
+          <div class="field">
+            <label for="dx">Diagnosis</label>
+            <select id="dx"></select>
+          </div>
+          <div class="field">
+            <label for="kw">Also look for (comma separated)</label>
+            <input type="text" id="kw" placeholder="e.g. TTFields, CAR-T, MGMT">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where</legend>
+          <div class="field">
+            <label for="region">Region</label>
+            <select id="region">
+              <option value="any">Anywhere</option>
+              <option value="uk" selected>United Kingdom</option>
+              <option value="eu">Europe (EU/EEA + Switzerland)</option>
+              <option value="uk_eu">UK and Europe</option>
+              <option value="us">United States</option>
+            </select>
+          </div>
+          <p class="hint">Region filters trial sites, not the register. A US-sponsored trial with a London site shows under United Kingdom.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Patient</legend>
+          <div class="pair">
+            <div>
+              <label for="age">Age</label>
+              <input type="number" id="age" min="0" max="110" value="55">
+            </div>
+            <div>
+              <label for="kps">KPS</label>
+              <input type="number" id="kps" min="0" max="100" step="10" value="90">
+            </div>
+          </div>
+          <div class="field">
+            <label for="setting">Disease setting</label>
+            <select id="setting">
+              <option value="">Not specified</option>
+              <option value="newly">Newly diagnosed</option>
+              <option value="recurrent" selected>Recurrent or progressive</option>
+            </select>
+          </div>
+          <div class="field checks" style="margin-top:11px">
+            <label class="check"><input type="checkbox" id="bev"> Has had bevacizumab</label>
+            <label class="check"><input type="checkbox" id="surg"> Fit for further surgery</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Filters</legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" id="onlyRecruiting" checked> Only open to recruitment</label>
+            <label class="check"><input type="checkbox" id="interventional" checked> Interventional studies only</label>
+            <label class="check"><input type="checkbox" id="hideIneligible"> Hide trials the patient fails on age</label>
+          </div>
+          <div class="field" style="margin-top:12px">
+            <label for="phase">Phase</label>
+            <select id="phase">
+              <option value="">Any phase</option>
+              <option value="1">Phase 1 (incl. 1/2)</option>
+              <option value="2">Phase 2 (incl. 1/2, 2/3)</option>
+              <option value="3">Phase 3</option>
+            </select>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="rail-foot">
+        <button type="submit" class="go" id="goBtn">Search</button>
+        <button type="button" class="ghost" id="csvBtn" title="Download the current results as CSV">CSV</button>
+      </div>
+    </form>
+  </aside>
+
+  <!-- ===================== results ===================== -->
+  <main>
+    <div class="feed-bar">
+      <p class="count" id="count">Loading trials…</p>
+      <div class="feed-tools">
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="score">Best match</option>
+          <option value="updated">Recently updated</option>
+          <option value="phase">Phase, highest first</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+    </div>
+
+    <ul class="sources" id="sources"></ul>
+    <div id="notices"></div>
+    <ol class="results" id="results"></ol>
+    <button class="more" id="moreBtn" hidden>Load more from ClinicalTrials.gov</button>
+  </main>
+</div>
+
+<footer>
+  <p><strong>This is not medical advice.</strong> It is a search aid over three public registers. Eligibility is decided by the trial team, not by this page — always confirm with the treating clinician and the trial contact before acting on anything here.</p>
+  <p>Sources: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (US NIH, queried live) · <a href="https://www.isrctn.com/">ISRCTN registry</a> (UK, queried live) · <a href="https://euclinicaltrials.eu/ctis-public/search">EU CTIS</a> (loaded from a snapshot rebuilt daily, because CTIS blocks direct browser requests). Registers overlap; the same trial can appear more than once under different identifiers.</p>
+  <p>Built by Prajwal Ghimire. Source and issues: <a href="https://github.com/prazg/brain_trials_finder">github.com/prazg/brain_trials_finder</a>.</p>
+</footer>
+
+<script>
+"use strict";
+
+/* =========================================================================
+   Diagnosis vocabulary — mirrors DEFAULT_DIAG_TERMS in ctgov_client.py
+   ========================================================================= */
+const DIAGNOSES = {
+  "Glioblastoma":            ["glioblastoma","GBM","glioblastoma multiforme","gliosarcoma"],
+  "Glioma (any grade)":      ["glioma","astrocytoma","oligodendroglioma"],
+  "Diffuse midline glioma":  ["diffuse midline glioma","DIPG","H3 K27M","diffuse intrinsic pontine glioma"],
+  "Astrocytoma":             ["astrocytoma","anaplastic astrocytoma"],
+  "Oligodendroglioma":       ["oligodendroglioma","1p19q codeleted"],
+  "Meningioma":              ["meningioma"],
+  "Medulloblastoma":         ["medulloblastoma"],
+  "Ependymoma":              ["ependymoma"],
+  "Brain metastases":        ["brain metastases","brain metastasis","cerebral metastases","leptomeningeal"],
+  "CNS lymphoma":            ["primary CNS lymphoma","central nervous system lymphoma"],
+  "Spinal cord tumour":      ["spinal cord tumor","spinal cord neoplasm","intramedullary tumor"],
+  "Any CNS tumour":          ["brain tumor","brain neoplasm","CNS tumor","central nervous system neoplasm"]
+};
+
+const EU_EEA = new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Czechia","Czech Republic",
+  "Denmark","Estonia","Finland","France","Germany","Greece","Hungary","Iceland","Ireland","Italy",
+  "Latvia","Liechtenstein","Lithuania","Luxembourg","Malta","Netherlands","Norway","Poland","Portugal",
+  "Romania","Slovakia","Slovenia","Spain","Sweden","Switzerland"]);
+
+const REGIONS = {
+  any:   () => true,
+  uk:    c => c === "United Kingdom",
+  eu:    c => EU_EEA.has(c),
+  uk_eu: c => c === "United Kingdom" || EU_EEA.has(c),
+  us:    c => c === "United States"
+};
+
+// ClinicalTrials.gov accepts boolean country lists in query.locn using Essie
+// AREA syntax, so the region filter runs on the server instead of trimming a
+// page of results after the fact.
+function locnExpr(region){
+  const list = names => 'AREA[LocationCountry](' + names.map(n => '"' + n + '"').join(" OR ") + ')';
+  const eu = [...EU_EEA];
+  if (region === "uk")    return 'AREA[LocationCountry]"United Kingdom"';
+  if (region === "us")    return 'AREA[LocationCountry]"United States"';
+  if (region === "eu")    return list(eu);
+  if (region === "uk_eu") return list(["United Kingdom", ...eu]);
+  return null;
+}
+
+/* =========================================================================
+   State
+   ========================================================================= */
+const state = {
+  trials: [],
+  intake: null,
+  ctgPageToken: null,
+  ctgTotal: 0,
+  ctisSnapshot: null,
+  running: false
+};
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, m =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+
+/* =========================================================================
+   ClinicalTrials.gov v2  (live; sends Access-Control-Allow-Origin: *)
+   ========================================================================= */
+const CTG_FIELDS = ["NCTId","BriefTitle","OverallStatus","Phase","Condition","LeadSponsorName",
+  "EligibilityCriteria","MinimumAge","MaximumAge","Sex","LocationFacility","LocationCity",
+  "LocationCountry","LocationStatus","LastUpdatePostDate","StudyType","EnrollmentCount","StartDate"].join(",");
+
+function essie(terms){
+  return terms.map(t => /\s/.test(t) ? '"' + t + '"' : t).join(" OR ");
+}
+
+async function fetchCTG(intake, pageToken){
+  const p = new URLSearchParams();
+  p.set("query.cond", essie(intake.terms));
+  if (intake.keywords.length) p.set("query.term", essie(intake.keywords));
+  const locn = locnExpr(intake.region);
+  if (locn) p.set("query.locn", locn);
+  p.set("filter.overallStatus", intake.onlyRecruiting
+    ? "RECRUITING,NOT_YET_RECRUITING"
+    : "RECRUITING,NOT_YET_RECRUITING,ENROLLING_BY_INVITATION,ACTIVE_NOT_RECRUITING");
+  p.set("fields", CTG_FIELDS);
+  p.set("pageSize", "100");
+  p.set("countTotal", "true");
+  if (pageToken) p.set("pageToken", pageToken);
+
+  const res = await fetch("https://clinicaltrials.gov/api/v2/studies?" + p.toString());
+  if (!res.ok) throw new Error("ClinicalTrials.gov returned HTTP " + res.status);
+  const data = await res.json();
+  return {
+    trials: (data.studies || []).map(normaliseCTG),
+    nextPageToken: data.nextPageToken || null,
+    total: data.totalCount ?? null
+  };
+}
+
+function normaliseCTG(study){
+  const ps  = study.protocolSection || {};
+  const idm = ps.identificationModule || {};
+  const sm  = ps.statusModule || {};
+  const dm  = ps.designModule || {};
+  const em  = ps.eligibilityModule || {};
+  const cl  = ps.contactsLocationsModule || {};
+  const locs = cl.locations || [];
+  const status = sm.overallStatus || "";
+
+  return {
+    register: "CTG",
+    registerName: "ClinicalTrials.gov",
+    id: idm.nctId || "",
+    title: idm.briefTitle || "",
+    url: idm.nctId ? "https://clinicaltrials.gov/study/" + idm.nctId : "",
+    status: titleCase(status),
+    recruiting: status === "RECRUITING" || status === "NOT_YET_RECRUITING",
+    interventional: (dm.studyType || "") === "INTERVENTIONAL",
+    phases: dm.phases || [],
+    conditions: ps.conditionsModule?.conditions || [],
+    sponsor: ps.sponsorCollaboratorsModule?.leadSponsor?.name || "",
+    criteria: em.eligibilityCriteria || "",
+    minAge: parseAge(em.minimumAge),
+    maxAge: parseAge(em.maximumAge),
+    enrollment: dm.enrollmentInfo?.count ?? null,
+    updated: sm.lastUpdatePostDateStruct?.date || "",
+    started: sm.startDateStruct?.date || "",
+    sites: locs.map(l => ({
+      facility: l.facility || "",
+      city: l.city || "",
+      country: normCountry(l.country || ""),
+      open: !l.status || l.status === "RECRUITING"
+    })),
+    countries: [...new Set(locs.map(l => normCountry(l.country)).filter(Boolean))],
+    hasCriteria: !!em.eligibilityCriteria
+  };
+}
+
+/* =========================================================================
+   ISRCTN  (live; echoes the requesting origin in Access-Control-Allow-Origin)
+   Returns XML in the http://www.67bricks.com/isrctn namespace.
+   ========================================================================= */
+async function fetchISRCTN(intake){
+  const q = intake.terms.map(t => /\s/.test(t) ? '"' + t + '"' : t).join(" OR ");
+  const url = "https://www.isrctn.com/api/query/format/default?limit=100&q=" + encodeURIComponent(q);
+  const res = await fetch(url);
+  if (!res.ok) throw new Error("ISRCTN returned HTTP " + res.status);
+  const doc = new DOMParser().parseFromString(await res.text(), "application/xml");
+  if (doc.getElementsByTagName("parsererror").length) throw new Error("ISRCTN returned malformed XML");
+
+  const root  = doc.getElementsByTagNameNS("*", "allTrials")[0];
+  const total = root ? Number(root.getAttribute("totalCount") || 0) : 0;
+  // Iterate fullTrial, not trial: sponsor and funder are siblings of <trial>.
+  const nodes = [...doc.getElementsByTagNameNS("*", "fullTrial")];
+  return { trials: nodes.map(normaliseISRCTN).filter(Boolean), total };
+}
+
+function kid(node, name){
+  if (!node) return null;
+  for (const c of node.children) if (c.localName === name) return c;
+  return null;
+}
+function tag(node, name){
+  if (!node) return "";
+  const el = node.getElementsByTagNameNS("*", name)[0];
+  return el ? (el.textContent || "").trim() : "";
+}
+function tags(node, name){
+  if (!node) return [];
+  return [...node.getElementsByTagNameNS("*", name)].map(e => (e.textContent || "").trim()).filter(Boolean);
+}
+
+function normaliseISRCTN(full){
+  const trial = kid(full, "trial");
+  if (!trial) return null;
+  const isrctn = tag(trial, "isrctn");
+  if (!isrctn) return null;
+
+  const desc    = kid(trial, "trialDescription");
+  const design  = kid(trial, "trialDesign");
+  const parts   = kid(trial, "participants");   // eligibility, ages, dates, centres
+  const sponsor = kid(full, "sponsor");         // sibling of <trial>
+
+  const today = new Date().toISOString().slice(0,10);
+  const sd = tag(parts, "recruitmentStart").slice(0,10);
+  const ed = tag(parts, "recruitmentEnd").slice(0,10);
+  const override = tag(parts, "recruitmentStatusOverride");
+
+  // ISRCTN has no plain recruitment-status field. Use the explicit override
+  // when the registry publishes one, otherwise derive from the recruitment
+  // window. Either way the card says which.
+  let recruiting, statusText;
+  if (override)              { recruiting = /recruiting|open/i.test(override) && !/not|stopped|suspend/i.test(override);
+                               statusText = override; }
+  else if (sd && sd > today) { recruiting = false; statusText = "Opens " + sd; }
+  else if (ed && ed < today) { recruiting = false; statusText = "Recruitment closed " + ed; }
+  else if (sd)               { recruiting = true;  statusText = "In recruitment window"; }
+  else                       { recruiting = false; statusText = "Recruitment dates not published"; }
+
+  const centres = kid(parts, "trialCentres");
+  const sites = centres ? [...centres.getElementsByTagNameNS("*", "trialCentre")].map(c => ({
+    facility: tag(c, "name"),
+    city: tag(c, "city"),
+    country: normCountry(tag(c, "country")),
+    open: recruiting
+  })) : [];
+
+  const declared = [...new Set(tags(kid(parts, "recruitmentCountries"), "country").map(normCountry))];
+  const inclusion = tag(parts, "inclusion");
+  const phases = [...new Set(tags(kid(trial, "interventions"), "phase"))]
+                   .filter(p => p && !/not specified|not applicable/i.test(p));
+
+  return {
+    register: "ISRCTN",
+    registerName: "ISRCTN",
+    id: "ISRCTN" + isrctn,
+    title: tag(desc, "scientificTitle") || tag(desc, "title"),
+    url: "https://www.isrctn.com/ISRCTN" + isrctn,
+    status: statusText,
+    statusDerived: !override,
+    recruiting,
+    interventional: !/observational/i.test(tag(design, "primaryStudyDesign")),
+    phases,
+    conditions: tags(kid(trial, "conditions"), "description"),
+    sponsor: tag(sponsor, "organisation"),
+    criteria: [inclusion, tag(parts, "exclusion")].filter(Boolean).join("\n\nExclusion:\n"),
+    minAge: parseAge(tag(parts, "lowerAgeLimit")),
+    maxAge: parseAge(tag(parts, "upperAgeLimit")),
+    enrollment: Number(tag(parts, "targetEnrolment")) || null,
+    updated: (trial.getAttribute("lastUpdated") || "").slice(0,10),
+    started: sd,
+    sites,
+    countries: [...new Set([...declared, ...sites.map(s => s.country)].filter(Boolean))],
+    hasCriteria: !!inclusion
+  };
+}
+
+/* =========================================================================
+   EU CTIS  (snapshot; CTIS pins Access-Control-Allow-Origin to its own host,
+   so a browser cannot read it directly — see scripts/build_snapshot.py)
+   ========================================================================= */
+async function loadCTIS(){
+  if (state.ctisSnapshot) return state.ctisSnapshot;
+  const res = await fetch("data/eu_ctis.json", {cache:"no-cache"});
+  if (!res.ok) throw new Error("snapshot missing (HTTP " + res.status + ")");
+  const snap = await res.json();
+  state.ctisSnapshot = snap;
+  return snap;
+}
+
+function normaliseCTIS(t){
+  return {
+    register: "CTIS",
+    registerName: "EU CTIS",
+    id: t.id,
+    title: t.title,
+    url: t.url,
+    status: t.recruitment === "recruiting" ? "Recruiting in " + t.recruitingCountries.length +
+              (t.recruitingCountries.length === 1 ? " country" : " countries")
+          : t.recruitment === "closed"      ? "Recruitment ended"
+          : t.recruitment === "not_started" ? "Authorised, recruitment not started"
+          : t.statusLabel,
+    statusDerived: true,
+    recruiting: t.recruitment === "recruiting",
+    interventional: true,
+    phases: t.phase ? [t.phase] : [],
+    conditions: t.conditions ? t.conditions.split(/,(?![^(]*\))/).map(s => s.trim()).filter(Boolean) : [],
+    sponsor: t.sponsor || "",
+    criteria: "",
+    minAge: ctisMinAge(t.ageGroup),
+    maxAge: null,
+    enrollment: t.enrolled ?? null,
+    updated: (t.lastUpdated || "").slice(0,10),
+    started: t.startDate || "",
+    sites: (t.recruitingCountries.length ? t.recruitingCountries : t.countries)
+             .map(c => ({facility:"", city:"", country:normCountry(c), open:t.recruitment === "recruiting"})),
+    countries: t.countries.map(normCountry),
+    hasCriteria: false
+  };
+}
+
+function ctisMinAge(ageGroup){
+  if (!ageGroup) return null;
+  const g = ageGroup.toLowerCase();
+  if (g.includes("in utero") || g.includes("newborn") || g.includes("infant") ||
+      g.includes("children") || g.includes("adolescent") || g.includes("0-17")) return 0;
+  if (g.includes("18-64") || g.includes("65+") || g.includes("adult")) return 18;
+  return null;
+}
+
+/* =========================================================================
+   Scoring — ported from score_trial() in ctgov_client.py, with every
+   adjustment surfaced to the user as a reason chip.
+   ========================================================================= */
+function mentions(text, term){
+  if (!text || !term) return false;
+  const t = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp("\\b" + t + "\\b", "i").test(text);
+}
+
+function score(trial, intake){
+  let s = 0;
+  const plus = [], minus = [];
+  const hay = (trial.title + " " + trial.conditions.join(" ")).toLowerCase();
+  const crit = trial.criteria || "";
+
+  if (intake.terms.some(t => hay.includes(t.toLowerCase()))) {
+    s += 30; plus.push("Matches " + intake.dxLabel.toLowerCase());
+  } else if (/glioma|glioblastoma|astrocytoma|brain|cns|central nervous|intracranial|cerebral|medulloblast|ependymom|meningiom/i.test(hay)) {
+    // The register matched this on its own indexing (synonyms, MeSH terms,
+    // free text) even though our term list did not. Credit it, but less.
+    s += 14; plus.push("Neuro-oncology, wider term match");
+  }
+
+  const ph = trial.phases.join(" ").toUpperCase();
+  if (/PHASE\s*3|PHASE3|III/.test(ph)) { s += 12; plus.push("Phase 3"); }
+  else if (/PHASE\s*2|PHASE2|\bII\b/.test(ph)) { s += 8; plus.push("Phase 2"); }
+
+  if (intake.age != null) {
+    if (trial.minAge != null && intake.age < trial.minAge) {
+      s -= 30; minus.push("Minimum age " + trial.minAge); trial.ageFail = true;
+    }
+    if (trial.maxAge != null && intake.age > trial.maxAge) {
+      s -= 30; minus.push("Maximum age " + trial.maxAge); trial.ageFail = true;
+    }
+  }
+
+  if (crit) {
+    if (/ECOG[^.\n]{0,20}0\s*[-–to]{1,3}\s*1/i.test(crit) && intake.kps != null && intake.kps < 80) {
+      s -= 15; minus.push("Needs ECOG 0–1");
+    }
+    if (mentions(crit, "Karnofsky") && intake.kps != null && intake.kps < 70) {
+      s -= 10; minus.push("Karnofsky threshold");
+    }
+    if (intake.bev && /no\s+prior\s+bevacizumab|bevacizumab[- ]na[ïi]ve/i.test(crit)) {
+      s -= 25; minus.push("Excludes prior bevacizumab");
+    }
+    if (intake.setting === "recurrent" && mentions(crit, "recurrent")) { s += 8; plus.push("Recurrent disease"); }
+    if (intake.setting === "newly" && (mentions(crit, "newly diagnosed") || mentions(trial.title, "adjuvant"))) {
+      s += 8; plus.push("Newly diagnosed");
+    }
+    if (intake.surgery && /resection|craniotomy|surgical|biopsy/i.test(crit)) {
+      s += 5; plus.push("Surgical component");
+    }
+  }
+  if (intake.setting === "recurrent" && mentions(trial.title, "recurrent")) { s += 6; plus.push("Recurrent in title"); }
+
+  for (const kw of intake.keywords) {
+    if (mentions(trial.title, kw) || mentions(crit, kw)) { s += 4; plus.push(kw); }
+  }
+
+  const inRegion = trial.sites.filter(x => REGIONS[intake.region](x.country));
+  if (intake.region !== "any" && inRegion.some(x => x.open)) {
+    s += 10; plus.push(inRegion.length + " open site" + (inRegion.length === 1 ? "" : "s") + " in region");
+  }
+
+  if (!trial.hasCriteria) minus.push("No eligibility text published");
+
+  trial.score = Math.max(0, Math.min(100, s));
+  trial.plus = [...new Set(plus)];
+  trial.minus = [...new Set(minus)];
+  return trial;
+}
+
+/* =========================================================================
+   Helpers
+   ========================================================================= */
+// ISRCTN records sites as England / Scotland / Wales / Northern Ireland.
+// Fold those to United Kingdom so region filtering matches the other registers.
+const UK_NATIONS = new Set(["England","Scotland","Wales","Northern Ireland","Great Britain","UK"]);
+function normCountry(c){
+  const s = (c || "").trim();
+  if (UK_NATIONS.has(s)) return "United Kingdom";
+  if (s === "USA" || s === "US") return "United States";
+  return s;
+}
+
+function parseAge(v){
+  if (v == null || v === "") return null;
+  const m = String(v).match(/(\d+)/);
+  if (!m) return null;
+  let n = Number(m[1]);
+  if (/month/i.test(String(v))) n = Math.floor(n / 12);
+  if (/week|day/i.test(String(v))) n = 0;
+  return n;
+}
+function titleCase(s){
+  return String(s).toLowerCase().replace(/_/g," ").replace(/\b\w/g, c => c.toUpperCase());
+}
+function phaseRank(t){
+  const p = t.phases.join(" ").toUpperCase();
+  if (/PHASE\s*4|PHASE4|\bIV\b/.test(p)) return 4;
+  if (/PHASE\s*3|PHASE3|III/.test(p)) return 3;
+  if (/PHASE\s*2|PHASE2|\bII\b/.test(p)) return 2;
+  if (/PHASE\s*1|PHASE1|\bI\b/.test(p)) return 1;
+  return 0;
+}
+function phaseLabel(t){
+  if (!t.phases.length) return "";
+  const out = t.phases.map(p => {
+    if (/^PHASE\d/i.test(p)) return p.replace(/^PHASE/i, "Phase ");
+    if (/^NA$/i.test(p)) return "Not applicable";
+    if (/^EARLY_PHASE1$/i.test(p)) return "Early phase 1";
+    // CTIS writes e.g. "Therapeutic exploratory (Phase II)" or
+    // "Phase I and Phase II (Integrated)- Other" — pull out the roman numerals.
+    const roman = [...p.matchAll(/phase\s+(I{1,3}V?|IV)\b/gi)].map(m => m[1].toUpperCase());
+    if (roman.length) return "Phase " + [...new Set(roman)].join("/");
+    return p;
+  });
+  return [...new Set(out)].join("/");
+}
+
+/* =========================================================================
+   Read the form
+   ========================================================================= */
+function readIntake(){
+  const dxLabel = $("dx").value;
+  return {
+    dxLabel,
+    terms: DIAGNOSES[dxLabel] || [dxLabel],
+    keywords: $("kw").value.split(",").map(s => s.trim()).filter(Boolean),
+    region: $("region").value,
+    age: $("age").value === "" ? null : Number($("age").value),
+    kps: $("kps").value === "" ? null : Number($("kps").value),
+    setting: $("setting").value,
+    bev: $("bev").checked,
+    surgery: $("surg").checked,
+    onlyRecruiting: $("onlyRecruiting").checked,
+    interventionalOnly: $("interventional").checked,
+    hideIneligible: $("hideIneligible").checked,
+    phase: $("phase").value
+  };
+}
+
+/* =========================================================================
+   Run a search
+   ========================================================================= */
+async function run(append){
+  if (state.running) return;
+  state.running = true;
+  const btn = $("goBtn");
+  btn.setAttribute("aria-busy","true");
+  btn.textContent = append ? "Loading…" : "Searching…";
+
+  const intake = readIntake();
+  state.intake = intake;
+  if (!append){ state.trials = []; state.ctgPageToken = null; $("results").innerHTML = ""; }
+
+  const report = [];
+  const notices = [];
+
+  // --- ClinicalTrials.gov -------------------------------------------------
+  try {
+    const r = await fetchCTG(intake, append ? state.ctgPageToken : null);
+    state.ctgPageToken = r.nextPageToken;
+    if (r.total != null) state.ctgTotal = r.total;
+    state.trials.push(...r.trials);
+    report.push({k:"CTG", name:"ClinicalTrials.gov", n:r.trials.length, total:state.ctgTotal, ok:true});
+  } catch (err) {
+    report.push({k:"CTG", name:"ClinicalTrials.gov", ok:false, msg:err.message});
+  }
+
+  if (!append){
+    // --- ISRCTN -----------------------------------------------------------
+    try {
+      const r = await fetchISRCTN(intake);
+      state.trials.push(...r.trials);
+      report.push({k:"ISRCTN", name:"ISRCTN", n:r.trials.length, total:r.total, ok:true});
+      notices.push("ISRCTN does not publish a recruitment-status field. Open/closed for those records is worked out from the published recruitment start and end dates.");
+    } catch (err) {
+      report.push({k:"ISRCTN", name:"ISRCTN", ok:false, msg:err.message});
+    }
+
+    // --- EU CTIS ----------------------------------------------------------
+    try {
+      const snap = await loadCTIS();
+      const terms = intake.terms.map(t => t.toLowerCase());
+      const kws = intake.keywords.map(t => t.toLowerCase());
+      const hits = snap.trials.filter(t => {
+        const hay = ((t.title || "") + " " + (t.conditions || "")).toLowerCase();
+        return terms.some(x => hay.includes(x)) || kws.some(x => hay.includes(x));
+      }).map(normaliseCTIS);
+      state.trials.push(...hits);
+      report.push({k:"CTIS", name:"EU CTIS", n:hits.length, total:snap.count, ok:true,
+                   stamp:(snap.generated || "").slice(0,10)});
+      notices.push("EU CTIS records come from a snapshot rebuilt daily (" +
+        (snap.generated || "").slice(0,10) + "), because CTIS blocks direct browser requests. " +
+        "CTIS publishes no single recruitment field, so recruitment is derived from per-country start and end-of-recruitment notifications.");
+    } catch (err) {
+      report.push({k:"CTIS", name:"EU CTIS", ok:false, msg:err.message});
+    }
+  }
+
+  // dedupe within register
+  const seen = new Set();
+  state.trials = state.trials.filter(t => {
+    const key = t.register + ":" + t.id;
+    if (seen.has(key)) return false;
+    seen.add(key); return true;
+  });
+  flagDuplicates(state.trials);
+
+  renderSources(report);
+  renderNotices(notices);
+  render();
+
+  btn.removeAttribute("aria-busy");
+  btn.textContent = "Search";
+  state.running = false;
+}
+
+/* -------------------------------------------------------------------------
+   The same trial is often registered in more than one place. There is no
+   shared key across the three registers, so this only flags a *likely* pair,
+   by a shared study acronym or an identical normalised title. It never merges
+   records — both stay visible and the user decides.
+   ------------------------------------------------------------------------- */
+const STOP_ACRONYM = new Set(["STUDY","TRIAL","PHASE","A","AN","THE","PROTOCOL","PART","NOTE"]);
+
+function acronymOf(title){
+  const head = String(title).split(":")[0].trim();
+  if (head.length < 4 || head.length > 24) return null;
+  if (!/^[A-Za-z0-9][A-Za-z0-9\-+]*$/.test(head)) return null;
+  if (head === head.toLowerCase()) return null;          // needs capitals
+  if (STOP_ACRONYM.has(head.toUpperCase())) return null;
+  return head.toUpperCase();
+}
+function normTitle(t){
+  return String(t).toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+}
+
+function flagDuplicates(trials){
+  const byAcr = new Map(), byTitle = new Map();
+  for (const t of trials){
+    t.alsoIn = [];
+    const a = acronymOf(t.title);
+    if (a){ if (!byAcr.has(a)) byAcr.set(a, []); byAcr.get(a).push(t); }
+    const n = normTitle(t.title);
+    if (n){ if (!byTitle.has(n)) byTitle.set(n, []); byTitle.get(n).push(t); }
+  }
+  const link = group => {
+    for (const t of group){
+      for (const o of group){
+        if (o !== t && o.register !== t.register && !t.alsoIn.includes(o.id)) t.alsoIn.push(o.id);
+      }
+    }
+  };
+  for (const g of byAcr.values())   if (g.length > 1) link(g);
+  for (const g of byTitle.values()) if (g.length > 1) link(g);
+}
+
+/* =========================================================================
+   Filter + render
+   ========================================================================= */
+function visible(){
+  const i = state.intake;
+  const inRegion = REGIONS[i.region];
+  return state.trials.filter(t => {
+    if (i.onlyRecruiting && !t.recruiting) return false;
+    if (i.interventionalOnly && !t.interventional) return false;
+    if (i.region !== "any" && !t.countries.some(inRegion)) return false;
+    if (i.phase && phaseRank(t) !== 0 && !phaseMatch(t, i.phase)) return false;
+    if (i.hideIneligible && t.ageFail) return false;
+    return true;
+  });
+}
+function phaseMatch(t, want){
+  const p = t.phases.join(" ").toUpperCase();
+  if (want === "1") return /PHASE\s*1|PHASE1|\bI\b/.test(p);
+  if (want === "2") return /PHASE\s*2|PHASE2|\bII\b/.test(p);
+  if (want === "3") return /PHASE\s*3|PHASE3|III/.test(p);
+  return true;
+}
+
+function sorted(list){
+  const how = $("sort").value;
+  const c = [...list];
+  if (how === "score")   c.sort((a,b) => b.score - a.score || a.title.localeCompare(b.title));
+  if (how === "updated") c.sort((a,b) => (b.updated||"").localeCompare(a.updated||""));
+  if (how === "phase")   c.sort((a,b) => phaseRank(b) - phaseRank(a) || b.score - a.score);
+  if (how === "title")   c.sort((a,b) => a.title.localeCompare(b.title));
+  return c;
+}
+
+function render(){
+  for (const t of state.trials){ t.ageFail = false; score(t, state.intake); }
+  const list = sorted(visible());
+
+  const tallies = {CTG:0, ISRCTN:0, CTIS:0};
+  for (const t of list) tallies[t.register]++;
+  $("tally").innerHTML =
+    `<span class="t-us"><i></i>ClinicalTrials.gov <b>${tallies.CTG}</b></span>` +
+    `<span class="t-uk"><i></i>ISRCTN <b>${tallies.ISRCTN}</b></span>` +
+    `<span class="t-eu"><i></i>EU CTIS <b>${tallies.CTIS}</b></span>`;
+
+  const regionName = $("region").selectedOptions[0].textContent;
+  $("count").innerHTML = list.length
+    ? `${list.length} trial${list.length===1?"":"s"} <small>· ${esc(state.intake.dxLabel)} · ${esc(regionName)}</small>`
+    : `No matches <small>· ${esc(state.intake.dxLabel)} · ${esc(regionName)}</small>`;
+
+  const out = $("results");
+  if (!list.length){
+    out.innerHTML = `<li class="empty"><p>Nothing matched this combination.</p>
+      <p>Widen the region, clear the phase filter, or pick a broader diagnosis such as “Any CNS tumour”.</p></li>`;
+  } else {
+    out.innerHTML = list.map(card).join("");
+  }
+
+  const more = $("moreBtn");
+  const shownCTG = state.trials.filter(t => t.register === "CTG").length;
+  if (state.ctgPageToken && shownCTG < state.ctgTotal){
+    more.hidden = false;
+    more.textContent = `Load more from ClinicalTrials.gov (${shownCTG} of ${state.ctgTotal} fetched)`;
+  } else {
+    more.hidden = true;
+  }
+}
+
+function card(t){
+  const inRegion = t.sites.filter(s => REGIONS[state.intake.region](s.country));
+  const shownSites = inRegion.length ? inRegion : t.sites;
+  const cities = [...new Set(shownSites.map(s => [s.city, s.country].filter(Boolean).join(", ")))];
+
+  const meta = [
+    `<span class="id">${esc(t.id)}</span>`,
+    `<span class="${t.recruiting ? "open" : "shut"}"><span class="dot"></span>${esc(t.status)}</span>`,
+    phaseLabel(t) ? `<span>${esc(phaseLabel(t))}</span>` : "",
+    t.sponsor ? `<span>${esc(t.sponsor.slice(0,60))}</span>` : "",
+    t.enrollment ? `<span>${t.enrollment} participants</span>` : "",
+    t.updated ? `<span>Updated ${esc(t.updated)}</span>` : ""
+  ].filter(Boolean).join("");
+
+  const chips = [
+    ...t.plus.map(r => `<li>${esc(r)}</li>`),
+    ...t.minus.map(r => `<li class="minus">${esc(r)}</li>`),
+    ...(t.alsoIn && t.alsoIn.length
+        ? [`<li>Possibly the same study as ${esc(t.alsoIn.join(", "))}</li>`] : [])
+  ].join("");
+
+  const siteList = shownSites.length ? `
+    <details class="sites">
+      <summary>${shownSites.length} site${shownSites.length===1?"":"s"}${inRegion.length?" in region":""}${cities.length?" — "+esc(cities.slice(0,3).join("; "))+(cities.length>3?"…":""):""}</summary>
+      <ul>${shownSites.slice(0,60).map(s =>
+        `<li>${esc([s.facility, s.city, s.country].filter(Boolean).join(", ")) || "Location not published"}${s.open?"":" (closed)"}</li>`
+      ).join("")}</ul>
+    </details>` : "";
+
+  return `<li class="trial r-${t.register}">
+    <h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title || t.id)}</a></h3>
+    <p class="meta">${meta}</p>
+    <div class="meter">
+      <span class="meter-track"><span class="meter-fill" style="width:${t.score}%"></span></span>
+      <span class="meter-num">${t.score}</span>
+      <span class="meter-cap">match score · ${esc(t.registerName)}</span>
+    </div>
+    <ul class="reasons">${chips}</ul>
+    ${siteList}
+  </li>`;
+}
+
+function renderSources(report){
+  $("sources").innerHTML = report.map(r => r.ok
+    ? `<li class="src"><b>${esc(r.name)}</b> ${r.n} fetched${r.total?` of ${r.total}`:""}${r.stamp?` · snapshot ${esc(r.stamp)}`:""}</li>`
+    : `<li class="src err"><b>${esc(r.name)}</b> unavailable — ${esc(r.msg)}</li>`
+  ).join("");
+}
+
+function renderNotices(list){
+  $("notices").innerHTML = list.map(n => `<p class="notice">${esc(n)}</p>`).join("");
+}
+
+/* =========================================================================
+   CSV export
+   ========================================================================= */
+function toCSV(){
+  const rows = sorted(visible());
+  if (!rows.length) return;
+  const head = ["register","id","title","status","phase","score","matched_on","flags",
+                "sponsor","countries","participants","updated","url"];
+  const cell = v => {
+    const s = String(v ?? "");
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
+  };
+  const body = rows.map(t => [
+    t.registerName, t.id, t.title, t.status, phaseLabel(t), t.score,
+    t.plus.join(" | "), t.minus.join(" | "), t.sponsor,
+    t.countries.join(" | "), t.enrollment ?? "", t.updated, t.url
+  ].map(cell).join(","));
+
+  const blob = new Blob([[head.join(","), ...body].join("\r\n")], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `brain-trials-${state.intake.dxLabel.toLowerCase().replace(/\W+/g,"-")}-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+/* =========================================================================
+   Wire up
+   ========================================================================= */
+(function init(){
+  const dx = $("dx");
+  for (const name of Object.keys(DIAGNOSES)){
+    const o = document.createElement("option");
+    o.value = o.textContent = name;
+    dx.appendChild(o);
+  }
+  dx.value = "Glioblastoma";
+
+  $("q").addEventListener("submit", e => { e.preventDefault(); run(false); });
+  $("moreBtn").addEventListener("click", () => run(true));
+  $("csvBtn").addEventListener("click", toCSV);
+  $("sort").addEventListener("change", () => { if (state.intake) render(); });
+
+  // These change what the registers are asked for, so the search is re-run.
+  for (const id of ["region","onlyRecruiting"]){
+    $(id).addEventListener("change", () => run(false));
+  }
+  // These only narrow what has already been fetched.
+  for (const id of ["interventional","hideIneligible","phase"]){
+    $(id).addEventListener("change", () => {
+      if (!state.intake) return;
+      state.intake = readIntake();
+      render();
+    });
+  }
+
+  const toggle = $("railToggle");
+  toggle.addEventListener("click", () => {
+    const body = $("railBody");
+    const hidden = body.hasAttribute("hidden");
+    if (hidden) body.removeAttribute("hidden"); else body.setAttribute("hidden","");
+    toggle.setAttribute("aria-expanded", String(hidden));
+    toggle.textContent = hidden ? "Hide" : "Show";
+  });
+
+  run(false);
+})();
+</script>
+</body>
+</html>
