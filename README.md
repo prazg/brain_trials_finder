@@ -81,47 +81,6 @@ stay visible.
 
 ---
 
-## Publishing to GitHub Pages
-
-1. **Settings → Pages → Source: GitHub Actions.**
-2. Push the contents of this repo including `docs/` and
-   `.github/workflows/refresh-trials.yml`.
-3. The workflow runs on push, daily at 04:15 UTC, and on manual dispatch. It
-   rebuilds the EU snapshot, checks it, commits it if it changed, and deploys
-   `docs/`.
-
-The workflow refuses to publish a snapshot with fewer than 40 trials or fewer
-than 10 recruiting. If the CTIS API changes shape, the job fails loudly instead
-of quietly shipping an empty page.
-
-Building the snapshot by hand:
-
-```bash
-python scripts/build_snapshot.py docs/data
-```
-
-It takes a few minutes — it searches fourteen terms, then fetches each trial's
-detail record for the recruitment events. No API key, no dependencies beyond the
-standard library.
-
----
-
-## Fixed: the UK filter returned nothing
-
-`ctgov_client.py` and `uk_sources.py` read `locationCity`, `locationCountry` and
-`locationFacility` from ClinicalTrials.gov. The v2 API returns `city`, `country`
-and `facility`. Those lookups all resolved to empty strings, so:
-
-- `extract_row` produced a blank site for every trial, and
-- the UK filter in `fetch_uk_trials` matched nothing and returned zero rows,
-  with no error.
-
-Both files now use the correct field names. On a glioblastoma search that takes
-the UK result count from 0 to 22.
-
-If you have local copies of these files, take the versions in this repo.
-
----
 
 ## Local development
 
