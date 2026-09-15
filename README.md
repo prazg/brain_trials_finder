@@ -1,4 +1,4 @@
-# Brain Cancer Trials Finder
+# Brain Cancer Trials Finder | Mastiṣka-mārga
 
 ![PRECISE-GBM Logo](logo_precise.png)
 
