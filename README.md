@@ -11,7 +11,7 @@ Three ways to use it:
 
 | | What it is | Data sources |
 |---|---|---|
-| **Web page** | `docs/index.html`, published on GitHub Pages | ClinicalTrials.gov + ISRCTN live; EU CTIS and WHO ICTRP (India, China, Japan, Australia, Germany and more) from daily snapshots |
+| **Web page** | https://prazg.github.io/brain_trials_finder/ | ClinicalTrials.gov + ISRCTN live; EU CTIS and WHO ICTRP (India, China, Japan, Australia, Germany and more) from daily snapshots |
 | **Streamlit app** | `streamlit_app.py` | ClinicalTrials.gov |
 | **Desktop app** | `Brain Cancer Trial Finder.exe`, built from `GUI_CLinicalTrial.py` | ClinicalTrials.gov, plus deep links to CRUK / NIHR / ISRCTN |
 
@@ -97,11 +97,6 @@ Only ClinicalTrials.gov publishes a plain recruitment-status field.
 Both derivations are labelled in the interface rather than presented as
 registry-stated fact.
 
-### Snapshot files can live in either place
-
-`index.html` looks for each snapshot at `data/<name>.json`, then `<name>.json`
-beside itself. If Pages flattens your layout, the page still finds them instead
-of 404ing.
 
 ### Duplicates across registers
 
@@ -113,60 +108,6 @@ stay visible.
 
 ---
 
-## Publishing to GitHub Pages
-
-1. **Settings → Pages → Source: GitHub Actions.**
-2. Push the contents of this repo including `docs/` and
-   `.github/workflows/refresh-trials.yml`.
-3. The workflow runs on push, daily at 04:15 UTC, and on manual dispatch. It
-   rebuilds the EU snapshot, checks it, commits it if it changed, and deploys
-   `docs/`.
-
-The workflow refuses to publish a snapshot with fewer than 40 trials or fewer
-than 10 recruiting. If the CTIS API changes shape, the job fails loudly instead
-of quietly shipping an empty page.
-
-Building the snapshots by hand:
-
-```bash
-python scripts/build_snapshot.py docs/data          # EU CTIS, a few minutes
-python scripts/build_ictrp.py    docs/data          # WHO ICTRP, 30-60 minutes
-```
-
-Neither needs an API key or anything beyond the standard library.
-
-ICTRP throttles sustained traffic with HTTP 403, so the collector backs off and
-is resumable. If a run is interrupted, re-run it — progress is kept in
-`.ictrp_state.json` — or drive it in stages:
-
-```bash
-python scripts/build_ictrp.py --phase search --terms "glioblastoma,glioma"
-python scripts/build_ictrp.py --phase detail --limit 80
-python scripts/build_ictrp.py --phase write docs/data
-```
-
-The ICTRP step in the workflow is `continue-on-error`. If WHO throttles the
-runner, the previous snapshot stays published rather than the page losing a
-source.
-
----
-
-## Fixed: the UK filter returned nothing
-
-`ctgov_client.py` and `uk_sources.py` read `locationCity`, `locationCountry` and
-`locationFacility` from ClinicalTrials.gov. The v2 API returns `city`, `country`
-and `facility`. Those lookups all resolved to empty strings, so:
-
-- `extract_row` produced a blank site for every trial, and
-- the UK filter in `fetch_uk_trials` matched nothing and returned zero rows,
-  with no error.
-
-Both files now use the correct field names. On a glioblastoma search that takes
-the UK result count from 0 to 22.
-
-If you have local copies of these files, take the versions in this repo.
-
----
 
 ## Local development
 
