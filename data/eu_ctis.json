@@ -1,0 +1,3863 @@
+{
+ "source": "EU Clinical Trials Information System (CTIS)",
+ "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
+ "generated": "2026-09-14T09:50:06+00:00",
+ "terms": [
+  "glioblastoma",
+  "glioma",
+  "astrocytoma",
+  "oligodendroglioma",
+  "diffuse midline glioma",
+  "meningioma",
+  "medulloblastoma",
+  "ependymoma",
+  "brain tumour",
+  "brain tumor",
+  "brain metastases",
+  "central nervous system tumour",
+  "spinal cord tumour",
+  "diffuse intrinsic pontine glioma"
+ ],
+ "note": "Recruitment state is derived from per-member-state notification events (START_OF_RECRUITMENT without a matching END_OF_RECRUITMENT or END_OF_TRIAL). CTIS does not publish a single recruitment field.",
+ "count": 150,
+ "recruitingCount": 85,
+ "trials": [
+  {
+   "register": "CTIS",
+   "id": "2025-520623-24-00",
+   "title": "(22931) A first-in-human study to evaluate the safety, tolerability and pharmacokinetics, pharmacodynamics and preliminary clinical activity of BAY 3713372, a novel 2nd generation PRMT5 inhibitor, in participants with MTAP-deleted solid tumors.",
+   "conditions": "MTAP-deleted Solid Tumors",
+   "sponsor": "Bayer AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "195",
+   "startDate": "19/11/2025",
+   "lastUpdated": "24/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-520623-24-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508805-26-00",
+   "title": "A Clinical Trial to Assess a New Anti-Cancer Treatment (called DSB2455) Given On Its Own in Patients with Advanced Malignancies",
+   "conditions": "patients with active brain metastases, where the primary tumour has confirmed BRCA1/2 and/or HRR alterations, ovarian cancer without active brain metastases, mCRPC without active brain metastases, breast cancer without active brain metastases",
+   "sponsor": "Duke Street Bio Limited",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "France",
+    "Hungary",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "France",
+    "Hungary",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "101",
+   "startDate": "23/10/2024",
+   "lastUpdated": "07/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508805-26-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506719-17-00",
+   "title": "A Dose Finding Study of [177Lu]Lu-DOTA-TATE in Newly Diagnosed Glioblastoma in Combination with Standard of Care and in Recurrent Glioblastoma as a Single Agent.",
+   "conditions": "Glioblastoma",
+   "sponsor": "Novartis Pharma AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "France",
+    "Portugal",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "34",
+   "startDate": "10/05/2022",
+   "lastUpdated": "25/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506719-17-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516211-25-00",
+   "title": "A follow-up study evaluating the long term safety of autologous CD34+-enriched hematopoietic progenitor cells genetically modified with a lentiviral vector encoding for the human interferon-α2 gene previously administered to patients with glioblastoma multiforme",
+   "conditions": "Glioblastoma multiforme (GBM)",
+   "sponsor": "Genenta Science S.p.A.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "5",
+   "startDate": "27/10/2022",
+   "lastUpdated": "26/08/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516211-25-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-521785-10-00",
+   "title": "A Global, Multicenter, Prospective, Controlled, Open-Label Pivotal Study of Iodofalan (131I) Solution for Injection (TLX101-Tx) Plus Lomustine Versus Lomustine Alone in Patients with Radiographically Confirmed Recurrent Glioblastoma at First Recurrence (IPAX-3)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Telix Pharmaceuticals (Innovations) Pty Limited",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "65",
+   "startDate": "04/03/2026",
+   "lastUpdated": "10/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-521785-10-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-504984-17-00",
+   "title": "A Modular Phase I/IIa, Open-label, Multi-centre Study to Assess the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics and Preliminary Efficacy of Ascending Doses of AZD9574 as Monotherapy and in Combination with Anti-cancer Agents in Patients with Advanced Solid Malignancies",
+   "conditions": "Module 3: advanced/relapsed HER2-negative breast, ovarian, prostate, or pancreatic cancer and expressing BRCA1m, BRCA2m, PALB2m, RAD51Cm or RAD51Dm, IDH-mutant recurrent glioma, breast cancer (without BM), Module 1: advanced/relapsed ovarian, breast, pancreatic or prostate cancer where patients loss of function or predicted loss of function mutation in BRCA1, BRCA2, PALB2, RAD51C, or RAD51D, Module 4: advanced,unresectable and HER2+ metastatic solid tumours; NSCLC, HER2 activating mutation, Module 5: advanced,unresectable or metastatic solid tumours in breast, endometrial, ovarian and prostate cancer, Module 2: IDH-mutant glioma",
+   "sponsor": "AstraZeneca AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Spain",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "176",
+   "startDate": "05/10/2022",
+   "lastUpdated": "03/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-504984-17-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502156-31-00",
+   "title": "A phase 1/2 open-label study of Debio 0123 in combination with temozolomide in adult participants with recurrent or progressive glioblastoma and of Debio 0123 in combination with temozolomide and radiotherapy in adult participants with newly diagnosed glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Debiopharm International S.A.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "55",
+   "startDate": "26/05/2023",
+   "lastUpdated": "31/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502156-31-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512606-25-00",
+   "title": "A Phase 1/2, Open-Label, Multi-Center, First-in-Human Study of the Safety, Tolerability, Pharmacokinetics, and Anti-Tumor Activity of TPX-0005 in Patients with Advanced Solid Tumors Harboring ALK, ROS1, or NTRK1-3 Rearrangements (TRIDENT-1)",
+   "conditions": "Advanced Solid Tumors",
+   "sponsor": "Turning Point Therapeutics Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Hungary",
+    "Italy",
+    "Netherlands",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "Hungary"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years, 0-17 years",
+   "gender": "Male",
+   "enrolled": "190",
+   "startDate": "20/12/2019",
+   "lastUpdated": "30/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512606-25-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506464-14-00",
+   "title": "A Phase 1/2, Open-label, Safety, Tolerability, Pharmacokinetics, and Antitumor\nActivity Study of Repotrectinib in Pediatric and Young Adult Subjects\nwith Advanced or Metastatic Malignancies Harboring ALK, ROS1, or\nNTRK1-3 Alterations (CARE)",
+   "conditions": "Advanced solid tumors",
+   "sponsor": "Turning Point Therapeutics Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Denmark",
+    "France",
+    "Italy",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "France",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "29/06/2023",
+   "lastUpdated": "30/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506464-14-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515307-19-00",
+   "title": "A Phase 1a/b Study Investigating the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Preliminary Antitumor Activity of PRMT5 Inhibitor BGB-58067 Alone and in Combination with Anticancer Agents in Patients With Advanced Solid Tumors",
+   "conditions": "Advanced, or metastatic solid tumors with methylthioadenosine phosphorylase (MTAP) homozygous deletion and/or lost MTAP protein expression",
+   "sponsor": "BeOne Medicines AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Denmark",
+    "France",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "France",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "79",
+   "startDate": "24/03/2025",
+   "lastUpdated": "10/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515307-19-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-517842-33-01",
+   "title": "A phase IB clinical trial on neoadjuvant and intraoperative intracranial \nadministration of triple immune checkpoint blockade plus myeloid dendritic \ncells in patients with recurrent high-grade glioma",
+   "conditions": "glioblastoma, astrocytoma",
+   "sponsor": "UZ Brussel",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Belgium"
+   ],
+   "recruitingCountries": [
+    "Belgium"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "113",
+   "startDate": "20/11/2024",
+   "lastUpdated": "03/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517842-33-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508112-35-00",
+   "title": "A phase II study assessing safety and efficacy of REPotrectinib in ROS1-positive non-small cell lung cancer patients with active brain mEtastasis  (The REPOSE study)",
+   "conditions": "ROS1-positive non-small cell lung cancer (NSCLC) with active brain metastasis",
+   "sponsor": "Medica Scientia Innovation Research S.L., Medical University Of Vienna",
+   "sponsorType": "Pharmaceutical company, Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Austria",
+    "Germany",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "15/04/2025",
+   "lastUpdated": "27/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508112-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514087-11-02",
+   "title": "A phase-2 clinical trial of regorafenib in patients with pretreated advanced melanoma",
+   "conditions": "Melanoma",
+   "sponsor": "UZ Brussel",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Belgium"
+   ],
+   "recruitingCountries": [
+    "Belgium"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "87",
+   "startDate": "03/10/2022",
+   "lastUpdated": "17/03/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514087-11-02"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508953-16-00",
+   "title": "A Pilot and Surgical Study of Larotrectinib for Treatment of Children with Newly Diagnosed High-Grade Glioma with NTRK Fusion",
+   "conditions": "Newly diagnosed high grade glioma (HGG) including diffuse intrinsic pontine glioma (DIPG)",
+   "sponsor": "Nationwide Childrens Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "5",
+   "startDate": "25/10/2024",
+   "lastUpdated": "09/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508953-16-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505040-19-00",
+   "title": "A prospective program aiming at improving outcome for young adults with poor-prognosis non seminomatous germ-cell tumors (VAPOR (GETUG T06))",
+   "conditions": "Non-seminomatous germ-cell tumors (including testis, retroperitoneal and mediastinal primaries) with a disseminated disease (clinical stages II or III according to AJCC 8th edition) and classified as poor prognosis according to IGCCCG criteria.",
+   "sponsor": "Institut Gustave Roussy",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Male",
+   "enrolled": "150",
+   "startDate": "11/04/2023",
+   "lastUpdated": "17/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505040-19-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508531-30-00",
+   "title": "A randomized and controlled phase II protocol in non NF1 pediatric and AYA (Adolescent and Young Adults) patients bearing a newly diagnosed low grade glioma with wild type BRAF gene comparing a daily oral MEK inhibitor (Trametinib) versus weekly vinblastine for 18 months.\nPLGG – MEKTRIC (Pediatric Low Grade Glioma – MEKinhibitor TRIal vs Chemotherapy)",
+   "conditions": "grade 1 glioma/mixed glio-neuronal tumors or pleomorphic xanthoastrocytoma (PXA)",
+   "sponsor": "Les Hopitaux Universitaires De Strasbourg",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "134",
+   "startDate": "25/03/2024",
+   "lastUpdated": "18/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508531-30-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519437-27-02",
+   "title": "A randomized phase III trial with lomustine versus lomustine and bevacizumab for patients with recurrent glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Rigshospitalet",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "168",
+   "startDate": "03/02/2025",
+   "lastUpdated": "13/01/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519437-27-02"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505829-14-00",
+   "title": "A randomized, open-label, multicentric, two-arm pivotal trial of SonoCloud-9 combined with carboplatin (CBDCA) vs standard of care lomustine (CCNU) or temozolomide (TMZ) in patients undergoing planned resection for first recurrence glioblastoma",
+   "conditions": "First recurrence glioblastoma",
+   "sponsor": "Carthera, Carthera",
+   "sponsorType": "Pharmaceutical company, Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "301",
+   "startDate": "02/06/2026",
+   "lastUpdated": "31/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505829-14-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-522818-23-00",
+   "title": "A Randomized, Open-Label, Phase 3 Study of ZL-1310, a DLL3 Antibody Drug Conjugate (ADC), Compared to Investigator’s Choice Therapy in Participants with Relapsed Small Cell Lung Cancer",
+   "conditions": "Small Cell Lung Cancer (SCLC)",
+   "sponsor": "Zai Lab (US) LLC",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Germany",
+    "Greece",
+    "Italy",
+    "Netherlands",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Belgium",
+    "Czechia",
+    "France",
+    "Poland",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "234",
+   "startDate": "26/06/2026",
+   "lastUpdated": "13/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522818-23-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514066-40-00",
+   "title": "A single arm phase II study evaluating intracranial efficacy of Sacituzumab govitecan (SG) with bevacizumab in patients with asymptomatic brain metastases from non-small cell lung cancer (NSCLC)",
+   "conditions": "Patients with metastatic non-squamous NSCLC pre-treated with platinum-doublet chemotherapy and ICI (for those with targetable oncogenic drivers, pretreated with at least one tyrosine kinase inhibitor and platinum-doublet chemotherapy), and active BM, defined as asymptomatic untreated or unequivocally progressive after local treatment",
+   "sponsor": "Academisch Ziekenhuis Maastricht",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "25",
+   "startDate": "10/07/2025",
+   "lastUpdated": "09/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514066-40-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-522162-75-00",
+   "title": "A single arm phase II study evaluating intracranial efficacy of tarlatamab in patients with asymptomatic active brain metastases from small cell lung cancer",
+   "conditions": "patients with asymptomatic active brain metastases from small cell lung cancer",
+   "sponsor": "Academisch Ziekenhuis Maastricht",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "35",
+   "startDate": "06/08/2026",
+   "lastUpdated": "15/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522162-75-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524498-17-00",
+   "title": "A two-part, seamless, multicenter, RANDOMIZED, open-label, ADAPTIVE Phase ii/III STUDY OF THE BLOOD-BRAIN barrier PENETRANT RO7771950 versus Tucatinib, both in combination with trastuzumab and capecitabine, in patients with Pretreated unresectable locally advanced or metastatic HER2-positive breast cancer, with or without central nervous system metastases",
+   "conditions": "Pretreated Unresectable Locally Advanced or Metastatic human epidermal growth factor receptor 2 (HER2)-Positive Breast Cancer, with or without Central Nervous System (CNS) Metastases",
+   "sponsor": "F. Hoffmann-La Roche AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "France",
+    "Germany",
+    "Hungary",
+    "Italy",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Hungary",
+    "Italy",
+    "Poland",
+    "Portugal",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "237",
+   "startDate": "08/05/2026",
+   "lastUpdated": "22/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524498-17-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513724-42-00",
+   "title": "An International Prospective Study in Children Older than 3 to 5 Years with Clinically Standard-Risk Medulloblastoma with Low-Risk Biological Profile (PNET 5 MB – LR and PNET 5 MB – WNT-HR), average-risk biological profile (PNET 5 MB -SR), or TP53 mutation, and registry for MB ocurring in the context of genetic predisposition",
+   "conditions": "Medulloblastoma",
+   "sponsor": "University Medical Center Hamburg-Eppendorf",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Finland",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Finland",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "359",
+   "startDate": "26/09/2024",
+   "lastUpdated": "18/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513724-42-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518964-11-01",
+   "title": "An interventional, open-label, Phase II study, to evaluate safety and efficacy of standard and high-dose chemotherapy associated with craniospinal irradiation in patients with metastatic medulloblastoma and other embryonal tumours",
+   "conditions": "Metastatic medulloblastoma and other embryonal tumours",
+   "sponsor": "Azienda Ospedaliera Universitaria Meyer IRCCS",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "18",
+   "startDate": "27/01/2025",
+   "lastUpdated": "27/01/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518964-11-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512136-30-00",
+   "title": "An open label, Phase IV study to assess immunological changes in patients with glioblastoma multiforme treated with bevacizumab infusion",
+   "conditions": "Glioblastoma multiforme",
+   "sponsor": "Orszagos Onkologiai Intezet",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic use (Phase IV)",
+   "countries": [
+    "Hungary"
+   ],
+   "recruitingCountries": [
+    "Hungary"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "175",
+   "startDate": "28/06/2024",
+   "lastUpdated": "28/06/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512136-30-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512878-98-00",
+   "title": "An Open-label Multicenter Phase 1b-2 Study of Elacestrant in Combination with Abemaciclib in Women and Men with Brain Metastasis from Estrogen Receptor Positive, HER-2 Negative Breast Cancer (ELECTRA)",
+   "conditions": "Brain Metastasis from Estrogen Receptor Positive, HER-2 Negative\nBreast Cancer",
+   "sponsor": "Stemline Therapeutics Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Belgium",
+    "France",
+    "Germany",
+    "Greece",
+    "Italy",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Belgium",
+    "France",
+    "Germany",
+    "Greece",
+    "Italy",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "131",
+   "startDate": "16/05/2023",
+   "lastUpdated": "14/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512878-98-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-520426-11-00",
+   "title": "An open-label, non-randomized, single dose, phase II trial of FG001 (an optical imaging agent) for localization of Meningiomas or presumed Low- Grade Gliomas scheduled for neurosurgery.",
+   "conditions": "Glioma, Meningioma",
+   "sponsor": "Copenhagen University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "40",
+   "startDate": "29/01/2025",
+   "lastUpdated": "31/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-520426-11-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513687-26-00",
+   "title": "Anti-GD2 ADC M3554 in Advanced Solid Tumors",
+   "conditions": "Advanced Solid Tumors",
+   "sponsor": "Merck Healthcare KGaA",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Belgium",
+    "France"
+   ],
+   "recruitingCountries": [
+    "Belgium",
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "26",
+   "startDate": "25/02/2025",
+   "lastUpdated": "31/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513687-26-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512466-34-00",
+   "title": "Bevacizumab for the treatment of cerebral RAdiation Induced NecrosiS (BRAINS) study: A multicenter, open-label, randomized clinical trial to assess the clinical efficacy and cost-effectiveness of bevacizumab versus corticosteroids as first-line treatment in patients with symptomatic cerebral radiation necrosis after radiation for high grade glioma or brain metastases",
+   "conditions": "High grade glioma (HGG), Brain metastases (BM)",
+   "sponsor": "Het Nederlands Kanker Instituut-Antoni van Leeuwenhoek Ziekenhuis Stichting",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "408",
+   "startDate": "10/07/2025",
+   "lastUpdated": "13/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512466-34-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506027-29-00",
+   "title": "Biological Medicine for Diffuse Intrinsic Pontine Glioma (DIPG) Eradication: BIOMEDE 2.0",
+   "conditions": "Children, adolescents and adults with newly diagnosed diffuse intrinsic pontine glioma and other diffuse midline gliomas H3K28M mutant or EZHIP positive",
+   "sponsor": "Institut Gustave Roussy",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Finland",
+    "France",
+    "Greece",
+    "Ireland",
+    "Norway",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "France",
+    "Norway",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "464",
+   "startDate": "01/10/2014",
+   "lastUpdated": "04/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506027-29-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515142-16-00",
+   "title": "BORTEZOMIB SENSITIZATION OF RECURRENT GRADE-4 GLIOMA WITH UNMETHYLATED MGMT PROMOTER TO TEMOZOLOMIDE. PHASE IB/II. (BORTEM 17)",
+   "conditions": "Grade IV recurrent glioma which includes both glioblastoma, classified as IDH wt and grade IV IDH mutated astrocytoma.",
+   "sponsor": "Helse Bergen HF",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Norway"
+   ],
+   "recruitingCountries": [
+    "Norway"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "63",
+   "startDate": "03/10/2024",
+   "lastUpdated": "05/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515142-16-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-503938-52-00",
+   "title": "Clinical and translational controlled study of Perampanel treatment around Surgery in patients with progressive glioblastoma (PerSurge)",
+   "conditions": "Progressive Glioblastoma",
+   "sponsor": "Universitaetsklinikum Heidelberg AöR",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "66",
+   "startDate": "26/01/2024",
+   "lastUpdated": "20/09/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-503938-52-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510893-25-00",
+   "title": "Corticodependent or corticoresistant brain radionecrosis after radiotherapy for brain metastases:  a multicentre randomized, controlled double-blind phase III study, comparing bevacizumab versus placebo (BRADI)",
+   "conditions": "Brain metastases of cancer > brain radionecrosis",
+   "sponsor": "Institut De Cancerologie De L Ouest",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "84",
+   "startDate": "29/04/2025",
+   "lastUpdated": "06/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510893-25-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-522605-37-00",
+   "title": "Early-stage clinical trial investigating the individual and combined effect of two drugs, senicapoc and perampanel, as part of the treatment for newly diagnosed glioblastoma, which is an aggressive brain tumor",
+   "conditions": "Glioblastoma",
+   "sponsor": "Region Midtjylland",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "36",
+   "startDate": "01/03/2026",
+   "lastUpdated": "24/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522605-37-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-507926-18-00",
+   "title": "Effect of methylphenidate on cancer-related fatigue in patients treated for a brain tumor during childhood or adolescence: Protocol for a randomized, double-blind, placebo-controlled crossover trial - the EMBRAIN trial",
+   "conditions": "Cancer-related fatigue after treatment of pediatric brain tumor",
+   "sponsor": "Odense University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "38",
+   "startDate": "02/09/2025",
+   "lastUpdated": "01/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-507926-18-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516585-11-00",
+   "title": "Efficacy of immunotherapy in melanoma patients with brain metastases treated with steroids. The MEMBRAINS trial",
+   "conditions": "Advanced melanoma",
+   "sponsor": "Region Hovedstaden",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "41",
+   "startDate": "12/06/2018",
+   "lastUpdated": "07/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516585-11-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-521843-19-00",
+   "title": "Efficacy of Tuvusertib in Recurrent IDH mutant Astrocytoma with ATRX mutation, a phase II prospective trial.",
+   "conditions": "IDH1/2-mutated, ATRX-mutated and p53-mutated astrocytoma",
+   "sponsor": "Grupo Espanol De Investigacion En Neurooncologia",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "56",
+   "startDate": "19/12/2025",
+   "lastUpdated": "11/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-521843-19-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505267-36-00",
+   "title": "EORTC 2227-BTG: Lomustine with or without reirradiation for first progression of glioblastoma: a randomized phase III study (LEGATO)",
+   "conditions": "Glioblastoma",
+   "sponsor": "European Organisation For Research And Treatment Of Cancer",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "409",
+   "startDate": "15/03/2024",
+   "lastUpdated": "11/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505267-36-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513443-93-00",
+   "title": "EORTC 2334-BTG: [177Lu]Lu-DOTATATE for recurrent MENingioma (LUMEN-1): a randomized phase II study",
+   "conditions": "Recurrent Meningioma without local treatment options (Surgery or Radiotherapy)",
+   "sponsor": "Europese Organisatie Voor Onderzoek En Behandeling Van Kanker Organisation Europeenne Pour La Recherche Et Le Traitement Du Cancer European Organi",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Austria",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "France",
+    "Germany",
+    "Norway",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "106",
+   "startDate": "10/03/2025",
+   "lastUpdated": "05/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513443-93-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519404-27-00",
+   "title": "EORTC-2427-BTG: Vorasidenib as maintenance treatment after first-line chemoradiotherapy in IDH-mutant grade 2 or 3 astrocytoma: a placebo-controlled, triple-blind, randomized phase III study (VIGOR)",
+   "conditions": "​​IDH-mutant grade 2 or 3 astrocytoma​",
+   "sponsor": "Europese Organisatie Voor Onderzoek En Behandeling Van Kanker Organisation Europeenne Pour La Recherche Et Le Traitement Du Cancer European Organi",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "247",
+   "startDate": "16/01/2026",
+   "lastUpdated": "01/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519404-27-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502351-60-00",
+   "title": "ETIC-LM_Multicentric single arm phase II study evaluating the Efficacy of association of Tucatinib, capecitabine and Intra-CSF trastuzumab in HER2 amplified breast cancer patients with Leptomeningeal Metastases.",
+   "conditions": "Patients having a HER2-amplified metastatic breast cancer with evolutive leptomeningeal metastases (LM) requiring intrathecal therapy",
+   "sponsor": "Unicancer",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "30",
+   "startDate": "22/02/2024",
+   "lastUpdated": "27/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502351-60-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-501688-42-00",
+   "title": "Evaluation of diagnostic performances of 18F-FDOPA PET KInetics as biomarkers for the improvement of care of MRI Non-contrast enhanced Gliomas : a phase IIIb exploratory trial",
+   "conditions": "Low Grade Glioma",
+   "sponsor": "Centre Hospitalier Regional Universitaire De Nancy",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "88",
+   "startDate": "24/05/2023",
+   "lastUpdated": "25/08/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-501688-42-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508400-38-00",
+   "title": "Evaluation of the addition of Everolimus to 177Lu-DOTATATE in the treatment of grades 2 and 3 refractory meningioma: a phase IIb clinical trial",
+   "conditions": "meningioma",
+   "sponsor": "CHRU De Nancy",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "28",
+   "startDate": "29/11/2024",
+   "lastUpdated": "19/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508400-38-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510691-20-00",
+   "title": "FIREFLY-1: A Phase 2, Open-Label, Multicenter Study to Evaluate the Safety and Efficacy of the Oral Pan-RAF Inhibitor DAY101 in Pediatric Patients with RAF-Altered, Recurrent or Progressive Low-Grade Glioma and Advanced Solid Tumors",
+   "conditions": "RAF-Altered, Recurrent or Progressive Low-Grade Glioma and Advanced Solid Tumors in pediatric patients",
+   "sponsor": "Day One Biopharmaceuticals Inc., Day One Biopharmaceuticals Inc.",
+   "sponsorType": "Pharmaceutical company, Pharmaceutical company",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Denmark",
+    "Germany",
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "Germany",
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "16",
+   "startDate": "23/09/2021",
+   "lastUpdated": "21/07/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510691-20-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511862-35-00",
+   "title": "First-line Chemotherapy With Temozolomide Alone for Non-enhancing Adult Brainstem Gliomas, With a Diffuse Subtype and Showing Clinical and/or Radiological Infiltrative Pattern of Progression (TEMOTRAD01)",
+   "conditions": "Adults with non-contrast-enhancing diffuse brainstem gliomas with non-threatening infiltrative clinical and/or radiological progression, Adult brain stem gliomas",
+   "sponsor": "Assistance Publique Hopitaux De Paris",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "60",
+   "startDate": "19/07/2019",
+   "lastUpdated": "08/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511862-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511452-40-00",
+   "title": "GBM AGILE Global Adaptive Trial Master Protocol: An International, Seamless Phase II/III Response Adaptive Randomization Platform Trial Designed To Evaluate Multiple Regimens In Newly Diagnosed and Recurrent Glioblastoma (GBM)",
+   "conditions": "Oncology - Glioblastoma (GBM)",
+   "sponsor": "Global Coalition For Adaptive Research Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "France",
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "France",
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "120",
+   "startDate": "12/09/2025",
+   "lastUpdated": "11/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511452-40-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512373-27-00",
+   "title": "GUIDANCE – A multicenter phase II trial of maintenance durvalumab and olaparib after standard 1st line treatment (carboplatin/ cisplatin, etoposide, durvalumab) in HRD positive extensive disease (ED) small-cell lung cancer (SCLC)",
+   "conditions": "Advanced/inoperable or metastatic small-cell lung cancer",
+   "sponsor": "University Of Cologne",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "29",
+   "startDate": "30/09/2024",
+   "lastUpdated": "21/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512373-27-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-507575-22-00",
+   "title": "Imaging Perfusion Restrictions from Extracellular Solid Stress - An open-label losartan study (ImPRESS)",
+   "conditions": "Glioblastoma - newly diagnosed and recurrent tumors (Study A), Brain metastases from non-small-cell lung cancer (NSCLC) (Study B)",
+   "sponsor": "Oslo University Hospital HF",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Norway"
+   ],
+   "recruitingCountries": [
+    "Norway"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "153",
+   "startDate": "25/09/2019",
+   "lastUpdated": "15/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-507575-22-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515400-40-00",
+   "title": "IMpact of Phenylephrine vs. norAdrenaline on systemic hemodynamics and Cerebral Tissue circulation and oxygenation in anesthetized brain tumor patients (IMPACT)",
+   "conditions": "low blood pressure during anesthesia",
+   "sponsor": "Region Midtjylland",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase III and phase IV (Integrated)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "32",
+   "startDate": "04/07/2024",
+   "lastUpdated": "24/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515400-40-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510616-73-00",
+   "title": "Improvement of functional outcome for patients with newly diagnosed grade 2 or 3 glioma with co-deletion of 1p/19q - IMPROVE CODEL: the NOA-18 trial (IMPROVE CODEL)",
+   "conditions": "newly diagnosed WHO grade 2 or 3 glioma",
+   "sponsor": "Universitaetsklinikum Heidelberg AöR",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "406",
+   "startDate": "16/12/2020",
+   "lastUpdated": "20/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510616-73-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-510214-11-00",
+   "title": "Individualized Systems Medicine strategy to target cancer stem cells in patients with recurrent Glioblastoma\n(ISM-GBM)",
+   "conditions": "Recurrent Glioblastoma",
+   "sponsor": "Oslo University Hospital HF",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Norway"
+   ],
+   "recruitingCountries": [
+    "Norway"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": "21/03/2023",
+   "lastUpdated": "23/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-510214-11-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511988-29-01",
+   "title": "Intracranial Injection of NK-92/​5.28.z Cells in Combination With Intravenous Ezabenlimab in Patients With Recurrent HER2-positive Glioblastoma (CAR2BRAIN)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Goethe University Frankfurt",
+   "sponsorType": "Educational Institution",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "42",
+   "startDate": "08/11/2017",
+   "lastUpdated": "09/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511988-29-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519239-40-01",
+   "title": "Itraconazole (ITRA) with standard radiotherapy (RT) and temozolomide (TMZ) in patients with newly diagnosed glioblastoma multiforme (GBM)\nITRA-RAD: Phase I Clinical Study",
+   "conditions": "Glioblastom",
+   "sponsor": "Otto Von Guericke Universitaet Magdeburg",
+   "sponsorType": "Educational Institution",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": "07/04/2025",
+   "lastUpdated": "07/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519239-40-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-504071-24-00",
+   "title": "LiBRA – Lithium treatment to prevent cognitive impairment after brain radiotherapy.",
+   "conditions": "Brain tumor",
+   "sponsor": "Karolinska University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Denmark",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Denmark",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "114",
+   "startDate": "07/11/2023",
+   "lastUpdated": "20/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-504071-24-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515626-92-00",
+   "title": "MEMMAT - Medulloblastoma European Multitarget Metronomic Anti-Angiogenic Trial - A Phase II study of metronomic and targeted anti-angiogenesis therapy for children with recurrent/progressive medulloblastoma, ependymoma, ATRT and rare CNS tumors",
+   "conditions": "recurrent/progressive medulloblastoma, ependymoma and atypical teratoid rhabdoid tumor (ATRT), rare CNS tumors",
+   "sponsor": "Medical University Of Vienna",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Austria",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Norway",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Norway",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "100",
+   "startDate": "18/10/2013",
+   "lastUpdated": "25/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515626-92-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-509585-38-00",
+   "title": "MEPENDAX: Phase I/II study of axitinib (Inlyta®) and oral metronomic etoposide for pediatric children and AYA with refractory/relapsing medulloblastoma and ependymoma",
+   "conditions": "Ependymoma, Medulloblastoma",
+   "sponsor": "Assistance Publique Hopitaux De Marseille",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "40",
+   "startDate": "19/11/2024",
+   "lastUpdated": "29/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-509585-38-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513392-40-01",
+   "title": "MIRROR; Multispectral and bimodal fluorescent guided surgery (FGS) of high-grade glioma for refining margin assessment: A phase 1 dose finding study using Cetuximab-IRDye800CW- combined with 5-ALA",
+   "conditions": "Glioblastoma",
+   "sponsor": "Universitair Medisch Centrum Groningen",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "21",
+   "startDate": "31/03/2023",
+   "lastUpdated": "03/09/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513392-40-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515408-37-00",
+   "title": "MRI with hyperpolarized pyruvate in gliblastoma - a phase II study",
+   "conditions": "glioblastoma multiforme, cancer",
+   "sponsor": "Aarhus Universitet",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "10",
+   "startDate": "01/04/2020",
+   "lastUpdated": "28/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515408-37-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515952-19-00",
+   "title": "Multicenter, open label study using molecularly determined targeted therapies in children 3-18 years of age with DIPG (diffuse intrinsic pontine glioma- DIPG)- DIPGen",
+   "conditions": "diffuse intrinsic pontine glioma",
+   "sponsor": "Instytut Pomnik Centrum Zdrowia Dziecka",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Poland"
+   ],
+   "recruitingCountries": [
+    "Poland"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "100",
+   "startDate": "18/12/2024",
+   "lastUpdated": "25/04/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515952-19-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514567-26-00",
+   "title": "NAVIG-1 : New adjuvant vaccine in glioblastoma, a Phase 1/2a study",
+   "conditions": "glioblastoma",
+   "sponsor": "Assistance Publique Hopitaux De Paris",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "90",
+   "startDate": "08/11/2024",
+   "lastUpdated": "11/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514567-26-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502051-56-00",
+   "title": "ONC201 for the Treatment of Newly Diagnosed H3 K27M-mutant Diffuse Glioma Following Completion of Radiotherapy: A Randomized, Double-Blind, Placebo-Controlled, Multicenter Study (The ACTION Study)",
+   "conditions": "H3 K27M-mutant diffuse glioma",
+   "sponsor": "Chimerix Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Denmark",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Denmark",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "170",
+   "startDate": "28/04/2023",
+   "lastUpdated": "08/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502051-56-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518663-35-00",
+   "title": "Open label randomized phase II/III trial of dendritic cell immunotherapy against cancer stem cells in glioblastoma patients receiving standard therapy (DEN-STEM)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Oslo University Hospital HF",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "Norway"
+   ],
+   "recruitingCountries": [
+    "Norway"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "60",
+   "startDate": "25/04/2018",
+   "lastUpdated": "12/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518663-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-509073-23-00",
+   "title": "OPEN-LABEL PHASE II EFFICACY STUDY OF REPOTRECTINIB IN FRAIL (PS ≥2) AND /OR ELDERLYPATIENTS WITH ROS1-REARRANGED ADVANCED NSCLC",
+   "conditions": "Stage III/IV non-small-cell lung cancer (NSCLC) harboring an ROS1 gene rearrangement",
+   "sponsor": "Centre Hospitalier Intercommunal Toulon / La Seine-Sur-Mer, Groupe Français de Pneumo-Oncologie",
+   "sponsorType": "Hospital/Clinic/Other health care facility, Health care",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "30",
+   "startDate": "01/10/2024",
+   "lastUpdated": "26/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-509073-23-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511026-31-01",
+   "title": "Oxidative Phosphorylation Targeting In Malignant glioma Using Metformin plus radiotherapy temozolomide",
+   "conditions": "Glioblastoma grade 4",
+   "sponsor": "Hospital Foch",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "59",
+   "startDate": "24/10/2024",
+   "lastUpdated": "20/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511026-31-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513827-18-00",
+   "title": "PET-imaging of two Vartumabs (F8scFv and C9scFv) in patients with solid tumors – a Phase 0 basket trial",
+   "conditions": "Multiple solid tumors including: colorectal carcinoma (CRC), pancreatic carcinoma, oesophageal or gastric carcinoma, head and neck squamous cell carcinoma (HNSCC), chondrosarcoma or osteosarcoma, bladder carcinoma, lung carcinoma and glioblastoma.",
+   "sponsor": "Var2 Pharmaceuticals ApS",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "32",
+   "startDate": "29/11/2024",
+   "lastUpdated": "01/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513827-18-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518808-43-00",
+   "title": "Pharmacokinetics of antibiotics in cerebrospinal fluid of children\nwith malignant brain tumors – a pilot study",
+   "conditions": "brain tumors",
+   "sponsor": "Medical University Of Vienna",
+   "sponsorType": "Educational Institution",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Austria"
+   ],
+   "recruitingCountries": [
+    "Austria"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "60",
+   "startDate": "22/10/2018",
+   "lastUpdated": "11/12/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518808-43-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513357-74-01",
+   "title": "Phase 0 trial of CBD in recurrent glioblastoma patients",
+   "conditions": "Glioblastoma",
+   "sponsor": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "7",
+   "startDate": "04/08/2025",
+   "lastUpdated": "30/07/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513357-74-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-520228-28-00",
+   "title": "Phase 2, open-label, single-arm study on the use of metformin as adjunctive therapy in high-grade glioma",
+   "conditions": "IDH-wildtype glioblastoma",
+   "sponsor": "Universita Degli Studi Di Milano Bicocca",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "25",
+   "startDate": "10/02/2025",
+   "lastUpdated": "03/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-520228-28-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-517651-12-00",
+   "title": "Phase I/II dose escalation trial of radiodynamic therapy (RDT) with 5-Aminolevulinic acid in patients with first recurrence of glioblastoma",
+   "conditions": "recurrent glioblastoma",
+   "sponsor": "Universitaet Muenster",
+   "sponsorType": "Educational Institution",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "33",
+   "startDate": "28/10/2022",
+   "lastUpdated": "18/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517651-12-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511264-89-00",
+   "title": "Phase I/II trial of meclofenamate in progressive MGMT-methylated glioblastoma under temozolomide second-line therapy (MecMeth/ NOA-24)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Rheinische Friedrich-Wilhelms-Universitaet Bonn",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "72",
+   "startDate": "11/04/2022",
+   "lastUpdated": "09/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511264-89-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502134-10-00",
+   "title": "Phase Ib Dose Finding Study of [177Lu]Lu-NeoB in Combination with RT and TMZ in Newly Diagnosed Glioblastoma and as a Single Agent in Recurrent Glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Novartis Pharma AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "France",
+    "Germany",
+    "Italy",
+    "Portugal",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Portugal"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "40",
+   "startDate": "15/05/2024",
+   "lastUpdated": "21/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502134-10-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513375-40-00",
+   "title": "Phase II, single arm, multicentre clinical trial to evaluate the activity of encorafenib plus binimetinib followed by Cemiplimab And Fianlimab in patients with BRAF mutated melanoma and symptomatic brain metastases.",
+   "conditions": "Melanoma",
+   "sponsor": "Grupo Espanol Multidisciplinar De Melanoma",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "33",
+   "startDate": "16/05/2025",
+   "lastUpdated": "12/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513375-40-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506998-35-00",
+   "title": "Phase III trial of lomustine/temozolomide (TMZ) combination therapy vs. standard TMZ therapy for newly diagnosed MGMT promoter methylated glioblastoma (IDHwt) patients +/- tumor treating fields (Optune)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Vaestra Goetalandsregionen, Region Oestergoetland",
+   "sponsorType": "Hospital/Clinic/Other health care facility, Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Denmark",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Denmark",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "200",
+   "startDate": "08/01/2025",
+   "lastUpdated": "27/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506998-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-521180-13-00",
+   "title": "PNOC023: Open Label Phase 1 and Target Validation Study of ONC206 in Children and Young Adults with Newly Diagnosed or Recurrent Diffuse Midline Glioma (DMG), and Other Recurrent Primary Malignant Central Nervous System (CNS) Tumors.",
+   "conditions": "Diffuse Midline Glioma (DMG), and Other Recurrent Primary Malignant Central Nervous System (CNS) Tumors",
+   "sponsor": "Prinses Maxima Centrum voor Kinderoncologie B.V.",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [
+    "Netherlands"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "04/03/2026",
+   "lastUpdated": "11/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-521180-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514865-20-00",
+   "title": "PRIDE: A phase IIa, open-label, multicenter study of radiochemotherapy with isotoxic dose escalation and protective VEGF inhibition using bevacizumab in the treatment of patients with first diagnosis of IDH wild-type, MGMT unmethylated glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Universitaetsklinikum Tuebingen AöR",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "146",
+   "startDate": "10/04/2024",
+   "lastUpdated": "09/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514865-20-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512642-42-00",
+   "title": "Randomized study to protect from radiation iatrogenic hypothyroidism patients with medulloblastoma (any stage, any biological risk) and pediatric patients with Hodgkin lymphoma and non-Hodgkin lymphoma needing radiation therapy on thyroid site - WINHYPO 2021",
+   "conditions": "Hodgkin and non Hodgkin lymphoma, Medulloblastoma",
+   "sponsor": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "65",
+   "startDate": "13/12/2021",
+   "lastUpdated": "24/05/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512642-42-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510954-28-01",
+   "title": "Regorafenib for recurrent meningioma. A multicenter, randomized phase II study (MIRAGE trial)",
+   "conditions": "grade 1, 2 and 3 meningioma",
+   "sponsor": "Istituto Oncologico Veneto",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "104",
+   "startDate": "23/09/2024",
+   "lastUpdated": "19/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510954-28-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-517535-52-00",
+   "title": "Single center, Open-Label, Randomized Study to Evaluate the Safety and Efficacy of neoadjuvant and adjuvant Pembrolizumab on top of standard Chemo-Radiotherapy (Stupp protocol) in Treatment of Patients with newly diagnosed Glioblastoma Multiforme (GBM). (PIRG)",
+   "conditions": "Glioblastoma Multiforme",
+   "sponsor": "Medical University Of Silesia Katowice Poland",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic use (Phase IV)",
+   "countries": [
+    "Poland"
+   ],
+   "recruitingCountries": [
+    "Poland"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "36",
+   "startDate": "24/08/2022",
+   "lastUpdated": "21/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517535-52-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510964-21-00",
+   "title": "Single-arm dose-escalation Phase 1/2 study of olaptesed pegol (NOX-A12) in combination with irradiation in inoperable or partially resected first-line glioblastoma patients with unmethylated MGMT promoter with a multiple-arm expansion group",
+   "conditions": "Glioblastoma",
+   "sponsor": "TME Pharma AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [
+    "Germany"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "136",
+   "startDate": "12/09/2019",
+   "lastUpdated": "09/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510964-21-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512222-28-00",
+   "title": "SIOP Ependymoma Program II: An International Clinical Program for the diagnosis and treatment of children, adolescents and young adults with ependymoma",
+   "conditions": "Newly diagnosed with an intracranial or spinal ependymoma (all WHO grades) including ependymoma variants: cellular, papillary, myxopapillary, clear-cell and tanycytic or anaplastic ependymoma.",
+   "sponsor": "Centre Leon Berard",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Ireland",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Ireland",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "894",
+   "startDate": "02/06/2015",
+   "lastUpdated": "10/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512222-28-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510578-25-00",
+   "title": "SIOP-HRMB: An international prospective trial on clinically high-risk medulloblastoma (HR-MB) in patients older than 3 years.",
+   "conditions": "Histologically proven high-risk medulloblastoma, with any of the currently defined histological subtypes. High-risk disease is defined as patients with sonic hedgehog (SHH) subgroup or non-SHH/non-wingless-type (WNT) (Groups 3 and 4) medulloblastoma, with at least one additional high risk feature",
+   "sponsor": "The University Of Birmingham",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Finland",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitingCountries": [
+    "Austria",
+    "Belgium",
+    "Denmark",
+    "Finland",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "311",
+   "startDate": "05/11/2021",
+   "lastUpdated": "04/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510578-25-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516169-35-00",
+   "title": "SONOKID. A Phase I Trial Evaluating the Tolerability of Repeated Blood-Brain Barrier Disruption by Ultrasound Prior to Chemotherapy in the Treatment of Recurrent Supratentorial Primary Malignant Brain Tumors in Children.",
+   "conditions": "recurrent primary supratentorial malignant brain tumors in children",
+   "sponsor": "Assistance Publique Hopitaux De Paris",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "24",
+   "startDate": "06/02/2023",
+   "lastUpdated": "22/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516169-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-500451-23-00",
+   "title": "StrateGlio: Phase III randomised trial evaluating early treatment intensification with temozolomide in adults with a glioblastoma",
+   "conditions": "Adults with a de novo glioblastoma",
+   "sponsor": "Centre Oscar Lambret",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Belgium",
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "460",
+   "startDate": "18/03/2019",
+   "lastUpdated": "10/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-500451-23-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-510568-11-00",
+   "title": "TARLATEM : Combination of TARLAtamab and TEMozolomide in patients with central nervous system tumors.\nA multicenter, open-label Phase I/II trial aiming to assess the safety and clinical activity of Tarlatamab in combination with metronomic Temozolomide in adolescents and adults’ patients with high grade brain tumors",
+   "conditions": "High grade brain tumors",
+   "sponsor": "Centre Leon Berard",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [
+    "France"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "450",
+   "startDate": "18/11/2025",
+   "lastUpdated": "09/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-510568-11-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512493-98-00",
+   "title": "Vaccination with Autologous Dendritic cells loaded with Autologous Tumour homogenate in Glioblastoma: a phase II Study (Combi G-Vax)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Istituto Romagnolo Per Lo Studio Dei Tumori Dino Amadori IRST S.r.l.",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [
+    "Italy"
+   ],
+   "recruitment": "recruiting",
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "28",
+   "startDate": "25/03/2021",
+   "lastUpdated": "15/07/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512493-98-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513638-39-00",
+   "title": "A clinical study to determine the dose and assess safety and efficacy of radioimmuntherapy in patients with glioblastoma, where Lutetium 177 labelled 6A10 antibody Fab fragments are applied to the tumor resection cavity.",
+   "conditions": "Surgically treated high grade glioma after concomitant radiochemotherapy and adjuvant standard chemotherapy, with no or small stable tumor residue",
+   "sponsor": "Universitaetsklinikum Muenster AöR",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": "17/10/2022",
+   "lastUpdated": "30/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513638-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514840-97-00",
+   "title": "A MultIceNTER Phase I Peptide VaCcine Trial to Exploit NeoePitope-Specific T Cells for the Treatment of H3-Mutated Gliomas – (INTERCEPT H3)",
+   "conditions": "glioma WHO grade IV (C71.1-9 according to ICD-10 classification)",
+   "sponsor": "Deutsches Krebsforschungszentrum Stiftung Des Oeffentlichen Rechts",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": "15/02/2023",
+   "lastUpdated": "03/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514840-97-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-504846-73-01",
+   "title": "A multicenter randomized double-blinded controlled phase 2 study evaluating the efficacy of valganciclovir as add-on therapy in glioblastoma patients",
+   "conditions": "Glioblstoma WHO grade IV",
+   "sponsor": "Karolinska Institutet",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Norway",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "220",
+   "startDate": null,
+   "lastUpdated": "29/10/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-504846-73-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515466-13-00",
+   "title": "A Phase 1 Safety and Dose Finding Study of 131I -TLX101 Plus Standard of Care in Patients with Newly Diagnosed Glioblastoma",
+   "conditions": "Glioblastoma multiforme (GBM)",
+   "sponsor": "Telix Pharmaceuticals (Innovations) Pty Limited",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Austria",
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "6",
+   "startDate": "28/06/2023",
+   "lastUpdated": "24/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515466-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515150-24-00",
+   "title": "A Phase 1 Study on the effects of LY3410738 (study drug) administered to Patients with Advanced Solid Tumors with IDH1 or IDH2 Mutations",
+   "conditions": "Patients with IDH1 R132, IDH2 R140 or IDH2 R172-mutant advanced solid tumor types, including but not limited to cholangiocarcinoma, chondrosarcoma, and glioma.",
+   "sponsor": "Eli Lilly & Co.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "France",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "3",
+   "startDate": "19/01/2021",
+   "lastUpdated": "20/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515150-24-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505309-18-00",
+   "title": "A Phase 1b/2 Multicentre, Open-label, Modular, Dose-finding and Dose-expansion Study to Explore the Safety, Tolerability, and Anti-tumour Activity of Trastuzumab Deruxtecan (T-DXd) in Combination with other Anti-cancer Agents in Patients with HER2-positive Metastatic Breast Cancer (DESTINY-Breast07)",
+   "conditions": "HER2-positive Metastatic Breast Cancer",
+   "sponsor": "AstraZeneca AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Germany",
+    "Italy",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "46",
+   "startDate": "21/01/2021",
+   "lastUpdated": "04/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505309-18-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513738-39-00",
+   "title": "A Phase 1b/2, multicenter study of vorasidenib in combination with temozolomide (TMZ) in participants with IDH1- or IDH2-mutant glioma",
+   "conditions": "IDH1-mutant Glioma, IDH2-mutant Glioma",
+   "sponsor": "Institut De Recherches Internationales Servier IRIS",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Austria",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "17",
+   "startDate": "18/03/2025",
+   "lastUpdated": "18/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513738-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506813-23-00",
+   "title": "A Phase 2, double-blind, placebo-controlled, randomized, proof-of-concept study evaluating LSTA1 when added to standard of care (temozolomide) versus temozolomide and matching LSTA1 placebo in subjects with newly diagnosed Glioblastoma Multiforme (GBM)",
+   "conditions": "Glioblastoma Multiforme",
+   "sponsor": "Tartu University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Estonia",
+    "Latvia",
+    "Lithuania"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "40",
+   "startDate": "18/12/2023",
+   "lastUpdated": "21/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506813-23-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512961-15-00",
+   "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-Controlled Study of AG-881 in Subjects With Residual or Recurrent Grade 2 Glioma With an IDH1 or IDH2 Mutation",
+   "conditions": "Residual or Recurrent Grade 2 Glioma With an IDH1 or IDH2 Mutation",
+   "sponsor": "Institut De Recherches Internationales Servier IRIS",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "71",
+   "startDate": "05/08/2020",
+   "lastUpdated": "10/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512961-15-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513077-48-00",
+   "title": "A Phase 3, open-label, randomized 2-arm study comparing the clinical efficacy and safety of niraparib with temozolomide in adult participants with newly-diagnosed, MGMT unmethylated glioblastoma",
+   "conditions": "O6-methylguanine methyltransferase (MGMT) unmethylated glioblastoma",
+   "sponsor": "Neurotrials LLC",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Denmark",
+    "France",
+    "Germany",
+    "Ireland",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "215",
+   "startDate": "19/12/2024",
+   "lastUpdated": "23/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513077-48-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513550-30-00",
+   "title": "A Phase 3, Randomized, Double-Blind, Placebo-Controlled Study of Optune® (TTFields, 200 kHz) Concomitant with Maintenance Temozolomide and Pembrolizumab Versus Optune® Concomitant with Maintenance Temozolomide and Placebo for the Treatment of Newly Diagnosed Glioblastoma (EF-41/KEYNOTE D58)",
+   "conditions": "Newly diagnosed Glioblastoma",
+   "sponsor": "Novocure GmbH",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Czechia",
+    "France",
+    "Germany",
+    "Italy",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "280",
+   "startDate": "28/03/2025",
+   "lastUpdated": "02/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513550-30-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508278-26-01",
+   "title": "A phase I clinical trial on combined (neo-)adjuvant intravenous plus intracranial administration of ipilimumab and nivolumab in recurrent glioblastoma.",
+   "conditions": "glioblastoma",
+   "sponsor": "UZ Brussel",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Belgium"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "18",
+   "startDate": "05/04/2024",
+   "lastUpdated": "03/06/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508278-26-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524555-31-00",
+   "title": "A Phase I Study using Oncolytic AdenoVirus Immunotherapy with Repeat Administrations in Recurrent GliOblastoma (VIRAGO)",
+   "conditions": "Recurrent Glioblastoma",
+   "sponsor": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "18",
+   "startDate": null,
+   "lastUpdated": "21/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524555-31-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508829-28-00",
+   "title": "A Phase II clinical trial targeting estrogen receptor negative or PAM50 non-luminal disease with Atezolizumab in combination with Trastuzumab and Vinorelbine in HER2-positive advanced/metastatic breast cancer – ATREZZO Study",
+   "conditions": "Pre- and post-menopausal women or men with advanced (loco regionally recurrent not amenable to curative therapy or metastatic)HER2-positive breast cancer who have progressed to trastuzumab based chemotherapy and AntiHER2-ADC",
+   "sponsor": "Solti Group",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "55",
+   "startDate": "15/03/2021",
+   "lastUpdated": "26/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508829-28-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518545-13-00",
+   "title": "A phase II, open label, randomised trial of ipilimumab and nivolumab with concurrent intracranial stereotactic radiotherapy versus ipilimumab and nivolumab alone in patients with melanoma brain metastases",
+   "conditions": "melanoma brain metastases",
+   "sponsor": "Melanoma Institute Australia",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": null,
+   "lastUpdated": "31/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518545-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516330-35-00",
+   "title": "A Phase III, Randomized, Double-Blind, Placebo-Controlled Study of Platinum Plus Pemetrexed Chemotherapy Plus Osimertinib Versus Platinum Plus Pemetrexed Chemotherapy Plus Placebo in Patients with EGFRm, Locally Advanced or Metastatic NSCLC who have Progressed Extracranially following First-Line Osimertinib Therapy (COMPEL)",
+   "conditions": "Non-Small Cell Lung Cancer",
+   "sponsor": "AstraZeneca AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Germany",
+    "Italy",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "155",
+   "startDate": "29/09/2021",
+   "lastUpdated": "07/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516330-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-504226-18-00",
+   "title": "A Phase III, Randomized, Double-Blind, Placebo-Controlled, Multicenter Basket Study to Evaluate the Efficacy, Safety, Pharmacokinetics, and Pharmacodynamics of Satralizumab in Patients with Anti-N-Methyl-D-Aspartic Acid Receptor (NMDAR) or Anti-Leucine-Rich Glioma-Inactivated 1 (LGI1) Encephalitis",
+   "conditions": "NMDAR or LGI1 mediated autoimmune Encephalitis",
+   "sponsor": "F. Hoffmann-La Roche AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Italy",
+    "Netherlands",
+    "Poland",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "47",
+   "startDate": "30/11/2022",
+   "lastUpdated": "03/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-504226-18-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519446-67-00",
+   "title": "A prospective randomized open-label phase II clinical study evaluating the efficacy and safety of zoledronic acid addition to standard therapy in patients with glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Pauls Stradins Clinical University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Latvia"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "80",
+   "startDate": "06/03/2025",
+   "lastUpdated": "28/02/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519446-67-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511542-39-00",
+   "title": "A randomized, double-blind, placebo-controlled adjuvant trial in newly diagnosed primary glioblastoma subjects to assess the efficacy and safety of 2-hydroxyoleic acid (2-OHOA) in combination with radiotherapy and temozolomide standard of care treatment.",
+   "conditions": "Newly diagnosed primary glioblastoma multiforme (ndGBM)",
+   "sponsor": "Laminar Pharmaceuticals S.A.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "France",
+    "Italy",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "106",
+   "startDate": "16/09/2019",
+   "lastUpdated": "01/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511542-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518223-29-00",
+   "title": "A randomized, non-comparative, phase II study investigating the best epidermal growth factor receptor tyrosine kinase inhibitor (EGFR-TKI) sequence in advanced or metastatic non-small-cell lung cancer (NSCLC) harboring EGFR mutations",
+   "conditions": "Advanced or metastatic untreated EGFR mutation positive NSCLC",
+   "sponsor": "Fondazione Ricerca Traslazionale",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "189",
+   "startDate": "10/03/2020",
+   "lastUpdated": "24/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518223-29-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-522437-65-00",
+   "title": "A single-arm phase II-study to confirm efficacy and feasibility of tarlatamab treatment in patients with extensive stage small-cell lung cancer with poor performance status (SPACE-T) [without IMPD-Q]",
+   "conditions": "small-cell lung cancer",
+   "sponsor": "AIO-Studien gGmbH",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "57",
+   "startDate": "06/03/2026",
+   "lastUpdated": "13/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522437-65-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-501822-39-00",
+   "title": "A study to evaluate the safety and efficacy of the tumor-targeting human antibody-cytokine fusion protein L19TNF plus lomustine in patients with glioblastoma at first progression",
+   "conditions": "Glioblastoma",
+   "sponsor": "Philogen S.p.A.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "France",
+    "Germany",
+    "Italy"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "113",
+   "startDate": "31/07/2023",
+   "lastUpdated": "22/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-501822-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516357-46-00",
+   "title": "A study to evaluate the safety and efficacy of the tumor-targeting human antibody-cytokine fusion protein L19TNF plus standard temozolomide chemoradiotherapy in patients with newly diagnosed glioblastoma.",
+   "conditions": "Glioblastoma",
+   "sponsor": "Philogen S.p.A.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Germany",
+    "Italy"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "70",
+   "startDate": null,
+   "lastUpdated": "23/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516357-46-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2026-525543-32-00",
+   "title": "A study to investigate how a single dose of the drug melflufen reaches brain tumor tissue, and how it affects the tumour, in patients who are already scheduled for surgery for a returning glioblastoma",
+   "conditions": "Recurrent glioblastoma",
+   "sponsor": "Oncopeptides AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Norway"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "10",
+   "startDate": "17/06/2026",
+   "lastUpdated": "15/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-525543-32-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-501766-22-01",
+   "title": "A study to test how well different doses of BI 764532 are tolerated by people with a tumour in the brain that is positive for DLL3",
+   "conditions": "Glioma expressing DLL3",
+   "sponsor": "Boehringer Ingelheim International GmbH, Boehringer Ingelheim Espana S.A., Boehringer Ingelheim RCV GmbH & Co. KG",
+   "sponsorType": "Pharmaceutical company, Pharmaceutical company, Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Austria",
+    "Germany",
+    "Netherlands",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "14",
+   "startDate": "23/04/2024",
+   "lastUpdated": "02/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-501766-22-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515291-13-00",
+   "title": "Adjuvant dendritic-cell immunotherapy plus temozolomide following surgery and chemoradiation in patients with newly diagnosed glioblastoma",
+   "conditions": "Glioblastoma grade IV",
+   "sponsor": "Antwerp University Hospital",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Belgium"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "01/04/2016",
+   "lastUpdated": "22/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515291-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-520563-41-00",
+   "title": "An interventional, multicenter, and international phase 1/2, light-dose-escalation study to investigate the safety and feasibility of intraoperative photodynamic therapy (PDT) with Pentalafen® drug and Heliance® Solution device in male and female patients 18 to 75 years of age with grade IV glioblastoma.",
+   "conditions": "High-grade glioma\nGlioblastoma",
+   "sponsor": "Hemerion Therapeutics",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "6",
+   "startDate": "29/09/2025",
+   "lastUpdated": "16/06/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-520563-41-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524267-20-00",
+   "title": "An open label, balanced, randomized, two-treatment, two-period, two-sequence, single-dose, crossover bioequivalence study comparing Trametinib tablets 2 mg, Manufactured by Sun Pharmaceutical Industries Limited, India with MEKINIST® (Trametinib) tablets 2 mg, Distributed by: Novartis Pharmaceuticals Corporation, East Hanover, New Jersey 07936, USA in healthy, adult, human subjects under fasting condition.",
+   "conditions": "Adjuvant treatment of BRAF V600E or V600K mutation-positive melanoma (in combination with dabrafenib);, BRAF V600E mutation-positive unresectable or metastatic solid tumors;, BRAF V600E mutation-positive metastatic non-small cell lung cancer (NSCLC), in combination with dabrafenib;, BRAF V600E mutation-positive low-grade glioma (LGG)., BRAF V600E mutation-positive locally advanced or metastatic anaplastic thyroid cancer (ATC);, BRAF V600E or V600K mutation-positive unresectable or metastatic melanoma, as a single agent in BRAF-inhibitor treatment-naïve patients or in combination with dabrafenib;",
+   "sponsor": "Sun Pharmaceutical Industries Limited",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- Bioequivalence Study",
+   "countries": [
+    "Romania"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "72",
+   "startDate": null,
+   "lastUpdated": "30/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524267-20-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515128-35-00",
+   "title": "An open-label dose escalation study to estimate maximum tolerated dose (MTD), identify dose-limiting toxicities (DLTs) and study pharmacokinetics following a single dose of intracranially administered temozolomide-based SI-053 as an add-on to the current standard of care (SoC), in adult patients with newly diagnosed glioblastoma (GBM).",
+   "conditions": "Glioblastoma",
+   "sponsor": "Double Bond Pharmaceutical AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Germany",
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "27",
+   "startDate": null,
+   "lastUpdated": "16/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515128-35-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510588-53-00",
+   "title": "An Open-Label, Multinational, Multicenter, Phase 3b/4 Study of Trastuzumab Deruxtecan in Patients With or Without Baseline Brain Metastasis With Previously-Treated Advanced/Metastatic HER2-Positive Breast Cancer (DESTINY-Breast12)",
+   "conditions": "Treatment of patients with HER2-positive breast cancer with or without brain metastasis",
+   "sponsor": "AstraZeneca AB",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase III and phase IV (Integrated)",
+   "countries": [
+    "Belgium",
+    "Denmark",
+    "Germany",
+    "Ireland",
+    "Italy",
+    "Poland",
+    "Portugal",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "482",
+   "startDate": "10/06/2021",
+   "lastUpdated": "16/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510588-53-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513243-85-00",
+   "title": "Chemotherapy for the treatment of standard risk adult medulloblastomas",
+   "conditions": "Adult medulloblastoma",
+   "sponsor": "CHRU De Nancy",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "45",
+   "startDate": "03/02/2023",
+   "lastUpdated": "24/05/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513243-85-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-517133-40-00",
+   "title": "Comparison of neurocognitive outcome in two standard regimen for treatment of low-risk medulloblastoma (COGNITO-MB)",
+   "conditions": "newly diagnosed, non-metastatic, SHH-activated, TP53-wt, non-MYC amplified medulloblastoma",
+   "sponsor": "GPOH gGmbH",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "46",
+   "startDate": null,
+   "lastUpdated": "08/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517133-40-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2026-525513-31-00",
+   "title": "Durvalumab after concurrent platinum/etoposide chemotherapy and high-dose twice-daily thoracic radiotherapy in limited stage small cell lung cancer – an open label, randomized phase III trial (DAHRTS)",
+   "conditions": "Small-cell lung cancer, limited stage",
+   "sponsor": "Norges Teknisk-Naturvitenskapelige Universitet NTNU",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "Germany",
+    "Lithuania",
+    "Netherlands",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "426",
+   "startDate": null,
+   "lastUpdated": "24/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-525513-31-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-520814-78-00",
+   "title": "FIDES: Focused Ultrasound-mediated Blood-Brain Barrier Opening In Pontine Diffuse Midline Glioma (DMG) to Enhance Systemic Therapy with Temozolomide – an exploratory pilot and feasibility trial",
+   "conditions": "Diffuse Midline Glioma, H3K27-altered",
+   "sponsor": "Universitair Medisch Centrum Utrecht",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": null,
+   "lastUpdated": "26/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-520814-78-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524299-44-00",
+   "title": "First study evaluating the safety and dosage of YG-01 in patients with a malignant brain tumor",
+   "conditions": "Glioblastoma",
+   "sponsor": "Ygion Biomedical GmbH",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Austria"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": null,
+   "lastUpdated": "29/06/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524299-44-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502269-13-00",
+   "title": "I3Y-MC-JPEH: A Randomized, Open-Label, Phase 2 Study Evaluating Abemaciclib in Combination With Temozolomide Compared to Temozolomide Monotherapy in Children and Young Adults With Newly Diagnosed High-Grade Glioma Following Radiotherapy.",
+   "conditions": "Glioma",
+   "sponsor": "Eli Lilly & Co.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Belgium",
+    "Denmark",
+    "France",
+    "Italy",
+    "Netherlands",
+    "Romania",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "30",
+   "startDate": "24/09/2024",
+   "lastUpdated": "15/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502269-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-512028-12-00",
+   "title": "IFCT-2003 ALBATROS A phase II single-group assignment, multicenter study of efficacy and safety of lorlatinib monotherapy after failure of first-line tyrosine kinase inhibitor in patients with advanced ROS1-positive non-small cell lung cancer",
+   "conditions": "Advanced ROS1-positive non-small cell lung cancer",
+   "sponsor": "Intergroupe Francophone De Cancerologie Thoracique",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "84",
+   "startDate": "19/03/2021",
+   "lastUpdated": "17/09/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512028-12-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-523032-39-00",
+   "title": "Improved baseline staging with 68Ga-FAPI-46 PET in non-small cell lung cancer – a pilot study",
+   "conditions": "Non-small cell lung cancer",
+   "sponsor": "Academisch Ziekenhuis Maastricht",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "10",
+   "startDate": null,
+   "lastUpdated": "03/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-523032-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510703-11-00",
+   "title": "InTTercePT : Treatment with Tucatinib in addition to Pertuzumab and Trastuzumab in patients with HER2-positive metastatic breast cancer after local therapy of isolated brain progression",
+   "conditions": "HER2+ metastatic breast cancer with isolated brain progression",
+   "sponsor": "Unicancer",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "55",
+   "startDate": "13/12/2021",
+   "lastUpdated": "12/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510703-11-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510742-13-00",
+   "title": "LOGGIC/FIREFLY-2: A Phase 3, Randomized, International Multicenter Trial of DAY101 Monotherapy Versus Standard of Care Chemotherapy in Patients with Pediatric Low-Grade Glioma Harboring an Activating RAF Alteration Requiring First-Line Systemic Therapy",
+   "conditions": "Pediatric low-grade glioma harboring an activating RAF alteration requiring first-line systemic therapy",
+   "sponsor": "Day One Biopharmaceuticals Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Ireland",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Slovenia",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "245",
+   "startDate": "19/04/2023",
+   "lastUpdated": "23/03/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510742-13-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514399-42-00",
+   "title": "MATVAC-1 : EVALUATION OF UCPVAX VACCINE +/- PEMBROLIZUMAB COMBINED WITH STANDARD TREATMENT AS ADJUVANT THERAPY IN PATIENTS WITH UNMETHYLATED MGMT GLIOBLASTOMA",
+   "conditions": "Glioblastoma",
+   "sponsor": "Centre Hospitalier Regional Universitaire",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "98",
+   "startDate": null,
+   "lastUpdated": "12/11/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514399-42-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-511880-27-00",
+   "title": "Multisite open-label randomized phase II clinical trial in newly diagnosed glioblastoma treated by concurrent TemoRadiation and adjuvant temozolomide +/- ultrasound-induced blood brain barrier opening - SonoFIRST",
+   "conditions": "Newly diagnosed Glioblastoma (IDH wild-type) patients at initial radiological diagnosis eligible for tumor resection, and for the standard of care including concurrent temoradiation followed by adjuvant TMZ with or without Tumor Treating Fields*.\n(*Tumor Treating Fields is applicable only in participating centers in France)",
+   "sponsor": "Assistance Publique Hopitaux De Paris",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Belgium",
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "63",
+   "startDate": null,
+   "lastUpdated": "05/12/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511880-27-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-502527-21-00",
+   "title": "Phase 1/2 Study of BLU-451 in Advanced Cancers with EGFR exon20 Insertion Mutations",
+   "conditions": "Advanced cancers with EGFR Exon20 insertions mutations",
+   "sponsor": "Blueprint Medicines Corp.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "28",
+   "startDate": null,
+   "lastUpdated": "10/10/2023",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502527-21-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-513654-30-00",
+   "title": "Phase 2 open label randomized study of radiotherapy, concomitant nimotuzumab and vinorelbine and re-irradiation at relapse versus radiotherapy and multiple elective radiotherapy courses with concomitant vinorelbine and nimotuzumab for newly diagnosed childhood and adolescence diffuse intrinsic pontine glioma (DIPG).",
+   "conditions": "Diffuse intrinsic pontine glioma",
+   "sponsor": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "81",
+   "startDate": "04/11/2015",
+   "lastUpdated": "26/06/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513654-30-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524031-39-00",
+   "title": "Phase I study of CDK8 inhibitor RVU120 in combination with everolimus in children with recurrent or progressive Group 3 or 4 medulloblastoma; MEDWAY",
+   "conditions": "Medulloblastoma (recurrent or progressive)",
+   "sponsor": "Instytut Pomnik Centrum Zdrowia Dziecka",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Poland"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "48",
+   "startDate": null,
+   "lastUpdated": "30/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524031-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516896-34-00",
+   "title": "Phase I/II combination umbrella trial in progressive/relapsed/refractory pediatric low-grade glioma (pLGG) (EPILOGUE)",
+   "conditions": "progressive/relapsed/refractory pediatric low-grade glioma (pLGG)",
+   "sponsor": "Universitaetsklinikum Heidelberg AöR",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Austria",
+    "Czechia",
+    "Denmark",
+    "Germany",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 0-17 years",
+   "gender": "Female, Male",
+   "enrolled": "34",
+   "startDate": "17/06/2026",
+   "lastUpdated": "07/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516896-34-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-517114-15-00",
+   "title": "Phase I/II study of AGuIX nanoparticles with radiotherapy plus concomitant Temozolomide in the treatment of newly diagnosed glioblastoma",
+   "conditions": "newly  diagnosed gliblastoma",
+   "sponsor": "Centre Jean Perrin",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "66",
+   "startDate": "07/03/2025",
+   "lastUpdated": "11/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517114-15-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-510960-22-00",
+   "title": "Phase I/II study to evaluate the efficacy and safety of PAZOPANIB in combination with TEMOZOLOMIDE as maintenance therapy in Glioblastoma patients undergoing surgery and subsequently treated with induction radiotherapy-TEMOZOLOMIDE",
+   "conditions": "gliobastoma",
+   "sponsor": "Centre Antoine Lacassagne",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "56",
+   "startDate": "25/06/2015",
+   "lastUpdated": "20/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510960-22-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514144-85-02",
+   "title": "Phase I/IIa study of concomitant radiotherapy with olaparib and temozolomide in unresectable high grade gliomas patients",
+   "conditions": "Glioblastoma",
+   "sponsor": "Centre Francois Baclesse",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "91",
+   "startDate": null,
+   "lastUpdated": "20/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514144-85-02"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514052-32-00",
+   "title": "Phase Ib, non-randomized, single-arm, open-label, single-center clinical trial to evaluate the safety of the first-in-human administration of the combination of dendritic cell (DC) immunization pulsed with tumor lysate and CAR-T cells targeting IL13Ra2 in patients with newly diagnosed diffuse intrinsic pontine glioma (DIPG)",
+   "conditions": "Patients with newly diagnosed diffuse intrinsic pontine glioma (DIPG)",
+   "sponsor": "Fundacio Sant Joan De Deu",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": null,
+   "lastUpdated": "27/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514052-32-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-518819-19-00",
+   "title": "Phase II Study of daTopotamab-derUXtecan (Dato-DXd; DS-1026a) in triple-negative brEast cancer patients with newly Diagnosed or prOgressing brain metastases",
+   "conditions": "triple negative breast cancer",
+   "sponsor": "Medical University Of Vienna",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Austria",
+    "Ireland"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "26",
+   "startDate": "23/05/2023",
+   "lastUpdated": "23/01/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-518819-19-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-506702-39-00",
+   "title": "Phase II Study of Trastuzumab-Deruxtecan (T-DXd; DS-8201a) in HER2-Low Breast Cancer Patients Presenting with Newly Diagnosed or Progressing Brain Metastases. (The TUXEDO-4 Study)",
+   "conditions": "HER2-low breast cancer presenting with newly diagnosed or progressing brain metastases with or without type II leptomeningeal disease.",
+   "sponsor": "Medica Scientia Innovation Research S.L.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Austria",
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "27",
+   "startDate": "05/06/2024",
+   "lastUpdated": "27/08/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-506702-39-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514820-18-00",
+   "title": "Phase II trial of vaccination with lysate-loaded, mature dendritic cells integrated into standard radiochemotherapy in newly diagnosed glioblastoma",
+   "conditions": "newly diagnosed glioblastoma",
+   "sponsor": "Heinrich-Heine-Universitaet Duesseldorf",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "136",
+   "startDate": "07/03/2018",
+   "lastUpdated": "10/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514820-18-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519135-41-00",
+   "title": "Phase II, single-arm, open-label interventional clinical trial to evaluate the role of anthracycline infusion after radiotherapy (RT) in pediatric and young adult patients with glioblastoma (pGBM)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Azienda Ospedaliera Universitaria Meyer IRCCS",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Italy"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "0-17 years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "21/06/2022",
+   "lastUpdated": "28/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519135-41-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-516918-37-00",
+   "title": "Quality of life and neurocognitive functioning in diffuse low-grade glioma patients treated with Temozolomide: feasibility study - TEMOIN",
+   "conditions": "Diffuse low-grade gliomas",
+   "sponsor": "Institut Regional Du Cancer De Montpellier",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "24",
+   "startDate": null,
+   "lastUpdated": "19/09/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-516918-37-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2022-503028-29-01",
+   "title": "Radiation during Osimertinib Treatment: a Safety and Efficacy Cohort Study (ROSE)",
+   "conditions": "Patients with stage IV EGFR-mutation positive NSCLC target population will comprise 3 parallel cohorts:\n1. Irradiation of bone, solid organ (non-lung, non-brain) or soft-tissue metastases\n2. Irradiation of brain metastases (initial lesion size < 3 cm)\n3. Irradiation of lung lesions (primary tumor or pulmonary metastases, lesion size < 5 cm)",
+   "sponsor": "AIO-Studien-gGmbH",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "40",
+   "startDate": "14/12/2021",
+   "lastUpdated": "16/04/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2022-503028-29-01"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505514-15-00",
+   "title": "Randomized phase III trial investigating the survival benefit of adding thoracic radiotherapy to durvalumab (MEDI4736) immunotherapy plus chemotherapy in extensive stage small-cell lung cancer",
+   "conditions": "Small-cell lung cancer, extensive stage",
+   "sponsor": "Norwegian University Of Science And Technolology",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Estonia",
+    "Iceland",
+    "Netherlands",
+    "Norway",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "310",
+   "startDate": "11/01/2022",
+   "lastUpdated": "01/09/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505514-15-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514733-38-00",
+   "title": "Randomized, double-blind, phase 3 study of tucatinib or placebo in combination with ado-trastuzumab emtansine (T-DM1) for subjects with unresectable locally-advanced or metastatic HER2+ breast cancer (HER2CLIMB-02)",
+   "conditions": "Unresectable locally-advanced or metastatic HER2+ breast cancer",
+   "sponsor": "Seagen Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Belgium",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Spain",
+    "Sweden"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "closed",
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "101",
+   "startDate": "03/11/2020",
+   "lastUpdated": "20/10/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514733-38-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-523340-12-00",
+   "title": "Repurposed Drugs in Research and Cancer Clinical Trials. The ReDiReCCT trial Vemurafenib",
+   "conditions": "Glioma",
+   "sponsor": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "18",
+   "startDate": null,
+   "lastUpdated": "09/12/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-523340-12-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-508662-15-00",
+   "title": "RIVKAL clinical trial for the first-in-human administration of BIM2b in participants with Glioblastoma",
+   "conditions": "Glioblastoma",
+   "sponsor": "Beta Innov",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Human Pharmacology (Phase I)- First administration to humans",
+   "countries": [
+    "France"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "36",
+   "startDate": null,
+   "lastUpdated": "21/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508662-15-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-522128-28-00",
+   "title": "Study Investigating Tucatinib and Osimertinib Pharmacokinetics in Primary and Metastatic Brain Tumors: the STICK trial",
+   "conditions": "Breast cancer, Non small cell lung carcinoma, Glioblastoma",
+   "sponsor": "Amsterdam UMC Stichting",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 3,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "20",
+   "startDate": "26/05/2026",
+   "lastUpdated": "25/02/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522128-28-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2025-524359-30-00",
+   "title": "Tarlatamab Before and After Surgery for Recurrent High-Grade Glioma",
+   "conditions": "surgically resectable recurrent high-grade glioma",
+   "sponsor": "Vall D Hebron Institute Of Oncology",
+   "sponsorType": "Laboratory/Research/Testing facility",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Spain"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "10",
+   "startDate": null,
+   "lastUpdated": "22/07/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524359-30-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-504696-24-00",
+   "title": "The ALPINE trial: a phase 1-2  study of intra-arterial [177Lu]Lu-PSMA-I&T for progressive or recurrent intracranial adult type diffuse glioma",
+   "conditions": "Glioma (diffuse astrocytoma, oligodendroglioma or glioblastoma)",
+   "sponsor": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- First administration to humans",
+   "countries": [
+    "Netherlands",
+    "Norway"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "28",
+   "startDate": null,
+   "lastUpdated": "13/05/2026",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-504696-24-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-514013-34-00",
+   "title": "Unravelling the invisiBle infiltRating cOmponeNT Of glioblaStomA Using mRi USpio (BRONTOSAURUS)",
+   "conditions": "Glioblastoma",
+   "sponsor": "Stichting Radboud universitair medisch centrum",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Therapeutic use (Phase IV)",
+   "countries": [
+    "Netherlands"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "15",
+   "startDate": null,
+   "lastUpdated": "02/12/2024",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514013-34-00"
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-519723-20-01",
+   "title": "uPAR PET/MRI in glioma",
+   "conditions": "Glioma",
+   "sponsor": "Rigshospitalet",
+   "sponsorType": "Hospital/Clinic/Other health care facility",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Denmark"
+   ],
+   "recruitingCountries": [],
+   "recruitment": "not_started",
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "61",
+   "startDate": null,
+   "lastUpdated": "29/01/2025",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-519723-20-01"
+  }
+ ]
+}
