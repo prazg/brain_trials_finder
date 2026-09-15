@@ -124,10 +124,17 @@ button.ghost{background:none;border:1px solid var(--rule);color:var(--ink);borde
 .direct{margin:11px 0 0;font-size:12.5px;color:var(--slate);line-height:1.7}
 .direct a{color:var(--ink)}
 .direct span{white-space:nowrap}
-.notice{
-  margin:14px 0 0;padding:10px 13px;border:1px solid var(--rule);border-left:3px solid var(--warn);
-  background:var(--warn-bg);color:var(--warn);font-size:13px;border-radius:2px;line-height:1.5;
+.endnotes{margin:34px 0 0;padding:18px 0 0;border-top:1px solid var(--rule)}
+.endnotes h2{
+  margin:0 0 10px;font-size:12px;font-weight:600;color:var(--slate);
+  letter-spacing:.01em;
 }
+.notice{
+  margin:0 0 8px;padding:9px 13px;border-left:2px solid var(--warn);
+  background:var(--warn-bg);color:var(--warn);font-size:12.5px;line-height:1.55;
+  border-radius:0 2px 2px 0;max-width:86ch;
+}
+.notice:last-child{margin-bottom:0}
 
 ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
 .trial{
@@ -291,9 +298,12 @@ footer p{margin:0 0 6px;max-width:78ch}
 
     <ul class="sources" id="sources"></ul>
     <p class="direct" id="direct"></p>
-    <div id="notices"></div>
     <ol class="results" id="results"></ol>
     <button class="more" id="moreBtn" hidden>Load more from ClinicalTrials.gov</button>
+
+    <section class="endnotes" id="notices" hidden aria-labelledby="notesHead">
+      <h2 id="notesHead">How these results were put together</h2>
+    </section>
   </main>
 </div>
 
@@ -1064,7 +1074,12 @@ function renderDirect(dxLabel){
 }
 
 function renderNotices(list){
-  $("notices").innerHTML = list.map(n => `<p class="notice">${esc(n)}</p>`).join("");
+  const box = $("notices");
+  // Keep the heading; replace only the notices under it.
+  for (const p of [...box.querySelectorAll(".notice")]) p.remove();
+  box.insertAdjacentHTML("beforeend",
+    list.map(n => `<p class="notice">${esc(n)}</p>`).join(""));
+  box.hidden = list.length === 0;
 }
 
 /* =========================================================================
