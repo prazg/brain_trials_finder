@@ -22,8 +22,7 @@ team. Always confirm with the treating clinician and the trial contact.
 
 ## The web page
 
-Open `docs/index.html` locally or visit the published site. It loads with a
-glioblastoma / United Kingdom search already run, so there is something on
+It loads with a glioblastoma / United Kingdom search already run, so there is something on
 screen immediately.
 
 - **Diagnosis** picks a synonym set (Glioblastoma also searches GBM, glioblastoma
