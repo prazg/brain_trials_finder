@@ -19,6 +19,7 @@
   --reg-us:#1f5d7a;
   --reg-uk:#7b3358;
   --reg-eu:#2f6b4f;
+  --reg-who:#8a5a1f;
   --warn:#8c5c0d;
   --warn-bg:#fbf3e2;
   --focus:#1f5d7a;
@@ -29,7 +30,7 @@
   :root{
     --paper:#101514;--card:#171d1c;--ink:#e6eae9;--slate:#9aa8a5;
     --rule:#2b3433;--rule-soft:#222a29;
-    --reg-us:#63aed1;--reg-uk:#cc86ab;--reg-eu:#6fbd95;
+    --reg-us:#63aed1;--reg-uk:#cc86ab;--reg-eu:#6fbd95;--reg-who:#d9a25e;
     --warn:#d8ab5c;--warn-bg:#2a2317;--focus:#63aed1;
   }
 }
@@ -61,7 +62,7 @@ a{color:inherit}
   font-style:normal;display:inline-block;width:8px;height:8px;border-radius:1px;
   margin-right:6px;vertical-align:1px;
 }
-.t-us i{background:var(--reg-us)} .t-uk i{background:var(--reg-uk)} .t-eu i{background:var(--reg-eu)}
+.t-us i{background:var(--reg-us)} .t-uk i{background:var(--reg-uk)} .t-eu i{background:var(--reg-eu)} .t-who i{background:var(--reg-who)}
 
 /* ---------- shell ---------- */
 .shell{max-width:1380px;margin:0 auto;padding:22px 20px 80px;display:grid;grid-template-columns:312px minmax(0,1fr);gap:28px;align-items:start}
@@ -120,6 +121,9 @@ button.ghost{background:none;border:1px solid var(--rule);color:var(--ink);borde
 .src.err{border-color:var(--warn);background:var(--warn-bg);color:var(--warn)}
 .src.err b{color:var(--warn)}
 
+.direct{margin:11px 0 0;font-size:12.5px;color:var(--slate);line-height:1.7}
+.direct a{color:var(--ink)}
+.direct span{white-space:nowrap}
 .notice{
   margin:14px 0 0;padding:10px 13px;border:1px solid var(--rule);border-left:3px solid var(--warn);
   background:var(--warn-bg);color:var(--warn);font-size:13px;border-radius:2px;line-height:1.5;
@@ -133,6 +137,7 @@ ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction
 .trial.r-CTG{border-left-color:var(--reg-us)}
 .trial.r-ISRCTN{border-left-color:var(--reg-uk)}
 .trial.r-CTIS{border-left-color:var(--reg-eu)}
+.trial.r-ICTRP{border-left-color:var(--reg-who)}
 .trial h3{margin:0 0 7px;font-size:15.5px;font-weight:600;line-height:1.38;max-width:74ch}
 .trial h3 a{text-decoration:none}
 .trial h3 a:hover{text-decoration:underline}
@@ -209,6 +214,9 @@ footer p{margin:0 0 6px;max-width:78ch}
               <option value="eu">Europe (EU/EEA + Switzerland)</option>
               <option value="uk_eu">UK and Europe</option>
               <option value="us">United States</option>
+              <option value="india">India</option>
+              <option value="china">China (incl. Taiwan, Hong Kong)</option>
+              <option value="asiapac">Asia-Pacific</option>
             </select>
           </div>
           <p class="hint">Region filters trial sites, not the register. A US-sponsored trial with a London site shows under United Kingdom.</p>
@@ -282,6 +290,7 @@ footer p{margin:0 0 6px;max-width:78ch}
     </div>
 
     <ul class="sources" id="sources"></ul>
+    <p class="direct" id="direct"></p>
     <div id="notices"></div>
     <ol class="results" id="results"></ol>
     <button class="more" id="moreBtn" hidden>Load more from ClinicalTrials.gov</button>
@@ -290,7 +299,7 @@ footer p{margin:0 0 6px;max-width:78ch}
 
 <footer>
   <p><strong>This is not medical advice.</strong> It is a search aid over three public registers. Eligibility is decided by the trial team, not by this page — always confirm with the treating clinician and the trial contact before acting on anything here.</p>
-  <p>Sources: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (US NIH, queried live) · <a href="https://www.isrctn.com/">ISRCTN registry</a> (UK, queried live) · <a href="https://euclinicaltrials.eu/ctis-public/search">EU CTIS</a> (loaded from a snapshot rebuilt daily, because CTIS blocks direct browser requests). Registers overlap; the same trial can appear more than once under different identifiers.</p>
+  <p>Sources: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (US NIH, queried live) · <a href="https://www.isrctn.com/">ISRCTN registry</a> (UK, queried live) · <a href="https://euclinicaltrials.eu/ctis-public/search">EU CTIS</a> (loaded from a snapshot rebuilt daily, because CTIS blocks direct browser requests). <a href="https://trialsearch.who.int/">WHO ICTRP</a> (snapshot; supplies CTRI India, ChiCTR China, JPRN Japan, ANZCTR, DRKS and other national registries, none of which permit direct browser requests). Registers overlap; the same trial can appear more than once under different identifiers.</p>
   <p>Built by Prajwal Ghimire. Source and issues: <a href="https://github.com/prazg/brain_trials_finder">github.com/prazg/brain_trials_finder</a>.</p>
 </footer>
 
@@ -320,12 +329,20 @@ const EU_EEA = new Set(["Austria","Belgium","Bulgaria","Croatia","Cyprus","Czech
   "Latvia","Liechtenstein","Lithuania","Luxembourg","Malta","Netherlands","Norway","Poland","Portugal",
   "Romania","Slovakia","Slovenia","Spain","Sweden","Switzerland"]);
 
+const ASIA_PACIFIC = new Set(["India","China","Japan","South Korea","Korea, Republic of",
+  "Taiwan","Hong Kong","Singapore","Malaysia","Thailand","Viet Nam","Vietnam","Indonesia",
+  "Philippines","Australia","New Zealand","Pakistan","Bangladesh","Sri Lanka","Nepal","Iran",
+  "Islamic Republic of Iran","Turkey","Israel","Saudi Arabia"]);
+
 const REGIONS = {
-  any:   () => true,
-  uk:    c => c === "United Kingdom",
-  eu:    c => EU_EEA.has(c),
-  uk_eu: c => c === "United Kingdom" || EU_EEA.has(c),
-  us:    c => c === "United States"
+  any:    () => true,
+  uk:     c => c === "United Kingdom",
+  eu:     c => EU_EEA.has(c),
+  uk_eu:  c => c === "United Kingdom" || EU_EEA.has(c),
+  us:     c => c === "United States",
+  india:  c => c === "India",
+  china:  c => c === "China" || c === "Taiwan" || c === "Hong Kong",
+  asiapac: c => ASIA_PACIFIC.has(c)
 };
 
 // ClinicalTrials.gov accepts boolean country lists in query.locn using Essie
@@ -334,10 +351,13 @@ const REGIONS = {
 function locnExpr(region){
   const list = names => 'AREA[LocationCountry](' + names.map(n => '"' + n + '"').join(" OR ") + ')';
   const eu = [...EU_EEA];
-  if (region === "uk")    return 'AREA[LocationCountry]"United Kingdom"';
-  if (region === "us")    return 'AREA[LocationCountry]"United States"';
-  if (region === "eu")    return list(eu);
-  if (region === "uk_eu") return list(["United Kingdom", ...eu]);
+  if (region === "uk")      return 'AREA[LocationCountry]"United Kingdom"';
+  if (region === "us")      return 'AREA[LocationCountry]"United States"';
+  if (region === "india")   return 'AREA[LocationCountry]"India"';
+  if (region === "china")   return list(["China","Taiwan","Hong Kong"]);
+  if (region === "eu")      return list(eu);
+  if (region === "uk_eu")   return list(["United Kingdom", ...eu]);
+  if (region === "asiapac") return list([...ASIA_PACIFIC]);
   return null;
 }
 
@@ -350,6 +370,7 @@ const state = {
   ctgPageToken: null,
   ctgTotal: 0,
   ctisSnapshot: null,
+  ictrpSnapshot: null,
   running: false
 };
 
@@ -534,14 +555,24 @@ function normaliseISRCTN(full){
    EU CTIS  (snapshot; CTIS pins Access-Control-Allow-Origin to its own host,
    so a browser cannot read it directly — see scripts/build_snapshot.py)
    ========================================================================= */
-async function loadCTIS(){
-  if (state.ctisSnapshot) return state.ctisSnapshot;
-  const res = await fetch("data/eu_ctis.json", {cache:"no-cache"});
-  if (!res.ok) throw new Error("snapshot missing (HTTP " + res.status + ")");
-  const snap = await res.json();
-  state.ctisSnapshot = snap;
-  return snap;
+// Snapshots may sit in data/ or beside index.html depending on how the repo
+// is laid out for Pages, so try both rather than 404 on a path assumption.
+async function loadSnapshot(name, cacheKey){
+  if (state[cacheKey]) return state[cacheKey];
+  const tried = [];
+  for (const path of ["data/" + name, name, "./data/" + name]){
+    try {
+      const res = await fetch(path, {cache:"no-cache"});
+      if (!res.ok){ tried.push(path + " -> " + res.status); continue; }
+      const snap = await res.json();
+      state[cacheKey] = snap;
+      return snap;
+    } catch (e) { tried.push(path + " -> " + e.message); }
+  }
+  throw new Error("not found at " + tried.join(", "));
 }
+const loadCTIS  = () => loadSnapshot("eu_ctis.json", "ctisSnapshot");
+const loadICTRP = () => loadSnapshot("ictrp.json",  "ictrpSnapshot");
 
 function normaliseCTIS(t){
   return {
@@ -581,6 +612,38 @@ function ctisMinAge(ageGroup){
       g.includes("children") || g.includes("adolescent") || g.includes("0-17")) return 0;
   if (g.includes("18-64") || g.includes("65+") || g.includes("adult")) return 18;
   return null;
+}
+
+/* =========================================================================
+   WHO ICTRP snapshot — the national registries: CTRI (India), ChiCTR (China),
+   JPRN, ANZCTR, DRKS and others. Collected server-side by
+   scripts/build_ictrp.py because none of them permit cross-origin requests.
+   ========================================================================= */
+function normaliseICTRP(t){
+  const countries = (t.countries || []).map(normCountry);
+  return {
+    register: "ICTRP",
+    registerName: t.registryName || t.registry || "ICTRP",
+    id: t.id,
+    title: t.title || t.scientificTitle || "",
+    url: t.url,
+    status: t.status || "Status not published",
+    statusDerived: false,
+    recruiting: !!t.recruiting,
+    interventional: /intervention/i.test(t.studyType || ""),
+    phases: t.phase && !/^(n\/a|not applicable|not selected)$/i.test(t.phase) ? [t.phase] : [],
+    conditions: t.conditions ? [t.conditions] : [],
+    sponsor: t.sponsor || "",
+    criteria: t.criteria || "",
+    minAge: null,
+    maxAge: null,
+    enrollment: Number(String(t.enrolled || "").replace(/[^0-9]/g, "")) || null,
+    updated: t.lastUpdated || "",
+    started: t.firstEnrolment || "",
+    sites: countries.map(c => ({facility:"", city:"", country:c, open:!!t.recruiting})),
+    countries,
+    hasCriteria: !!t.criteria
+  };
 }
 
 /* =========================================================================
@@ -766,6 +829,28 @@ async function run(append){
       report.push({k:"ISRCTN", name:"ISRCTN", ok:false, msg:err.message});
     }
 
+    // --- WHO ICTRP national registries -------------------------------------
+    try {
+      const snap = await loadICTRP();
+      const terms = intake.terms.map(t => t.toLowerCase());
+      const kws = intake.keywords.map(t => t.toLowerCase());
+      const hits = snap.trials.filter(t => {
+        const hay = ((t.title || "") + " " + (t.scientificTitle || "") + " " +
+                     (t.conditions || "")).toLowerCase();
+        return terms.some(x => hay.includes(x)) || kws.some(x => hay.includes(x));
+      }).map(normaliseICTRP);
+      state.trials.push(...hits);
+      report.push({k:"ICTRP", name:"WHO ICTRP", n:hits.length, total:snap.count, ok:true,
+                   stamp:(snap.generated || "").slice(0,10)});
+      notices.push("India (CTRI), China (ChiCTR) and the other national registries are " +
+        "reached through WHO ICTRP, which aggregates them — none of those sites offers an " +
+        "API a browser can read. Snapshot rebuilt daily (" + (snap.generated || "").slice(0,10) +
+        "). ICTRP mirrors national registries on their own schedule, so a very new entry may " +
+        "appear on the national site first.");
+    } catch (err) {
+      report.push({k:"ICTRP", name:"WHO ICTRP", ok:false, msg:err.message});
+    }
+
     // --- EU CTIS ----------------------------------------------------------
     try {
       const snap = await loadCTIS();
@@ -796,6 +881,7 @@ async function run(append){
   flagDuplicates(state.trials);
 
   renderSources(report);
+  renderDirect(intake.dxLabel);
   renderNotices(notices);
   render();
 
@@ -881,12 +967,13 @@ function render(){
   for (const t of state.trials){ t.ageFail = false; score(t, state.intake); }
   const list = sorted(visible());
 
-  const tallies = {CTG:0, ISRCTN:0, CTIS:0};
+  const tallies = {CTG:0, ISRCTN:0, CTIS:0, ICTRP:0};
   for (const t of list) tallies[t.register]++;
   $("tally").innerHTML =
     `<span class="t-us"><i></i>ClinicalTrials.gov <b>${tallies.CTG}</b></span>` +
     `<span class="t-uk"><i></i>ISRCTN <b>${tallies.ISRCTN}</b></span>` +
-    `<span class="t-eu"><i></i>EU CTIS <b>${tallies.CTIS}</b></span>`;
+    `<span class="t-eu"><i></i>EU CTIS <b>${tallies.CTIS}</b></span>` +
+    `<span class="t-who"><i></i>WHO ICTRP <b>${tallies.ICTRP}</b></span>`;
 
   const regionName = $("region").selectedOptions[0].textContent;
   $("count").innerHTML = list.length
@@ -958,6 +1045,22 @@ function renderSources(report){
     ? `<li class="src"><b>${esc(r.name)}</b> ${r.n} fetched${r.total?` of ${r.total}`:""}${r.stamp?` · snapshot ${esc(r.stamp)}`:""}</li>`
     : `<li class="src err"><b>${esc(r.name)}</b> unavailable — ${esc(r.msg)}</li>`
   ).join("");
+}
+
+// ICTRP mirrors the national registries on their own schedule, so offer a
+// direct search on each for anyone chasing something very recently posted.
+function renderDirect(dxLabel){
+  const q = encodeURIComponent(dxLabel === "Any CNS tumour" ? "brain tumor" : dxLabel);
+  const links = [
+    ["CTRI (India)",  "https://ctri.nic.in/Clinicaltrials/advsearch.php"],
+    ["ChiCTR (China)","https://www.chictr.org.cn/searchprojEN.html"],
+    ["WHO ICTRP",     "https://trialsearch.who.int/"],
+    ["ClinicalTrials.gov", "https://clinicaltrials.gov/search?cond=" + q],
+    ["ISRCTN",        "https://www.isrctn.com/search?q=" + q],
+    ["EU CTIS",       "https://euclinicaltrials.eu/ctis-public/search"]
+  ];
+  $("direct").innerHTML = "Search a register directly: " + links.map(([n,u]) =>
+    `<span><a href="${u}" target="_blank" rel="noopener">${esc(n)}</a></span>`).join(" · ");
 }
 
 function renderNotices(list){

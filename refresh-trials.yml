@@ -24,6 +24,7 @@ concurrency:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -31,12 +32,26 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache the ICTRP resume state
+        uses: actions/cache@v4
+        with:
+          path: .ictrp_state.json
+          key: ictrp-state-${{ github.run_id }}
+          restore-keys: ictrp-state-
+
       - name: Rebuild the EU CTIS snapshot
         # CTIS pins its CORS header to its own origin, so the browser cannot
         # read it. This step fetches it server-side into docs/data.
         run: python scripts/build_snapshot.py docs/data
 
-      - name: Sanity-check the snapshot before committing
+      - name: Rebuild the WHO ICTRP snapshot
+        # CTRI (India) and ChiCTR (China) publish no browser-readable API, so
+        # they are reached through the WHO aggregator that both feed.
+        # Best-effort: ICTRP throttles, and a stale snapshot beats no page.
+        continue-on-error: true
+        run: python scripts/build_ictrp.py docs/data --state .ictrp_state.json
+
+      - name: Sanity-check the snapshots before committing
         run: |
           python - <<'PY'
           import json, sys, pathlib
@@ -50,17 +65,27 @@ jobs:
               sys.exit(f"Refusing to publish: only {n} trials found (expected 100+).")
           if rec < 10:
               sys.exit(f"Refusing to publish: only {rec} recruiting (expected 40+).")
+
+          w = pathlib.Path("docs/data/ictrp.json")
+          if w.exists():
+              ic = json.loads(w.read_text())
+              print(f"ICTRP: {ic['count']} trials, {ic['recruitingCount']} recruiting")
+              print("  " + ", ".join(f"{k}={v}" for k, v in ic["byRegistry"].items()))
+              if ic["count"] < 30:
+                  sys.exit(f"Refusing to publish: ICTRP holds only {ic['count']} trials.")
+          else:
+              print("No ICTRP snapshot yet - page will report that source unavailable.")
           PY
 
       - name: Commit if the snapshot changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- docs/data/eu_ctis.json; then
+          if git diff --quiet -- docs/data/; then
             echo "No change."
           else
-            git add docs/data/eu_ctis.json
-            git commit -m "Refresh EU CTIS snapshot ($(date -u +%Y-%m-%d))"
+            git add docs/data/
+            git commit -m "Refresh trial snapshots ($(date -u +%Y-%m-%d))"
             git push
           fi
 
