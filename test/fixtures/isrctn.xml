@@ -1,0 +1,1086 @@
+<allTrials totalCount="4" xmlns="http://www.67bricks.com/isrctn"><fullTrial>
+  <trial lastUpdated="2026-03-17T12:13:23.305734838Z" version="52" isPublished="true" publicIdentifierType="isrctn" publicIdentifierCanonical="ISRCTN88772403" publicIdentifierDateAssigned="2026-02-24T14:46:11.132277Z">
+    <isrctn dateAssigned="2026-02-24T14:46:11.132277Z">88772403</isrctn>
+    <trialDescription thirdPartyFilesAcknowledgement="false">
+      <acknowledgment>true</acknowledgment>
+      <title>5G: A next generation agile genomically guided glioma modular platform for proof-of-concept molecular hypothesis testing in patients with malignant brain tumours</title>
+      <scientificTitle>5G-PEARL: Paxalisib in combination with temozolomide in patients with high grade malignant brain tumours within the 5G Platform</scientificTitle>
+      <acronym>5G-Master and 5G-PEARL</acronym>
+      <studyHypothesis>The main objective of the trial is to evaluate the safety and efficacy of paxalisib in combination with temozolomide for biomarker-selected malignant brain tumours. 
+
+Primary objectives:
+Phase 1b:
+1. …</studyHypothesis>
+      <plainEnglishSummary>Background and study aims
+The 5G-PEARL is a clinical study looking at a new drug called paxalisib. This drug blocks the PI3K signalling pathway which is a cell pathway in the body that helps cancer ce…</plainEnglishSummary>
+      <primaryOutcomes>
+	<outcomeMeasure id="2de33199-544a-49dc-ade7-895848e141d4">
+	  <variable>Phase 1b - Incidence, nature and severity of adverse events</variable>
+	  <method>NCI CTCAE v5.0</method>
+	  <timepoints>baseline and 12 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="0841410e-ffdb-49e2-9dda-e58854c4e2db">
+	  <variable>Phase 1b - Progression‑free survival</variable>
+	  <method>investigator‑assessed disease status according to RANO</method>
+	  <timepoints>12 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="2f71511e-d2b7-4fed-bce5-4d01d022ef8e">
+	  <variable>Phase 2 - Progression‑free survival</variable>
+	  <method>investigator‑assessed disease status according to RANO</method>
+	  <timepoints>24 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="e14a226b-7794-4718-ae73-212f2f0c42da">
+	  <variable>Phase 2 - Overall survival</variable>
+	  <method>survival status from study records</method>
+	  <timepoints>baseline and 24 months</timepoints>
+	</outcomeMeasure>
+      </primaryOutcomes>
+      <primaryOutcome/>
+      <secondaryOutcomes>
+	<outcomeMeasure id="8db5bbb1-af8a-40ed-952a-ce3e0f13fced">
+	  <variable>Phase 1b - Co‑occurring genetic biomarkers of response</variable>
+	  <method>genetic profiling assays</method>
+	  <timepoints>over 12 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="4d1c614b-c148-4c4e-9e33-c94cdab8de5a">
+	  <variable>Phase 2 - Co‑occurring genetic biomarkers of response</variable>
+	  <method>genetic profiling assays</method>
+	  <timepoints>over 24 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="16b4c596-7cf5-4ead-b934-581750c5bd2e">
+	  <variable>Phase 2 - OS12</variable>
+	  <method>survival status from study records</method>
+	  <timepoints>baseline and 12 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="6077dba3-b30a-4b37-bda9-c3f5887d2659">
+	  <variable>Phase 2 - PFS6</variable>
+	  <method>investigator‑assessed disease status according to RANO</method>
+	  <timepoints>baseline and 6 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="26279b2a-74d6-4343-82c4-9382bf9e9e01">
+	  <variable>Phase 2 - Incidence, nature and severity of treatment‑emergent adverse events during combination with TMZ</variable>
+	  <method>NCI CTCAE v5.0</method>
+	  <timepoints>over 24 months</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="be35e13a-c3fb-4873-8a32-8bf560af65d7">
+	  <variable>Phase 2 - Global health‑related quality of life</variable>
+	  <method>EORTC QLQ‑C30</method>
+	  <timepoints>baseline, end of Cycle 1 and Cycle 3 Day 1</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="e8a27152-a216-42cf-b6ab-3be8169022de">
+	  <variable>Phase 2 - Global health‑related quality of life</variable>
+	  <method>EORTC QLQ‑BN20</method>
+	  <timepoints>baseline, end of Cycle 1 and Cycle 3 Day 1</timepoints>
+	</outcomeMeasure>
+      </secondaryOutcomes>
+      <secondaryOutcome/>
+      <ethicsApprovalRequired>Ethics approval required</ethicsApprovalRequired>
+      <ethicsCommittees>
+	<ethicsCommittee id="ab295fba-cec4-4bb5-b9cf-ad621451c447" approvalStatus="approved" statusDate="2023-11-02T00:00:00.000Z">
+	  <committeeName>London - Central Research Ethics Committee</committeeName>
+	  <contactDetails>
+	    <address>2 Redman Place, Stratford</address>
+	    <city>London</city>
+	    <state/>
+	    <country>United Kingdom</country>
+	    <zip>E20 1JQ</zip>
+	    <telephone xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	    <email xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	  </contactDetails>
+	  <committeeReference>23/LO/0720</committeeReference>
+	</ethicsCommittee>
+      </ethicsCommittees>
+    </trialDescription>
+    <externalRefs>
+      <doi>10.1186/ISRCTN88772403</doi>
+      <eudraCTNumber/>
+      <irasNumber>1007726</irasNumber>
+      <clinicalTrialsGovNumber/>
+      <protocolSerialNumber>CPMS: 55941, CCR5814</protocolSerialNumber>
+      <secondaryNumbers>
+	<secondaryNumber id="abbcee35-3bf2-4f57-a295-d20427cb3247" numberType="iras" canonicalSecondaryNumber="IRAS1007726">1007726</secondaryNumber>
+	<secondaryNumber id="83ff2dd6-d2ec-4101-bc03-4530b91522ee" numberType="cpms" canonicalSecondaryNumber="CPMS55941">55941</secondaryNumber>
+	<secondaryNumber id="7bdbdf4d-9fb9-4faf-b5c5-d40954d38cb2" numberType="Protocol serial number">CCR5814</secondaryNumber>
+      </secondaryNumbers>
+    </externalRefs>
+    <trialDesign>
+      <studyDesign>-</studyDesign>
+      <primaryStudyDesign>Interventional</primaryStudyDesign>
+      <secondaryStudyDesign/>
+      <trialTypes>
+	<trialType>Efficacy</trialType>
+	<trialType>Safety</trialType>
+      </trialTypes>
+      <overallEndDate>2029-08-13T00:00:00.000Z</overallEndDate>
+    </trialDesign>
+    <participants>
+      <recruitmentCountries>
+	<country>United Kingdom</country>
+	<country>England</country>
+	<country>Scotland</country>
+      </recruitmentCountries>
+      <trialCentres>
+	<trialCentre id="1dce4a4f-18ad-48ce-b849-32237e585265">
+	  <name>The Royal Marsden Hospital – Drug Development Unit</name>
+	  <address>Downs Road</address>
+	  <city>Sutton</city>
+	  <state/>
+	  <country>England</country>
+	  <zip>SM2 5PT</zip>
+	</trialCentre>
+	<trialCentre id="b07b501b-0228-48ed-b18b-44fe12108f99">
+	  <name>University Hospital Southampton NHS Foundation Trust</name>
+	  <address>Southampton General Hospital
+Tremona Road</address>
+	  <city>Southampton</city>
+	  <state/>
+	  <country>England</country>
+	  <zip>SO16 6YD</zip>
+	  <rtsId>RHM@2.16.840.1.113883.2.1.3.2.4.18.48</rtsId>
+	</trialCentre>
+	<trialCentre id="867c20d7-6136-47b4-9f9c-ee019e55e8fe">
+	  <name>Edinburgh Cancer Centre, Western General Hospital</name>
+	  <address>Crewe Road South</address>
+	  <city>Edinburgh</city>
+	  <state/>
+	  <country>Scotland</country>
+	  <zip>EH4 2XU</zip>
+	</trialCentre>
+      </trialCentres>
+      <participantTypes>
+	<participantType>Patient</participantType>
+      </participantTypes>
+      <inclusion>Phase 1b:
+1.  Patients with:  
+    1.1. Glioblastoma, IDH-wildtype Grade 4
+2.  Patients for Phase 1b will need to have consented to the Minderoo Precision Brain Tumour Programme and have available whole genome and transcriptome data available.
+3.  Patients for the front-line minimal residual disease (MRD) cohort will be eligible following completion of optimal surgery and Stupp-based adjuvant chemoradiotherapy as long as they meet all other inclusion/exclusion criteria.
+4.  Aged 16 years or over.
+5.  Life expectancy of at least 12 weeks.
+6.  World Health Organisation (WHO) performance status of 0–1.
+7.  Neurologically stable (eg without a progression of neurological symptoms or requiring escalating doses of systemic steroid therapy within the last week prior to informed consent).
+8.  Written (signed or dated) informed consent and be capable of co-operating with treatment and follow-up.
+9…</inclusion>
+      <ageRange>Mixed</ageRange>
+      <lowerAgeLimit unit="years" value="16.0">16 Years</lowerAgeLimit>
+      <upperAgeLimit unit="years" value="99.0">99 Years</upperAgeLimit>
+      <gender>All</gender>
+      <targetEnrolment>182</targetEnrolment>
+      <totalFinalEnrolment>0</totalFinalEnrolment>
+      <exclusion>Phase 1b:
+1. Receipt of treatment before the first dose of the study drug (Cycle 1 Day 1) within an interval shorter than the following, as applicable:
+1.1. Cytotoxic chemotherapy during the prior 2 weeks or 6 weeks for nitrosoureas 
+1.2. Bevacizumab during the prior 6 weeks
+1.3. Five half-lives of any small molecule investigational or licensed medicinal product.
+2. Prior immune checkpoint inhibitor therapy or vaccine therapy is not permitted. Prior use of any other immune-modulatory investigational agent must be discussed with sponsor team and CI. 
+3. Ongoing Grade 2 or greater toxicities from pre-existing conditions or from previous treatments. 
+4. Patients with carcinomatous meningitis, leptomeningeal spread of tumour, spread of tumour to the brain stem or spinal cord. 
+5. Has evidence of recent intratumoural or peritumoural haemorrhage on baseline MRI. Patients with radiological find…</exclusion>
+      <recruitmentStart>2026-02-13T00:00:00.000Z</recruitmentStart>
+      <recruitmentEnd>2029-02-13T00:00:00.000Z</recruitmentEnd>
+      <recruitmentStartStatusOverride/>
+      <recruitmentStatusOverride/>
+    </participants>
+    <conditions>
+      <condition>
+	<description>Glioblastoma</description>
+	<diseaseClass1>Cancer</diseaseClass1>
+	<diseaseClass2/>
+      </condition>
+    </conditions>
+    <interventions>
+      <intervention>
+	<description>The clinical trial will be divided into two parts: Phase 1b (proof of concept of hypothesis-driven biomarker-guided therapies) and Phase 2 (preliminary efficacy testing).
+This is a study within 5G: A …</description>
+	<interventionType>Drug</interventionType>
+	<phase>Phase I/II</phase>
+	<drugNames>Paxalisib, temozolomide</drugNames>
+      </intervention>
+    </interventions>
+    <results>
+      <ipdSharingStatement/>
+      <dataPolicies>
+	<dataPolicy>Data sharing statement to be made available at a later date</dataPolicy>
+      </dataPolicies>
+      <publicationDetails/>
+      <publicationStage/>
+      <basicReport/>
+      <plainEnglishReport/>
+    </results>
+    <outputs>
+      
+    </outputs>
+    <parties xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <funderId>7892926e-e904-402c-b040-d59962d265d5</funderId>
+      <funderId>ae4cf35f-3f6c-4d2b-bd35-6e42dfaa0ee8</funderId>
+      <contactId>a0e81f8a-8f5c-4cd8-b8e5-4f31b1f8b723</contactId>
+      <contactId>9d1e853b-1c96-4c17-82c0-bf2470c0ebf3</contactId>
+      <sponsorId>149b66f3-2084-4a84-8260-1fb37ddfbe33</sponsorId>
+    </parties>
+    <miscellaneous xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <ipdSharingPlan>No</ipdSharingPlan>
+    </miscellaneous>
+    <attachedFiles/>
+  </trial>
+  
+  
+  <sponsor id="149b66f3-2084-4a84-8260-1fb37ddfbe33">
+    <organisation>Institute of Cancer Research</organisation>
+    <sponsorType>Research organisation</sponsorType>
+    <rorId>https://ror.org/043jzw605</rorId>
+    <commercialStatus>Non-commercial</commercialStatus>
+  </sponsor>
+  <funder id="7892926e-e904-402c-b040-d59962d265d5">
+    <name>Minderoo Foundation</name>
+    <fundRef>http://dx.doi.org/10.13039/501100016056</fundRef>
+  </funder>
+  <funder id="ae4cf35f-3f6c-4d2b-bd35-6e42dfaa0ee8">
+    <name>Cancer Research UK</name>
+    <fundRef>http://dx.doi.org/10.13039/501100000289</fundRef>
+  </funder>
+</fullTrial><fullTrial>
+  <trial lastUpdated="2026-09-28T11:12:03.830006528Z" version="9" isPublished="true" publicIdentifierType="isrctn" publicIdentifierCanonical="ISRCTN80111907" publicIdentifierDateAssigned="2026-09-28T11:39:49.878154Z">
+    <isrctn dateAssigned="2026-09-28T11:39:49.878154Z">80111907</isrctn>
+    <trialDescription thirdPartyFilesAcknowledgement="false">
+      <acknowledgment>true</acknowledgment>
+      <title>Which clinical features are linked with severe presentation in people tested for anti-GBM (glomerular basement membrane) antibodies?</title>
+      <scientificTitle>Clinical characteristics and CRI-defined high-risk presentation among adults evaluated for anti-glomerular basement membrane antibodies: a retrospective cross-sectional analytical study at Baoding No.1 Central Hospital</scientificTitle>
+      <acronym>CRI-GBM</acronym>
+      <studyHypothesis>The study aims to characterize the demographic, clinical, laboratory, serologic, imaging and histopathologic features of adults evaluated for anti-glomerular basement membrane (anti-GBM) antibodies at…</studyHypothesis>
+      <plainEnglishSummary>Background and study aims
+Anti-glomerular basement membrane (anti-GBM) antibodies can be associated with a rare autoimmune condition that may damage the kidneys and sometimes the lungs. Some people ha…</plainEnglishSummary>
+      <primaryOutcomes>
+	<outcomeMeasure id="68b8e421-330f-41c1-95d3-c5cf198586a0">
+	  <variable>CRI-defined high-risk presentation</variable>
+	  <method>binary risk class among anti-GBM-positive patients using the first eligible index record. High risk is defined by at least one of: eGFR &lt;15 mL/min/1.73 m², dialysis dependence at presentation, clinically defined pulmonary hemorrhage, or anti-GBM/ANCA co-positivity. Anti-GBM-positive patients with none of these criteria are classified as lower risk,</method>
+	  <timepoints>index presentation; measured once from the first eligible record within the historical source-record period</timepoints>
+	</outcomeMeasure>
+      </primaryOutcomes>
+      <primaryOutcome/>
+      <secondaryOutcomes>
+	<outcomeMeasure id="caa2c813-28a9-4e70-819e-d97571c6083b">
+	  <variable>Renal status</variable>
+	  <method>serum creatinine, eGFR, blood urea nitrogen, serum albumin, dialysis dependence, proteinuria, hematuria, red cell casts, and active urinary sediment extracted from the index clinical/laboratory record</method>
+	  <timepoints>index presentation; measured once</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="3ddfd3b3-a9ab-457e-a569-fccd5621d397">
+	  <variable>Pulmonary status</variable>
+	  <method>hemoptysis, dyspnea, diffuse alveolar infiltrates, and pulmonary hemorrhage determined from respiratory review and chest-imaging records</method>
+	  <timepoints>index presentation; measured once</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="9f65cefe-5143-47e2-b317-26bc4238825a">
+	  <variable>Serologic profile</variable>
+	  <method>anti-GBM titer, ANCA status, single-positive versus double-positive serology, and anti-GBM titer category (20 to &lt;100 RU/mL versus &gt;=100 RU/mL) extracted from the index immunology record</method>
+	  <timepoints>index presentation; measured once</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="66573c80-38ed-4250-b0c6-8dbca6a0dd39">
+	  <variable>Histopathologic status</variable>
+	  <method>crescent burden, necrotizing lesions, glomerulosclerosis, interstitial fibrosis or tubular atrophy, and tubular injury extracted from the final renal biopsy report when biopsy data are available</method>
+	  <timepoints>Index presentation / diagnostic biopsy; measured once</timepoints>
+	</outcomeMeasure>
+	<outcomeMeasure id="99a629aa-ee13-42ce-b3e8-eccb536abb23">
+	  <variable>Exploratory association of non-defining severity markers with CRI risk class</variable>
+	  <method>univariable logistic regression for non-defining features including age, blood urea nitrogen, serum albumin, high anti-GBM titer, crescent burden &gt;=50%, glomerulosclerosis, and tubular injury. CRI-defining variables are excluded from predictor modelling</method>
+	  <timepoints>index presentation; analysis performed after record abstraction was complete</timepoints>
+	</outcomeMeasure>
+      </secondaryOutcomes>
+      <secondaryOutcome/>
+      <ethicsApprovalRequired>Ethics approval required</ethicsApprovalRequired>
+      <ethicsCommittees>
+	<ethicsCommittee id="7e36a818-9fd0-46fa-a4a1-f375ac270aeb" approvalStatus="approved" statusDate="2026-01-15T00:00:00.000Z">
+	  <committeeName>Medical Ethics Committee of Baoding First Central Hospital</committeeName>
+	  <contactDetails>
+	    <address>No. 320 Changcheng North Street, Lianchi District</address>
+	    <city>Baoding</city>
+	    <state/>
+	    <country>China</country>
+	    <zip>071000</zip>
+	    <telephone xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	    <email xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	  </contactDetails>
+	  <committeeReference>IRB-A27N5-2026</committeeReference>
+	</ethicsCommittee>
+      </ethicsCommittees>
+    </trialDescription>
+    <externalRefs>
+      <doi>10.1186/ISRCTN80111907</doi>
+      <eudraCTNumber/>
+      <irasNumber/>
+      <clinicalTrialsGovNumber/>
+      <protocolSerialNumber/>
+      <secondaryNumbers/>
+    </externalRefs>
+    <trialDesign>
+      <studyDesign/>
+      <primaryStudyDesign>Observational</primaryStudyDesign>
+      <secondaryStudyDesign>Cross sectional study</secondaryStudyDesign>
+      <trialTypes/>
+      <overallEndDate>2026-08-31T00:00:00.000Z</overallEndDate>
+    </trialDesign>
+    <participants>
+      <recruitmentCountries>
+	<country>China</country>
+      </recruitmentCountries>
+      <trialCentres>
+	<trialCentre id="0c9ddb65-3a24-4170-82a5-6ed1fa4b6c44">
+	  <name>Baoding No.1 Central Hospital</name>
+	  <address>No. 320 Changcheng North Street, Lianchi District</address>
+	  <city>Baoding</city>
+	  <state/>
+	  <country>China</country>
+	  <zip>071000</zip>
+	</trialCentre>
+      </trialCentres>
+      <participantTypes/>
+      <healthyVolunteersAllowed>false</healthyVolunteersAllowed>
+      <inclusion>1. Age 18 years or older at index evaluation
+2. Documented anti-GBM antibody test performed during routine clinical care within the historical source-record period
+3. Serum creatinine available at index presentation to permit eGFR calculation using the 2021 CKD-EPI creatinine equation
+4. Sufficient clinical documentation to determine renal and pulmonary involvement at index presentation</inclusion>
+      <ageRange>Mixed</ageRange>
+      <lowerAgeLimit unit="years" value="18.0">18 Years</lowerAgeLimit>
+      <upperAgeLimit unit="years" value="100.0">100 Years</upperAgeLimit>
+      <gender>All</gender>
+      <targetEnrolment>130</targetEnrolment>
+      <totalFinalEnrolment>91</totalFinalEnrolment>
+      <exclusion>1. Age younger than 18 years
+2. Repeat encounter after the first eligible index presentation
+3. Record lacking core CRI classification variables: antibody status, renal-function data, or organ-involvement documentation
+4. Irretrievable or unverifiable serologic or clinical source documentation</exclusion>
+      <recruitmentStart>2026-01-01T00:00:00.000Z</recruitmentStart>
+      <recruitmentEnd>2026-04-30T00:00:00.000Z</recruitmentEnd>
+      <recruitmentStartStatusOverride/>
+      <recruitmentStatusOverride/>
+    </participants>
+    <conditions>
+      <condition>
+	<description>Anti-glomerular basement membrane antibody positivity and anti-GBM disease / pulmonary-renal presentation</description>
+	<diseaseClass1>Urological and Genital Diseases</diseaseClass1>
+	<diseaseClass2/>
+      </condition>
+    </conditions>
+    <interventions>
+      <intervention>
+	<description>This is a retrospective cross-sectional analytical study using existing routinely collected clinical records from Baoding No.1 Central Hospital, China. Adult patients who underwent anti-GBM antibody t…</description>
+	<interventionType>Other</interventionType>
+	<phase/>
+	<drugNames/>
+      </intervention>
+    </interventions>
+    <results>
+      <ipdSharingStatement/>
+      <dataPolicies>
+	<dataPolicy>Not expected to be made available</dataPolicy>
+      </dataPolicies>
+      <publicationDetails/>
+      <publicationStage>Protocol</publicationStage>
+      <basicReport/>
+      <plainEnglishReport/>
+    </results>
+    <outputs>
+      <output id="becc488b-161f-438e-868c-c671ba2f7c10" outputType="otherfiles" artefactType="LocalFile" dateCreated="2026-09-28T00:00:00.000Z" dateUploaded="2026-09-28T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="aeb563eb-96f6-4323-ad35-1a61c28ec304" originalFilename="50360_Informed_Consent_Waiver_Statement v1.0 28Sep2026.pdf" downloadFilename="50360_Informed_Consent_Waiver_Statement v1.0 28Sep2026.pdf" version="1.0" mimeType="application/pdf" length="56970" md5sum="6c674bce57d208b2d4f84cb3ad24648e"/>
+	<description>Consent form</description>
+	<productionNotes/>
+      </output>
+      <output id="ba07f5f2-a5cb-4a0f-88bf-97c98f6bea94" outputType="pis" artefactType="LocalFile" dateCreated="2026-09-28T00:00:00.000Z" dateUploaded="2026-09-28T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="69a36acb-9aed-4be3-bcef-2962d782e6ab" originalFilename="50360 Version 1.0 - 28 September 2026_Participant_Information_Sheet.pdf" downloadFilename="50360 Version 1.0 - 28 September 2026_Participant_Information_Sheet.pdf" version="1.0" mimeType="application/pdf" length="84579" md5sum="faddb26735a2117cea1eece125b8848c"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="8ab1bfa6-d760-4876-bad9-f3c0ceeab876" outputType="protocolfile" artefactType="LocalFile" dateCreated="2026-09-28T00:00:00.000Z" dateUploaded="2026-09-28T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="bcc9f4a7-0fa3-4da8-ac69-577932baebac" originalFilename="50360 Version 1.0 - 28 September 2026_Study_Protocol.pdf" downloadFilename="50360 Version 1.0 - 28 September 2026_Study_Protocol.pdf" version="1.0" mimeType="application/pdf" length="95272" md5sum="1f0a97558a12014d19d7eda198f60ef3"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="a890c560-0d88-4549-982f-8a33772a3bf7" outputType="sap" artefactType="LocalFile" dateCreated="2026-09-28T00:00:00.000Z" dateUploaded="2026-09-28T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="2130524e-ea05-467b-a17c-b6493f1f38a7" originalFilename="50360 Version 1.0 - 28 September 2026_Statistical_Analysis_Plan.pdf" downloadFilename="50360 Version 1.0 - 28 September 2026_Statistical_Analysis_Plan.pdf" version="1.0" mimeType="application/pdf" length="67066" md5sum="03005da25e57400b3bb885afc9212cb2"/>
+	<description/>
+	<productionNotes/>
+      </output>
+    </outputs>
+    <parties xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <funderId>26d582bf-18c3-48ba-9cc1-bc9009781b9e</funderId>
+      <contactId>b3c3f160-2840-4a1f-82e9-0cc21c02d68f</contactId>
+      <contactId>73d491d3-a694-4590-aa7f-243f29cb3f5d</contactId>
+      <contactId>e772af51-0d34-42da-8910-9f585c388a95</contactId>
+      <contactId>39ac5c0d-f75d-4793-9e0e-1d124bf76ab0</contactId>
+      <contactId>41adca95-9127-4e9b-bce3-e4da09417a78</contactId>
+      <sponsorId>e58709ae-82e9-46af-9b63-d7939eb30276</sponsorId>
+    </parties>
+    <miscellaneous xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <ipdSharingPlan>No</ipdSharingPlan>
+    </miscellaneous>
+    <attachedFiles>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/2130524e-ea05-467b-a17c-b6493f1f38a7/50360">
+	<description>Statistical Analysis Plan</description>
+	<name>50360 Version 1.0 - 28 September 2026_Statistical_Analysis_Plan.pdf</name>
+	<id>2130524e-ea05-467b-a17c-b6493f1f38a7</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>67066</length>
+	<md5sum>03005da25e57400b3bb885afc9212cb2</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/69a36acb-9aed-4be3-bcef-2962d782e6ab/50360">
+	<description>Participant information sheet</description>
+	<name>50360 Version 1.0 - 28 September 2026_Participant_Information_Sheet.pdf</name>
+	<id>69a36acb-9aed-4be3-bcef-2962d782e6ab</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>84579</length>
+	<md5sum>faddb26735a2117cea1eece125b8848c</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/aeb563eb-96f6-4323-ad35-1a61c28ec304/50360">
+	<description>Consent form</description>
+	<name>50360_Informed_Consent_Waiver_Statement v1.0 28Sep2026.pdf</name>
+	<id>aeb563eb-96f6-4323-ad35-1a61c28ec304</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>56970</length>
+	<md5sum>6c674bce57d208b2d4f84cb3ad24648e</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/bcc9f4a7-0fa3-4da8-ac69-577932baebac/50360">
+	<description>Protocol file</description>
+	<name>50360 Version 1.0 - 28 September 2026_Study_Protocol.pdf</name>
+	<id>bcc9f4a7-0fa3-4da8-ac69-577932baebac</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>95272</length>
+	<md5sum>1f0a97558a12014d19d7eda198f60ef3</md5sum>
+      </attachedFile>
+    </attachedFiles>
+  </trial>
+  
+  
+  
+  
+  
+  <sponsor id="e58709ae-82e9-46af-9b63-d7939eb30276">
+    <organisation>Medical Science Research Project of Hebei Province (Project No. 20251434)</organisation>
+    <sponsorType/>
+    <commercialStatus>Non-commercial</commercialStatus>
+  </sponsor>
+  <funder id="26d582bf-18c3-48ba-9cc1-bc9009781b9e">
+    <name>Baoding No.1 Central Hospital</name>
+  </funder>
+</fullTrial><fullTrial>
+  <trial lastUpdated="2026-09-01T15:47:30.435496281Z" version="84" isPublished="true" publicIdentifierType="isrctn" publicIdentifierCanonical="ISRCTN14920547" publicIdentifierDateAssigned="2021-04-30T13:37:23.071737Z">
+    <isrctn dateAssigned="2021-04-30T13:37:23.071737Z">14920547</isrctn>
+    <trialDescription thirdPartyFilesAcknowledgement="false">
+      <acknowledgment>true</acknowledgment>
+      <title>Recognising emotions and rehabilitation for families living with brain tumour</title>
+      <scientificTitle>Social Cognition Assessment and Rehabilitation for Families living with Brain Tumour (SCARF-BT): a feasibility study</scientificTitle>
+      <acronym>SCARF-BT</acronym>
+      <studyHypothesis>Feasibility of screening for and then providing a rehabilitation protocol for emotional recognition in patients with brain tumours (glioblastoma).</studyHypothesis>
+      <plainEnglishSummary>Background and study aims
+Brain tumours are unlike other cancers. They change things that make us who we are - memory, thinking, personality and interaction with others. Maintaining quality of life mu…</plainEnglishSummary>
+      <primaryOutcomes/>
+      <primaryOutcome>Stage 1: the cohort study
+1. Completion of the Faces intervention (defined as completing all 9 sessions) recorded at the end of the 3-week intervention (post-intervention)
+2. Changes to the administra…</primaryOutcome>
+      <secondaryOutcomes/>
+      <secondaryOutcome>To provide an early indicator that the intervention may make some difference and would be worth exploring in a larger multicentre study, the researchers will calculate the difference in scores pre and…</secondaryOutcome>
+      <ethicsApprovalRequired>Old ethics approval format</ethicsApprovalRequired>
+      <ethicsCommittees/>
+      <ethicsApproval>Approved 12/04/2021, East of England- Cambridge South Research Ethics Committee (The Old Chapel, Royal Standard Place, Nottingham, NG1 6FS, UK; +44 (0)207 104 8140; cambridgesouth.rec@hra.nhs.uk), REC ref: 21/EE/0052</ethicsApproval>
+    </trialDescription>
+    <externalRefs>
+      <doi>10.1186/ISRCTN14920547</doi>
+      <eudraCTNumber/>
+      <irasNumber>270758</irasNumber>
+      <clinicalTrialsGovNumber/>
+      <protocolSerialNumber>CPMS: 48505, NIHR: 2004995, SCARF-2019</protocolSerialNumber>
+      <secondaryNumbers>
+	<secondaryNumber id="f7ea4936-dacf-4ac1-8d8e-2c1a02d9eee6" numberType="iras" canonicalSecondaryNumber="IRAS270758">270758</secondaryNumber>
+	<secondaryNumber id="b3131d6a-e48d-4364-8d85-2a1c8c89df99" numberType="cpms" canonicalSecondaryNumber="CPMS48505">48505</secondaryNumber>
+	<secondaryNumber id="0842d6b3-b3a9-4194-9c65-9e28527e6595" numberType="nihr">2004995</secondaryNumber>
+	<secondaryNumber id="12affed7-81f7-43e4-8b67-e829b622e345" numberType="Protocol serial number">SCARF-2019</secondaryNumber>
+      </secondaryNumbers>
+    </externalRefs>
+    <trialDesign>
+      <studyDesign>Single-centre interventional cohort study followed by feasibility randomized controlled study with parallel qualitative study</studyDesign>
+      <primaryStudyDesign>Interventional</primaryStudyDesign>
+      <secondaryStudyDesign>Randomised controlled trial</secondaryStudyDesign>
+      <trialTypes>
+	<trialType>Quality of life</trialType>
+      </trialTypes>
+      <overallStatusOverride>Stopped</overallStatusOverride>
+      <reasonAbandoned>Objectives no longer viable</reasonAbandoned>
+      <overallEndDate>2025-03-31T00:00:00.000Z</overallEndDate>
+    </trialDesign>
+    <participants>
+      <recruitmentCountries>
+	<country>United Kingdom</country>
+	<country>England</country>
+      </recruitmentCountries>
+      <trialCentres>
+	<trialCentre id="a7dfda25-dc29-44cb-9eea-6caab5dd41e5">
+	  <name>Addenbrooke’s Hospital</name>
+	  <address>Cambridge University Hospitals NHS Foundation Trust
+Research and Development Department
+Box 277
+Hills Road</address>
+	  <city>Cambridge</city>
+	  <state/>
+	  <country>England</country>
+	  <zip>CB2 0QQ</zip>
+	</trialCentre>
+      </trialCentres>
+      <participantTypes/>
+      <healthyVolunteersAllowed>false</healthyVolunteersAllowed>
+      <inclusion>Patients:
+1. Patients pre-screened as part of the CogENT and SIND studies, scoring 11 or less on the emotional recognition test within the OCS-Bridge screening tool done pre-operatively (consistent with having a deficit pre-operatively)
+2. Signed Informed Consent to SCARF-BT study
+3. Aged 18 years and older
+4. Imaging evidence of a high-grade glioma as assessed by a neuro-oncology MDT
+5. MDT and treating clinician recommend either biopsy or debulking of the tumour; 6. Patients scoring 11 or less on the emotional recognition test within the OCS-Bridge screening tool done post-operatively (consistent with having a deficit post-operatively)
+7. Patients with WHO Performance status 0-2
+8. Patients suitable for oncological intervention (involving radiotherapy/ chemotherapy/ combining radiotherapy and chemotherapy)
+9. For Qualitative Study only: speaks fluent English as the use of interpreters …</inclusion>
+      <ageRange>Mixed</ageRange>
+      <lowerAgeLimit unit="years" value="18.0">18 Years</lowerAgeLimit>
+      <upperAgeLimit unit="years" value="100.0">100 Years</upperAgeLimit>
+      <gender>All</gender>
+      <targetEnrolment>60</targetEnrolment>
+      <totalFinalEnrolment>0</totalFinalEnrolment>
+      <exclusion>1. Patients unable to give written consent or who lack capacity to consent
+2. Patients for palliative/best supportive care only, following surgery
+3. Pre-morbid developmental or acquired/traumatic neurologic disorder (e.g. autism, stroke, severe head injury or dementia/cognitive impairment)
+4. Pre-morbid major psychiatric disorder (e.g., schizophrenia)
+Impaired vision and/or hearing that would interfere with task participation (determined by interacting with participant on screening and medical history)
+5. Patients have impairment of facial recognition (i.e. prosopagnosia) using the OCS-Bridge screening tool score of &gt;5 on immediate assessment
+6. Impaired facial recognition (i.e. prosopagnosia) using a separate test from the OCS-Bridge screening tool, where a score of ≤5 on immediate assessment of neutral face recognition would suggest a deficit requiring exclusion</exclusion>
+      <recruitmentStart>2021-03-31T00:00:00.000Z</recruitmentStart>
+      <recruitmentEnd>2024-03-30T00:00:00.000Z</recruitmentEnd>
+      <recruitmentStartStatusOverride/>
+      <recruitmentStatusOverride>Stopped</recruitmentStatusOverride>
+    </participants>
+    <conditions>
+      <condition>
+	<description>Defects of emotional recognition in brain tumour (glioblastoma) patients</description>
+	<diseaseClass1>Mental and Behavioural Disorders</diseaseClass1>
+	<diseaseClass2/>
+      </condition>
+    </conditions>
+    <interventions>
+      <intervention>
+	<description>This study comprises two stages: Stage 1 where all patients will receive the FACES intervention and Stage 2 where patients will be randomised 1:1 to receive either the FACES intervention or a placebo …</description>
+	<interventionType>Behavioural</interventionType>
+	<phase/>
+	<drugNames/>
+      </intervention>
+    </interventions>
+    <results>
+      <ipdSharingStatement>The datasets generated and/or analysed during the current study during this study will be included in the subsequent results publication</ipdSharingStatement>
+      <dataPolicies>
+	<dataPolicy>Other</dataPolicy>
+      </dataPolicies>
+      <publicationDetails/>
+      <publicationStage>Protocol</publicationStage>
+      <basicReport/>
+      <plainEnglishReport/>
+    </results>
+    <outputs>
+      <output id="24df2627-28f5-4c21-83d6-6f5674b4fe1a" outputType="hrasummary" artefactType="ExternalLink" dateCreated="" dateUploaded="2023-06-28T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="System">
+	<externalLink url="https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/scarf-bt-study/"/>
+	<description/>
+	<productionNotes>Added from spreadsheet</productionNotes>
+      </output>
+      <output id="7a2b6f00-5f2b-4103-afd2-0fa8e21b7e58" outputType="pis" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="Data migration">
+	<localFile fileId="e576c8d2-9420-4846-add9-b631b0f830ee" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="346254" md5sum="60182add80dde34909d474bf7d74d17a"/>
+	<description>Lived Experience Interviewees carers</description>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="2e0bbcb7-aaa3-4161-a256-ffb69ade3e3b" outputType="pis" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="Data migration">
+	<localFile fileId="bfb2aac3-d3b5-4d85-85c3-206464b61cf8" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="320165" md5sum="57d9685f22b664de993bba8a3dac6504"/>
+	<description>Lived Experience Interviewees patients</description>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="7bcca980-e638-4248-a5fb-9ec152321e83" outputType="pis" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="Data migration">
+	<localFile fileId="291a7876-fcd8-4138-a949-2c5854e5774d" originalFilename="ISRCTN14920547_PIS_stage1_carers_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_carers_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="284929" md5sum="794729f3ee889a0ac65b939b3860d288"/>
+	<description>Stage 1 carers</description>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="0cdb4d2e-f6ad-4970-a5d9-702c70126c8e" outputType="pis" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="Data migration">
+	<localFile fileId="6fb89380-ae75-46b1-8a93-545e1a2aec52" originalFilename="ISRCTN14920547_PIS_stage1_patients_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_patients_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="302301" md5sum="03277d2e066081822ded1be86007bbba"/>
+	<description>Stage 1 patients</description>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="b256f705-4c50-49ce-ae5d-613df8d1befe" outputType="pis" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="Data migration">
+	<localFile fileId="2fb6907e-f70a-4e8f-b992-4a6782d1fd0b" originalFilename="ISRCTN14920547_PIS_stage2_patients_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PIS_stage2_patients_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="330057" md5sum="157273232a20f31a9f491a0fffcebded"/>
+	<description>Stage 2 patients</description>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="ba293b20-4a38-4b3b-97be-8112d655ee72" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="859733e8-1656-4ae4-a94a-68e147369744" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="352525" md5sum="b1e7bb2ee8f6e90e9e5e8bb893ac164e"/>
+	<description>Lived Experience Interviewees carers</description>
+	<productionNotes/>
+      </output>
+      <output id="9d9670d2-7257-4441-b220-17cd91e0544a" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="ddb835c9-a336-4852-b1a0-7c0a33d1a40e" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="325015" md5sum="efd59cb117006016c4c278d938a164bb"/>
+	<description>Lived Experience Interviewees patients</description>
+	<productionNotes/>
+      </output>
+      <output id="8fc0ed37-4db4-4fac-b669-0ad792ffb1f2" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="9e919d1d-0b19-4c24-b94a-41aa2d0bf3f1" originalFilename="ISRCTN14920547_PIS_stage1_carers_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_carers_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="291605" md5sum="ed7cc84376d1d87d4166a0cae1a0e1ae"/>
+	<description>Stage 1 carers</description>
+	<productionNotes/>
+      </output>
+      <output id="db81f00e-9871-4c09-8de1-d3fad124e983" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="0592f485-460d-431d-92de-90c91564f21b" originalFilename="ISRCTN14920547_PIS_stage1_patients_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_patients_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="310738" md5sum="5dfb5900d820612d30b8604a383ca393"/>
+	<description>Stage 1 patients</description>
+	<productionNotes/>
+      </output>
+      <output id="0b647a9b-9281-40af-b2e1-f7ae85b956d0" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="915466fb-331c-45a4-af5d-f940e001ec60" originalFilename="ISRCTN14920547_PIS_stage2_carers_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_stage2_carers_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="315442" md5sum="a755f8485677878e4fa97bd78c632a08"/>
+	<description>Stage 2 carers</description>
+	<productionNotes/>
+      </output>
+      <output id="42b5f010-b94c-40ad-b1e8-9ffb73c28a8f" outputType="pis" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="c4771277-3833-4d80-84b6-0e5e4c1b79af" originalFilename="ISRCTN14920547_PIS_stage2_patients_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PIS_stage2_patients_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="336120" md5sum="c8f35d68b01981ed5e0efc035ae7f1ac"/>
+	<description>Stage 2 patients</description>
+	<productionNotes/>
+      </output>
+      <output id="d3f2e246-83b8-4849-8147-b39010d5c73b" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="b09c7f08-e86d-4737-b71d-e696ed96b806" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="352631" md5sum="53adab922730d4dc74e5bc6733a5eeb3"/>
+	<description>Lived Experience Interviewees carers</description>
+	<productionNotes/>
+      </output>
+      <output id="854ca963-b658-426b-9ead-c18e02d8eb7b" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="94bc5eab-1a73-4055-8eb0-b45f004521bc" originalFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v2.0_250422.pdf" downloadFilename="ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v2.0_250422.pdf" version="2.0" mimeType="application/pdf" length="323868" md5sum="822b2be7918851e5669744d9891e47a9"/>
+	<description>Lived Experience Interviewees patients</description>
+	<productionNotes/>
+      </output>
+      <output id="5de5a782-aa76-4ac0-9fab-3cba2d687829" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="f7c7110e-c352-475c-9c72-ff4dcdff0ede" originalFilename="ISRCTN14920547_PIS_stage1_carers_v2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_carers_v2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="307426" md5sum="9948d7e48ce43b3bf8fef654da3537bd"/>
+	<description>Stage 1 carers</description>
+	<productionNotes/>
+      </output>
+      <output id="24fbb26c-0e80-4777-9c1c-ef30011fffd5" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="f1a7394d-897a-4334-aff9-52578fb4ad0b" originalFilename="ISRCTN14920547_PIS_stage1_patients_v2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PIS_stage1_patients_v2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="314816" md5sum="c9707d36ca74cdb4fb368e3503746c40"/>
+	<description>Stage 1 patients</description>
+	<productionNotes/>
+      </output>
+      <output id="d2679c60-cb1b-4fa1-9ae7-b6aa460abf37" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="0aa11841-6c76-4833-a9a7-0bdb250038b6" originalFilename="ISRCTN14920547_PIS_stage2_carers_v2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PIS_stage2_carers_v2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="334160" md5sum="8f77c9872dc73707f69635cb9cd930c9"/>
+	<description>Stage 2 carers</description>
+	<productionNotes/>
+      </output>
+      <output id="afe35f6c-0c2b-466c-895e-d86520d64fc0" outputType="pis" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="779394e8-82fe-4046-bae9-40454edfb0d5" originalFilename="ISRCTN14920547_PIS_stage2_patients_v2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PIS_stage2_patients_v2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="350045" md5sum="89ebfa65bc482c407cf783ce5ddeeb3c"/>
+	<description>Stage 2 patients</description>
+	<productionNotes/>
+      </output>
+      <output id="bc13c7cf-9ee3-4435-8efc-3d2f958928a7" outputType="plainenglishresults" artefactType="LocalFile" dateCreated="" dateUploaded="2026-09-01T00:00:00.000Z" peerReviewed="false" patientFacing="true" createdBy="">
+	<localFile fileId="f3141f47-d843-4047-88d6-27562a0163a8" originalFilename="ISRCTN14920547_PlainEnglishResults.pdf" downloadFilename="ISRCTN14920547_PlainEnglishResults.pdf" version="" mimeType="application/pdf" length="22410" md5sum="7b28d5aef7c5fe105daeba24e07c74cd"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="5b2e70f9-5665-4a68-8b57-6f83d4dc9dd3" outputType="protocolfile" artefactType="LocalFile" dateCreated="2021-03-18T00:00:00.000Z" dateUploaded="2021-04-30T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="Data migration">
+	<localFile fileId="733d73a9-0201-49ed-a7d5-718f098fd2a8" originalFilename="ISRCTN14920547_PROTOCOL_v1.1_18Mar21.pdf" downloadFilename="ISRCTN14920547_PROTOCOL_v1.1_18Mar21.pdf" version="v1.1" mimeType="application/pdf" length="793249" md5sum="58182f410d7d5c2d7a8150fdb1f1cab5"/>
+	<description/>
+	<productionNotes>Unreferenced after processing basic results</productionNotes>
+      </output>
+      <output id="0b04aaae-47cf-4d77-bee8-ec23cf4b7a69" outputType="protocolfile" artefactType="LocalFile" dateCreated="2021-09-03T00:00:00.000Z" dateUploaded="2021-10-08T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="ee547ff1-ed6e-4047-b395-d35d2c3253f7" originalFilename="ISRCTN14920547_PROTOCOL_v1.3_03Sep21.pdf" downloadFilename="ISRCTN14920547_PROTOCOL_v1.3_03Sep21.pdf" version="1.3" mimeType="application/pdf" length="846920" md5sum="5a271db1d661d1dae842e2f3155c2b12"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="18eecedd-99b1-44dd-8b21-75aa140e418b" outputType="protocolfile" artefactType="LocalFile" dateCreated="2022-04-25T00:00:00.000Z" dateUploaded="2022-09-07T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="6c474d39-379f-4808-af57-414f18129476" originalFilename="ISRCTN14920547_PROTOCOL_V2.0_25Apr22.pdf" downloadFilename="ISRCTN14920547_PROTOCOL_V2.0_25Apr22.pdf" version="2.0" mimeType="application/pdf" length="800908" md5sum="6376305f3df55e1d56951e210e4dae1e"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="f65570e9-8487-4936-b6f7-b81e9fbb2ca3" outputType="protocolfile" artefactType="LocalFile" dateCreated="2023-03-01T00:00:00.000Z" dateUploaded="2026-09-01T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="2f41cc1c-e83b-418d-822b-c5ba34a47909" originalFilename="ISRCTN14920547_Protocol _v3.0_01March2023.pdf" downloadFilename="ISRCTN14920547_Protocol _v3.0_01March2023.pdf" version="3.0" mimeType="application/pdf" length="999973" md5sum="6e0f722a4edd9606ceca152b30ef6ee9"/>
+	<description/>
+	<productionNotes/>
+      </output>
+      <output id="3847b1ed-c6d4-4d59-a94c-21b7210351a5" outputType="protocolfile" artefactType="LocalFile" dateCreated="" dateUploaded="2026-09-01T00:00:00.000Z" peerReviewed="false" patientFacing="false" createdBy="">
+	<localFile fileId="768a4510-6f23-4352-ad3c-a5211875712a" originalFilename="ISRCTN14920547_Protocol _v4.0.pdf" downloadFilename="ISRCTN14920547_Protocol _v4.0.pdf" version="4.0" mimeType="application/pdf" length="854342" md5sum="bfa6c5482be55f7890c1d2aa2028a92c"/>
+	<description/>
+	<productionNotes/>
+      </output>
+    </outputs>
+    <parties xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <funderId>66df9258-8b96-4045-9649-fc7f60256654</funderId>
+      <contactId>1f389809-458e-46ff-8aaa-6b5f07ea1928</contactId>
+      <sponsorId>72e5f20c-5cfb-49ed-a93a-1da6aec73f50</sponsorId>
+    </parties>
+    <miscellaneous xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <ipdSharingPlan>Yes</ipdSharingPlan>
+    </miscellaneous>
+    <attachedFiles>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/2fb6907e-f70a-4e8f-b992-4a6782d1fd0b/39796">
+	<description>Stage 2 patients</description>
+	<name>ISRCTN14920547_PIS_stage2_patients_v1.1_18Mar21.pdf</name>
+	<id>2fb6907e-f70a-4e8f-b992-4a6782d1fd0b</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>330057</length>
+	<md5sum>157273232a20f31a9f491a0fffcebded</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/291a7876-fcd8-4138-a949-2c5854e5774d/39796">
+	<description>Stage 1 carers</description>
+	<name>ISRCTN14920547_PIS_stage1_carers_v1.1_18Mar21.pdf</name>
+	<id>291a7876-fcd8-4138-a949-2c5854e5774d</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>284929</length>
+	<md5sum>794729f3ee889a0ac65b939b3860d288</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/6fb89380-ae75-46b1-8a93-545e1a2aec52/39796">
+	<description>Stage 1 patients</description>
+	<name>ISRCTN14920547_PIS_stage1_patients_v1.1_18Mar21.pdf</name>
+	<id>6fb89380-ae75-46b1-8a93-545e1a2aec52</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>302301</length>
+	<md5sum>03277d2e066081822ded1be86007bbba</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/bfb2aac3-d3b5-4d85-85c3-206464b61cf8/39796">
+	<description>Lived Experience Interviewees patients</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.1_18Mar21.pdf</name>
+	<id>bfb2aac3-d3b5-4d85-85c3-206464b61cf8</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>320165</length>
+	<md5sum>57d9685f22b664de993bba8a3dac6504</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/e576c8d2-9420-4846-add9-b631b0f830ee/39796">
+	<description>Lived Experience Interviewees carers</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.1_18Mar21.pdf</name>
+	<id>e576c8d2-9420-4846-add9-b631b0f830ee</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>346254</length>
+	<md5sum>60182add80dde34909d474bf7d74d17a</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/733d73a9-0201-49ed-a7d5-718f098fd2a8/39796">
+	<description>Uploaded 30/04/2021</description>
+	<name>ISRCTN14920547_PROTOCOL_v1.1_18Mar21.pdf</name>
+	<id>733d73a9-0201-49ed-a7d5-718f098fd2a8</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>793249</length>
+	<md5sum>58182f410d7d5c2d7a8150fdb1f1cab5</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/ee547ff1-ed6e-4047-b395-d35d2c3253f7/39796">
+	<description>Protocol file</description>
+	<name>ISRCTN14920547_PROTOCOL_v1.3_03Sep21.pdf</name>
+	<id>ee547ff1-ed6e-4047-b395-d35d2c3253f7</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>846920</length>
+	<md5sum>5a271db1d661d1dae842e2f3155c2b12</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/859733e8-1656-4ae4-a94a-68e147369744/39796">
+	<description>Lived Experience Interviewees carers</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v1.3_03Sep21.pdf</name>
+	<id>859733e8-1656-4ae4-a94a-68e147369744</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>352525</length>
+	<md5sum>b1e7bb2ee8f6e90e9e5e8bb893ac164e</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/ddb835c9-a336-4852-b1a0-7c0a33d1a40e/39796">
+	<description>Lived Experience Interviewees patients</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v1.3_03Sep21.pdf</name>
+	<id>ddb835c9-a336-4852-b1a0-7c0a33d1a40e</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>325015</length>
+	<md5sum>efd59cb117006016c4c278d938a164bb</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/9e919d1d-0b19-4c24-b94a-41aa2d0bf3f1/39796">
+	<description>Stage 1 carers</description>
+	<name>ISRCTN14920547_PIS_stage1_carers_v1.3_03Sep21.pdf</name>
+	<id>9e919d1d-0b19-4c24-b94a-41aa2d0bf3f1</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>291605</length>
+	<md5sum>ed7cc84376d1d87d4166a0cae1a0e1ae</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/0592f485-460d-431d-92de-90c91564f21b/39796">
+	<description>Stage 1 patients</description>
+	<name>ISRCTN14920547_PIS_stage1_patients_v1.3_03Sep21.pdf</name>
+	<id>0592f485-460d-431d-92de-90c91564f21b</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>310738</length>
+	<md5sum>5dfb5900d820612d30b8604a383ca393</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/915466fb-331c-45a4-af5d-f940e001ec60/39796">
+	<description>Stage 2 carers</description>
+	<name>ISRCTN14920547_PIS_stage2_carers_v1.3_03Sep21.pdf</name>
+	<id>915466fb-331c-45a4-af5d-f940e001ec60</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>315442</length>
+	<md5sum>a755f8485677878e4fa97bd78c632a08</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/c4771277-3833-4d80-84b6-0e5e4c1b79af/39796">
+	<description>Stage 2 patients</description>
+	<name>ISRCTN14920547_PIS_stage2_patients_v1.3_03Sep21.pdf</name>
+	<id>c4771277-3833-4d80-84b6-0e5e4c1b79af</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>336120</length>
+	<md5sum>c8f35d68b01981ed5e0efc035ae7f1ac</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/6c474d39-379f-4808-af57-414f18129476/39796">
+	<description>Protocol file</description>
+	<name>ISRCTN14920547_PROTOCOL_V2.0_25Apr22.pdf</name>
+	<id>6c474d39-379f-4808-af57-414f18129476</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>800908</length>
+	<md5sum>6376305f3df55e1d56951e210e4dae1e</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/b09c7f08-e86d-4737-b71d-e696ed96b806/39796">
+	<description>Lived Experience Interviewees carers</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_carers_v2.0_25Apr22.pdf</name>
+	<id>b09c7f08-e86d-4737-b71d-e696ed96b806</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>352631</length>
+	<md5sum>53adab922730d4dc74e5bc6733a5eeb3</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/94bc5eab-1a73-4055-8eb0-b45f004521bc/39796">
+	<description>Lived Experience Interviewees patients</description>
+	<name>ISRCTN14920547_PIS_A_LivedExperienceInterviewees_patient_v2.0_250422.pdf</name>
+	<id>94bc5eab-1a73-4055-8eb0-b45f004521bc</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>323868</length>
+	<md5sum>822b2be7918851e5669744d9891e47a9</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/f7c7110e-c352-475c-9c72-ff4dcdff0ede/39796">
+	<description>Stage 1 carers</description>
+	<name>ISRCTN14920547_PIS_stage1_carers_v2.0_25Apr22.pdf</name>
+	<id>f7c7110e-c352-475c-9c72-ff4dcdff0ede</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>307426</length>
+	<md5sum>9948d7e48ce43b3bf8fef654da3537bd</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/f1a7394d-897a-4334-aff9-52578fb4ad0b/39796">
+	<description>Stage 1 patients</description>
+	<name>ISRCTN14920547_PIS_stage1_patients_v2.0_25Apr22.pdf</name>
+	<id>f1a7394d-897a-4334-aff9-52578fb4ad0b</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>314816</length>
+	<md5sum>c9707d36ca74cdb4fb368e3503746c40</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/0aa11841-6c76-4833-a9a7-0bdb250038b6/39796">
+	<description>Stage 2 carers</description>
+	<name>ISRCTN14920547_PIS_stage2_carers_v2.0_25Apr22.pdf</name>
+	<id>0aa11841-6c76-4833-a9a7-0bdb250038b6</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>334160</length>
+	<md5sum>8f77c9872dc73707f69635cb9cd930c9</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/779394e8-82fe-4046-bae9-40454edfb0d5/39796">
+	<description>Stage 2 patients</description>
+	<name>ISRCTN14920547_PIS_stage2_patients_v2.0_25Apr22.pdf</name>
+	<id>779394e8-82fe-4046-bae9-40454edfb0d5</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>350045</length>
+	<md5sum>89ebfa65bc482c407cf783ce5ddeeb3c</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/2f41cc1c-e83b-418d-822b-c5ba34a47909/39796">
+	<description>Protocol file</description>
+	<name>ISRCTN14920547_Protocol _v3.0_01March2023.pdf</name>
+	<id>2f41cc1c-e83b-418d-822b-c5ba34a47909</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>999973</length>
+	<md5sum>6e0f722a4edd9606ceca152b30ef6ee9</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/768a4510-6f23-4352-ad3c-a5211875712a/39796">
+	<description>Protocol file</description>
+	<name>ISRCTN14920547_Protocol _v4.0.pdf</name>
+	<id>768a4510-6f23-4352-ad3c-a5211875712a</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>854342</length>
+	<md5sum>bfa6c5482be55f7890c1d2aa2028a92c</md5sum>
+      </attachedFile>
+      <attachedFile downloadUrl="https://www.isrctn.com/editorial/retrieveFile/f3141f47-d843-4047-88d6-27562a0163a8/39796">
+	<description>Plain English results</description>
+	<name>ISRCTN14920547_PlainEnglishResults.pdf</name>
+	<id>f3141f47-d843-4047-88d6-27562a0163a8</id>
+	<public>true</public>
+	<mimeType>application/pdf</mimeType>
+	<length>22410</length>
+	<md5sum>7b28d5aef7c5fe105daeba24e07c74cd</md5sum>
+      </attachedFile>
+    </attachedFiles>
+  </trial>
+  
+  <sponsor id="72e5f20c-5cfb-49ed-a93a-1da6aec73f50">
+    <organisation>Cambridge University Hospitals NHS Foundation Trust</organisation>
+    <sponsorType>Hospital/treatment centre</sponsorType>
+    <rorId>https://ror.org/04v54gj93</rorId>
+    <commercialStatus>Non-commercial</commercialStatus>
+  </sponsor>
+  <funder id="66df9258-8b96-4045-9649-fc7f60256654">
+    <name>Research for Patient Benefit Programme</name>
+    <fundRef>http://dx.doi.org/10.13039/501100009128</fundRef>
+  </funder>
+</fullTrial><fullTrial>
+  <trial lastUpdated="2026-11-04T09:25:11.918625575Z" version="8" isPublished="true" publicIdentifierType="isrctn" publicIdentifierCanonical="ISRCTN82678458" publicIdentifierDateAssigned="2026-11-04T18:30:32.747576Z">
+    <isrctn dateAssigned="2026-11-04T18:30:32.747576Z">82678458</isrctn>
+    <trialDescription thirdPartyFilesAcknowledgement="false">
+      <acknowledgment>true</acknowledgment>
+      <title>Impact of a multidimensional intervention on adherence to oral anticancer therapies in patients with advanced cancer</title>
+      <scientificTitle>Impact of a multidimensional intervention on adherence to oral anticancer therapies in patients with advanced cancer: a prospective randomized controlled study</scientificTitle>
+      <acronym/>
+      <studyHypothesis>Primary objectives:
+1. To evaluate the effectiveness of a multidimensional intervention in improving adherence to oral anticancer therapies among adult patients with advanced or metastatic cancer, com…</studyHypothesis>
+      <plainEnglishSummary>Background and study aims
+Oral anticancer medicines are increasingly used to treat people with cancer. These medicines allow patients to receive treatment at home, reducing the need for frequent hospi…</plainEnglishSummary>
+      <primaryOutcomes>
+	<outcomeMeasure id="367ef765-6221-4098-bac9-8fa17e190643">
+	  <variable>Medication adherence</variable>
+	  <method>the validated Portuguese Medida de Adesão aos Tratamentos (MAT; Measure of Treatment Adherence)</method>
+	  <timepoints>three months after the study-defined start of follow-up (primary endpoint assessment)</timepoints>
+	</outcomeMeasure>
+      </primaryOutcomes>
+      <primaryOutcome/>
+      <secondaryOutcomes/>
+      <secondaryOutcome/>
+      <ethicsApprovalRequired>Ethics approval required</ethicsApprovalRequired>
+      <ethicsCommittees>
+	<ethicsCommittee id="052c5668-b7de-4147-a603-27a671e21d3d" approvalStatus="approved" statusDate="2026-10-29T00:00:00.000Z">
+	  <committeeName>Comissão de Ética para a Saúde</committeeName>
+	  <contactDetails>
+	    <address>Unidade Local de Saúde de Braga, E.P.E.
+Hospital de Braga
+Sete Fontes – São Victor</address>
+	    <city>Braga</city>
+	    <state/>
+	    <country>Portugal</country>
+	    <zip>4710-243</zip>
+	    <telephone xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	    <email xmlns:ssb="http://www.67bricks.com/isrctn/functions"/>
+	  </contactDetails>
+	  <committeeReference>271_2025</committeeReference>
+	</ethicsCommittee>
+      </ethicsCommittees>
+    </trialDescription>
+    <externalRefs>
+      <doi>10.1186/ISRCTN82678458</doi>
+      <eudraCTNumber/>
+      <irasNumber/>
+      <clinicalTrialsGovNumber/>
+      <protocolSerialNumber/>
+      <secondaryNumbers/>
+    </externalRefs>
+    <trialDesign>
+      <studyDesign/>
+      <primaryStudyDesign>Interventional</primaryStudyDesign>
+      <interventionalTrialDesign>
+	<allocation>Randomized controlled trial</allocation>
+	<masking>Open (masking not used)</masking>
+	<control>Active</control>
+	<assignment>Parallel</assignment>
+	<purposes>
+	  <purpose>Treatment</purpose>
+	</purposes>
+      </interventionalTrialDesign>
+      <secondaryStudyDesign>Not applicable</secondaryStudyDesign>
+      <trialTypes/>
+      <overallEndDate>2026-08-31T00:00:00.000Z</overallEndDate>
+    </trialDesign>
+    <participants>
+      <recruitmentCountries>
+	<country>Portugal</country>
+      </recruitmentCountries>
+      <trialCentres>
+	<trialCentre id="10edd975-948e-4716-a2bd-889c718cc766">
+	  <name>Unidade Local de Saúde de Braga - Hospital de Braga</name>
+	  <address>Rua das Sete Fontes / Sete Fontes – São Victor</address>
+	  <city>Braga</city>
+	  <state/>
+	  <country>Portugal</country>
+	  <zip>4710-243 Braga</zip>
+	</trialCentre>
+      </trialCentres>
+      <participantTypes/>
+      <healthyVolunteersAllowed>false</healthyVolunteersAllowed>
+      <inclusion>1.	Adult patients aged 18 years or older
+2.	Histologically or cytologically confirmed diagnosis of advanced or metastatic cancer
+3.	Patients with hormone receptor-positive (HR+)/HER2-negative metastatic breast cancer scheduled to receive cyclin-dependent kinase 4/6 (CDK4/6) inhibitors in combination with aromatase inhibitors
+4.	Patients with metastatic breast cancer scheduled to receive oral capecitabine
+5.	Patients with metastatic colorectal cancer scheduled to receive capecitabine, either as monotherapy or as part of a combination chemotherapy regimen, or trifluridine/tipiracil
+6.	Patients with advanced or metastatic hepatocellular carcinoma scheduled to receive sorafenib or lenvatinib
+7.	Patients with metastatic gastrointestinal stromal tumors (GIST) scheduled to receive imatinib, sunitinib, regorafenib or ripretinib
+8.	Patients with prostate cancer scheduled to receive second-generat…</inclusion>
+      <ageRange>Mixed</ageRange>
+      <lowerAgeLimit unit="years" value="18.0">18 Years</lowerAgeLimit>
+      <upperAgeLimit unit="years" value="100.0">100 Years</upperAgeLimit>
+      <gender>All</gender>
+      <targetEnrolment>120</targetEnrolment>
+      <totalFinalEnrolment>120</totalFinalEnrolment>
+      <exclusion>1. Patients receiving exclusively symptomatic or supportive care without active oral anticancer treatment
+2. Patients with severe cognitive impairment or psychiatric disorders that prevent adequate understanding of the study procedures, provision of informed consent, completion of study questionnaires, or meaningful participation in the study
+3. Patients who are illiterate and do not have an available caregiver or support person to assist with medication management and study-related procedures
+4. Patients simultaneously participating in another clinical trial or interventional study that could interfere with the study intervention, medication adherence assessment, or interpretation of the study outcomes</exclusion>
+      <recruitmentStart>2025-12-01T00:00:00.000Z</recruitmentStart>
+      <recruitmentEnd>2026-04-30T00:00:00.000Z</recruitmentEnd>
+      <recruitmentStartStatusOverride/>
+      <recruitmentStatusOverride/>
+    </participants>
+    <conditions>
+      <condition>
+	<description>Adherence to oral anticancer therapies in patients with advanced cancer</description>
+	<diseaseClass1>Cancer</diseaseClass1>
+	<diseaseClass2/>
+      </condition>
+    </conditions>
+    <interventions>
+      <intervention>
+	<description>Study design and allocation
+This is a single-centre, prospective, randomized, controlled, open-label, parallel-group interventional study conducted at the Medical Oncology Department of Hospital de Br…</description>
+	<interventionType>Behavioural</interventionType>
+	<phase/>
+	<drugNames/>
+      </intervention>
+    </interventions>
+    <results>
+      <ipdSharingStatement/>
+      <dataPolicies>
+	<dataPolicy>Not expected to be made available</dataPolicy>
+      </dataPolicies>
+      <publicationDetails/>
+      <publicationStage/>
+      <basicReport/>
+      <plainEnglishReport/>
+    </results>
+    <outputs>
+      
+    </outputs>
+    <parties xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <funderId>20f37358-e487-4132-8948-437690facb05</funderId>
+      <contactId>63dee95f-8b16-4d45-b7a8-4d3d12b58a76</contactId>
+      <sponsorId>7e39bf70-5889-45d0-920d-f322cef8e2ca</sponsorId>
+    </parties>
+    <miscellaneous xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <ipdSharingPlan>No</ipdSharingPlan>
+    </miscellaneous>
+    <attachedFiles/>
+  </trial>
+  
+  <sponsor id="7e39bf70-5889-45d0-920d-f322cef8e2ca">
+    <organisation>Unidade Local de Saúde de Braga, E.P.E.</organisation>
+    <sponsorType/>
+    <commercialStatus>Non-commercial</commercialStatus>
+  </sponsor>
+  <funder id="20f37358-e487-4132-8948-437690facb05">
+    <name>Unidade Local de Saúde de Braga, E.P.E.</name>
+  </funder>
+</fullTrial></allTrials>

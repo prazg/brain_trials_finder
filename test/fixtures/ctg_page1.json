@@ -1,0 +1,477 @@
+{
+ "totalCount": 106,
+ "studies": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06630260",
+     "briefTitle": "5G-RUBY: Avutometinib and Defactinib in Malignant Brain Tumours",
+     "acronym": "5G-RUBY"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2024-11-15"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-01-21"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Institute of Cancer Research, United Kingdom"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Glioblastoma Multiforme (GBM)",
+      "Glioblastoma Multiform (Grade IV Astrocytoma)",
+      "Diffuse Hemispheric Glioma, H3 G34-Mutant",
+      "Malignant Primary Gliomas"
+     ]
+    },
+    "designModule": {
+     "studyType": "INTERVENTIONAL",
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 182
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "Avutometinib"
+      },
+      {
+       "name": "Defactinib"
+      },
+      {
+       "name": "Temozolomide"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Inclusion Criteria for Phase 1b:\n\n1. Patients with histologically confirmed advanced WHO Stage IV glioblastoma (per fourth edition 2016). Per the new 2021 fifth edition of WHO Classification of Tumours of the Central Nervous System, this will include:\n\n   * Glioblastoma, IDH-wildtype Grade 4\n   * Astrocytoma, IDH-mutant, Grade 4 (lower Grade 2/3 are not included)\n   * Diffuse hemispheric glioma, H3 G34 mutant Grade 4\n\n   Patients with any other CNS tumours will only be eligible for defined Phase 2 biomarker arms once a Phase 1b GO decision has been met. Specific eligibility criteria for these tumours will be defined following an amendment.\n2. Patients for Phase 1 will need to have consented to the Minderoo Precision Brain Tumour Programme and have available whole genome, and transcriptome data available.\n3. Patients for the relapsed cohorts will be eligible at first relapse following completion of optimal surgery, and Stupp based adjuvant chemo-radiotherapy (or equivalent). They will need to have measurable disease per RANO or evaluable disease.\n4. Patients for the front line minimal residual disease (mrd) cohort will be eligible following completion of optimal surgery and Stupp based adjuvant chemoradiotherapy as long as they meet all other inclusion/exclusion criteria.\n5. 16 years or over\n6. Life expectancy of at least 12 weeks.\n7. World Health Organisation (WHO) performance status of 0-1\n8. Neurologically stable (e.g., without a progression of neurological symptoms or requiring escalating doses of systemic steroid therapy within the last week)\n9. Written (signed or dated) informed consent and be capable of co-operating with treatment and follow up\n10. Haematological and biochemical indices within the ranges shown below. These measurements must be performed within one",
+     "sex": "ALL",
+     "minimumAge": "16 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Cambridge University Hospitals",
+       "status": "RECRUITING",
+       "city": "Cambridge",
+       "country": "United Kingdom"
+      },
+      {
+       "facility": "The Royal Marsden Hospital - Drug Development Unit",
+       "status": "RECRUITING",
+       "city": "Sutton",
+       "country": "United Kingdom"
+      },
+      {
+       "facility": "The Royal Marsden Hospital - Neuro-Oncology Unit",
+       "status": "RECRUITING",
+       "city": "Sutton",
+       "country": "United Kingdom"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07365124",
+     "briefTitle": "MRinRT: Swansea University and SWWCC Collaboration Study.",
+     "acronym": "MRinRT"
+    },
+    "statusModule": {
+     "overallStatus": "NOT_YET_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-05"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-04-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Swansea Bay University Health Board"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Carcinoma",
+      "Glioblastoma",
+      "Radiotherapy",
+      "MRI",
+      "MRI-guided Adaptive Radiotherapy",
+      "MRI Scanner Configuration",
+      "MRI Image Enhancement",
+      "Oesophageal Carcinoma",
+      "Pancreas Carcinoma",
+      "Gastric Cancer",
+      "Brain (Nervous System) Cancers"
+     ]
+    },
+    "designModule": {
+     "studyType": "OBSERVATIONAL",
+     "enrollmentInfo": {
+      "count": 165
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "MRI"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Inclusion Criteria for health volunteers:\n\n* Free from medical conditions that could confound imaging or study results\n* Eligible for MRI\n\nInclusion Criteria for patients:\n\n* Confirmed diagnosis of invasive carcinoma at the relevant tumour/target sites listed in this protocol\n* Scheduled to receive radiotherapy to the target site\n* ECOG performance status of 0-2\n* Eligible for MRI (determined through MRI safety screening)\n\nExclusion Criteria:\n\n* Presence of medical conditions that may interfere with study outcomes or data interpretation\n* Use of regular medications that could affect imaging results or safety\n* Any contraindications to MRI scanning, including but not limited to claustrophobia, reduced thermal regulatory capabilities, MR Unsafe implants and foreign bodies.",
+     "sex": "ALL",
+     "minimumAge": "18 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Swansea Bay University Health Board",
+       "city": "Swansea",
+       "country": "United Kingdom"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07384884",
+     "briefTitle": "Surgery and Laser Interstitial Thermal Therapy for Bilateral Glioblastomas",
+     "acronym": "SLITT-GBM"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-04-27"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-03"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "King's College Hospital NHS Trust"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Brain Tumours",
+      "GBM"
+     ]
+    },
+    "designModule": {
+     "studyType": "INTERVENTIONAL",
+     "phases": [
+      "NA"
+     ],
+     "enrollmentInfo": {
+      "count": 12
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "surgery (any volume) and / or pharmaceuticals treatment initiated or planned or only dynamic observation, in accordance with current clinical guidelines"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Inclusion Criteria:\n\n1. Presumptive diagnosis of bGBM as per preoperative MRI and MDT assessment\n2. Presumed residual / smaller component of the bGBM has to be \\< 2.5cm\n3. Performance Status 0-1\n4. Able to consent for the study\n\nExclusion Criteria:\n\n1. bGBM measuring \\>2.5 cm in both hemispheres.\n2. Tumour progression between surgical debulking and LITT treatment\n3. Severe complications after surgery (hydrocephalus, infection, heamatoma, stroke)",
+     "sex": "ALL",
+     "minimumAge": "18 Years",
+     "maximumAge": "80 Years"
+    },
+    "contactsLocationsModule": {
+     "locations": [
+      {
+       "facility": "King's College NHS Foundation Trust",
+       "status": "RECRUITING",
+       "city": "London",
+       "country": "United Kingdom"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04094610",
+     "secondaryIdInfos": [
+      {
+       "id": "CA127-1029"
+      },
+      {
+       "id": "TPX-0005-07"
+      },
+      {
+       "id": "2023-506464-14"
+      },
+      {
+       "id": "2023"
+      }
+     ],
+     "briefTitle": "A Study of Repotrectinib in Pediatric and Young Adult Subjects Harboring ALK, ROS1, OR NTRK1-3 Alterations"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2020-03-12"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-25"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Turning Point Therapeutics, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Locally Advanced Solid Tumors",
+      "Metastatic Solid Tumors",
+      "Lymphoma",
+      "Primary CNS Tumors"
+     ]
+    },
+    "designModule": {
+     "studyType": "INTERVENTIONAL",
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 75
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "Oral repotrectinib (TPX-0005)"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Key Inclusion Criteria:\n\n1. Documented genetic ROS1 point mutation, fusion, or amplification or NTRK1-3 fusion as identified by local testing in a Clinical Laboratory Improvement Amendments (CLIA) laboratory in the US or equivalently accredited diagnostic lab outside the United States (US) is required.\n2. Phase 1: Age \\<12 years; Phase 2: Age 12- 25 years\n3. Prior cytotoxic chemotherapy is allowed.\n4. Prior immunotherapy is allowed.\n5. Resolution of all acute toxic effects (excluding alopecia) of any prior anti-cancer therapy to National Cancer Institute Common Terminology Criteria for Adverse Events (NCI CTCAE) Version 4.03 Grade less than or equal to 1.\n6. All subjects must have measurable disease by RECIST v1.1 or Response Assessment in Neuro-Oncology (RANO) criteria at time of enrollment.\n7. Subjects with a primary CNS tumor or CNS metastases must be neurologically stable on a stable or decreasing dose of steroids for at least 7 days prior to enrollment.\n8. Subjects must have a Lansky (\\< 16 years) or Karnofsky (\u2265 16 years) score of at least 50.\n9. Life expectancy greater than or equal to 12 weeks, in the investigator's opinion.\n10. Adequate hematologic, renal and hepatic function.\n\nPhase 2 Inclusion Criteria:\n\n1. Cohort Specific Inclusion Criteria:\n\n   * Cohort 1: Subjects with NTRK fusion gene positive (NTRK+) advanced solid tumors (including primary CNS tumors), that are tropomyosin receptor kinase (TRK) TKI na\u00efve;\n   * Cohort 2: subjects with NTRK+ advanced solid tumors (including primary CNS tumors), that are TRK TKI pre-treated;\n   * Cohort 3: subjects with advanced solid tumors with ROS1 gene fusions or other ROS1 aberrations (including amplifications and point mutations) with measurable disease.\n2. Subjects in Cohorts 1 and 2 must have prospectively confirme",
+     "sex": "ALL",
+     "maximumAge": "25 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      },
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Alder Hey Children's NHS Foundation Trust",
+       "status": "RECRUITING",
+       "city": "Liverpool",
+       "country": "United Kingdom"
+      },
+      {
+       "facility": "Local Institution - 4403",
+       "status": "COMPLETED",
+       "city": "Birmingham",
+       "country": "United Kingdom"
+      },
+      {
+       "facility": "University Hospital of Wales",
+       "status": "RECRUITING",
+       "city": "Cardiff",
+       "country": "United Kingdom"
+      },
+      {
+       "facility": "Children's Hospital Los Angeles",
+       "status": "RECRUITING",
+       "city": "Los Angeles",
+       "country": "United States"
+      },
+      {
+       "facility": "University of California at Los Angeles",
+       "status": "RECRUITING",
+       "city": "Los Angeles",
+       "country": "United States"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07391215",
+     "briefTitle": "5G-PEARL: Paxalisib in Malignant Brain Tumours",
+     "acronym": "5G-PEARL"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-01-19"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-02-05"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Institute of Cancer Research, United Kingdom"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Malignant Primary Gliomas",
+      "Glioblastoma Multiforme (GBM)"
+     ]
+    },
+    "designModule": {
+     "studyType": "INTERVENTIONAL",
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 64
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "Paxalisib"
+      },
+      {
+       "name": "Temozolomide capsule"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Inclusion Criteria:\n\nPhase 1b front line mrd cohort:\n\n1. Patients with histologically confirmed advanced WHO Stage IV glioblastoma (per fourth edition 2016). Per the new 2021 fifth edition of WHO Classification of Tumours of the Central Nervous System, this will include:\n\n   \u2022 Glioblastoma, IDH-wildtype Grade 4\n2. Patients for Phase 1b will need to have consented to the Minderoo Precision Brain Tumour Programme and have whole genome, and transcriptome data available. Patients who have had NHS funded whole genome sequencing and have available frozen tissue stored can be recruited to the study in parallel to consenting to the Minderoo Precision Brain Tumour Programme to have transcriptome analysis done.\n3. Patients for the minimal residual disease (mrd) cohort will be eligible following completion of optimal surgery and Stupp based adjuvant chemoradiotherapy as long as they meet all other inclusion/exclusion criteria. Patients will need to commence Cycle 1 Day 1 of the study no later than 6 weeks from the completion of chemoradiotherapy. Patients who are radiologically progressing following chemo-radiotherapy will not be eligible.\n4. 16 years or over.\n5. Life expectancy of at least 12 weeks.\n6. World Health Organisation (WHO) performance status of 0-1.\n7. Neurologically stable (eg without a progression of neurological symptoms or requiring escalating doses of systemic steroid therapy within one week prior to cycle 1, day 1.\n8. Written (signed or dated) informed consent and be capable of co-operating with treatment and follow up.\n9. Haematological and biochemical indices within the ranges shown below. These measurements must be performed within one week prior to the first dose of either IMP.\n\n   Haemoglobin (Hb): \u2265 9.0 g/dL Absolute neutrophil count: \u22651.5 x 10\\^9/L Platele",
+     "sex": "ALL",
+     "minimumAge": "16 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Royal Marden NHS Foundation Trust",
+       "status": "RECRUITING",
+       "city": "Sutton",
+       "country": "United Kingdom"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07018024",
+     "secondaryIdInfos": [
+      {
+       "id": "2023"
+      }
+     ],
+     "briefTitle": "Anti-Glomerular Basement Membrane Disease",
+     "acronym": "PRAGMATIC"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2024-01-01"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-06-25"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Region Skane"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Anti-Glomerular Basement Membrane Disease"
+     ]
+    },
+    "designModule": {
+     "studyType": "OBSERVATIONAL",
+     "enrollmentInfo": {
+      "count": 300
+     }
+    },
+    "armsInterventionsModule": {},
+    "eligibilityModule": {
+     "eligibilityCriteria": "Arm A:\n\nInclusion Criteria:\n\n* Anti-GBM disease diagnosed 01-01-2010 - 31-12-2027\n* Available information about initial treatment\n\nArm B:\n\nInclusion Criteria:\n\n* Anti-GBM disease diagnosis (no time limit)\n* Available blood and/or urine sample at the time of diagnosis\n* Available information about patient survival at six months",
+     "sex": "ALL",
+     "minimumAge": "18 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      },
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Lund",
+       "status": "RECRUITING",
+       "city": "Lund",
+       "country": "Sweden"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "nextPageToken": "FIXTURE_PAGE_2"
+}

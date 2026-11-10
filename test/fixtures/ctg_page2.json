@@ -1,0 +1,85 @@
+{
+ "totalCount": 106,
+ "studies": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07346144",
+     "briefTitle": "Study of an AAV Mediated Dual-Payload Gene Therapy in Patients With High Grade Glioma",
+     "acronym": "ADePT"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-04-21"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Trogenix ltd"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Glioblastoma (GBM)",
+      "High Grade Gliomas",
+      "Recurrent Glioblastoma",
+      "Newly Diagnosed Glioblastoma"
+     ]
+    },
+    "designModule": {
+     "studyType": "INTERVENTIONAL",
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 68
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "name": "TGX-007"
+      },
+      {
+       "name": "Valaciclovir"
+      }
+     ]
+    },
+    "eligibilityModule": {
+     "eligibilityCriteria": "Inclusion Criteria:\n\n* Aged 18-70 years\n* Karnofsky performance status \u226570\n* Newly diagnosed patients: Unifocal, unilateral high-grade glioma based on MRI\n* Recurrent patients: First radiological progression (as determined by the multidisciplinary team \\[MDT\\]) of GBM previously treated with standard care surgery and chemoradiotherapy. Patients must have a prior confirmed histological/molecular diagnosis of GBM\n* Newly diagnosed patient: suitable for six weeks of chemoradiotherapy followed by six months of adjuvant temozolomide (Stupp protocol)\n* Debulking surgery is indicated for optimal pati",
+     "sex": "ALL",
+     "minimumAge": "18 Years",
+     "maximumAge": "70 Years"
+    },
+    "contactsLocationsModule": {
+     "centralContacts": [
+      {
+       "name": "Trial Office",
+       "phone": "+44 20 0000 0000",
+       "email": "trials@example.org"
+      }
+     ],
+     "locations": [
+      {
+       "facility": "Ohio State University Hospital",
+       "status": "RECRUITING",
+       "city": "Columbus",
+       "country": "United States"
+      },
+      {
+       "facility": "Royal Infirmary of Edinburgh",
+       "status": "RECRUITING",
+       "city": "Edinburgh",
+       "country": "United Kingdom"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
