@@ -1,0 +1,29 @@
+name: Build the Windows desktop app
+
+# Manual only. Produces "Brain Cancer Trial Finder.exe" from desktop_app.py as
+# a downloadable artifact, so the executable can be rebuilt after a code change
+# without a Windows machine.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -r requirements-desktop.txt pyinstaller
+      - name: Build
+        run: pyinstaller --onefile --windowed --name "Brain Cancer Trial Finder" desktop_app.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: brain-cancer-trial-finder-windows
+          path: dist/*.exe

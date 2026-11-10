@@ -10,6 +10,9 @@ __pycache__/
 venv/
 ENV/
 
+# Node
+node_modules/
+
 # Jupyter and cache
 .ipynb_checkpoints/
 *.ipynb-*
@@ -22,10 +25,23 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Logs / data
+# Logs and scratch
 *.log
-*.csv
-*.json
-!neuro_onc_trials.csv
-!neuro_onc_trials.json
+*.tmp
 
+# Output of Neuro_onc_clinicalTrial.py and the desktop app's exports.
+# (Do not ignore *.json wholesale: the snapshots in docs/data, package.json and
+#  the test fixtures are JSON and must be committed.)
+neuro_onc_trials.csv
+neuro_onc_trials.json
+brain_trials_results.*
+
+# Resume state for scripts/build_ictrp.py (kept in the Actions cache, not in git)
+.ictrp_state.json
+
+# PyInstaller
+build/
+dist/
+
+# Linters
+.ruff_cache/

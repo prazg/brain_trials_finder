@@ -1,0 +1,151 @@
+name: Refresh snapshots and publish Pages
+
+# One workflow owns GitHub Pages. It publishes the docs/ folder.
+#   schedule / manual run : rebuild both snapshots, commit them, test, publish
+#   push to main          : test, publish (no rebuild, so a page fix goes live in a minute)
+
+on:
+  schedule:
+    # 04:15 UTC daily. Cron on GitHub is best-effort and can run late under load.
+    - cron: "15 4 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "scripts/**"
+      - "test/**"
+      - ".github/workflows/refresh-trials.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write      # commit the refreshed snapshots
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Restore the ICTRP resume state
+        if: github.event_name != 'push'
+        uses: actions/cache@v4
+        with:
+          path: .ictrp_state.json
+          key: ictrp-state-v2-${{ github.run_id }}
+          restore-keys: ictrp-state-v2-
+
+      - name: Rebuild the EU CTIS snapshot
+        # CTIS pins its CORS header to its own origin, so the browser cannot
+        # read it. This step fetches it server-side into docs/data.
+        # Best-effort: the script keeps the previous file if the result looks
+        # wrong, and the page shows how old each snapshot is.
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python scripts/build_snapshot.py docs/data
+
+      - name: Rebuild the WHO ICTRP snapshot
+        # CTRI (India) and ChiCTR (China) publish no browser-readable API, so
+        # they are reached through the WHO aggregator that both feed.
+        # Best-effort: ICTRP throttles, and a dated snapshot beats no page.
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python scripts/build_ictrp.py docs/data --state .ictrp_state.json --limit 400
+
+      - name: Sanity-check the snapshots
+        run: |
+          python - <<'PY'
+          import json, sys, pathlib
+          p = pathlib.Path("docs/data/eu_ctis.json")
+          snap = json.loads(p.read_text(encoding="utf-8"))
+          n, rec = snap["count"], snap["recruitingCount"]
+          print(f"CTIS: {n} trials, {rec} recruiting, built {snap['generated'][:10]}, {p.stat().st_size/1024:.0f} KB")
+          # A collapse to near-zero almost always means the API changed shape
+          # rather than that every EU neuro-oncology trial closed overnight.
+          if n < 40:
+              sys.exit(f"Refusing to publish: only {n} CTIS trials found (expected 100+).")
+          if rec < 10:
+              sys.exit(f"Refusing to publish: only {rec} CTIS trials recruiting (expected 40+).")
+
+          w = pathlib.Path("docs/data/ictrp.json")
+          if w.exists():
+              ic = json.loads(w.read_text(encoding="utf-8"))
+              print(f"ICTRP: {ic['count']} trials, {ic['recruitingCount']} recruiting, built {ic['generated'][:10]}")
+              print("  " + ", ".join(f"{k}={v}" for k, v in ic["byRegistry"].items()))
+              if ic["count"] < 30:
+                  sys.exit(f"Refusing to publish: ICTRP holds only {ic['count']} trials.")
+          else:
+              print("No ICTRP snapshot yet - page will report that source unavailable.")
+          PY
+
+      - name: Offline tests
+        # Parsing, scoring and page behaviour against fixtures and the
+        # snapshots just built. Nothing is published if these fail.
+        run: |
+          pip install -r requirements-desktop.txt
+          python -m unittest discover -s test -p "test_*.py"
+          npm ci
+          npm run test:unit
+
+      - name: Commit the snapshots if they changed
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            git commit -m "Refresh trial snapshots ($(date -u +%Y-%m-%d))"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: snapshot
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  live-check:
+    # Runs the real page against the live registers once a day. A failure here
+    # does not block publishing; it is the alarm that a register has changed a
+    # field name or gone away.
+    needs: snapshot
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run test:live

@@ -1,12 +1,18 @@
 {
   "name": "brain-trials-finder",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "description": "Interactive finder for recruiting neuro-oncology clinical trials",
   "type": "module",
   "scripts": {
-    "test": "node test/page.test.mjs",
+    "test": "node test/unit.test.mjs && node test/page.test.mjs",
+    "test:unit": "node test/unit.test.mjs",
+    "test:live": "node test/page.test.mjs",
+    "test:python": "python3 -m unittest discover -s test -p \"test_*.py\"",
     "serve": "python3 -m http.server -d docs 8000"
+  },
+  "engines": {
+    "node": ">=20.11"
   },
   "devDependencies": {
     "jsdom": "^24.0.0"

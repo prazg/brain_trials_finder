@@ -1,0 +1,34 @@
+name: Tests
+
+# Offline tests on every pull request and on pushes to branches other than
+# main (main is tested by the publish workflow before it deploys).
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Python tests
+        run: |
+          pip install -r requirements-desktop.txt
+          python -m unittest discover -s test -p "test_*.py" -v
+      - name: Page tests (fixtures, no network)
+        run: |
+          npm ci
+          npm run test:unit
