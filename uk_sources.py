@@ -1,23 +1,10 @@
-# UK sources aggregator (initial: ClinicalTrials.gov UK filter)
-from typing import List, Dict, Any, Tuple
+"""UK trials: ClinicalTrials.gov studies with at least one United Kingdom site."""
+from typing import Any, Dict, List, Tuple
 
-from ctgov_client import (
-    build_terms,
-    fetch_all_terms,
-    score_trial,
-    extract_row,
-)
+from ctgov_client import rank, search
 
 STATUSES = ["RECRUITING", "NOT_YET_RECRUITING"]
-
-
-def _normalize_key(row: Dict[str, Any]) -> str:
-    # Prefer identifiers; fallback to normalized title
-    nct = (row.get("nct") or "").strip()
-    if nct:
-        return f"NCT:{nct}"
-    title = (row.get("title") or "").lower().strip()
-    return f"TITLE:{title}"
+UK = "United Kingdom"
 
 
 def fetch_uk_trials(
@@ -27,60 +14,20 @@ def fetch_uk_trials(
     include_ctgov: bool = True,
 ) -> Tuple[List[Dict[str, Any]], int, int]:
     """
-    Fetch UK trials across selected sources.
-    Currently implemented: ClinicalTrials.gov with UK site filter.
+    Returns (rows, total_on_register, hidden_as_unrelated).
 
-    Returns: (rows, total_raw, skipped)
-    rows: list of standard rows with keys: title, nct, status, phases, conditions, site, score, reasons, url
-    total_raw: number of raw studies fetched before filters
-    skipped: number of studies skipped due to formatting issues
+    rows carry: title, nct, url, status, phases, conditions, sponsor, site,
+    city_country, countries, score, reasons, study.
+
+    The UK filter runs on the server (query.locn). Filtering client-side meant
+    trimming the first few pages of a worldwide result set, which misses UK
+    trials further down it.
+    Raises ctgov_client.CTGovError if the register cannot be read.
     """
-    terms = build_terms(diagnosis, keywords)
-    rows: List[Dict[str, Any]] = []
-    skipped = 0
-    total_raw = 0
-
-    if include_ctgov:
-        studies = fetch_all_terms(terms, STATUSES, page_size=100, max_pages=5)
-        total_raw += len(studies)
-        for s in studies:
-            try:
-                ps = (s.get("protocolSection", {}) or {})
-                locs = ((ps.get("contactsLocationsModule", {}) or {}).get("locations") or [])
-                # UK filter (case-insensitive contains)
-                uk_locs = [L for L in locs if "united kingdom" in (L.get("country") or "").lower()]
-                if not uk_locs:
-                    continue
-                sc, reasons = score_trial(s, intake)
-                base = extract_row(s)
-                # Replace site with first UK site
-                first_site = next(iter(uk_locs), {})
-                base["site"] = ", ".join(
-                    p for p in (
-                        first_site.get("facility", ""),
-                        first_site.get("city", ""),
-                        first_site.get("country", ""),
-                    ) if p
-                )
-                base["score"] = sc
-                base["reasons"] = "; ".join(reasons)
-                base["url"] = f"https://clinicaltrials.gov/study/{base['nct']}" if base.get("nct") else ""
-                rows.append(base)
-            except Exception:
-                skipped += 1
-                continue
-
-    # Deduplicate
-    seen = set()
-    deduped: List[Dict[str, Any]] = []
-    for r in rows:
-        k = _normalize_key(r)
-        if k in seen:
-            continue
-        seen.add(k)
-        deduped.append(r)
-
-    # Sort
-    deduped.sort(key=lambda x: -x.get("score", 0))
-    return deduped, total_raw, skipped
-
+    if not include_ctgov:
+        return [], 0, 0
+    studies, total = search(diagnosis, keywords, country=UK, statuses=STATUSES,
+                            page_size=100, max_pages=5)
+    rows, hidden = rank(studies, {**(intake or {}), "diagnosis": diagnosis,
+                                  "keywords": keywords, "country": UK})
+    return rows, total, hidden
