@@ -7,18 +7,18 @@
  * starts rendering blanks without erroring. Snapshots are served from disk.
  *
  *   npm install
- *   npm test                      # default scenarios
- *   npm test -- --quick           # one scenario, for a fast loop
+ *   npm run test:live                  # default scenarios
+ *   npm run test:live -- --quick       # one scenario, for a fast loop
  *
  * Exit code is non-zero if any scenario reports a failed source, a blank title,
- * a missing trial id, or zero results where results are expected.
+ * a missing trial id, malformed card text, or fewer results than its floor.
+ * The offline behaviour tests live in unit.test.mjs.
  */
 
-import { JSDOM, VirtualConsole } from "jsdom";
 import fs from "node:fs";
 import path from "node:path";
+import { ROOT, loadPage, wait } from "./harness.mjs";
 
-const ROOT = path.resolve(import.meta.dirname, "..");
 const quick = process.argv.includes("--quick");
 
 // dx, region, minimum results we expect to see
@@ -35,6 +35,7 @@ const SCENARIOS = quick
       ["Meningioma",         "any",     5],
       ["Brain metastases",   "uk_eu",   5],
       ["Any CNS tumour",     "india",   1],
+      ["Any CNS tumour",     "asiapac", 10],
     ];
 
 const snapshots = {};
@@ -45,84 +46,41 @@ for (const name of ["eu_ctis.json", "ictrp.json"]) {
 }
 
 const realFetch = globalThis.fetch;
-async function routedFetch(input, init) {
+function routedFetch(input, init = {}) {
   const url = String(input);
   for (const [name, body] of Object.entries(snapshots)) {
     if (url.endsWith("data/" + name) || url.endsWith("/" + name)) {
-      return new Response(body, { status: 200, headers: { "content-type": "application/json" } });
+      return Promise.resolve(new Response(body, { status: 200, headers: { "content-type": "application/json" } }));
     }
   }
-  if (/\.json(\?|$)/.test(url)) return new Response("", { status: 404 });
-  const r = await realFetch(url, init);
-  return new Response(await r.text(), {
-    status: r.status,
-    headers: { "content-type": r.headers.get("content-type") || "text/plain" },
-  });
+  if (/\.json(\?|$)/.test(url)) return Promise.resolve(new Response("", { status: 404 }));
+  // The page hands over a jsdom AbortSignal, which Node's fetch will not
+  // accept, so bridge it to a native controller.
+  const ctl = new AbortController();
+  init.signal?.addEventListener("abort", () => ctl.abort());
+  return realFetch(url, { signal: ctl.signal }).then(async (r) =>
+    new Response(await r.text(), {
+      status: r.status,
+      headers: { "content-type": r.headers.get("content-type") || "text/plain" },
+    }));
 }
 
-const vc = new VirtualConsole();
-vc.on("jsdomError", (e) => {
-  // jsdom does not implement navigation or object URLs; those are not our bugs.
-  if (!/Not implemented|navigation/i.test(e.message)) console.error("  jsdom:", e.message);
-});
-
-const dom = new JSDOM(fs.readFileSync(path.join(ROOT, "docs/index.html"), "utf8"), {
-  runScripts: "dangerously",
-  url: "https://example.github.io/brain_trials_finder/",
-  virtualConsole: vc,
-  pretendToBeVisual: true,
-  beforeParse(w) {
-    w.Response = Response;
-    w.Blob = Blob;
-    w.URL.createObjectURL = () => "blob:test";
-    w.URL.revokeObjectURL = () => {};
-    w.fetch = (...a) => routedFetch(...a);
-  },
-});
-
-const d = dom.window.document;
-const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function settle(timeoutMs = 45000) {
-  const deadline = Date.now() + timeoutMs;
-  while (Date.now() < deadline) {
-    await wait(400);
-    if (d.getElementById("goBtn").textContent === "Search") return true;
-  }
-  return false;
-}
-
-async function search(dx, region) {
-  d.getElementById("dx").value = dx;
-  d.getElementById("region").value = region;
-  d.getElementById("q").dispatchEvent(new dom.window.Event("submit"));
-  const ok = await settle();
-  const cards = [...d.querySelectorAll(".trial")];
-  const by = { CTG: 0, ISRCTN: 0, CTIS: 0, ICTRP: 0 };
-  for (const c of cards) by[c.className.split("r-")[1]]++;
-  return {
-    settled: ok,
-    cards,
-    by,
-    errors: [...d.querySelectorAll(".src.err")].map((e) => e.textContent.trim()),
-    blankTitles: cards.filter((c) => !c.querySelector("h3").textContent.trim()).length,
-    missingIds: cards.filter((c) => !c.querySelector(".id").textContent.trim()).length,
-  };
-}
-
+const page = loadPage({ fetch: routedFetch });
 const failures = [];
-await settle();
+await page.settle(90000);
 
 console.log("\ndx / region                          total  CTG ISRCTN CTIS ICTRP  status");
 console.log("-".repeat(80));
 
 for (const [dx, region, minimum] of SCENARIOS) {
-  const r = await search(dx, region);
+  const settled = await page.search({ dx, region });
+  const r = page.snapshot();
   const notes = [];
-  if (!r.settled) notes.push("TIMED OUT");
+  if (!settled) notes.push("TIMED OUT");
   if (r.errors.length) notes.push("SOURCE ERROR");
   if (r.blankTitles) notes.push(`${r.blankTitles} BLANK TITLES`);
   if (r.missingIds) notes.push(`${r.missingIds} MISSING IDS`);
+  if (r.garbage) notes.push(`${r.garbage} MALFORMED CARDS`);
   if (r.cards.length < minimum) notes.push(`BELOW MINIMUM (${minimum})`);
 
   console.log(
@@ -132,17 +90,19 @@ for (const [dx, region, minimum] of SCENARIOS) {
       (notes.length ? notes.join(", ") : "ok")
   );
   for (const e of r.errors) console.log("      " + e);
+  if (r.hidden) console.log("      " + r.hidden.replace(/\s+/g, " ").slice(0, 150));
   if (notes.length) failures.push(`${dx}/${region}: ${notes.join(", ")}`);
 }
 
 // CSV export must not throw.
 try {
-  d.getElementById("csvBtn").dispatchEvent(new dom.window.Event("click"));
+  page.d.getElementById("csvBtn").dispatchEvent(new page.w.Event("click"));
   console.log("\nCSV export: ok");
 } catch (e) {
   console.log("\nCSV export: FAILED — " + e.message);
   failures.push("CSV export threw: " + e.message);
 }
+if (page.errors.length) failures.push("script errors: " + page.errors.join("; "));
 
 console.log(
   failures.length
@@ -151,5 +111,5 @@ console.log(
 );
 
 await wait(300);
-dom.window.close();
+page.close();
 process.exit(failures.length ? 1 : 0);
