@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-11T11:54:43+00:00",
+ "generated": "2026-11-12T12:43:18+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -25,8 +25,8 @@
  ],
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
- "count": 164,
- "recruitingCount": 82,
+ "count": 165,
+ "recruitingCount": 83,
  "detailCarriedForward": 0,
  "trials": [
   {
@@ -1002,6 +1002,144 @@
    ],
    "otherIds": [
     "NCT07104032"
+   ]
+  },
+  {
+   "register": "CTIS",
+   "id": "2024-515690-10-00",
+   "title": "A PHASE I/II, MULTI-CENTER, OPEN-LABEL STUDY TO ASSESS THE SAFETY, PHARMACOKINETICS, AND PRELIMINARY EFFICACY OF AN ORALLY AVAILABLE SMALL MOLECULE, CC-99282, ALONE AND IN COMBINATION WITH ANTI-LYMPHOMA AGENTS IN SUBJECTS WITH RELAPSED OR REFRACTORY NON-HODGKIN LYMPHOMAS (R/R NHL)",
+   "conditions": "Marginal zone lymphoma, Diffuse large B-cell lymphoma, Primary central nervous system lymphoma, Mantle cell lymphoma, Follicular B-cell non-Hodgkin's lymphoma",
+   "sponsor": "Celgene Corp.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase I and Phase II (Integrated)- Other",
+   "countries": [
+    "Denmark",
+    "France",
+    "Italy",
+    "Spain"
+   ],
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "204",
+   "startDate": "2019-05-10",
+   "lastUpdated": "2026-11-11",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515690-10-00",
+   "recruitment": "recruiting",
+   "recruitingCountries": [
+    "Denmark"
+   ],
+   "criteria": "Inclusion:\n- Subject is ≥18 years of age at the time of signing the informed consent form (ICF).\n- Subject has a history of NHL (including DLBCL, FL, MZL, MCL and PCNSL) with relapsed or refractory disease\n- Subject has an Eastern Cooperative Oncology Group (ECOG) performance status of 0, 1 or 2.\n- Subjects must have the following laboratory values: a. Absolute neutrophil count (ANC) ≥ 1.5 x 10^9/L or ≥ 1 x 10^9/L in case of documented bone marrow involvement, without growth factor support for 7 days (14 days if pegfilgastrim) b. Hemoglobin (Hgb) ≥ 8 g/dL c. Platelets (plt) ≥ 75 x 10^9/L or ≥ 50 x 10^9/L in case of documented bone marrow involvement, without transfusion for 7 days d. Serum bilirubin ≤ 1.5 x ULN (upper limit of normal). e. AST/SGOT and ALT/SGPT ≤ 2.5X ULN f. Estimated serum creatinine clearance of > 30 mL/min using the Cockcroft-Gault equation or directly determined from the 24-hour urine collection method or using the modification of diet in renal disease (MDRD) formula. For Cohort G and H, estimated serum creatinine clearance of ≥ 45 mL/min using the Cockcroft-Gault equation or directly determined from the 24-hour urine collection method or using the modification of diet in renal disease (MDRD) formula.\n- Agree to follow the CC-99282 Pregnancy Prevention Plan (PPP)\n\nExclusion:\n- Subject has life expectancy ≤ 2 months.\n- Subjects who have aggressive lymphoma relapse requiring immediate cytoreductive therapy to avoid potential life-threatening consequences (eg, due to tumor location).\n- Subject has received prior systemic anti-cancer treatment (approved or investigational) ≤ 5 half-lives or 4 weeks prior to starting investigational product(s), whichever is shorter.\n- Subject has symptomatic CNS involvement of disease (does not apply to PCNSL subjects in Part B).\n- Subject is on chronic systemic immunosuppressive therapy or corticosteroids (eg, prednisone or equivalent not to exceed 10 mg per day within the last 14 days) or subjects with clinically significant graft versus- host disease (GVHD).\n- Subject had prior autologous SCT ≤ 3 months prior to starting investigational product(s) and any treatment-related toxicity is unresolved (grade > 1).\n- Subject had prior allogeneic SCT with either standard or reduced intensity conditioning ≤ 6 months prior to starting investigational product(s) and any treatment-related toxicity is unresolved (grade > 1).",
+   "sites": [
+    {
+     "facility": "Aarhus Universitetshospital",
+     "city": "Aarhus N",
+     "country": "Denmark"
+    },
+    {
+     "facility": "Rigshospitalet",
+     "city": "Copenhagen Oe",
+     "country": "Denmark"
+    },
+    {
+     "facility": "Sygehus Lillebaelt Vejle Sygehus",
+     "city": "Vejle",
+     "country": "Denmark"
+    },
+    {
+     "facility": "IRCCS Istituto Nazionale Tumori Fondazione Pascale",
+     "city": "Naples",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero-Universitaria Di Bologna IRCCS Istituto Di Ricerca E Di Cura A Carattere Scientifico",
+     "city": "Bologna",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Socio Sanitaria Territoriale Papa Giovanni Xxiii",
+     "city": "Bergamo",
+     "country": "Italy"
+    },
+    {
+     "facility": "Hospices Civils De Lyon",
+     "city": "Pierre Benite",
+     "country": "France"
+    },
+    {
+     "facility": "Oncopole Claudius Regaud",
+     "city": "Toulouse Cedex 9",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Henri Becquerel",
+     "city": "Rouen Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Montpellier",
+     "city": "Montpellier Cedex 5",
+     "country": "France"
+    },
+    {
+     "facility": "Assistance Publique Hopitaux De Paris",
+     "city": "Creteil Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Bergonie",
+     "city": "Bordeaux",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Lille",
+     "city": "Lille",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Gustave Roussy",
+     "city": "Villejuif",
+     "country": "France"
+    },
+    {
+     "facility": "Assistance Publique Hopitaux De Paris",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
+     "facility": "Hospital Universitario Virgen De La Victoria",
+     "city": "Malaga",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario La Paz",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitari Vall D Hebron",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Fundacion Jimenez Diaz",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Institut Catala D'oncologia",
+     "city": "Badalona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario De Salamanca",
+     "city": "Salamanca",
+     "country": "Spain"
+    }
+   ],
+   "otherIds": [
+    "NCT03930953"
    ]
   },
   {
@@ -3940,7 +4078,7 @@
    "register": "CTIS",
    "id": "2024-520426-11-00",
    "title": "An open-label, non-randomized, single dose, phase II trial of FG001 (an optical imaging agent) for localization of Meningiomas or presumed Low- Grade Gliomas scheduled for neurosurgery.",
-   "conditions": "Meningioma, Glioma",
+   "conditions": "Glioma, Meningioma",
    "sponsor": "Copenhagen University Hospital",
    "sponsorType": "Hospital/Clinic/Other health care facility",
    "phase": "Therapeutic exploratory (Phase II)",
@@ -3949,11 +4087,11 @@
    ],
    "statusCode": 4,
    "statusLabel": "Authorised",
-   "ageGroup": "18-64 years, 65+ years",
+   "ageGroup": "65+ years, 18-64 years",
    "gender": "Female, Male",
    "enrolled": "40",
    "startDate": "2025-01-29",
-   "lastUpdated": "2026-11-10",
+   "lastUpdated": "2026-11-11",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-520426-11-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -10153,6 +10291,67 @@
   },
   {
    "register": "CTIS",
+   "id": "2026-526504-73-00",
+   "title": "A multicenter safety and immunogenicity window-of-opportunity phase 1 interventional trial assessing the combination of IDH1 vaccine (IDH1-vac) and vorasidenib in adult patients with recurrent IDH1R132H-mutant astrocytoma, grade 2 - 4 (iVOCAL)",
+   "conditions": "recurrent IDH1R132H-mutant astrocytoma, grade 2 - 4",
+   "sponsor": "Heidelberg University",
+   "sponsorType": "Educational Institution",
+   "phase": "Human Pharmacology (Phase I)-  Other",
+   "countries": [
+    "Germany"
+   ],
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "45",
+   "startDate": "",
+   "lastUpdated": "2026-11-11",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-526504-73-00",
+   "recruitment": "not_started",
+   "recruitingCountries": [],
+   "criteria": "Inclusion:\n- Ability of patient to understand character and individual consequences of the clinical trial\n- Written informed consent\n- Age ≥ 18 years\n- Patients present with unequivocal first, second or third recurrence of a histologically and molecularly confirmed IDH1R132H-mutated astrocytoma WHO grade 2, 3 and 4 recurrent and/or progressive after radiotherapy and chemotherapy\n- Availability of pre-study MRI (not older than 3 months) of latest tumor recurrence\n- Availability of tumor tissue from the most recent glioma-directed surgical intervention (FFPE bulk or cryo tissue)\n- Patients have received radiotherapy and alkylating chemotherapy\n- Patients are at least six months off radiotherapy and at least 4 weeks off chemotherapy prior to screening MRI prior to baseline\n- Patients must be candidates for complete or partial on-trial resection and the on- trial resection must be postponable for six weeks\n- Patients should be immunocompetent (i.e. no concomitant treatment with dexamethasone (or equivalent), or receive stable/decreasing steroid levels not exceeding 2 mg/day dexamethasone (or equivalent) during the last 3 days prior to baseline)\n- Karnofsky Performance Status ≥ 70\n- Adequate bone marrow function: a. absolute neutrophil counts (ANC) ≥ 1.5 x 109/L, b. hemoglobin ≥ 9 g/dL, c. platelets ≥ 100 x 109/L.\n- Adequate renal function: serum creatinine ≤ 2.0 x ULN, or creatinine clearance > 30 mL/min\n- Adequate hepatic function: a. Total bilirubin ≤ 1.5 × ULN (except for patients with Gilbert's syndrome who are excluded if total bilirubin > 3.0 × ULN or direct bilirubin ≥1.5 × ULN) b. Alanine aminotransferase (ALT) and aspartate aminotransferase (AST) at or below ULN. c. Alkaline phosphatase (ALP) ≤ 2.5 x ULN.\n- Postmenopausal or evidence of non-childbearing status. For women of childbearing potential negative serum pregnancy test (minimum sensitivity 25 IU/L or equivalent units of HCG) before treatment as well as highly effective forms of contraception have to be in place thereafter\n- Female patients of childbearing potential and male patients with partners of childbearing potential who are sexually active must agree to the use of two forms of contraception in combination (male condom and one highly effective method). These should be started immediately after signing the informed consent form and continued throughout the period of study treatment plus 6 months after EOT.\n\nExclusion:\n- Presence of 1p19q co-deletion (Per local assessment, q).\n- Patient is unable to swallow oral medication\n- Patient is unlikely to cooperate in the study\n- Known hypersensitivity to any of the components of vorasidenib\n- Known hypersensitivity to any of the components of IDH1-vac\n- Ongoing use of medications that are CYP2C8, CYP2C9, CYP2C19, or CYP3A substrates with a narrow therapeutic index.\n- Relevant lactose intolerance\n- Any prior treatment with vorasidenib or any other mutant IDH inhibitor\n- Any prior treatment with the IDH1 vaccine (IDH1-vac)\n- Pregnancy and lactation\n- Current participation in another interventional study or participation in other clinical trials or their observation period during the last 30 days before the first administration of the IMP(s).participation in non-interventional registries or epidemiological studies is allowed\n- Have received prior systemic anticancer therapy (other than surgery) within 4 weeks (or 6 weeks for nitrosoureas) of the start of study treatment. In addition, the first dose of study treatment should not occur before a period of 28 days of any prior investigational agent have elapsed.\n- Any use of immunosuppressive medication until 4 weeks prior to baseline, except for the following: a. intranasal, inhaled, topical steroids, or local steroid injection (e.g., intra-articular injection); b. Systemic corticosteroids at physiologic doses ≤ 10 mg/day of prednisone or equivalent; c. Steroids as premedication for hypersensitivity reactions (e.g., CT scan premedication).\n- Patients with history or presence of HIV and/or HBV/HCV positivity (positive HBV surface antigen or HCV RNA if anti-HCV antibody screening test positive).\n- Active infection requiring systemic therapy\n- Patients who have received a live, attenuated vaccine within 4 weeks prior to the first administration of the study drug(s)\n- Clinically significant (i.e., active) cardiovascular disease: Cerebral vascular accident/stroke (< 6 months prior to baseline), myocardial infarction (< 6 months prior to baseline), unstable angina, congestive heart failure (≥ New York Heart Association Classification Class II), or serious cardiac arrhythmia requiring medication.\n- Other severe acute or chronic medical conditions including colitis, inflammatory bowel disease, pneumonitis, pulmonary fibrosis or psychiatric conditions including recent (within the past year) or active suicidal ideation or behavior; or laboratory abnormalities that may increase the risk associated with study participation or study treatment administration or may interfere with the interpretation of study results and, in the judgment of the investigator, would make the patient inappropriate for entry into this study.\n- Have a heart-rate corrected QT interval using the formula of Bazett or other factors that increase the risk of QT prolongation or arrhythmic events (eg, heart failure, hypokalemia, family history of long QT interval syndrome). Subjects with bundle branch block and prolonged QTcF are permitted with approval of the Medical Monitor.\n- Have features assessed as high-risk by the Investigator, including brainstem involvement either as primary location or by tumor extension, clinically relevant functional or neurocognitive deficits due to the tumor in the opinion of the Investigator (deficits resulting from surgery are allowed), or uncontrolled seizures (defined as persistent seizures interfering with activities of daily life AND failed 3 lines of antiepileptic drug regimens including at least 1 combination regimen).\n- Concurrent active ma",
+   "sites": [
+    {
+     "facility": "Charite Universitaetsmedizin Berlin KöR",
+     "city": "Berlin",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Heidelberg AöR",
+     "city": "Heidelberg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Tuebingen AöR",
+     "city": "Tuebingen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Bonn AöR",
+     "city": "Bonn",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Regensburg AöR",
+     "city": "Regensburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "University Hospital Frankfurt",
+     "city": "Frankfurt am Main",
+     "country": "Germany"
+    },
+    {
+     "facility": "Heidelberg University",
+     "city": "Mannheim",
+     "country": "Germany"
+    }
+   ],
+   "otherIds": []
+  },
+  {
+   "register": "CTIS",
    "id": "2024-515466-13-00",
    "title": "A Phase 1 Safety and Dose Finding Study of 131I -TLX101 Plus Standard of Care in Patients with Newly Diagnosed Glioblastoma",
    "conditions": "Glioblastoma multiforme (GBM)",
@@ -12208,62 +12407,12 @@
    "gender": "Female, Male",
    "enrolled": "280",
    "startDate": "2025-03-28",
-   "lastUpdated": "2026-10-23",
+   "lastUpdated": "2026-11-11",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-513550-30-00",
    "recruitment": "closed",
    "recruitingCountries": [],
    "criteria": "Inclusion:\n- 1. The participant (or legally acceptable representative) has provided documented informed consent for the study.\n- 2. Be ≥ 18 years of age on day of providing informed consent.\n- 3. Participant with new diagnosis of GBM according to WHO 2021 Classification.\n- 4. Recovered from maximal debulking surgery (gross total resection, partial resection and biopsy-only patients are all acceptable), Gliadel wafers placement at the time of surgical resection is not allowed.\n- 5. Have completed standard adjuvant chemoradiotherapy of RT according to local practice (56-64 Gy), and concomitant TMZ chemotherapy.\n- 6. Able to start treatment between 4 to 7 weeks from the later of last dose of concomitant temozolomide or radiotherapy.\n- 7. Amenable to treatment with Optune concomitant with maintenance temozolomide (150-200 mg/m^2 daily x 5, Q28 days).\n- 8. All patients must have had tissue submitted for MGMT Promoter Methylation determination prior to randomization.\n- 9. Have an ECOG Performance Status of 0 to 1 assessed within 7 days before randomization.\n- 10. Life expectancy ≥ 3 months.\n- 11. Stable or decreasing dose of corticosteroids (dexamethasone ≤ 2mg or equivalent) for the last 7 days prior to randomization, if applicable.\n- 12. For the full list of inclusion criteria, please refer to the protocol.\n\nExclusion:\n- 1. Has received prior therapy with an anti-PD-1, anti-PD-L1, or anti PD L2 agent or with an agent directed to another stimulatory or co-inhibitory T-cell receptor (e.g., CTLA-4, OX 40, CD137).\n- 2. Ongoing requirement for >2 mg dexamethasone (or equivalent), due to intracranial mass effect.\n- 3. Has received prior systemic anti-cancer therapy including investigational agents within 4 weeks prior to randomization. Note: Participants must have recovered from all AEs due to previous therapies to ≤Grade 1 or baseline. Participants with ≤Grade 2 neuropathy may be eligible. Participants with endocrine-related AEs Grade ≤2 requiring treatment or hormone replacement may be eligible. Note: If the participant had a major operation, the participant must have recovered adequately from the procedure and/or any complications from the operation before starting study intervention.\n- 4. Received a live or live-attenuated vaccine within 30 days before the first dose of study intervention. Administration of killed vaccines are allowed. Refer to Section 6.5.1 for information on COVID-19 vaccines\n- 5. Is currently participating in or has participated in a study of an investigational agent or has used an investigational device within 4 weeks prior to the first study treatment. Note: Participants who have entered the follow-up phase of an investigational study may participate as long as it has been 4 weeks after the last dose of the previous investigational agent.\n- 6. Has a diagnosis of immunodeficiency or is receiving chronic systemic steroid therapy (in dosing exceeding 10 mg daily of prednisone equivalent) or any other form of immunosuppressive therapy within 7 days prior the first dose of study medication.\n- 7. Has a known additional malignancy that is progressing or has required active treatment within the past 3 years. Note: Participants with basal cell carcinoma of the skin, squamous cell carcinoma of the skin, or carcinoma in situ (e.g., breast carcinoma, cervical cancer in situ) that have undergone potentially curative therapy are not excluded.\n- 8. Has severe hypersensitivity (≥Grade 3) to the experimental drug and/or any of its excipients.\n- 9. Has an active autoimmune disease that has required systemic treatment in past 2 years (i.e., with use of disease modifying agents, corticosteroids or immunosuppressive drugs). Replacement therapy (e.g., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency) is not considered a form of systemic treatment and is allowed.\n- 10. Has a history of (noninfectious) pneumonitis/interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease.\n- 11. Has an active infection requiring systemic therapy.\n- 12. Has a known history of human immunodeficiency virus (HIV), Hepatitis B (defined as HBsAg reactive) or known active Hepatitis C virus (defined as HCV RNA [qualitative] is detected) infection Note: Hepatitis B and C screening tests are not required unless: - Known history of HBV and HCV infection - As mandated by local health authority\n- 13. Has a history or current evidence of any condition, therapy, or laboratory abnormality that might confound the results of the study, interfere with the participant's participation for the full duration of the study, or is not in the best interest of the participant to participate, in the opinion of the treating investigator.\n- 14. Has a known psychiatric or substance abuse disorder that would interfere with the participant’s ability to cooperate with the requirements of the study.\n- 15. Has had an allogenic tissue/solid organ transplant.\n- 16. Early progressive disease after the end of TMZ/RT. If pseudoprogression is suspected, additional imaging studies should be performed to rule out true progression.\n- 17. Infratentorial or leptomeningeal disease.\n- 18. Implanted pacemaker, defibrillator, deep brain stimulator, other implanted electronic devices in the brain, or documented clinically significant arrhythmias.\n- 19. A skull defect (such as, missing bone with no replacement) or bullet fragments.\n- 20. Evidence of increased intracranial pressure (midline shift > 5mm, clinically significant papilledema, vomiting and nausea or reduced level of consciousness).\n- 21. Known allergies to medical adhesives or hydrogel and/or compounds of similar chemical or biologic composition to Temozolomide.\n- 22. Admitted to an institution by administrative or court order.",
    "sites": [
-    {
-     "facility": "Hospital Universitario La Paz",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Virgen De Las Nieves",
-     "city": "Granada",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Ramon Y Cajal",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Clinico San Carlos",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "ICO L'HOSPITALET HOSPITAL DURAN I REYNALS",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Y Politecnico La Fe",
-     "city": "Valencia",
-     "country": "Spain"
-    },
-    {
-     "facility": "University Hospital Virgen Del Rocio S.L.",
-     "city": "Sevilla",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitari Vall D Hebron",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Reina Sofia",
-     "city": "Cordoba",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario 12 De Octubre",
-     "city": "Madrid",
-     "country": "Spain"
-    },
     {
      "facility": "Universitaetsklinikum Muenster AöR",
      "city": "Muenster",
@@ -12318,6 +12467,56 @@
      "facility": "Azienda Ospedaliera Universitaria Citta Della Salute E Della Scienza Di Torino",
      "city": "Turin",
      "country": "Italy"
+    },
+    {
+     "facility": "Hospital Universitari Vall D Hebron",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Virgen De Las Nieves",
+     "city": "Granada",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Clinico San Carlos",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Reina Sofia",
+     "city": "Cordoba",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Ramon Y Cajal",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Y Politecnico La Fe",
+     "city": "Valencia",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario 12 De Octubre",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "University Hospital Virgen Del Rocio S.L.",
+     "city": "Sevilla",
+     "country": "Spain"
+    },
+    {
+     "facility": "ICO L'HOSPITALET HOSPITAL DURAN I REYNALS",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario La Paz",
+     "city": "Madrid",
+     "country": "Spain"
     },
     {
      "facility": "Fakultni Nemocnice Motol A Homolka",
@@ -12433,144 +12632,6 @@
     }
    ],
    "otherIds": []
-  },
-  {
-   "register": "CTIS",
-   "id": "2024-515690-10-00",
-   "title": "A PHASE I/II, MULTI-CENTER, OPEN-LABEL STUDY TO ASSESS THE SAFETY, PHARMACOKINETICS, AND PRELIMINARY EFFICACY OF AN ORALLY AVAILABLE SMALL MOLECULE, CC-99282, ALONE AND IN COMBINATION WITH ANTI-LYMPHOMA AGENTS IN SUBJECTS WITH RELAPSED OR REFRACTORY NON-HODGKIN LYMPHOMAS (R/R NHL)",
-   "conditions": "Marginal zone lymphoma, Diffuse large B-cell lymphoma, Primary central nervous system lymphoma, Mantle cell lymphoma, Follicular B-cell non-Hodgkin's lymphoma",
-   "sponsor": "Celgene Corp.",
-   "sponsorType": "Pharmaceutical company",
-   "phase": "Phase I and Phase II (Integrated)- Other",
-   "countries": [
-    "Denmark",
-    "France",
-    "Italy",
-    "Spain"
-   ],
-   "statusCode": 5,
-   "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years",
-   "gender": "Female, Male",
-   "enrolled": "204",
-   "startDate": "2019-05-10",
-   "lastUpdated": "2026-11-09",
-   "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515690-10-00",
-   "recruitment": "uncertain",
-   "recruitingCountries": [
-    "Denmark"
-   ],
-   "criteria": "Inclusion:\n- Subject is ≥18 years of age at the time of signing the informed consent form (ICF).\n- Subject has a history of NHL (including DLBCL, FL, MZL, MCL and PCNSL) with relapsed or refractory disease\n- Subject has an Eastern Cooperative Oncology Group (ECOG) performance status of 0, 1 or 2.\n- Subjects must have the following laboratory values: a. Absolute neutrophil count (ANC) ≥ 1.5 x 10^9/L or ≥ 1 x 10^9/L in case of documented bone marrow involvement, without growth factor support for 7 days (14 days if pegfilgastrim) b. Hemoglobin (Hgb) ≥ 8 g/dL c. Platelets (plt) ≥ 75 x 10^9/L or ≥ 50 x 10^9/L in case of documented bone marrow involvement, without transfusion for 7 days d. Serum bilirubin ≤ 1.5 x ULN (upper limit of normal). e. AST/SGOT and ALT/SGPT ≤ 2.5X ULN f. Estimated serum creatinine clearance of > 30 mL/min using the Cockcroft-Gault equation or directly determined from the 24-hour urine collection method or using the modification of diet in renal disease (MDRD) formula. For Cohort G and H, estimated serum creatinine clearance of ≥ 45 mL/min using the Cockcroft-Gault equation or directly determined from the 24-hour urine collection method or using the modification of diet in renal disease (MDRD) formula.\n- Agree to follow the CC-99282 Pregnancy Prevention Plan (PPP)\n\nExclusion:\n- Subject has life expectancy ≤ 2 months.\n- Subjects who have aggressive lymphoma relapse requiring immediate cytoreductive therapy to avoid potential life-threatening consequences (eg, due to tumor location).\n- Subject has received prior systemic anti-cancer treatment (approved or investigational) ≤ 5 half-lives or 4 weeks prior to starting investigational product(s), whichever is shorter.\n- Subject has symptomatic CNS involvement of disease (does not apply to PCNSL subjects in Part B).\n- Subject is on chronic systemic immunosuppressive therapy or corticosteroids (eg, prednisone or equivalent not to exceed 10 mg per day within the last 14 days) or subjects with clinically significant graft versus- host disease (GVHD).\n- Subject had prior autologous SCT ≤ 3 months prior to starting investigational product(s) and any treatment-related toxicity is unresolved (grade > 1).\n- Subject had prior allogeneic SCT with either standard or reduced intensity conditioning ≤ 6 months prior to starting investigational product(s) and any treatment-related toxicity is unresolved (grade > 1).",
-   "sites": [
-    {
-     "facility": "Hospital Universitario Virgen De La Victoria",
-     "city": "Malaga",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario La Paz",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Institut Catala D'oncologia",
-     "city": "Badalona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitari Vall D Hebron",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario De Salamanca",
-     "city": "Salamanca",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Fundacion Jimenez Diaz",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Aarhus Universitetshospital",
-     "city": "Aarhus N",
-     "country": "Denmark"
-    },
-    {
-     "facility": "Rigshospitalet",
-     "city": "Copenhagen Oe",
-     "country": "Denmark"
-    },
-    {
-     "facility": "Sygehus Lillebaelt Vejle Sygehus",
-     "city": "Vejle",
-     "country": "Denmark"
-    },
-    {
-     "facility": "IRCCS Istituto Nazionale Tumori Fondazione Pascale",
-     "city": "Naples",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Ospedaliero-Universitaria Di Bologna IRCCS Istituto Di Ricerca E Di Cura A Carattere Scientifico",
-     "city": "Bologna",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Socio Sanitaria Territoriale Papa Giovanni Xxiii",
-     "city": "Bergamo",
-     "country": "Italy"
-    },
-    {
-     "facility": "Hospices Civils De Lyon",
-     "city": "Pierre Benite",
-     "country": "France"
-    },
-    {
-     "facility": "Oncopole Claudius Regaud",
-     "city": "Toulouse Cedex 9",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Henri Becquerel",
-     "city": "Rouen Cedex",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Montpellier",
-     "city": "Montpellier Cedex 5",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Creteil Cedex",
-     "country": "France"
-    },
-    {
-     "facility": "Institut Bergonie",
-     "city": "Bordeaux",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Lille",
-     "city": "Lille",
-     "country": "France"
-    },
-    {
-     "facility": "Institut Gustave Roussy",
-     "city": "Villejuif",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Paris",
-     "country": "France"
-    }
-   ],
-   "otherIds": [
-    "NCT03930953"
-   ]
   },
   {
    "register": "CTIS",
