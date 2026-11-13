@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-12T12:43:18+00:00",
+ "generated": "2026-11-13T12:13:22+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -13452,20 +13452,46 @@
    "sponsorType": "Pharmaceutical company",
    "phase": "Therapeutic exploratory (Phase II)",
    "countries": [
-    "Germany"
+    "Germany",
+    "Spain"
    ],
    "statusCode": 2,
    "statusLabel": "Authorised",
    "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
-   "enrolled": "20",
+   "enrolled": "53",
    "startDate": "",
-   "lastUpdated": "2026-11-09",
+   "lastUpdated": "2026-11-12",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2025-523824-39-01",
    "recruitment": "not_started",
    "recruitingCountries": [],
    "criteria": "Inclusion:\n- 1. Patient must be capable to understand the purpose of the study and have signed written ICF prior to beginning specific protocol procedures.\n- 2. Male or female patients ≥ 18 years of age at the time of signing ICF.\n- 3. Histological or cytological diagnosis of locally advanced unresectable or metastatic solid tumor.\n- 4. At least one measurable brain lesion of ≥10 mm on T1-weighted, gadolinium-enhanced magnetic resonance imaging (MRI) according to Response Assessment in Neuro-Oncology Brain Metastases (RANO-BM) criteria.\n- 5. Patients may or may not have type II leptomeningeal disease (LMD) per European Association of Neuro-Oncology (EANO)- European Society for Molecular Oncology (ESMO) criteria.\n- 6. Stable or decreasing corticosteroid dose, or no use of corticoids, for at least 7 days prior to enrollment.\n- 7. Eastern Cooperative Oncology Group performance status (ECOG PS) ≤ 2.\n- 8. Minimum life expectancy of ≥ 6 weeks at screening. 1. Patient has adequate bone marrow, liver, and renal function within 7 days before first Study treatment dose: I. Hematological (without platelet, red blood cell transfusion/plasma transfusion within 1 week prior to screening assessment, and/or granulocyte colony-stimulating factor support): White blood cell (WBC) count > 3.0 x 109/L, absolute neutrophil count (ANC) ≥ 1.5 x 109/L, platelet count ≥ 100.0 x109/L, and hemoglobin ≥ 9.0 g/dL (≥ 5.6 mmol/L). II. Hepatic: Serum albumin ≥ 2.5 g/dL; total bilirubin ≤ 1.5 times upper limit of normal (ULN) (≤ 3 in patients with liver metastases or know history of Gilbert’s disease); alkaline phosphatase (ALP) ≤ 2.5 times ULN (≤ 5 in patients with liver metastases); aspartate transaminase (AST) and alanine transaminase (ALT) ≤ 3 times ULN (≤ 5 in patients with liver metastases); international normalized ratio (INR) < 1.5. III. Renal: serum creatinine ≤ 1.5 x ULN or creatinine clearance ≥ 50 mL/min/1.73 m2 based on Cockcroft−Gault glomerular filtration rate estimation for patients with creatinine levels above institutional normal.\n- 9. Resolution of all acute toxic effects of prior anticancer therapy to grade ≤ 1 as determined by the US National Cancer Institute (NCI)-Common Terminology Criteria for Adverse Events (CTCAE) version 5.0 (v.5.0).\n- 10. Women of childbearing potential who are sexually active with a non-sterilized male partner must have a negative serum pregnancy test at screening and within 14 days prior to initiation of study treatment. In addition, they must agree to one highly effective method of contraception from the time of screening within the time period specified in the Investigator's Brochure (IB) after the final dose of IMP. Female patients must refrain from egg cell donation and breastfeeding during this same period. Contraception methods will be detailed in the specific sub-cohorts.\n- 11. Male participants who are sexually active with a female partner of childbearing potential must be surgically sterile or using an acceptable method of contraception from the time of screening within the time period specified in the Investigator's Brochure (IB) after the final dose of IMP. Male participants must not donate or bank sperm during this same period. Contraception methods will be detailed in the specific sub-cohorts.\n- 12. Patient must be accessible for treatment and follow-up.\n\nExclusion:\n- 1. Participation in another clinical trial, interventional or observational, until the Study's safety visit (participation in retrospective studies or data analysis is allowed).\n- 2. Treatment with approved or investigational cancer therapy within 14 days prior to initiation of study drug.\n- 3. Patients having type I leptomeningeal disease (LMD) per European Association of Neuro-Oncology (EANO)- European Society for Molecular Oncology (ESMO) criteria.\n- 4. Known history of invasive malignancy and other than the malignancy of interest within 5 years prior to signing informed consent except for adequately treated basal cell or squamous cell skin cancer or in situ cervical cancer. For other cancers considered to have a low risk of recurrence, discussion with the Sponsor’s Medical Monitor is required.\n- 5. Known allergy or hypersensitivity reaction to any investigational medicinal products (diagnostic radioligand) or their incorporated substances.\n- 6. Major surgical procedure or significant traumatic injury within 14 days before the first dose of study treatment or anticipation of need for major surgery within the course of the study treatment.\n- 7. Pregnant or breastfeeding females or patients not willing to apply highly effective contraception as defined in the ¨pregnancy and assessment of fertility¨ section of each sub-cohort protocol.\n- 8. Receipt of live or attenuated vaccine within 30 days prior to the first dose of study treatment.\n- 9. Has active or uncontrolled infection with hepatitis B virus (HBV), or hepatitis C virus (HCV). Patients with past HBV infection or resolved HBV infection (defined as having a negative hepatitis B surface antigen [HBsAg] test and a positive hepatitis B core antibody [HBcAb] test, accompanied by a negative HBV DNA test) are eligible. Patients positive for HCV antibody are eligible only if polymerase chain reaction (PCR) is negative for HCV RNA.\n- 10. Has known human immunodeficiency virus (HIV) infection that is not well controlled.\n- 11. Other active uncontrolled infection at the time of enrollment.\n- 12. A history of uncontrolled seizures, central nervous system (CNS) disorders, or serious and/or unstable pre-existing psychiatric disability judged by the investigator to be clinically significant and adversely affecting compliance to study drugs or interfering with trial participant safety.\n- 13. Known substance abuse or any other concurrent severe and/or uncontrolled medical condition that would, in the investigator’s judgment, contraindicate patient participation.\n- 14. Any serious medical condition or abnormality in clinical laboratory tests that, in the inves",
    "sites": [
+    {
+     "facility": "University Clinical Hospital Virgen De La Arrixaca",
+     "city": "Murcia",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Virgen De Las Nieves",
+     "city": "Granada",
+     "country": "Spain"
+    },
+    {
+     "facility": "Clinica Universidad De Navarra",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Virgen De La Victoria",
+     "city": "Malaga",
+     "country": "Spain"
+    },
+    {
+     "facility": "Clinica Universidad De Navarra",
+     "city": "Pamplona",
+     "country": "Spain"
+    },
     {
      "facility": "LMU Klinikum Muenchen AöR",
      "city": "Munich",
@@ -14769,12 +14795,12 @@
    "countries": [
     "Austria"
    ],
-   "statusCode": 2,
+   "statusCode": 3,
    "statusLabel": "Authorised",
    "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
    "enrolled": "15",
-   "startDate": "",
+   "startDate": "2026-11-09",
    "lastUpdated": "2026-06-29",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524299-44-00",
    "recruitment": "not_started",
