@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "WHO International Clinical Trials Registry Platform (ICTRP)",
  "sourceUrl": "https://trialsearch.who.int/",
- "generated": "2026-11-13T12:23:32+00:00",
+ "generated": "2026-11-14T11:35:20+00:00",
  "oldestRecord": "2026-11-11",
  "terms": [
   "glioblastoma",
@@ -21,15 +21,15 @@
   "brain neoplasms"
  ],
  "note": "National registries that feed WHO ICTRP. ClinicalTrials.gov and ISRCTN records are excluded because the page queries those live; EUCTR is excluded as the retired EU register superseded by CTIS. ICTRP mirrors national registries on their own schedule, so a very new CTRI or ChiCTR entry may appear on the national site first.",
- "count": 161,
- "recruitingCount": 111,
+ "count": 162,
+ "recruitingCount": 112,
  "byRegistry": {
   "JPRN (Japan)": 39,
   "CTRI (India)": 37,
   "NTR/OMON (Netherlands)": 26,
   "ChiCTR (China)": 25,
   "ANZCTR (Australia/NZ)": 13,
-  "DRKS (Germany)": 9,
+  "DRKS (Germany)": 10,
   "IRCT (Iran)": 4,
   "TCTR (Thailand)": 3,
   "ReBec (Brazil)": 2,
@@ -2015,6 +2015,32 @@
    "lastUpdated": "2026-06-29",
    "otherIds": [],
    "url": "https://trialsearch.who.int/Trial2.aspx?TrialID=JPRN-jRCT2031230007"
+  },
+  {
+   "register": "ICTRP",
+   "registry": "German Clinical Trials Register",
+   "registryName": "DRKS (Germany)",
+   "id": "DRKS00041790",
+   "title": "Neurosurgical treatment of children with brain tumors in the context of the continuous development of individualized surgical and follow-up care approaches - 18 years of clinical experience",
+   "scientificTitle": "Neurosurgical treatment of children with brain tumors in the context of the continuous development of individualized surgical and follow-up care approaches - 18 years of clinical experience",
+   "conditions": "Pediatric brain tumor",
+   "interventions": "Group 1: The study is based on routine clinical, demographic, and treatment-related data from the electronic medical records (ORBIS old and new systems) of the Asklepios Children’s Hospital St. Augustin, Department of Pediatric Neurosurgery. The study includes all pediatric patients diagnosed with a brain tumor who underwent neurosurgical treatment between January 1, 2008, and December 31, 2025. Data collection is conducted exclusively retrospectively by physicians involved in the treatment.",
+   "sponsor": "Asklepios Kinderklinik Abt. Neurochirurgie",
+   "phase": "",
+   "studyType": "observational",
+   "status": "Recruiting",
+   "recruiting": true,
+   "countries": [
+    "Germany"
+   ],
+   "criteria": "Inclusion criteria: brain tumor\n\nExclusion criteria: Ruling out brain tumors",
+   "enrolled": 300,
+   "enrolledRaw": "300",
+   "registered": "2026-10-13",
+   "firstEnrolment": "2026-09-08",
+   "lastUpdated": "2026-11-09",
+   "otherIds": [],
+   "url": "https://trialsearch.who.int/Trial2.aspx?TrialID=DRKS00041790"
   },
   {
    "register": "ICTRP",

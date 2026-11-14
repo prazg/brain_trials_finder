@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-13T12:13:22+00:00",
+ "generated": "2026-11-14T11:29:46+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -8536,7 +8536,6 @@
    "recruitingCountries": [
     "Austria",
     "Belgium",
-    "Czechia",
     "Denmark",
     "Finland",
     "France",
@@ -13452,6 +13451,7 @@
    "sponsorType": "Pharmaceutical company",
    "phase": "Therapeutic exploratory (Phase II)",
    "countries": [
+    "Austria",
     "Germany",
     "Spain"
    ],
@@ -13459,9 +13459,9 @@
    "statusLabel": "Authorised",
    "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
-   "enrolled": "53",
+   "enrolled": "66",
    "startDate": "",
-   "lastUpdated": "2026-11-12",
+   "lastUpdated": "2026-11-13",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2025-523824-39-01",
    "recruitment": "not_started",
    "recruitingCountries": [],
@@ -13491,6 +13491,11 @@
      "facility": "Clinica Universidad De Navarra",
      "city": "Pamplona",
      "country": "Spain"
+    },
+    {
+     "facility": "Medical University Of Vienna",
+     "city": "Vienna",
+     "country": "Austria"
     },
     {
      "facility": "LMU Klinikum Muenchen AöR",
