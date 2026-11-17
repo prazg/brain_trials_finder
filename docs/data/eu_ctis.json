@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-16T12:45:11+00:00",
+ "generated": "2026-11-17T13:23:11+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -305,6 +305,7 @@
    "recruitingCountries": [
     "France",
     "Hungary",
+    "Poland",
     "Spain"
    ],
    "criteria": "",
@@ -1192,11 +1193,11 @@
    ],
    "statusCode": 4,
    "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years",
+   "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
    "enrolled": "20",
    "startDate": "2025-04-15",
-   "lastUpdated": "2026-10-07",
+   "lastUpdated": "2026-11-16",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2023-508112-35-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -1236,8 +1237,73 @@
      "country": "Germany"
     },
     {
+     "facility": "Hospital Clinico Universitario De Valencia",
+     "city": "Valencia",
+     "country": "Spain"
+    },
+    {
      "facility": "Institut Catala d'Oncologia de Girona- Hospital Universitari Dr Josep Trueta",
      "city": "Girona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital La Milagrosa S.A.",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Del Vinalopo",
+     "city": "Elche",
+     "country": "Spain"
+    },
+    {
+     "facility": "Salut Sant Joan De Reus",
+     "city": "Reus",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitari Vall D Hebron",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "University Clinical Hospital Virgen De La Arrixaca",
+     "city": "Murcia",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Clinic De Barcelona",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Micancer Center S.L.P.",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Central De Asturias",
+     "city": "Oviedo",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario De Cruces",
+     "city": "Barakaldo",
+     "country": "Spain"
+    },
+    {
+     "facility": "Parc Tauli Hospital Universitari",
+     "city": "Sabadell",
+     "country": "Spain"
+    },
+    {
+     "facility": "Clinica Universidad De Navarra",
+     "city": "Pamplona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital General Universitario Dr. Balmis",
+     "city": "Alicante",
      "country": "Spain"
     },
     {
@@ -1251,43 +1317,8 @@
      "country": "Spain"
     },
     {
-     "facility": "Salut Sant Joan De Reus",
-     "city": "Reus",
-     "country": "Spain"
-    },
-    {
-     "facility": "University Clinical Hospital Virgen De La Arrixaca",
-     "city": "Murcia",
-     "country": "Spain"
-    },
-    {
-     "facility": "Micancer Center S.L.P.",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Parc Tauli Hospital Universitari",
-     "city": "Sabadell",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Del Vinalopo",
-     "city": "Elche",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Clinico Universitario De Valencia",
-     "city": "Valencia",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital General Universitario Dr. Balmis",
-     "city": "Alicante",
-     "country": "Spain"
-    },
-    {
-     "facility": "Clinica Universidad De Navarra",
-     "city": "Pamplona",
+     "facility": "Hospital Beata Maria Ana",
+     "city": "Madrid",
      "country": "Spain"
     },
     {
@@ -1296,32 +1327,7 @@
      "country": "Spain"
     },
     {
-     "facility": "Hospital Clinic De Barcelona",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitari Vall D Hebron",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Central De Asturias",
-     "city": "Oviedo",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Beata Maria Ana",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario De Cruces",
-     "city": "Barakaldo",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital La Milagrosa S.A.",
+     "facility": "Clinica Universidad De Navarra",
      "city": "Madrid",
      "country": "Spain"
     }
@@ -5355,7 +5361,7 @@
     "Norway",
     "Spain"
    ],
-   "statusCode": 3,
+   "statusCode": 4,
    "statusLabel": "Authorised",
    "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
@@ -5368,6 +5374,7 @@
     "Austria",
     "France",
     "Germany",
+    "Italy",
     "Netherlands",
     "Norway",
     "Spain"
@@ -6746,11 +6753,11 @@
    ],
    "statusCode": 4,
    "statusLabel": "Authorised",
-   "ageGroup": "18-64 years, 0-17 years",
+   "ageGroup": "0-17 years, 18-64 years",
    "gender": "Female, Male",
    "enrolled": "135",
    "startDate": "2013-10-18",
-   "lastUpdated": "2026-11-04",
+   "lastUpdated": "2026-11-16",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-515626-92-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -6808,36 +6815,6 @@
      "facility": "Oslo University Hospital HF",
      "city": "Oslo",
      "country": "Norway"
-    },
-    {
-     "facility": "Queen Silvia Childrens Hospital - Sahlgrenska University Hospital - Vaestra Goetalandsregionen",
-     "city": "Gothenburg",
-     "country": "Sweden"
-    },
-    {
-     "facility": "Region Oestergoetland",
-     "city": "Linkoping",
-     "country": "Sweden"
-    },
-    {
-     "facility": "Region Skane Skanes Universitetssjukhus",
-     "city": "Lund",
-     "country": "Sweden"
-    },
-    {
-     "facility": "Region Vaesterbotten",
-     "city": "Umea",
-     "country": "Sweden"
-    },
-    {
-     "facility": "Karolinska University Hospital",
-     "city": "Huddinge",
-     "country": "Sweden"
-    },
-    {
-     "facility": "Uppsala University Hospital",
-     "city": "Uppsala",
-     "country": "Sweden"
     },
     {
      "facility": "Centre Leon Berard",
@@ -6913,6 +6890,36 @@
      "facility": "Fakultni Nemocnice Brno",
      "city": "Brno",
      "country": "Czechia"
+    },
+    {
+     "facility": "Queen Silvia Childrens Hospital - Sahlgrenska University Hospital - Vaestra Goetalandsregionen",
+     "city": "Gothenburg",
+     "country": "Sweden"
+    },
+    {
+     "facility": "Region Vaesterbotten",
+     "city": "Umea",
+     "country": "Sweden"
+    },
+    {
+     "facility": "Karolinska University Hospital",
+     "city": "Solna",
+     "country": "Sweden"
+    },
+    {
+     "facility": "Region Oestergoetland",
+     "city": "Linkoping",
+     "country": "Sweden"
+    },
+    {
+     "facility": "Uppsala University Hospital",
+     "city": "Uppsala",
+     "country": "Sweden"
+    },
+    {
+     "facility": "Region Skane Skanes Universitetssjukhus",
+     "city": "Lund",
+     "country": "Sweden"
     }
    ],
    "otherIds": [
