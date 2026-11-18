@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-17T13:23:11+00:00",
+ "generated": "2026-11-18T13:02:20+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -2030,6 +2030,7 @@
     "Belgium",
     "Czechia",
     "France",
+    "Greece",
     "Italy",
     "Netherlands",
     "Poland",
@@ -17232,7 +17233,7 @@
    "gender": "Female, Male",
    "enrolled": "101",
    "startDate": "2020-11-03",
-   "lastUpdated": "2025-10-20",
+   "lastUpdated": "2026-11-17",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-514733-38-00",
    "recruitment": "closed",
    "recruitingCountries": [],
@@ -17369,28 +17370,8 @@
      "country": "Netherlands"
     },
     {
-     "facility": "Oncopole Claudius Regaud",
-     "city": "Toulouse Cedex 9",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Francois Baclesse",
-     "city": "Caen Cedex 5",
-     "country": "France"
-    },
-    {
-     "facility": "Institut Curie",
-     "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Clinique Victor Hugo",
-     "city": "Le Mans Cedex 2",
-     "country": "France"
-    },
-    {
-     "facility": "CHU Besancon",
-     "city": "Besancon Cedex",
+     "facility": "Centr Georges Francois Leclerc",
+     "city": "Dijon",
      "country": "France"
     },
     {
@@ -17399,23 +17380,43 @@
      "country": "France"
     },
     {
-     "facility": "Centre Leon Berard",
-     "city": "Lyon",
-     "country": "France"
-    },
-    {
-     "facility": "Centr Georges Francois Leclerc",
-     "city": "Dijon",
-     "country": "France"
-    },
-    {
      "facility": "Institut Paoli Calmettes",
      "city": "Marseille",
      "country": "France"
     },
     {
+     "facility": "Institut Curie",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
      "facility": "Centre Regional Lutte Contre Le Cancer",
      "city": "Strasbourg",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Francois Baclesse",
+     "city": "Caen Cedex 5",
+     "country": "France"
+    },
+    {
+     "facility": "Oncopole Claudius Regaud",
+     "city": "Toulouse Cedex 9",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Leon Berard",
+     "city": "Lyon",
+     "country": "France"
+    },
+    {
+     "facility": "CHU Besancon",
+     "city": "Besancon Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Clinique Victor Hugo",
+     "city": "Le Mans Cedex 2",
      "country": "France"
     }
    ],
