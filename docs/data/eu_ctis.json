@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-18T13:02:20+00:00",
+ "generated": "2026-11-19T13:02:06+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -26,7 +26,7 @@
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
  "count": 165,
- "recruitingCount": 83,
+ "recruitingCount": 82,
  "detailCarriedForward": 0,
  "trials": [
   {
@@ -5085,264 +5085,6 @@
     }
    ],
    "otherIds": []
-  },
-  {
-   "register": "CTIS",
-   "id": "2023-505267-36-00",
-   "title": "EORTC 2227-BTG: Lomustine with or without reirradiation for first progression of glioblastoma: a randomized phase III study (LEGATO)",
-   "conditions": "Glioblastoma",
-   "sponsor": "European Organisation For Research And Treatment Of Cancer",
-   "sponsorType": "Patient organisation/association",
-   "phase": "Therapeutic confirmatory  (Phase III)",
-   "countries": [
-    "Austria",
-    "Belgium",
-    "Czechia",
-    "Denmark",
-    "France",
-    "Germany",
-    "Italy",
-    "Netherlands",
-    "Norway",
-    "Spain"
-   ],
-   "statusCode": 4,
-   "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years",
-   "gender": "Female, Male",
-   "enrolled": "399",
-   "startDate": "2024-03-15",
-   "lastUpdated": "2026-10-22",
-   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505267-36-00",
-   "recruitment": "recruiting",
-   "recruitingCountries": [
-    "Austria",
-    "Belgium",
-    "Czechia",
-    "Denmark",
-    "France",
-    "Germany",
-    "Italy",
-    "Netherlands",
-    "Norway",
-    "Spain"
-   ],
-   "criteria": "Inclusion:\n- Before patient’s enrolment, written informed consent must be given according to ICH/GCP, and national/local regulations.\n- Patients of childbearing / reproductive potential must agree to use adequate birth control measures during the study treatment period and for at least 4 months after the last dose of study treatment for male subjects and 7 months for female subjects. A highly effective method of birth control is defined as a method which results in a low failure rate (i.e., less than 1% per year) when used consistently and correctly.\n- Patients with first progression or recurrent glioblastoma after first-line treatment with biopsy or maximal safe resection and standard radiotherapy or chemoradiotherapy with recurrence occuring at least 6 months after the end of Prior radiotherapy Prior first line therapy may include: Any systemic antineoplastic treatment other than nitroureas , Tumour-treating fields, Conventionally fractionated or abbreviated (minimum 15 fractions) radiotherapy\n- Measurable disease according to RANO criteria with a maximum tumour (GTV) diameter of 5 cm (local investigator assessment) Note 1: in case of multiple lesions, the total of the maximum diameters of the lesion(s) intended for reirradiation must be <5cm and the lesions must be in proximity to one other to be treated by 1 isocentre. Note 2: in case of surgery for recurrence, the measurable disease criterion applies at the time of recurrence, and the maximum GTV diameter of 5cm applies at the time of enrolment.\n- In case of surgery for recurrence: fully recovered from surgery, confirmation of recurrence by histology, and patient fit for treatment as per local investigator assessment. Note: residual and measurable disease after surgery is not required, provided that measurable disease was present before surgery.\n- Histologically proven diagnosis of glioblastoma, IDH wildtype per WHO 2021 classification and local assessment of tissue from diagnosis or recurrence\n- Stable or decreasing dose of steroids for 7 days prior to enrolment\n- Age ≥ 18 years\n- WHO Performance status of 0-2\n- Women of childbearing potential (WOCBP) must have a negative serum pregnancy test within 7 days prior to enrolment\n- Candidates for treatment with lomustine as per physician’s assessment.\n\nExclusion:\n- Any prior anticancer treatment for recurrent glioblastoma (except surgery)\n- Concurrent or recent history (30 days prior to lomustine initiation) of varicella (infection or exposure) and herpes zoster\n- Known hereditary galactose intolerance, Lapp-lactase deficiency, or glucose-galactose malabsorption.\n- Patients with known pulmonary infiltration, interstitial pneumonia or pulmonary fibrosis and with a baseline below 70% of the predicted Forced Vital Capacity (FVC) or Carbon Monoxide Diffusing Capacity (DLCO)\n- Significant reduction in thrombocyte and/or leukocyte counts (leukocytes < 4 x 10^9 /L and the platelets < 100 x 10^9 /L) as well as severe renal impairment according to investigator's opinion\n- History or present acute leukaemia or any myeloid disease\n- Known hypersensitivity to the active components or excipients of lomustine\n- Known coeliac disease or wheat allergy\n- Live attenuated vaccine in the 3 months prior to lomustine initiation\n- Any serious or uncontrolled medical condition (e.g., infections, chronic alcoholism, drug addiction) or abnormality, in the judgment of the investigator that prohibits obtaining informed consent, safe participation and study completion\n- Known contraindication to imaging tracer or any product of contrast media and Magnetic Resonance Imaging (MRI) contraindications\n- Any psychological, familial, sociological or geographical condition potentially hampering compliance with the study protocol and follow-up schedule; those conditions should be assessed and discussed with the patient before the enrolment in the trial",
-   "sites": [
-    {
-     "facility": "Medical University of Vienna",
-     "city": "Vienna",
-     "country": "Austria"
-    },
-    {
-     "facility": "Medizinische Universitaet Innsbruck",
-     "city": "Innsbruck",
-     "country": "Austria"
-    },
-    {
-     "facility": "Kepler Universitaetsklinikum GmbH",
-     "city": "Linz",
-     "country": "Austria"
-    },
-    {
-     "facility": "Institut De Cancerologie De L Ouest",
-     "city": "St Herblain",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Lille",
-     "city": "Lille Cedex",
-     "country": "France"
-    },
-    {
-     "facility": "Hospices Civils De Lyon",
-     "city": "Bron",
-     "country": "France"
-    },
-    {
-     "facility": "Institut De Cancerologie Strasbourg Europe",
-     "city": "Strasbourg",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Nice",
-     "city": "Nice",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire Amiens Picardie",
-     "city": "Amiens Cedex 1",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Jean Perrin",
-     "city": "Clermont Ferrand Cedex1",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Paris Cedex 13",
-     "country": "France"
-    },
-    {
-     "facility": "Universitaetsklinikum Knappschaftskrankenhaus Bochum GmbH",
-     "city": "Bochum",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Jena KöR",
-     "city": "Jena",
-     "country": "Germany"
-    },
-    {
-     "facility": "University Hospital Cologne AöR",
-     "city": "Cologne",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Heidelberg AöR",
-     "city": "Heidelberg",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum der Universitaet Muenchen AöR",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Tuebingen AöR",
-     "city": "Tuebingen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Essen AöR",
-     "city": "Essen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Cliniques Universitaires Saint-Luc",
-     "city": "Sint-Lambrechts-Woluwe",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Universitair Ziekenhuis Gent",
-     "city": "Gent",
-     "country": "Belgium"
-    },
-    {
-     "facility": "UZ Leuven",
-     "city": "Leuven",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Ziekenhuis Aan De Stroom",
-     "city": "Antwerp",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Azorg",
-     "city": "Aalst",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Grand Hopital De Charleroi",
-     "city": "Charleroi",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Masarykuv Onkologicky Ustav",
-     "city": "Brno-Stred",
-     "country": "Czechia"
-    },
-    {
-     "facility": "Region Midtjylland",
-     "city": "Aarhus N",
-     "country": "Denmark"
-    },
-    {
-     "facility": "Hospital Germans Trias I Pujol",
-     "city": "Badalona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario 12 De Octubre",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Institut Catala D'oncologia",
-     "city": "L'hospitalet De Llobregat",
-     "country": "Spain"
-    },
-    {
-     "facility": "Leiden University Medical Center",
-     "city": "Leiden",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
-     "city": "Rotterdam",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "St. Elisabeth Hospital Tilburg",
-     "city": "Tilburg",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "Oslo University Hospital HF",
-     "city": "Oslo",
-     "country": "Norway"
-    },
-    {
-     "facility": "St. Olavs Hospital HF",
-     "city": "Trondheim",
-     "country": "Norway"
-    },
-    {
-     "facility": "Ospedale Mater Salutis Di Legnago",
-     "city": "Legnago",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Ospedaliero Universitaria Careggi",
-     "city": "Florence",
-     "country": "Italy"
-    },
-    {
-     "facility": "Instituto Di Ricovero E Cura A Carattere Scientifico",
-     "city": "Bologna",
-     "country": "Italy"
-    },
-    {
-     "facility": "Humanitas Research Hospital",
-     "city": "Rozzano",
-     "country": "Italy"
-    },
-    {
-     "facility": "Ospedale Isola Tiberina Gemelli Isola",
-     "city": "Rome",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Oncologico Veneto",
-     "city": "Padova",
-     "country": "Italy"
-    },
-    {
-     "facility": "Universita' Degli Studi Di Roma La Sapienza",
-     "city": "Rome",
-     "country": "Italy"
-    }
-   ],
-   "otherIds": [
-    "NCT05904119"
-   ]
   },
   {
    "register": "CTIS",
@@ -10988,12 +10730,12 @@
     "Italy",
     "Spain"
    ],
-   "statusCode": 2,
+   "statusCode": 3,
    "statusLabel": "Authorised",
    "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
    "enrolled": "37",
-   "startDate": "",
+   "startDate": "2026-11-02",
    "lastUpdated": "2026-10-30",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2026-526472-23-00",
    "recruitment": "not_started",
@@ -14595,6 +14337,253 @@
     }
    ],
    "otherIds": []
+  },
+  {
+   "register": "CTIS",
+   "id": "2023-505267-36-00",
+   "title": "EORTC 2227-BTG: Lomustine with or without reirradiation for first progression of glioblastoma: a randomized phase III study (LEGATO)",
+   "conditions": "Glioblastoma",
+   "sponsor": "European Organisation For Research And Treatment Of Cancer",
+   "sponsorType": "Patient organisation/association",
+   "phase": "Therapeutic confirmatory  (Phase III)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "Denmark",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Spain"
+   ],
+   "statusCode": 5,
+   "statusLabel": "Authorised",
+   "ageGroup": "65+ years, 18-64 years",
+   "gender": "Female, Male",
+   "enrolled": "399",
+   "startDate": "2024-03-15",
+   "lastUpdated": "2026-10-22",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505267-36-00",
+   "recruitment": "closed",
+   "recruitingCountries": [],
+   "criteria": "Inclusion:\n- Before patient’s enrolment, written informed consent must be given according to ICH/GCP, and national/local regulations.\n- Patients of childbearing / reproductive potential must agree to use adequate birth control measures during the study treatment period and for at least 4 months after the last dose of study treatment for male subjects and 7 months for female subjects. A highly effective method of birth control is defined as a method which results in a low failure rate (i.e., less than 1% per year) when used consistently and correctly.\n- Patients with first progression or recurrent glioblastoma after first-line treatment with biopsy or maximal safe resection and standard radiotherapy or chemoradiotherapy with recurrence occuring at least 6 months after the end of Prior radiotherapy Prior first line therapy may include: Any systemic antineoplastic treatment other than nitroureas , Tumour-treating fields, Conventionally fractionated or abbreviated (minimum 15 fractions) radiotherapy\n- Measurable disease according to RANO criteria with a maximum tumour (GTV) diameter of 5 cm (local investigator assessment) Note 1: in case of multiple lesions, the total of the maximum diameters of the lesion(s) intended for reirradiation must be <5cm and the lesions must be in proximity to one other to be treated by 1 isocentre. Note 2: in case of surgery for recurrence, the measurable disease criterion applies at the time of recurrence, and the maximum GTV diameter of 5cm applies at the time of enrolment.\n- In case of surgery for recurrence: fully recovered from surgery, confirmation of recurrence by histology, and patient fit for treatment as per local investigator assessment. Note: residual and measurable disease after surgery is not required, provided that measurable disease was present before surgery.\n- Histologically proven diagnosis of glioblastoma, IDH wildtype per WHO 2021 classification and local assessment of tissue from diagnosis or recurrence\n- Stable or decreasing dose of steroids for 7 days prior to enrolment\n- Age ≥ 18 years\n- WHO Performance status of 0-2\n- Women of childbearing potential (WOCBP) must have a negative serum pregnancy test within 7 days prior to enrolment\n- Candidates for treatment with lomustine as per physician’s assessment.\n\nExclusion:\n- Any prior anticancer treatment for recurrent glioblastoma (except surgery)\n- Concurrent or recent history (30 days prior to lomustine initiation) of varicella (infection or exposure) and herpes zoster\n- Known hereditary galactose intolerance, Lapp-lactase deficiency, or glucose-galactose malabsorption.\n- Patients with known pulmonary infiltration, interstitial pneumonia or pulmonary fibrosis and with a baseline below 70% of the predicted Forced Vital Capacity (FVC) or Carbon Monoxide Diffusing Capacity (DLCO)\n- Significant reduction in thrombocyte and/or leukocyte counts (leukocytes < 4 x 10^9 /L and the platelets < 100 x 10^9 /L) as well as severe renal impairment according to investigator's opinion\n- History or present acute leukaemia or any myeloid disease\n- Known hypersensitivity to the active components or excipients of lomustine\n- Known coeliac disease or wheat allergy\n- Live attenuated vaccine in the 3 months prior to lomustine initiation\n- Any serious or uncontrolled medical condition (e.g., infections, chronic alcoholism, drug addiction) or abnormality, in the judgment of the investigator that prohibits obtaining informed consent, safe participation and study completion\n- Known contraindication to imaging tracer or any product of contrast media and Magnetic Resonance Imaging (MRI) contraindications\n- Any psychological, familial, sociological or geographical condition potentially hampering compliance with the study protocol and follow-up schedule; those conditions should be assessed and discussed with the patient before the enrolment in the trial",
+   "sites": [
+    {
+     "facility": "Medical University of Vienna",
+     "city": "Vienna",
+     "country": "Austria"
+    },
+    {
+     "facility": "Medizinische Universitaet Innsbruck",
+     "city": "Innsbruck",
+     "country": "Austria"
+    },
+    {
+     "facility": "Kepler Universitaetsklinikum GmbH",
+     "city": "Linz",
+     "country": "Austria"
+    },
+    {
+     "facility": "Institut De Cancerologie De L Ouest",
+     "city": "St Herblain",
+     "country": "France"
+    },
+    {
+     "facility": "Assistance Publique Hopitaux De Paris",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Lille",
+     "city": "Lille Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Hospices Civils De Lyon",
+     "city": "Bron",
+     "country": "France"
+    },
+    {
+     "facility": "Institut De Cancerologie Strasbourg Europe",
+     "city": "Strasbourg",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Nice",
+     "city": "Nice",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire Amiens Picardie",
+     "city": "Amiens Cedex 1",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Jean Perrin",
+     "city": "Clermont Ferrand Cedex1",
+     "country": "France"
+    },
+    {
+     "facility": "Assistance Publique Hopitaux De Paris",
+     "city": "Paris Cedex 13",
+     "country": "France"
+    },
+    {
+     "facility": "Universitaetsklinikum Knappschaftskrankenhaus Bochum GmbH",
+     "city": "Bochum",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Jena KöR",
+     "city": "Jena",
+     "country": "Germany"
+    },
+    {
+     "facility": "University Hospital Cologne AöR",
+     "city": "Cologne",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Heidelberg AöR",
+     "city": "Heidelberg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum der Universitaet Muenchen AöR",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Tuebingen AöR",
+     "city": "Tuebingen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Essen AöR",
+     "city": "Essen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Cliniques Universitaires Saint-Luc",
+     "city": "Sint-Lambrechts-Woluwe",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Universitair Ziekenhuis Gent",
+     "city": "Gent",
+     "country": "Belgium"
+    },
+    {
+     "facility": "UZ Leuven",
+     "city": "Leuven",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Ziekenhuis Aan De Stroom",
+     "city": "Antwerp",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Azorg",
+     "city": "Aalst",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Grand Hopital De Charleroi",
+     "city": "Charleroi",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Masarykuv Onkologicky Ustav",
+     "city": "Brno-Stred",
+     "country": "Czechia"
+    },
+    {
+     "facility": "Region Midtjylland",
+     "city": "Aarhus N",
+     "country": "Denmark"
+    },
+    {
+     "facility": "Hospital Germans Trias I Pujol",
+     "city": "Badalona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario 12 De Octubre",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Institut Catala D'oncologia",
+     "city": "L'hospitalet De Llobregat",
+     "country": "Spain"
+    },
+    {
+     "facility": "Leiden University Medical Center",
+     "city": "Leiden",
+     "country": "Netherlands"
+    },
+    {
+     "facility": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
+     "city": "Rotterdam",
+     "country": "Netherlands"
+    },
+    {
+     "facility": "St. Elisabeth Hospital Tilburg",
+     "city": "Tilburg",
+     "country": "Netherlands"
+    },
+    {
+     "facility": "Oslo University Hospital HF",
+     "city": "Oslo",
+     "country": "Norway"
+    },
+    {
+     "facility": "St. Olavs Hospital HF",
+     "city": "Trondheim",
+     "country": "Norway"
+    },
+    {
+     "facility": "Ospedale Mater Salutis Di Legnago",
+     "city": "Legnago",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero Universitaria Careggi",
+     "city": "Florence",
+     "country": "Italy"
+    },
+    {
+     "facility": "Instituto Di Ricovero E Cura A Carattere Scientifico",
+     "city": "Bologna",
+     "country": "Italy"
+    },
+    {
+     "facility": "Humanitas Research Hospital",
+     "city": "Rozzano",
+     "country": "Italy"
+    },
+    {
+     "facility": "Ospedale Isola Tiberina Gemelli Isola",
+     "city": "Rome",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Oncologico Veneto",
+     "city": "Padova",
+     "country": "Italy"
+    },
+    {
+     "facility": "Universita' Degli Studi Di Roma La Sapienza",
+     "city": "Rome",
+     "country": "Italy"
+    }
+   ],
+   "otherIds": [
+    "NCT05904119"
+   ]
   },
   {
    "register": "CTIS",

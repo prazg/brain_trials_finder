@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "WHO International Clinical Trials Registry Platform (ICTRP)",
  "sourceUrl": "https://trialsearch.who.int/",
- "generated": "2026-11-18T13:17:54+00:00",
+ "generated": "2026-11-19T13:11:39+00:00",
  "oldestRecord": "2026-11-14",
  "terms": [
   "glioblastoma",
