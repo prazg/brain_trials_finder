@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-19T13:02:06+00:00",
+ "generated": "2026-11-20T12:53:25+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -25,7 +25,7 @@
  ],
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
- "count": 165,
+ "count": 164,
  "recruitingCount": 82,
  "detailCarriedForward": 0,
  "trials": [
@@ -9612,36 +9612,21 @@
    ],
    "statusCode": 4,
    "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years, 0-17 years",
+   "ageGroup": "0-17 years, 65+ years, 18-64 years",
    "gender": "Female, Male",
    "enrolled": "450",
    "startDate": "2025-11-18",
-   "lastUpdated": "2026-06-09",
+   "lastUpdated": "2026-11-19",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2023-510568-11-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
     "France"
    ],
-   "criteria": "Inclusion:\n- I1. Patients aged ≥ 12 years old at time of inform consent signature.\n- I2. Histologically proven diagnosis of central nervous system (CNS) malignant tumor: IDH-mutant high-grade glioma, other high-grade glioma, or other high-grade CNS tumors.\n- I3. Tumors expressing DLL3 based on IHC staining performed on archival tumor sample i.e. at least 1+ on IHC [patient with no tumor expression of DLL3 are not eligible]. Note- This pre-screening by IHC should be optimally initiated during an ongoing line of treatment i.e. before documented progression. The ICF1 must be signed before to initiate this pre-screening.\n- I4. Confirmed progressive or refractory disease after at least one line of standard therapy containing radiotherapy and for which no further effective standard therapy exists.\n- I5. Evaluable or measurable disease as per iRANO criteria\n- I6. Performance status (See Appendix 01): a. Karnofsky PS for pediatric patients ≥16 years of age ≥ 70%; b. Lansky PS for patients between 12 and 15y: ≥ 70%; c. PS ECOG for adult patients: 0 or 1.\n- I7. Life expectancy ≥ 3 months.\n- I8. Adequate end organ function according to laboratory values defined below : *Hematologic criteria • Peripheral absolute neutrophil count (ANC) ≥1.5 x 109 /L (without growth factor support within 7 d) • Platelet count ≥ 100 x 109/L (unsupported for > 7 days) • Hemoglobin ≥ 9.0 g/dL (unsupported for > 7 days) *Renal and hepatic function: • Creatinine • Adult patient: Creatinine clearance as per CKD-EPI > 30 mL/min/1.73m2 o Pediatric patients: Creatinine <1.5 ULN for age or an estimated glomerular filtration rate (GFR) > 60 mL/min/1.73m2 GFR based on the Schwartz equation (Mian and Schwartz 2017) or as per institutional guidelines • Total bilirubin ≤1.5 x ULN (≤ 3.0 × ULN for patients with Gilbert’s syndrome) • Alanine aminotransferase (ALAT) ≤ 3 x ULN; aspartate aminotransferase (ASAT ≤ 3 x ULN) *Coagulation function Prothrombin time (PT)/international normalized ratio (INR) and partial thromboplastin time (PTT) or activated partial thromboplastin time (APTT)  1.5 x ULN. Patients on chronic anticoagulation therapy who do not meet the criteria above may be eligible to enrol after discussion with the Sponsor.\n- I9. Adequate cardiac function defined by Left ventricular ejection fraction (LVEF) ≥50% at baseline.\n- I10. Adequate pulmonary function as per investigator judgment and no clinically significant pleural effusion. Pleural effusion managed with indwelling pleural catheter (e.g, PleurX) are allowed.\n- I11. Availability of a representative formalin-fixed paraffin-embedded (FFPE) sample of tumor tissue (resection or biopsy, archival) with an associated pathology report must be available. This tumor sample must meet the following quality/quantity control criteria: ≥30 % of tumor cells.\n- I12. Discontinuation of all previous anti-cancer treatments (approved or investigational) for CNS treatment with respect of wash-out period at time of C1D1 as shown below: *Cytotoxic and myelosuppressive chemotherapy : ≥21 days (or ≥42 days if prior nitrosourea) *Metronomic chemotherapy regimen : ≥21 days or ≥5 half-lives of the treatment with the longest half-life (whichever is shorter) *Targeted agent : ≥21 days or ≥5 half-lives (whichever is shorter) *Cellular therapy: ≥42 days for any type of cellular therapy (e.g. modified T cells, NK cells, dendritic cells) agent *Antibody therapy : ≥21 days after the last infusion except for bevacizumab for which a wash out period of 3 months is requested *Radiotherapy:  ≥14 days since small port radiation therapy (i.e. local palliative)  ≥84 days since large-field radiation therapy (i.e. Total body irradiation, craniospinal, whole abdominal, total lung, ≥50% or greater pelvic radiation, ≥50% marrow space)  ≥42 days for other substantial bone marrow radiation *Surgery : Major surgery ≥ 21 days. Gastrostomy, ventriculo-peritoneal shunt, endoscopic ventriculostomy, tumor biopsy and insertion of central venous access devices are not considered major surgery, but for these procedures, a 48-hour interval must be maintained before C1D1\n- I13. Women of childbearing potential must have a negative serum pregnancy test within 7 days prior C1D1 and must agree to use highly effective contraceptive measures starting with the Screening Visit through 6 months after the last dose of study drugs and to not breastfeed during this period. Highly effective contraception is defined in Appendix 02.\n- I14. Sexually active male must agree to use adequate and appropriate contraception while on study drugs and for 6 months after stopping the study drugs.\n- I15. Ability to understand and sign informed consent and willingness to comply with the study procedures before study entry and written informed consent from parents/legal representative, patient, and age-appropriate assent before any study-specific screening procedures are conducted according to local, regional or national guidelines.\n- I16. Covered by a medical insurance.\n\nExclusion:\n- E1. Diagnosis of non-CNS tumor.\n- E2. Diagnosis of diffuse intrinsic pontine glioma.\n- E3. Currently treatment with bevacizumab.\n- E4. Prior treatment with a DLL3-directed therapy. Note: Prior treatment with TMZ is not an exclusion criteria.\n- E5. Neurologically unstable or require increasing doses of corticosteroids during the 7 days before C1D1 or local CNS-directed therapy to control their CNS disease. Note: Patients on low doses of corticosteroids (≤ 10mg for adult or ≤< 0.25mg/kg/d for pediatric patients - with a maximum of 10mg - of prednisolone or equivalent) during the 7 days prior to receiving study drugs are eligible.\n- E6. Evidence of Grade > 1 recent CNS hemorrhage on the baseline MRI scan.\n- E7. Bulky tumor on imaging is defined as: i. Tumor with any evidence of uncial herniation or severe midline, or shift ii. Tumor with diameter of > 6 cm in one dimension on contrast-enhanced MRI, or iii. Tumor that in the opinion of the investigator shows significant mass ef",
+   "criteria": "Inclusion:\n- I1. Patients aged ≥ 12 years old at time of inform consent signature.\n- I2. Histologically proven diagnosis of central nervous system (CNS) malignant tumor: IDH-mutant high-grade glioma, other high-grade glioma, or other high-grade CNS tumors.\n- I3. Tumors expressing DLL3 based on IHC staining performed on archival tumor sample i.e. at least 1+ on IHC [patient with no tumor expression of DLL3 are not eligible]. Note- This pre-screening by IHC should be optimally initiated during an ongoing line of treatment i.e. before documented progression. The ICF1 must be signed before to initiate this pre-screening.\n- I4. Confirmed progressive or refractory disease after at least one line of standard therapy containing radiotherapy and for which no further effective standard therapy exists.\n- I5. Evaluable or measurable disease as per iRANO criteria\n- I6. Performance status (See Appendix 01): a. Karnofsky PS for pediatric patients ≥16 years of age ≥ 70%; b. Lansky PS for patients between 12 and 15y: ≥ 70%; c. PS ECOG for adult patients: 0 or 1.\n- I7. Life expectancy ≥ 3 months.\n- I8. Adequate end organ function according to laboratory values defined below : *Hematologic criteria • Peripheral absolute neutrophil count (ANC) ≥1.5 x 109 /L (without growth factor support within 7 d) • Platelet count ≥ 100 x 109/L (unsupported for > 7 days) • Hemoglobin ≥ 9.0 g/dL (unsupported for > 7 days) *Renal and hepatic function: • Creatinine • Adult patient: Creatinine clearance as per CKD-EPI > 30 mL/min/1.73m2 o Pediatric patients: Creatinine <1.5 ULN for age or an estimated glomerular filtration rate (GFR) > 60 mL/min/1.73m2 GFR based on the Schwartz equation (Mian and Schwartz 2017) or as per institutional guidelines • Total bilirubin ≤1.5 x ULN (≤ 3.0 × ULN for patients with Gilbert’s syndrome) • Alanine aminotransferase (ALAT) ≤ 3 x ULN; aspartate aminotransferase (ASAT ≤ 3 x ULN) *Coagulation function Prothrombin time (PT)/international normalized ratio (INR) and partial thromboplastin time (PTT) or activated partial thromboplastin time (APTT)  1.5 x ULN. Patients on chronic anticoagulation therapy who do not meet the criteria above may be eligible to enrol after discussion with the Sponsor.\n- I9. Adequate cardiac function defined by Left ventricular ejection fraction (LVEF) ≥50% at baseline.\n- I10. Adequate pulmonary function as per investigator judgment and no clinically significant pleural effusion. Pleural effusion managed with indwelling pleural catheter (e.g, PleurX) are allowed.\n- I11. Availability of a representative formalin-fixed paraffin-embedded (FFPE) sample of tumor tissue (resection or biopsy, archival) with an associated pathology report must be available. This tumor sample must meet the following quality/quantity control criteria: ≥30 % of tumor cells.\n- I12. Discontinuation of all previous anti-cancer treatments (approved or investigational) for CNS treatment with respect of wash-out period at time of C1D1 as shown below: *Cytotoxic and myelosuppressive chemotherapy : ≥21 days (or ≥42 days if prior nitrosourea) *Metronomic chemotherapy regimen : ≥21 days or ≥5 half-lives of the treatment with the longest half-life (whichever is shorter) *Targeted agent : ≥21 days or ≥5 half-lives (whichever is shorter) *Cellular therapy: ≥42 days for any type of cellular therapy (e.g. modified T cells, NK cells, dendritic cells) agent *Antibody therapy : ≥21 days after the last infusion except for bevacizumab for which a wash out period of 3 months is requested *Radiotherapy:  ≥14 days since small port radiation therapy (i.e. local palliative)  ≥84 days since large-field radiation therapy (i.e. Total body irradiation, craniospinal, whole abdominal, total lung, ≥50% or greater pelvic radiation, ≥50% marrow space)  ≥42 days for other substantial bone marrow radiation *Surgery : Major surgery ≥ 21 days. Gastrostomy, ventriculo-peritoneal shunt, endoscopic ventriculostomy, tumor biopsy and insertion of central venous access devices are not considered major surgery, but for these procedures, a 48-hour interval must be maintained before C1D1\n- I13. Women of childbearing potential must have a negative serum pregnancy test within 7 days prior C1D1 and must agree to use highly effective contraceptive measures starting with the Screening Visit through 6 months after the last dose of study drugs and to not breastfeed during this period. Highly effective contraception is defined in Appendix 02.\n- I14. Sexually active male must agree to use adequate and appropriate contraception while on study drugs and for 6 months after stopping the study drugs.\n- I15. Ability to understand and sign informed consent and willingness to comply with the study procedures before study entry and written informed consent from parents/legal representative, patient, and age-appropriate assent before any study-specific screening procedures are conducted according to local, regional or national guidelines.\n- I16. Covered by a medical insurance.\n\nExclusion:\n- E1. Diagnosis of non-CNS tumor.\n- E2. Diagnosis of diffuse intrinsic pontine glioma.\n- E3. Currently treatment with bevacizumab.\n- E4. Prior treatment with a DLL3-directed therapy. Note: Prior treatment with TMZ is not an exclusion criteria.\n- E5. Neurologically unstable or require increasing doses of corticosteroids during the 7 days before C1D1 or local CNS-directed therapy to control their CNS disease. Note: Patients on low doses of corticosteroids (≤ 10mg for adult or ≤< 0.25mg/kg/d for pediatric patients - with a maximum of 10mg - of prednisolone or equivalent) during the 7 days prior to receiving study drugs are eligible.\n- E6. Evidence of Grade > 1 recent CNS hemorrhage on the baseline MRI scan.\n- E7. Bulky tumor on imaging is defined as: i. Tumor with any evidence of uncial herniation or severe midline, or shift ii. Tumor with diameter of > 6 cm in one dimension on FLAIR imaging or iii. Tumor that in the opinion of the investigator shows significant mass effect.\n- E",
    "sites": [
-    {
-     "facility": "Centre Oscar Lambret",
-     "city": "Lille",
-     "country": "France"
-    },
-    {
-     "facility": "Hôpital La Timone - APHM",
-     "city": "Marseille",
-     "country": "France"
-    },
     {
      "facility": "Hopitaux Universitaires Pitie Salpetriere",
      "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Bordeaux",
-     "city": "Bordeaux",
      "country": "France"
     },
     {
@@ -9650,23 +9635,18 @@
      "country": "France"
     },
     {
-     "facility": "Centre Hospitalier Universitaire De Lille",
-     "city": "Lille Cedex",
+     "facility": "Hospices Civils De Lyon",
+     "city": "Bron",
      "country": "France"
     },
     {
-     "facility": "Centre Hospitalier Universitaire De Bordeaux",
-     "city": "Bordeaux Cedex",
+     "facility": "Hôpital La Timone - APHM",
+     "city": "Marseille",
      "country": "France"
     },
     {
-     "facility": "Centre Hospitalier Universitaire D'Angers",
-     "city": "Angers",
-     "country": "France"
-    },
-    {
-     "facility": "Institut De Cancerologie De L Ouest",
-     "city": "Angers",
+     "facility": "Institut Curie",
+     "city": "Paris",
      "country": "France"
     },
     {
@@ -9675,18 +9655,43 @@
      "country": "France"
     },
     {
+     "facility": "Centre Hospitalier Universitaire De Bordeaux",
+     "city": "Bordeaux",
+     "country": "France"
+    },
+    {
+     "facility": "Institut De Cancerologie De L Ouest",
+     "city": "Angers",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Bordeaux",
+     "city": "Bordeaux Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Oscar Lambret",
+     "city": "Lille",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Lille",
+     "city": "Lille Cedex",
+     "country": "France"
+    },
+    {
      "facility": "Oncopole Claudius Regaud",
      "city": "Toulouse",
      "country": "France"
     },
     {
-     "facility": "Hospices Civils De Lyon",
-     "city": "Bron",
+     "facility": "Centre Hospitalier Universitaire D'Angers",
+     "city": "Angers",
      "country": "France"
     },
     {
-     "facility": "Institut Curie",
-     "city": "Paris",
+     "facility": "Institut Gustave Roussy",
+     "city": "Villejuif Cedex",
      "country": "France"
     }
    ],
@@ -14337,253 +14342,6 @@
     }
    ],
    "otherIds": []
-  },
-  {
-   "register": "CTIS",
-   "id": "2023-505267-36-00",
-   "title": "EORTC 2227-BTG: Lomustine with or without reirradiation for first progression of glioblastoma: a randomized phase III study (LEGATO)",
-   "conditions": "Glioblastoma",
-   "sponsor": "European Organisation For Research And Treatment Of Cancer",
-   "sponsorType": "Patient organisation/association",
-   "phase": "Therapeutic confirmatory  (Phase III)",
-   "countries": [
-    "Austria",
-    "Belgium",
-    "Czechia",
-    "Denmark",
-    "France",
-    "Germany",
-    "Italy",
-    "Netherlands",
-    "Norway",
-    "Spain"
-   ],
-   "statusCode": 5,
-   "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years",
-   "gender": "Female, Male",
-   "enrolled": "399",
-   "startDate": "2024-03-15",
-   "lastUpdated": "2026-10-22",
-   "url": "https://euclinicaltrials.eu/ctis-public/view/2023-505267-36-00",
-   "recruitment": "closed",
-   "recruitingCountries": [],
-   "criteria": "Inclusion:\n- Before patient’s enrolment, written informed consent must be given according to ICH/GCP, and national/local regulations.\n- Patients of childbearing / reproductive potential must agree to use adequate birth control measures during the study treatment period and for at least 4 months after the last dose of study treatment for male subjects and 7 months for female subjects. A highly effective method of birth control is defined as a method which results in a low failure rate (i.e., less than 1% per year) when used consistently and correctly.\n- Patients with first progression or recurrent glioblastoma after first-line treatment with biopsy or maximal safe resection and standard radiotherapy or chemoradiotherapy with recurrence occuring at least 6 months after the end of Prior radiotherapy Prior first line therapy may include: Any systemic antineoplastic treatment other than nitroureas , Tumour-treating fields, Conventionally fractionated or abbreviated (minimum 15 fractions) radiotherapy\n- Measurable disease according to RANO criteria with a maximum tumour (GTV) diameter of 5 cm (local investigator assessment) Note 1: in case of multiple lesions, the total of the maximum diameters of the lesion(s) intended for reirradiation must be <5cm and the lesions must be in proximity to one other to be treated by 1 isocentre. Note 2: in case of surgery for recurrence, the measurable disease criterion applies at the time of recurrence, and the maximum GTV diameter of 5cm applies at the time of enrolment.\n- In case of surgery for recurrence: fully recovered from surgery, confirmation of recurrence by histology, and patient fit for treatment as per local investigator assessment. Note: residual and measurable disease after surgery is not required, provided that measurable disease was present before surgery.\n- Histologically proven diagnosis of glioblastoma, IDH wildtype per WHO 2021 classification and local assessment of tissue from diagnosis or recurrence\n- Stable or decreasing dose of steroids for 7 days prior to enrolment\n- Age ≥ 18 years\n- WHO Performance status of 0-2\n- Women of childbearing potential (WOCBP) must have a negative serum pregnancy test within 7 days prior to enrolment\n- Candidates for treatment with lomustine as per physician’s assessment.\n\nExclusion:\n- Any prior anticancer treatment for recurrent glioblastoma (except surgery)\n- Concurrent or recent history (30 days prior to lomustine initiation) of varicella (infection or exposure) and herpes zoster\n- Known hereditary galactose intolerance, Lapp-lactase deficiency, or glucose-galactose malabsorption.\n- Patients with known pulmonary infiltration, interstitial pneumonia or pulmonary fibrosis and with a baseline below 70% of the predicted Forced Vital Capacity (FVC) or Carbon Monoxide Diffusing Capacity (DLCO)\n- Significant reduction in thrombocyte and/or leukocyte counts (leukocytes < 4 x 10^9 /L and the platelets < 100 x 10^9 /L) as well as severe renal impairment according to investigator's opinion\n- History or present acute leukaemia or any myeloid disease\n- Known hypersensitivity to the active components or excipients of lomustine\n- Known coeliac disease or wheat allergy\n- Live attenuated vaccine in the 3 months prior to lomustine initiation\n- Any serious or uncontrolled medical condition (e.g., infections, chronic alcoholism, drug addiction) or abnormality, in the judgment of the investigator that prohibits obtaining informed consent, safe participation and study completion\n- Known contraindication to imaging tracer or any product of contrast media and Magnetic Resonance Imaging (MRI) contraindications\n- Any psychological, familial, sociological or geographical condition potentially hampering compliance with the study protocol and follow-up schedule; those conditions should be assessed and discussed with the patient before the enrolment in the trial",
-   "sites": [
-    {
-     "facility": "Medical University of Vienna",
-     "city": "Vienna",
-     "country": "Austria"
-    },
-    {
-     "facility": "Medizinische Universitaet Innsbruck",
-     "city": "Innsbruck",
-     "country": "Austria"
-    },
-    {
-     "facility": "Kepler Universitaetsklinikum GmbH",
-     "city": "Linz",
-     "country": "Austria"
-    },
-    {
-     "facility": "Institut De Cancerologie De L Ouest",
-     "city": "St Herblain",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Lille",
-     "city": "Lille Cedex",
-     "country": "France"
-    },
-    {
-     "facility": "Hospices Civils De Lyon",
-     "city": "Bron",
-     "country": "France"
-    },
-    {
-     "facility": "Institut De Cancerologie Strasbourg Europe",
-     "city": "Strasbourg",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire De Nice",
-     "city": "Nice",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire Amiens Picardie",
-     "city": "Amiens Cedex 1",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Jean Perrin",
-     "city": "Clermont Ferrand Cedex1",
-     "country": "France"
-    },
-    {
-     "facility": "Assistance Publique Hopitaux De Paris",
-     "city": "Paris Cedex 13",
-     "country": "France"
-    },
-    {
-     "facility": "Universitaetsklinikum Knappschaftskrankenhaus Bochum GmbH",
-     "city": "Bochum",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Jena KöR",
-     "city": "Jena",
-     "country": "Germany"
-    },
-    {
-     "facility": "University Hospital Cologne AöR",
-     "city": "Cologne",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Heidelberg AöR",
-     "city": "Heidelberg",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum der Universitaet Muenchen AöR",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Tuebingen AöR",
-     "city": "Tuebingen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Essen AöR",
-     "city": "Essen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Cliniques Universitaires Saint-Luc",
-     "city": "Sint-Lambrechts-Woluwe",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Universitair Ziekenhuis Gent",
-     "city": "Gent",
-     "country": "Belgium"
-    },
-    {
-     "facility": "UZ Leuven",
-     "city": "Leuven",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Ziekenhuis Aan De Stroom",
-     "city": "Antwerp",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Azorg",
-     "city": "Aalst",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Grand Hopital De Charleroi",
-     "city": "Charleroi",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Masarykuv Onkologicky Ustav",
-     "city": "Brno-Stred",
-     "country": "Czechia"
-    },
-    {
-     "facility": "Region Midtjylland",
-     "city": "Aarhus N",
-     "country": "Denmark"
-    },
-    {
-     "facility": "Hospital Germans Trias I Pujol",
-     "city": "Badalona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario 12 De Octubre",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Institut Catala D'oncologia",
-     "city": "L'hospitalet De Llobregat",
-     "country": "Spain"
-    },
-    {
-     "facility": "Leiden University Medical Center",
-     "city": "Leiden",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "Erasmus Universitair Medisch Centrum Rotterdam (Erasmus MC)",
-     "city": "Rotterdam",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "St. Elisabeth Hospital Tilburg",
-     "city": "Tilburg",
-     "country": "Netherlands"
-    },
-    {
-     "facility": "Oslo University Hospital HF",
-     "city": "Oslo",
-     "country": "Norway"
-    },
-    {
-     "facility": "St. Olavs Hospital HF",
-     "city": "Trondheim",
-     "country": "Norway"
-    },
-    {
-     "facility": "Ospedale Mater Salutis Di Legnago",
-     "city": "Legnago",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Ospedaliero Universitaria Careggi",
-     "city": "Florence",
-     "country": "Italy"
-    },
-    {
-     "facility": "Instituto Di Ricovero E Cura A Carattere Scientifico",
-     "city": "Bologna",
-     "country": "Italy"
-    },
-    {
-     "facility": "Humanitas Research Hospital",
-     "city": "Rozzano",
-     "country": "Italy"
-    },
-    {
-     "facility": "Ospedale Isola Tiberina Gemelli Isola",
-     "city": "Rome",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Oncologico Veneto",
-     "city": "Padova",
-     "country": "Italy"
-    },
-    {
-     "facility": "Universita' Degli Studi Di Roma La Sapienza",
-     "city": "Rome",
-     "country": "Italy"
-    }
-   ],
-   "otherIds": [
-    "NCT05904119"
-   ]
   },
   {
    "register": "CTIS",
