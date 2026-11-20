@@ -28,18 +28,24 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-import requests
-from requests.adapters import HTTPAdapter
+try:
+    import requests
+    from requests.adapters import HTTPAdapter
+except ImportError:  # pragma: no cover - allows offline scoring/tests without requests installed
+    requests = None  # type: ignore[assignment]
+    HTTPAdapter = None  # type: ignore[assignment]
 
 try:  # urllib3 ships with requests; the import path is stable across v1 and v2
     from urllib3.util.retry import Retry
-except Exception:  # pragma: no cover - extremely old environments
+except Exception:  # pragma: no cover - extremely old or stdlib-only environments
     Retry = None  # type: ignore[assignment]
 
 # Mirrors DIAGNOSES in docs/index.html. Keep the two in step.
 DIAGNOSES: Dict[str, List[str]] = {
     "Glioblastoma": ["glioblastoma", "GBM", "glioblastoma multiforme", "gliosarcoma"],
     "Glioma (any grade)": ["glioma", "astrocytoma", "oligodendroglioma"],
+    "Astrocytoma / Oligodendroglioma": ["astrocytoma", "anaplastic astrocytoma",
+                                        "oligodendroglioma", "1p19q codeleted"],
     "Diffuse midline glioma": ["diffuse midline glioma", "DIPG", "H3 K27M",
                                "diffuse intrinsic pontine glioma"],
     "Astrocytoma": ["astrocytoma", "anaplastic astrocytoma"],
@@ -47,6 +53,9 @@ DIAGNOSES: Dict[str, List[str]] = {
     "Meningioma": ["meningioma"],
     "Medulloblastoma": ["medulloblastoma"],
     "Ependymoma": ["ependymoma"],
+    "Pediatric CNS": ["medulloblastoma", "diffuse midline glioma", "DIPG", "ependymoma",
+                      "pediatric brain tumor", "pediatric glioma", "pilocytic astrocytoma",
+                      "atypical teratoid rhabdoid tumor", "embryonal CNS tumor"],
     "Brain metastases": ["brain metastases", "brain metastasis", "cerebral metastases",
                          "leptomeningeal"],
     "CNS lymphoma": ["primary CNS lymphoma", "central nervous system lymphoma"],
@@ -89,9 +98,11 @@ class CTGovError(RuntimeError):
 _session: Optional[requests.Session] = None
 
 
-def get_session() -> requests.Session:
+def get_session() -> "requests.Session":
     """One shared session with polite retries on throttling and server errors."""
     global _session
+    if requests is None:
+        raise CTGovError("The 'requests' package is required to query ClinicalTrials.gov.")
     if _session is None:
         s = requests.Session()
         s.headers.update(UA)

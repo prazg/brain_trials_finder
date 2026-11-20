@@ -12,30 +12,60 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
+:root,:root[data-theme="light"]{
+  color-scheme:light;
   --paper:#f1f3f2;
   --card:#ffffff;
   --ink:#141a19;
-  --slate:#5a6866;
-  --rule:#d6dcda;
-  --rule-soft:#e6eae9;
-  --reg-us:#1f5d7a;
-  --reg-uk:#7b3358;
-  --reg-eu:#2f6b4f;
-  --reg-who:#8a5a1f;
-  --warn:#8c5c0d;
+  --slate:#4e5d5b;
+  --rule:#cfd7d5;
+  --rule-soft:#e3e9e7;
+  --reg-us:#19516b;
+  --reg-us-bg:#eaf3f7;
+  --reg-us-bd:#b8d6e5;
+  --reg-uk:#6e2b4e;
+  --reg-uk-bg:#f7edf2;
+  --reg-uk-bd:#dfc0d0;
+  --reg-eu:#245c42;
+  --reg-eu-bg:#eaf4ef;
+  --reg-eu-bd:#b8dac9;
+  --reg-who:#784c16;
+  --reg-who-bg:#faf2e6;
+  --reg-who-bd:#e4cca8;
+  --warn:#7d5109;
   --warn-bg:#fbf3e2;
-  --focus:#1f5d7a;
+  --save-fg:#754900;
+  --save-bg:#fdf5e2;
+  --save-border:#d7b463;
+  --focus:#19516b;
   --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){
-  :root{
-    --paper:#101514;--card:#171d1c;--ink:#e6eae9;--slate:#9aa8a5;
-    --rule:#2b3433;--rule-soft:#222a29;
-    --reg-us:#63aed1;--reg-uk:#cc86ab;--reg-eu:#6fbd95;--reg-who:#d9a25e;
-    --warn:#d8ab5c;--warn-bg:#2a2317;--focus:#63aed1;
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#101514;--card:#171d1c;--ink:#e6eae9;--slate:#a1b0ad;
+    --rule:#2c3635;--rule-soft:#222a29;
+    --reg-us:#7ec2e2;--reg-us-bg:#16262f;--reg-us-bd:#2a4d5e;
+    --reg-uk:#dba0bf;--reg-uk-bg:#291a22;--reg-uk-bd:#543345;
+    --reg-eu:#84cfa8;--reg-eu-bg:#162820;--reg-eu-bd:#29523f;
+    --reg-who:#e5b473;--reg-who-bg:#292116;--reg-who-bd:#574328;
+    --warn:#deb368;--warn-bg:#2a2317;
+    --save-fg:#f3c668;--save-bg:#2b2313;--save-border:#6e5725;
+    --focus:#7ec2e2;
   }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#101514;--card:#171d1c;--ink:#e6eae9;--slate:#a1b0ad;
+  --rule:#2c3635;--rule-soft:#222a29;
+  --reg-us:#7ec2e2;--reg-us-bg:#16262f;--reg-us-bd:#2a4d5e;
+  --reg-uk:#dba0bf;--reg-uk-bg:#291a22;--reg-uk-bd:#543345;
+  --reg-eu:#84cfa8;--reg-eu-bg:#162820;--reg-eu-bd:#29523f;
+  --reg-who:#e5b473;--reg-who-bg:#292116;--reg-who-bd:#574328;
+  --warn:#deb368;--warn-bg:#2a2317;
+  --save-fg:#f3c668;--save-bg:#2b2313;--save-border:#6e5725;
+  --focus:#7ec2e2;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -45,8 +75,8 @@ body{
   font-variant-numeric:tabular-nums;
 }
 a{color:inherit}
-:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:2px}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+:focus-visible{outline:2.5px solid var(--focus);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 
 /* ---------- masthead ---------- */
 .masthead{
@@ -55,71 +85,153 @@ a{color:inherit}
 }
 .masthead-in{
   max-width:1380px;margin:0 auto;padding:10px 20px;
-  display:flex;gap:20px;align-items:baseline;flex-wrap:wrap;
+  display:flex;gap:14px 20px;align-items:center;flex-wrap:wrap;
 }
 .wordmark{font-weight:600;font-size:16px;letter-spacing:-.01em;margin:0}
 .wordmark span{color:var(--slate);font-weight:400}
-.tally{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap;font-size:13px;color:var(--slate)}
+.tally{display:flex;gap:8px 14px;margin-left:auto;flex-wrap:wrap;font-size:13px;color:var(--slate);align-items:center}
 .tally b{font-weight:600;color:var(--ink)}
 .tally i{
-  font-style:normal;display:inline-block;width:8px;height:8px;border-radius:1px;
+  font-style:normal;display:inline-block;width:8px;height:8px;border-radius:2px;
   margin-right:6px;vertical-align:1px;
 }
 .t-us i{background:var(--reg-us)} .t-uk i{background:var(--reg-uk)} .t-eu i{background:var(--reg-eu)} .t-who i{background:var(--reg-who)}
+.theme-btn{
+  border:1px solid var(--rule);background:var(--paper);color:var(--ink);
+  border-radius:4px;font:500 12.5px/1 var(--sans);padding:6px 10px;min-height:30px;
+  display:inline-flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap;
+  transition:border-color .14s ease,background-color .14s ease;
+}
+.theme-btn:hover{border-color:var(--focus)}
 
 /* ---------- shell ---------- */
-.shell{max-width:1380px;margin:0 auto;padding:22px 20px 80px;display:grid;grid-template-columns:312px minmax(0,1fr);gap:28px;align-items:start}
-@media (max-width:960px){.shell{grid-template-columns:1fr;gap:16px;padding-top:14px}}
+.shell{max-width:1380px;margin:0 auto;padding:22px 20px 80px;display:grid;grid-template-columns:316px minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:960px){.shell{grid-template-columns:1fr;gap:16px;padding:14px 14px 64px}}
 
 /* ---------- query rail ---------- */
-.rail{position:sticky;top:68px}
-@media (max-width:960px){.rail{position:static}}
-.rail form{background:var(--card);border:1px solid var(--rule);border-radius:3px}
+.rail{
+  position:sticky;top:58px;
+  max-height:calc(100vh - 72px);max-height:calc(100dvh - 72px);
+  overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;
+}
+@media (max-width:960px){.rail{position:static;max-height:none;overflow:visible}}
+.rail form{background:var(--card);border:1px solid var(--rule);border-radius:5px}
 .rail-head{
   display:flex;align-items:center;justify-content:space-between;gap:10px;
   padding:12px 16px;border-bottom:1px solid var(--rule-soft);
 }
 .rail-head h2{margin:0;font-size:14px;font-weight:600}
-.rail-toggle{display:none;border:1px solid var(--rule);background:none;color:var(--ink);border-radius:3px;font:500 13px var(--sans);padding:4px 10px;cursor:pointer}
-@media (max-width:960px){.rail-toggle{display:block}.rail-body[hidden]{display:none}}
+.rail-toggle{
+  display:none;border:1px solid var(--rule);background:var(--paper);color:var(--ink);
+  border-radius:4px;font:500 13px var(--sans);padding:5px 11px;min-height:32px;cursor:pointer;
+}
+@media (max-width:960px){
+  .rail-toggle{display:inline-flex;align-items:center}
+  .rail-body[hidden],.rail-body[hidden]+.rail-foot{display:none}
+  .rail-collapsed .rail-head{border-bottom:0}
+}
+@media (min-width:961px){.rail-body[hidden]{display:block!important}}
 .rail-body{padding:4px 16px 16px}
 fieldset{border:0;margin:16px 0 0;padding:0;min-width:0}
-legend{font-size:12px;font-weight:600;color:var(--slate);padding:0 0 8px;float:left;width:100%}
+legend{font-size:12px;font-weight:600;color:var(--slate);padding:0 0 8px;float:left;width:100%;text-transform:uppercase;letter-spacing:.03em}
 legend+*{clear:both}
 label{display:block;font-size:13px;margin:0 0 4px;color:var(--slate)}
 input[type=text],input[type=number],select{
   width:100%;font:400 14px var(--sans);color:var(--ink);background:var(--paper);
-  border:1px solid var(--rule);border-radius:3px;padding:7px 9px;
+  border:1px solid var(--rule);border-radius:4px;padding:7px 9px;
+  transition:border-color .14s ease;
 }
+input[type=text]:hover,input[type=number]:hover,select:hover{border-color:var(--slate)}
 .field+.field{margin-top:11px}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.checks{display:flex;flex-direction:column;gap:7px}
+.checks{display:flex;flex-direction:column;gap:8px}
 .check{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--ink);cursor:pointer}
-.check input{margin:2px 0 0;accent-color:var(--focus)}
+.check input{margin:3px 0 0;accent-color:var(--focus);width:15px;height:15px;flex:none}
 .hint{font-size:12px;color:var(--slate);margin:6px 0 0;line-height:1.45}
-.rail-foot{padding:14px 16px;border-top:1px solid var(--rule-soft);display:flex;gap:9px}
+.kw-dirty{font-size:12px;color:var(--warn);background:var(--warn-bg);border:1px solid var(--warn);border-radius:3px;padding:4px 8px;margin:6px 0 0;line-height:1.4}
+.rail-foot{padding:14px 16px;border-top:1px solid var(--rule-soft);display:flex;gap:8px;flex-wrap:wrap}
 button.go{
-  flex:1;background:var(--ink);color:var(--paper);border:0;border-radius:3px;
-  font:600 14px var(--sans);padding:9px;cursor:pointer;
+  flex:1 1 100px;background:var(--ink);color:var(--paper);border:0;border-radius:4px;
+  font:600 14px var(--sans);padding:9px 12px;min-height:36px;cursor:pointer;
 }
+button.go:hover{opacity:.9}
 button.go[aria-busy=true]{opacity:.6;cursor:progress}
-button.ghost{background:none;border:1px solid var(--rule);color:var(--ink);border-radius:3px;font:500 13px var(--sans);padding:9px 12px;cursor:pointer}
-
-/* ---------- feed ---------- */
-.feed-bar{
-  display:flex;gap:12px;align-items:center;flex-wrap:wrap;
-  padding-bottom:12px;border-bottom:1px solid var(--rule);margin-bottom:4px;
+button.ghost{
+  background:var(--paper);border:1px solid var(--rule);color:var(--ink);border-radius:4px;
+  font:500 13px var(--sans);padding:8px 11px;min-height:36px;cursor:pointer;
+  transition:border-color .14s ease,background-color .14s ease;
 }
-.count{font-size:14px;font-weight:600;margin:0}
-.count small{font-weight:400;color:var(--slate)}
-.feed-tools{margin-left:auto;display:flex;gap:10px;align-items:center}
-.feed-tools label{margin:0;font-size:13px}
-.feed-tools select{width:auto;padding:5px 8px;font-size:13px}
+button.ghost:hover:not(:disabled){border-color:var(--focus);background:var(--card)}
+button.ghost:disabled{opacity:.45;cursor:not-allowed}
 
-.sources{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0;padding:0;list-style:none}
+/* ---------- quick diagnosis presets ---------- */
+.preset-bar{
+  display:flex;align-items:center;gap:7px;flex-wrap:wrap;
+  margin:0 0 14px;padding:0;
+}
+.preset-label{font-size:12px;font-weight:600;color:var(--slate);margin-right:2px;white-space:nowrap}
+.preset-pill{
+  flex:none;display:inline-flex;align-items:center;gap:5px;
+  background:var(--card);color:var(--ink);border:1px solid var(--rule);
+  border-radius:999px;padding:5px 12px;min-height:32px;
+  font:500 13px/1.2 var(--sans);cursor:pointer;white-space:nowrap;
+  transition:background-color .14s ease,border-color .14s ease,color .14s ease;
+}
+.preset-pill:hover{border-color:var(--focus);background:var(--reg-us-bg)}
+.preset-pill[aria-pressed="true"]{
+  background:var(--reg-us);color:var(--card);border-color:var(--reg-us);font-weight:600;
+}
+@media (max-width:720px){
+  .preset-bar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+  .preset-pill{min-height:35px;padding:6px 13px}
+}
+
+/* ---------- feed & shortlist bar ---------- */
+.feed-bar{
+  display:flex;gap:10px 12px;align-items:center;flex-wrap:wrap;
+  padding-bottom:12px;border-bottom:1px solid var(--rule);margin-bottom:10px;
+}
+.count{font-size:14.5px;font-weight:600;margin:0}
+.count small{font-weight:400;color:var(--slate)}
+.feed-tools{margin-left:auto;display:flex;gap:8px;align-items:center}
+.feed-tools label{margin:0;font-size:13px}
+.feed-tools select{width:auto;padding:6px 9px;font-size:13px;background:var(--card)}
+
+.shortlist-bar{
+  display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap;
+  padding:8px 12px;margin:0 0 10px;
+  background:var(--card);border:1px solid var(--rule);border-radius:5px;
+}
+.shortlist-bar.is-filtering{border-color:var(--save-border);background:var(--save-bg)}
+.shortlist-toggle{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--paper);color:var(--ink);border:1px solid var(--rule);
+  border-radius:999px;padding:5px 12px;min-height:31px;
+  font:600 12.5px/1.2 var(--sans);cursor:pointer;
+  transition:border-color .14s ease,background-color .14s ease;
+}
+.shortlist-toggle:hover:not(:disabled){border-color:var(--save-border);background:var(--save-bg);color:var(--save-fg)}
+.shortlist-toggle:disabled{opacity:.55;cursor:not-allowed}
+.shortlist-toggle[aria-pressed="true"]{
+  background:var(--save-fg);color:var(--card);border-color:var(--save-fg);
+}
+.shortlist-note{font-size:12.5px;color:var(--slate);flex:1 1 180px;min-width:0}
+.shortlist-bar.is-filtering .shortlist-note{color:var(--save-fg);font-weight:500}
+.shortlist-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-left:auto}
+.shortlist-btn{
+  background:var(--paper);border:1px solid var(--rule);color:var(--ink);
+  border-radius:4px;padding:5px 10px;min-height:30px;
+  font:500 12.5px/1.2 var(--sans);cursor:pointer;white-space:nowrap;
+  transition:border-color .14s ease,background-color .14s ease;
+}
+.shortlist-btn:hover:not(:disabled){border-color:var(--focus);background:var(--card)}
+.shortlist-btn:disabled{opacity:.45;cursor:not-allowed}
+.shortlist-btn.danger-confirm{border-color:var(--warn);background:var(--warn-bg);color:var(--warn);font-weight:600}
+
+.sources{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0;padding:0;list-style:none}
 .src{
   display:flex;gap:7px;align-items:baseline;font-size:12.5px;color:var(--slate);
-  border:1px solid var(--rule);border-radius:3px;padding:5px 9px;background:var(--card);
+  border:1px solid var(--rule);border-radius:4px;padding:5px 9px;background:var(--card);
 }
 .src b{font-weight:600;color:var(--ink)}
 .src.err{border-color:var(--warn);background:var(--warn-bg);color:var(--warn)}
@@ -131,29 +243,55 @@ button.ghost{background:none;border:1px solid var(--rule);color:var(--ink);borde
 .endnotes{margin:34px 0 0;padding:18px 0 0;border-top:1px solid var(--rule)}
 .endnotes h2{
   margin:0 0 10px;font-size:12px;font-weight:600;color:var(--slate);
-  letter-spacing:.01em;
+  letter-spacing:.02em;text-transform:uppercase;
 }
 .notice{
-  margin:0 0 8px;padding:9px 13px;border-left:2px solid var(--warn);
+  margin:0 0 8px;padding:9px 13px;border-left:3px solid var(--warn);
   background:var(--warn-bg);color:var(--warn);font-size:12.5px;line-height:1.55;
-  border-radius:0 2px 2px 0;max-width:86ch;
+  border-radius:0 3px 3px 0;max-width:86ch;
 }
 .notice:last-child{margin-bottom:0}
 
-ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:11px}
+ol.results:focus{outline:none}
 .trial{
-  background:var(--card);border:1px solid var(--rule);border-radius:3px;
+  background:var(--card);border:1px solid var(--rule);border-radius:5px;
   border-left:4px solid var(--rule);padding:14px 16px 13px;
+  transition:border-color .14s ease,box-shadow .14s ease;
 }
+.trial:hover{box-shadow:0 1px 4px rgba(0,0,0,.05)}
 .trial.r-CTG{border-left-color:var(--reg-us)}
 .trial.r-ISRCTN{border-left-color:var(--reg-uk)}
 .trial.r-CTIS{border-left-color:var(--reg-eu)}
 .trial.r-ICTRP{border-left-color:var(--reg-who)}
-.trial h3{margin:0 0 7px;font-size:15.5px;font-weight:600;line-height:1.38;max-width:74ch}
+.trial.is-saved{border-top-color:var(--save-border);border-right-color:var(--save-border);border-bottom-color:var(--save-border)}
+.trial.flash-target{outline:2.5px solid var(--focus);outline-offset:2px}
+.trial-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 8px}
+.trial h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.38;max-width:74ch;flex:1 1 auto;min-width:0}
 .trial h3 a{text-decoration:none}
 .trial h3 a:hover{text-decoration:underline}
-.meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--slate);margin:0 0 9px}
-.meta .id{font:500 12.5px var(--mono);color:var(--ink)}
+.save-btn{
+  flex:none;display:inline-flex;align-items:center;gap:5px;
+  background:var(--paper);color:var(--slate);border:1px solid var(--rule);
+  border-radius:999px;padding:4px 10px;min-height:29px;
+  font:500 12.5px/1 var(--sans);cursor:pointer;white-space:nowrap;
+  transition:border-color .14s ease,background-color .14s ease,color .14s ease;
+}
+.save-btn:hover{border-color:var(--save-border);color:var(--save-fg);background:var(--save-bg)}
+.save-btn[aria-pressed="true"]{
+  background:var(--save-bg);color:var(--save-fg);border-color:var(--save-border);font-weight:600;
+}
+
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:13px;color:var(--slate);margin:0 0 9px}
+.reg-badge{
+  display:inline-flex;align-items:center;padding:1px 7px;border-radius:3px;
+  font:600 11.5px/1.4 var(--sans);letter-spacing:.01em;border:1px solid transparent;
+}
+.reg-CTG{color:var(--reg-us);background:var(--reg-us-bg);border-color:var(--reg-us-bd)}
+.reg-ISRCTN{color:var(--reg-uk);background:var(--reg-uk-bg);border-color:var(--reg-uk-bd)}
+.reg-CTIS{color:var(--reg-eu);background:var(--reg-eu-bg);border-color:var(--reg-eu-bd)}
+.reg-ICTRP{color:var(--reg-who);background:var(--reg-who-bg);border-color:var(--reg-who-bd)}
+.meta .id{font:500 12.5px/1.35 var(--mono);color:var(--ink);background:var(--paper);border:1px solid var(--rule-soft);border-radius:3px;padding:1px 6px}
 .dot{width:7px;height:7px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:1px}
 .open .dot{background:var(--reg-eu)}
 .shut .dot{background:var(--slate)}
@@ -166,33 +304,33 @@ ol.results{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction
 .meter-cap{font-size:12.5px;color:var(--slate)}
 
 .reasons{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
-.reasons li{font-size:12.5px;border:1px solid var(--rule);border-radius:2px;padding:2px 7px;color:var(--slate);background:var(--paper)}
+.reasons li{font-size:12.5px;border:1px solid var(--rule);border-radius:3px;padding:2px 8px;color:var(--slate);background:var(--paper)}
 .reasons li.minus{border-color:var(--warn);color:var(--warn);background:var(--warn-bg)}
 
 details.sites{margin:10px 0 0}
-details.sites summary{font-size:13px;color:var(--slate);cursor:pointer}
-details.sites ul{margin:8px 0 0;padding:0 0 0 16px;font-size:13px;color:var(--slate);line-height:1.55;max-height:230px;overflow:auto}
+details.sites summary{font-size:13px;color:var(--slate);cursor:pointer;padding:2px 0}
+details.sites summary:hover,details.elig summary:hover{color:var(--ink)}
+details.sites ul{margin:8px 0 0;padding:0 0 0 18px;font-size:13px;color:var(--slate);line-height:1.55;max-height:230px;overflow:auto}
 
-.empty{padding:44px 20px;text-align:center;color:var(--slate);border:1px dashed var(--rule);border-radius:3px;margin-top:16px}
-.empty p{margin:0 0 4px}
-.more{margin:16px 0 0;width:100%;background:none;border:1px solid var(--rule);color:var(--ink);border-radius:3px;font:500 14px var(--sans);padding:11px;cursor:pointer}
+.empty{padding:44px 20px;text-align:center;color:var(--slate);border:1px dashed var(--rule);border-radius:5px;margin-top:16px;background:var(--card)}
+.empty p{margin:0 0 6px}
+.more{margin:16px 0 0;width:100%;background:var(--card);border:1px solid var(--rule);color:var(--ink);border-radius:4px;font:500 14px var(--sans);padding:11px;cursor:pointer}
+.more:hover{border-color:var(--focus)}
 
 footer{max-width:1380px;margin:0 auto;padding:0 20px 40px;font-size:12.5px;color:var(--slate);line-height:1.6}
 footer p{margin:0 0 6px;max-width:78ch}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* ---------- additions: states, filters, card detail ---------- */
-.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:8px 12px;z-index:50}
-.skip:focus{left:8px;top:8px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:4px;z-index:50;font-weight:600}
+.skip:focus{left:10px;top:10px}
 .rail-sum{font-size:12.5px;color:var(--slate);font-weight:400;margin-left:8px}
 @media (min-width:961px){.rail-sum{display:none}}
-button.ghost:disabled{opacity:.45;cursor:not-allowed}
-.rail-foot{flex-wrap:wrap}
 .linkbtn{background:none;border:0;padding:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer}
 .privacy{font-size:12px;color:var(--slate);margin:10px 0 0;line-height:1.45}
 
-.find{flex:1 1 220px;max-width:340px}
-.find input{padding:6px 9px;font-size:13.5px;background:var(--card)}
+.find{flex:1 1 220px;max-width:360px}
+.find input{padding:6px 10px;font-size:13.5px;background:var(--card)}
 .hidden-note{margin:10px 0 0;font-size:12.5px;color:var(--slate);line-height:1.6}
 .src.wait{border-style:dashed}
 .src.warn{border-color:var(--warn);color:var(--warn)}
@@ -201,22 +339,22 @@ button.ghost:disabled{opacity:.45;cursor:not-allowed}
 
 .soon .dot{background:var(--warn)}
 .unclear .dot{background:none;border:1.5px solid var(--warn)}
-.trial.offtopic{opacity:.72}
-.trial:target{outline:2px solid var(--focus);outline-offset:2px}
+.trial.offtopic{opacity:.82}
+.trial:target{outline:2.5px solid var(--focus);outline-offset:2px}
 .reasons li.link{border-style:dashed}
 .reasons li a{color:inherit}
 
 details.sites,details.elig{margin:10px 0 0}
-details.elig summary{font-size:13px;color:var(--slate);cursor:pointer}
+details.elig summary{font-size:13px;color:var(--slate);cursor:pointer;padding:2px 0}
 details.sites+details.elig,details.elig+details.sites{margin-top:6px}
-.elig-body{margin:8px 0 0;padding:10px 12px;border:1px solid var(--rule-soft);border-radius:3px;background:var(--paper);font-size:13px;line-height:1.55;max-height:320px;overflow:auto}
+.elig-body{margin:8px 0 0;padding:10px 12px;border:1px solid var(--rule-soft);border-radius:4px;background:var(--paper);font-size:13px;line-height:1.55;max-height:320px;overflow:auto}
 .elig-body p{margin:0 0 8px}
 .elig-body pre{margin:0;white-space:pre-wrap;word-break:break-word;font:inherit}
 .elig-facts{color:var(--slate)}
 .contact{margin:9px 0 0;font-size:13px;color:var(--slate)}
 .contact a{color:var(--ink)}
 
-.skeleton{height:118px;border:1px solid var(--rule);border-radius:3px;background:linear-gradient(100deg,var(--card) 30%,var(--rule-soft) 50%,var(--card) 70%);background-size:300% 100%;animation:shimmer 1.4s linear infinite}
+.skeleton{height:118px;border:1px solid var(--rule);border-radius:5px;background:linear-gradient(100deg,var(--card) 30%,var(--rule-soft) 50%,var(--card) 70%);background-size:300% 100%;animation:shimmer 1.4s linear infinite}
 @keyframes shimmer{from{background-position:100% 0}to{background-position:-100% 0}}
 .empty .linkbtn{color:var(--ink)}
 .endnotes details{font-size:12.5px;color:var(--slate);line-height:1.6;max-width:86ch;margin:10px 0 0}
@@ -225,9 +363,56 @@ details.sites+details.elig,details.elig+details.sites{margin-top:6px}
 .endnotes details td{padding:2px 14px 2px 0;vertical-align:top}
 .endnotes details td:first-child{font:500 12.5px var(--mono);white-space:nowrap}
 noscript p{max-width:720px;margin:40px auto;padding:0 20px}
+
+@media (max-width:640px){
+  .masthead-in{padding:9px 14px;gap:8px 12px}
+  .tally{margin-left:0;width:100%;order:3;font-size:12px;gap:6px 12px}
+  .theme-btn{margin-left:auto}
+  input[type=text],input[type=number],select,.find input,.feed-tools select{font-size:16px}
+  .feed-bar{gap:8px}
+  .find{flex:1 1 100%;max-width:none;order:3}
+  .shortlist-actions{width:100%;margin-left:0}
+  .shortlist-btn{flex:1 1 auto;text-align:center}
+  .trial{padding:12px 13px}
+  .trial-top{gap:8px}
+  .save-btn{min-height:33px;padding:5px 11px}
+}
+
+/* ---------- clinic discussion sheet (print view) ---------- */
+.clinic-sheet{display:none;max-width:960px;margin:0 auto;padding:12px 20px 28px;color:#111615;background:#ffffff}
+.sheet-head{border-bottom:2px solid #141a19;padding-bottom:10px;margin-bottom:14px}
+.sheet-head h2{margin:0 0 4px;font-size:19px;font-weight:600}
+.sheet-sub{margin:0;font-size:12.5px;color:#3d4947;line-height:1.5}
+.sheet-disclaimer{margin:8px 0 0;padding:6px 10px;border:1px solid #b8c2bf;border-radius:3px;font-size:11.5px;color:#2c3635;background:#f7f9f8}
+.sheet-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.sheet-item{border:1px solid #9aa8a5;border-left:4px solid #19516b;border-radius:4px;padding:10px 13px;break-inside:avoid;page-break-inside:avoid}
+.sheet-item-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.sheet-item h3{margin:0;font-size:14px;font-weight:600;line-height:1.35}
+.sheet-id{font:600 12px var(--mono);color:#111615}
+.sheet-meta,.sheet-sites,.sheet-url,.sheet-flags{margin:4px 0;font-size:12px;line-height:1.45;color:#2c3635}
+.sheet-url{font-family:var(--mono);font-size:11px;word-break:break-all;color:#19516b}
+.sheet-notes-box{margin-top:7px;padding-top:6px;border-top:1px dashed #b8c2bf;font-size:11.5px;color:#3d4947}
+.sheet-checks{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.sheet-line{border-bottom:1px dotted #9aa8a5;height:16px;margin-top:4px}
+
 @media print{
-  .masthead{position:static}.rail,.feed-tools,.find,.more,.direct,.skip{display:none!important}
-  .shell{display:block}.trial{break-inside:avoid}
+  :root,:root[data-theme="dark"],:root[data-theme="light"]{
+    color-scheme:light;
+    --paper:#ffffff;--card:#ffffff;--ink:#111615;--slate:#3d4947;
+    --rule:#b8c2bf;--rule-soft:#dce2e0;
+    --reg-us:#19516b;--reg-us-bg:#f0f6f9;--reg-us-bd:#b8d6e5;
+    --reg-uk:#6e2b4e;--reg-uk-bg:#faf2f6;--reg-uk-bd:#dfc0d0;
+    --reg-eu:#245c42;--reg-eu-bg:#f0f7f3;--reg-eu-bd:#b8dac9;
+    --reg-who:#784c16;--reg-who-bg:#fcf6ec;--reg-who-bd:#e4cca8;
+    --warn:#6e4606;--warn-bg:#fdf7ea;
+  }
+  body{background:#ffffff;color:#111615;font-size:12.5px}
+  .masthead{position:static;border-bottom:1.5px solid #141a19}
+  .rail,.preset-bar,.shortlist-bar,.feed-tools,.find,.more,.direct,.skip,.save-btn,.theme-btn,.linkbtn,.kw-dirty{display:none!important}
+  .shell{display:block;padding:10px 0 16px}
+  .trial{break-inside:avoid;page-break-inside:avoid;box-shadow:none;border-color:#9aa8a5}
+  body.printing-shortlist .masthead,body.printing-shortlist .shell{display:none!important}
+  body.printing-shortlist .clinic-sheet{display:block!important}
 }
 
 /* === PRAZG_SUITE_BANNER_CSS_START === */
@@ -407,7 +592,8 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
 <header class="masthead">
   <div class="masthead-in">
     <h1 class="wordmark">Brain Trials Finder <span>— neuro-oncology</span></h1>
-    <div class="tally" id="tally" aria-live="polite"></div>
+    <div class="tally" id="tally" aria-label="Trials shown by register"></div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Switch colour theme" title="Switch between light and dark theme"><span aria-hidden="true" id="themeIcon">☾</span> <span id="themeText">Dark</span></button>
   </div>
 </header>
 
@@ -434,6 +620,7 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
           <div class="field">
             <label for="kw">Must also mention (optional, comma separated)</label>
             <input type="text" id="kw" placeholder="e.g. TTFields, CAR-T, MGMT" maxlength="200">
+            <p class="kw-dirty" id="kwDirty" hidden>Press Enter or click Search to apply updated keywords.</p>
             <p class="hint">Narrows the results to trials that mention at least one of these words.</p>
           </div>
         </fieldset>
@@ -513,11 +700,21 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
 
   <!-- ===================== results ===================== -->
   <main>
+    <div class="preset-bar" id="presetBar" role="toolbar" aria-label="Quick diagnosis presets">
+      <span class="preset-label" id="presetLabel">Quick presets:</span>
+      <button type="button" class="preset-pill" data-preset="gbm" aria-pressed="true">Glioblastoma</button>
+      <button type="button" class="preset-pill" data-preset="idh" aria-pressed="false">IDH-Mutant Glioma</button>
+      <button type="button" class="preset-pill" data-preset="astro_oligo" aria-pressed="false">Astrocytoma / Oligodendroglioma</button>
+      <button type="button" class="preset-pill" data-preset="mets" aria-pressed="false">Brain Metastases</button>
+      <button type="button" class="preset-pill" data-preset="meningioma" aria-pressed="false">Meningioma</button>
+      <button type="button" class="preset-pill" data-preset="pediatric" aria-pressed="false">Pediatric CNS</button>
+    </div>
+
     <div class="feed-bar">
       <p class="count" id="count" role="status">Loading trials…</p>
       <div class="find">
         <label class="sr" for="find">Filter the results shown</label>
-        <input type="text" id="find" placeholder="Filter by hospital, city, sponsor, drug or ID" autocomplete="off">
+        <input type="text" id="find" placeholder="Filter by hospital, city, sponsor, drug or ID (/)" aria-keyshortcuts="/" autocomplete="off">
       </div>
       <div class="feed-tools">
         <label for="sort">Sort</label>
@@ -530,11 +727,21 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
       </div>
     </div>
 
+    <div class="shortlist-bar" id="shortlistBar" role="region" aria-label="Saved trials shortlist">
+      <button type="button" class="shortlist-toggle" id="savedToggleBtn" aria-pressed="false" disabled><span aria-hidden="true">★</span> <span id="savedToggleLabel">Saved (0)</span></button>
+      <span class="shortlist-note" id="shortlistNote">Star trials on any card to build a clinic shortlist.</span>
+      <div class="shortlist-actions">
+        <button type="button" class="shortlist-btn" id="shortlistCsvBtn" title="Download your saved trials shortlist as a CSV file" disabled>Export Shortlist CSV</button>
+        <button type="button" class="shortlist-btn" id="printSheetBtn" title="Print a formatted Clinic Discussion Sheet of your saved trials" disabled>Print Clinic Discussion Sheet</button>
+        <button type="button" class="shortlist-btn" id="clearShortlistBtn" title="Remove all trials from your shortlist" hidden>Clear</button>
+      </div>
+    </div>
+
     <ul class="sources" id="sources" aria-label="Registers searched"></ul>
     <p class="hidden-note" id="hiddenNote" hidden></p>
     <p class="direct" id="direct"></p>
-    <ol class="results" id="results" aria-live="off"></ol>
-    <button class="more" id="moreBtn" hidden>Load more from ClinicalTrials.gov</button>
+    <ol class="results" id="results" aria-live="off" tabindex="-1"></ol>
+    <button type="button" class="more" id="moreBtn" hidden>Load more from ClinicalTrials.gov</button>
 
     <section class="endnotes" id="notices" aria-labelledby="notesHead">
       <h2 id="notesHead">How these results were put together</h2>
@@ -559,6 +766,8 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
   </main>
 </div>
 
+<section class="clinic-sheet" id="clinicSheet" aria-label="Clinic discussion sheet" hidden></section>
+
 <footer>
   <p><strong>This is not medical advice.</strong> It is a search aid over public trial registers. Eligibility is decided by the trial team, not by this page — always confirm with the treating clinician and the trial contact before acting on anything here.</p>
   <p>Sources: <a href="https://clinicaltrials.gov/">ClinicalTrials.gov</a> (US NIH, queried live) · <a href="https://www.isrctn.com/">ISRCTN registry</a> (UK, queried live) · <a href="https://euclinicaltrials.eu/ctis-public/search">EU CTIS</a> (loaded from a snapshot, because CTIS blocks direct browser requests) · <a href="https://trialsearch.who.int/">WHO ICTRP</a> (snapshot; supplies CTRI India, ChiCTR China, JPRN Japan, ANZCTR, DRKS and other national registries, none of which permit direct browser requests). Each snapshot shows its build date above the results. Registers overlap; the same trial can appear more than once under different identifiers.</p>
@@ -572,20 +781,31 @@ noscript p{max-width:720px;margin:40px auto;padding:0 20px}
    Diagnosis vocabulary — mirrors DIAGNOSES in ctgov_client.py
    ========================================================================= */
 const DIAGNOSES = {
-  "Glioblastoma":            ["glioblastoma","GBM","glioblastoma multiforme","gliosarcoma"],
-  "Glioma (any grade)":      ["glioma","astrocytoma","oligodendroglioma"],
-  "Diffuse midline glioma":  ["diffuse midline glioma","DIPG","H3 K27M","diffuse intrinsic pontine glioma"],
-  "Astrocytoma":             ["astrocytoma","anaplastic astrocytoma"],
-  "Oligodendroglioma":       ["oligodendroglioma","1p19q codeleted"],
-  "Meningioma":              ["meningioma"],
-  "Medulloblastoma":         ["medulloblastoma"],
-  "Ependymoma":              ["ependymoma"],
-  "Brain metastases":        ["brain metastases","brain metastasis","cerebral metastases","leptomeningeal"],
-  "CNS lymphoma":            ["primary CNS lymphoma","central nervous system lymphoma"],
-  "Spinal cord tumour":      ["spinal cord tumor","spinal cord neoplasm","intramedullary tumor"],
-  "Any CNS tumour":          ["brain tumor","brain neoplasm","CNS tumor","central nervous system neoplasm"]
+  "Glioblastoma":                    ["glioblastoma","GBM","glioblastoma multiforme","gliosarcoma"],
+  "Glioma (any grade)":              ["glioma","astrocytoma","oligodendroglioma"],
+  "Astrocytoma / Oligodendroglioma": ["astrocytoma","anaplastic astrocytoma","oligodendroglioma","1p19q codeleted"],
+  "Diffuse midline glioma":          ["diffuse midline glioma","DIPG","H3 K27M","diffuse intrinsic pontine glioma"],
+  "Astrocytoma":                     ["astrocytoma","anaplastic astrocytoma"],
+  "Oligodendroglioma":               ["oligodendroglioma","1p19q codeleted"],
+  "Meningioma":                      ["meningioma"],
+  "Medulloblastoma":                 ["medulloblastoma"],
+  "Ependymoma":                      ["ependymoma"],
+  "Pediatric CNS":                   ["medulloblastoma","diffuse midline glioma","DIPG","ependymoma","pediatric brain tumor","pediatric glioma","pilocytic astrocytoma","atypical teratoid rhabdoid tumor","embryonal CNS tumor"],
+  "Brain metastases":                ["brain metastases","brain metastasis","cerebral metastases","leptomeningeal"],
+  "CNS lymphoma":                    ["primary CNS lymphoma","central nervous system lymphoma"],
+  "Spinal cord tumour":              ["spinal cord tumor","spinal cord neoplasm","intramedullary tumor"],
+  "Any CNS tumour":                  ["brain tumor","brain neoplasm","CNS tumor","central nervous system neoplasm"]
 };
 const ANY_CNS = "Any CNS tumour";
+
+const PRESETS = {
+  gbm:         {label:"Glioblastoma", dx:"Glioblastoma", kw:"", pediatric:false},
+  idh:         {label:"IDH-Mutant Glioma", dx:"Glioma (any grade)", kw:"IDH, IDH1, IDH2, vorasidenib, ivosidenib", pediatric:false},
+  astro_oligo: {label:"Astrocytoma / Oligodendroglioma", dx:"Astrocytoma / Oligodendroglioma", kw:"", pediatric:false},
+  mets:        {label:"Brain Metastases", dx:"Brain metastases", kw:"", pediatric:false},
+  meningioma:  {label:"Meningioma", dx:"Meningioma", kw:"", pediatric:false},
+  pediatric:   {label:"Pediatric CNS", dx:"Pediatric CNS", kw:"", pediatric:true}
+};
 
 // Anything a neuro-oncology record would plausibly say about itself. Used for
 // two things: a smaller score when a register matched on its own indexing, and
@@ -646,11 +866,32 @@ const state = {
   notices: {},         // per-register explanatory notes, same keys
   running: false,
   showOffTopic: false,
+  savedOnly: false,    // true when viewing Saved (N) shortlist filter
+  shortlist: new Map(),// trial id -> saved trial record (persisted in localStorage)
+  presetAgeAdjusted: false,
+  prevAdultAge: "55",
   shownIds: new Set(), // ids of the cards on screen
   criteria: new Map()  // card id -> eligibility text, filled into the DOM only when opened
 };
 let runSeq = 0;
 let activeCtl = null;
+let copyTimer = null;
+let clearConfirmTimer = null;
+
+const SHORTLIST_KEY = "btf_shortlist_v1";
+const THEME_KEY = "btf_theme_v1";
+function storageGet(k){
+  try { return typeof window !== "undefined" && window.localStorage ? window.localStorage.getItem(k) : null; }
+  catch (e) { return null; }
+}
+function storageSet(k, v){
+  try { if (typeof window !== "undefined" && window.localStorage) window.localStorage.setItem(k, v); }
+  catch (e) { /* quota, private mode or sandboxed frame */ }
+}
+function storageRemove(k){
+  try { if (typeof window !== "undefined" && window.localStorage) window.localStorage.removeItem(k); }
+  catch (e) { /* ignore */ }
+}
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, m =>
@@ -904,7 +1145,7 @@ function normaliseISRCTN(full){
     minAge: parseAge(tag(parts, "lowerAgeLimit")),
     maxAge: parseAge(tag(parts, "upperAgeLimit")),
     sex: /^(male|female)$/i.test(tag(parts, "gender")) ? titleCase(tag(parts, "gender")) + " only" : "",
-    enrollment: Number(tag(parts, "targetEnrolment")) || null,
+    enrollment: parseEnrolment(tag(parts, "targetEnrolment")),
     updated: isoDate(trial.getAttribute("lastUpdated")),
     started: sd,
     sites,
@@ -955,10 +1196,15 @@ const STALE_AFTER_DAYS = 7;
 
 // The snapshots hold neuro-oncology records only, so "Any CNS tumour" means
 // all of them. Otherwise match the diagnosis terms on title and condition.
-function snapshotMatches(intake, text){
+function snapshotMatches(intake, text, raw){
   if (intake.dxLabel === ANY_CNS) return true;
   const hay = spell(text);
-  return intake.terms.some(x => hay.includes(spell(x)));
+  if (intake.terms.some(x => hay.includes(spell(x)))) return true;
+  if (intake.dxLabel === "Pediatric CNS"){
+    if (raw && /0-17|child|infant|adolescent/i.test(String(raw.ageGroup || ""))) return true;
+    if (/\b(pediatric|paediatric|child|children|childhood|adolescent|infant)\b/i.test(text)) return true;
+  }
+  return false;
 }
 
 function normaliseCTIS(t){
@@ -1005,7 +1251,7 @@ function normaliseCTIS(t){
     minAge: ages.min,
     maxAge: ages.max,
     sex: /^(male|female)$/i.test(t.gender || "") ? titleCase(t.gender) + " only" : "",
-    enrollment: Number(t.enrolled) || null,
+    enrollment: parseEnrolment(t.enrolled),
     updated: isoDate(t.lastUpdated),
     started: isoDate(t.startDate),
     sites,
@@ -1269,7 +1515,11 @@ function isoDate(v){
   const s = String(v || "").trim();
   if (!s) return "";
   const pad = n => String(n).padStart(2, "0");
-  const ok = (y, m, d) => y >= 1900 && y <= 2100 && m >= 1 && m <= 12 && d >= 1 && d <= 31;
+  const ok = (y, m, d) => {
+    if (!(y >= 1900 && y <= 2100 && m >= 1 && m <= 12 && d >= 1 && d <= 31)) return false;
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d;
+  };
   let m = s.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})/);
   if (m) return ok(+m[1], +m[2], +m[3]) ? m[1] + "-" + pad(m[2]) + "-" + pad(m[3]) : "";
   m = s.match(/^(\d{4})-(\d{1,2})$/);
@@ -1373,12 +1623,16 @@ function num(id, lo, hi){
   return Math.min(hi, Math.max(lo, n));
 }
 
+function parsedKeywords(){
+  return [...new Set($("kw").value.split(",").map(s => s.trim()).filter(Boolean))].slice(0, 8);
+}
+
 function readIntake(){
-  const dxLabel = $("dx").value;
+  const dxLabel = $("dx").value || DEFAULTS.dx;
   return {
     dxLabel,
     terms: DIAGNOSES[dxLabel] || [dxLabel],
-    keywords: [...new Set($("kw").value.split(",").map(s => s.trim()).filter(Boolean))].slice(0, 8),
+    keywords: parsedKeywords(),
     region: REGIONS[$("region").value] ? $("region").value : "any",
     age: num("age", 0, 120),
     kps: num("kps", 0, 100),
@@ -1390,6 +1644,14 @@ function readIntake(){
     hideIneligible: $("hideIneligible").checked,
     phase: $("phase").value
   };
+}
+
+function updateKwDirty(){
+  const el = $("kwDirty");
+  if (!el || !state.intake) return;
+  const domKw = parsedKeywords().map(s => s.toLowerCase()).join(",");
+  const activeKw = (state.intake.keywords || []).map(s => s.toLowerCase()).join(",");
+  el.hidden = domKw === activeKw;
 }
 
 function fieldValue(id){
@@ -1406,10 +1668,12 @@ function setField(id, v){
 // The search lives in the URL fragment so it can be bookmarked or sent to a
 // colleague. A fragment is never sent to the server, which matters because it
 // can hold a patient's age and treatment history.
-function writeHash(){
+function writeHash(keepSubmittedKw){
   const p = new URLSearchParams();
   for (const id of FIELD_IDS){
-    const v = fieldValue(id);
+    const v = (keepSubmittedKw && id === "kw" && state.intake)
+      ? state.intake.keywords.join(", ")
+      : fieldValue(id);
     if (v === DEFAULTS[id]) continue;
     p.set(id, v === true ? "1" : v === false ? "0" : v);
   }
@@ -1423,6 +1687,310 @@ function readHash(){
   if (!raw || !raw.includes("=")) return;
   const p = new URLSearchParams(raw);
   for (const id of FIELD_IDS) if (p.has(id)) setField(id, p.get(id));
+}
+
+function syncPresetPills(){
+  const bar = $("presetBar");
+  if (!bar) return;
+  const dx = $("dx").value || DEFAULTS.dx;
+  const kws = parsedKeywords().map(s => s.toLowerCase());
+  const kwRaw = kws.join(",");
+  for (const btn of bar.querySelectorAll(".preset-pill")){
+    const key = btn.dataset.preset;
+    const p = PRESETS[key];
+    if (!p) continue;
+    let match = false;
+    if (key === "idh"){
+      match = dx === "Glioma (any grade)" && kws.some(k => /^idh[12]?$|^vorasidenib$|^ivosidenib$/.test(k));
+    } else {
+      match = dx === p.dx && kwRaw === "";
+    }
+    btn.setAttribute("aria-pressed", String(match));
+  }
+}
+
+function applyPreset(key){
+  const p = PRESETS[key];
+  if (!p) return;
+  setField("dx", p.dx);
+  setField("kw", p.kw);
+  if (p.pediatric){
+    const curAge = num("age", 0, 120);
+    if (curAge == null || curAge >= 18){
+      state.prevAdultAge = $("age").value || DEFAULTS.age;
+      setField("age", "10");
+      state.presetAgeAdjusted = true;
+    }
+  } else if (state.presetAgeAdjusted){
+    setField("age", state.prevAdultAge || DEFAULTS.age);
+    state.presetAgeAdjusted = false;
+  }
+  state.savedOnly = false;
+  syncPresetPills();
+  run(false);
+}
+
+/* =========================================================================
+   Saved Trials Shortlist — persisted in localStorage with full JSDOM guard
+   ========================================================================= */
+function serialiseTrial(t){
+  const reg = ["CTG","ISRCTN","CTIS","ICTRP"].includes(t.register) ? t.register : "CTG";
+  const tone = ["open","soon","shut","unclear"].includes(t.tone) ? t.tone : (t.recruiting ? "open" : "shut");
+  return {
+    register: reg,
+    registerName: String(t.registerName || reg),
+    id: String(t.id || ""),
+    title: String(t.title || ""),
+    altTitle: String(t.altTitle || ""),
+    acronym: String(t.acronym || ""),
+    url: safeUrl(t.url),
+    status: String(t.status || "Status not published"),
+    statusDerived: !!t.statusDerived,
+    tone,
+    recruiting: !!t.recruiting,
+    interventional: t.interventional !== false,
+    phases: Array.isArray(t.phases) ? t.phases.map(String) : [],
+    conditions: Array.isArray(t.conditions) ? t.conditions.map(String) : [],
+    interventions: Array.isArray(t.interventions) ? t.interventions.map(String) : [],
+    sponsor: String(t.sponsor || ""),
+    criteria: String(t.criteria || "").slice(0, 4000),
+    minAge: typeof t.minAge === "number" && Number.isFinite(t.minAge) ? t.minAge : null,
+    maxAge: typeof t.maxAge === "number" && Number.isFinite(t.maxAge) ? t.maxAge : null,
+    sex: String(t.sex || ""),
+    enrollment: typeof t.enrollment === "number" && Number.isFinite(t.enrollment) ? t.enrollment : null,
+    updated: String(t.updated || ""),
+    started: String(t.started || ""),
+    sites: Array.isArray(t.sites) ? t.sites.slice(0, 40).map(s => ({
+      facility: String(s?.facility || ""),
+      city: String(s?.city || ""),
+      country: String(s?.country || ""),
+      open: !!s?.open,
+      note: String(s?.note || "")
+    })) : [],
+    countries: Array.isArray(t.countries) ? t.countries.map(String) : [],
+    countryInferred: !!t.countryInferred,
+    otherIds: Array.isArray(t.otherIds) ? t.otherIds.map(String) : [],
+    sameAs: Array.isArray(t.sameAs) ? t.sameAs.map(String) : [],
+    alsoIn: Array.isArray(t.alsoIn) ? t.alsoIn.map(String) : [],
+    contact: t.contact ? {
+      name: String(t.contact.name || ""),
+      phone: String(t.contact.phone || ""),
+      email: String(t.contact.email || "")
+    } : null,
+    carried: String(t.carried || ""),
+    hasCriteria: !!(t.criteria || t.hasCriteria),
+    score: Number.isFinite(Number(t.score)) ? Number(t.score) : 0,
+    plus: Array.isArray(t.plus) ? t.plus.map(String) : [],
+    minus: Array.isArray(t.minus) ? t.minus.map(String) : []
+  };
+}
+
+function loadShortlist(){
+  state.shortlist.clear();
+  const raw = storageGet(SHORTLIST_KEY);
+  if (!raw) return;
+  try {
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return;
+    for (const item of parsed.slice(0, 100)){
+      if (item && typeof item === "object" && typeof item.id === "string" && item.id.trim()){
+        const clean = serialiseTrial(item);
+        state.shortlist.set(clean.id, clean);
+      }
+    }
+  } catch (e) { /* ignore malformed storage */ }
+}
+
+function saveShortlist(){
+  const items = [...state.shortlist.values()].slice(0, 100);
+  if (items.length) storageSet(SHORTLIST_KEY, JSON.stringify(items));
+  else storageRemove(SHORTLIST_KEY);
+}
+
+function syncShortlistWithFetched(){
+  if (!state.shortlist.size) return;
+  let changed = false;
+  for (const t of state.trials){
+    if (state.shortlist.has(t.id)){
+      state.shortlist.set(t.id, serialiseTrial(t));
+      changed = true;
+    }
+  }
+  if (changed) saveShortlist();
+}
+
+function shortlistTrials(){
+  const byLive = new Map(state.trials.map(t => [t.id, t]));
+  const out = [];
+  for (const [id, saved] of state.shortlist.entries()){
+    const rec = byLive.get(id) || saved;
+    if (state.intake) score(rec, state.intake);
+    out.push(rec);
+  }
+  return out;
+}
+
+function shortlistVisible(){
+  const needle = $("find").value.trim().toLowerCase();
+  return shortlistTrials().filter(t => findHit(t, needle));
+}
+
+function resetClearConfirm(){
+  clearTimeout(clearConfirmTimer);
+  clearConfirmTimer = null;
+  const btn = $("clearShortlistBtn");
+  if (btn){
+    delete btn.dataset.confirm;
+    btn.classList.remove("danger-confirm");
+    btn.textContent = "Clear";
+  }
+}
+
+function renderShortlistBar(){
+  const bar = $("shortlistBar");
+  if (!bar) return;
+  const n = state.shortlist.size;
+  const toggleBtn = $("savedToggleBtn");
+  const label = $("savedToggleLabel");
+  const note = $("shortlistNote");
+  const csvBtn = $("shortlistCsvBtn");
+  const printBtn = $("printSheetBtn");
+  const clearBtn = $("clearShortlistBtn");
+
+  label.textContent = `Saved (${n})`;
+  toggleBtn.disabled = n === 0 && !state.savedOnly;
+  toggleBtn.setAttribute("aria-pressed", String(state.savedOnly));
+  bar.classList.toggle("is-filtering", state.savedOnly);
+  csvBtn.disabled = n === 0;
+  printBtn.disabled = n === 0;
+  clearBtn.hidden = n === 0;
+  if (n === 0) resetClearConfirm();
+
+  if (state.savedOnly){
+    note.textContent = n
+      ? `Viewing your shortlist (${n} saved trial${n===1?"":"s"}). Click Saved (${n}) to return to all search results.`
+      : "Your shortlist is empty. Click Saved (0) to return to all search results.";
+  } else if (n > 0){
+    note.textContent = `${n} trial${n===1?"":"s"} saved in your shortlist — filter, export CSV, or print a clinic discussion sheet.`;
+  } else {
+    note.textContent = "Star trials on any card to build a clinic shortlist.";
+  }
+}
+
+function toggleSaveTrial(id){
+  if (!id) return;
+  resetClearConfirm();
+  const wasSaved = state.shortlist.has(id);
+  if (wasSaved){
+    state.shortlist.delete(id);
+  } else {
+    const live = state.trials.find(t => t.id === id);
+    if (!live) return;
+    state.shortlist.set(id, serialiseTrial(live));
+  }
+  saveShortlist();
+  const nowSaved = state.shortlist.has(id);
+  renderShortlistBar();
+
+  if (state.savedOnly){
+    render();
+    return;
+  }
+  // Update matching card & button in place so open <details> stay expanded.
+  for (const btn of document.querySelectorAll(".save-btn")){
+    if (btn.dataset.save === id){
+      btn.setAttribute("aria-pressed", String(nowSaved));
+      btn.setAttribute("aria-label", nowSaved ? `Remove ${id} from saved shortlist` : `Save ${id} to shortlist`);
+      btn.innerHTML = `<span aria-hidden="true">★</span> ${nowSaved ? "Saved" : "Save"}`;
+      const li = btn.closest(".trial");
+      if (li) li.classList.toggle("is-saved", nowSaved);
+    }
+  }
+}
+
+function exportShortlistCSV(){
+  const rows = sorted(shortlistTrials());
+  if (!rows.length) return;
+  const blob = new Blob([buildCSV(rows)], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `brain-trials-shortlist-${new Date().toISOString().slice(0,10)}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+
+function buildClinicSheetHTML(rows){
+  const i = state.intake;
+  const dateStr = fmtDate(new Date().toISOString().slice(0,10)) || new Date().toISOString().slice(0,10);
+  const regionOpt = i ? $("region").querySelector(`option[value="${i.region}"]`) : null;
+  const summaryParts = [];
+  if (i){
+    summaryParts.push(`Search diagnosis: ${i.dxLabel}`);
+    if (regionOpt) summaryParts.push(`Region: ${regionOpt.textContent}`);
+    if (i.age != null) summaryParts.push(`Age entered: ${i.age} yrs`);
+    if (i.kps != null) summaryParts.push(`Karnofsky (KPS): ${i.kps}`);
+    if (i.setting) summaryParts.push(`Setting: ${i.setting === "newly" ? "Newly diagnosed" : "Recurrent / progressive"}`);
+  }
+
+  const items = rows.map((t, idx) => {
+    const regionKey = i ? i.region : "any";
+    const inRegion = (t.sites || []).filter(s => REGIONS[regionKey](s.country));
+    const sitesToUse = (inRegion.length ? inRegion : (t.sites || [])).slice(0, 6);
+    const siteText = sitesToUse.map(s => [s.facility, s.city, s.country].filter(Boolean).join(", ")).filter(Boolean).join(" · ");
+    const c = t.contact;
+    const contactText = c ? [c.name, c.phone, c.email].filter(Boolean).join(" · ") : "";
+    const flags = [...(t.plus || []), ...(t.minus || []).map(m => "Note: " + m)].join(" · ");
+    const url = safeUrl(t.url);
+    return `<li class="sheet-item">
+      <div class="sheet-item-top">
+        <h3>${idx + 1}. ${esc(t.title || t.id)}</h3>
+        <span class="sheet-id">${esc(t.registerName || t.register)} · ${esc(t.id)}</span>
+      </div>
+      <p class="sheet-meta"><strong>Status:</strong> ${esc(t.status)}${t.statusDerived ? " (derived)" : ""}${phaseLabel(t) ? " · <strong>Phase:</strong> " + esc(phaseLabel(t)) : ""}${t.sponsor ? " · <strong>Sponsor:</strong> " + esc(t.sponsor) : ""}${t.enrollment ? " · <strong>Target size:</strong> " + esc(t.enrollment) : ""}</p>
+      ${flags ? `<p class="sheet-flags"><strong>Match notes:</strong> ${esc(flags)}</p>` : ""}
+      ${siteText ? `<p class="sheet-sites"><strong>Listed sites${inRegion.length && regionKey !== "any" ? " in region" : ""}:</strong> ${esc(siteText)}${(inRegion.length ? inRegion.length : (t.sites || []).length) > 6 ? " …" : ""}</p>` : ""}
+      ${contactText ? `<p class="sheet-sites"><strong>Central trial contact:</strong> ${esc(contactText)}</p>` : ""}
+      ${url ? `<p class="sheet-url">${esc(url)}</p>` : ""}
+      <div class="sheet-notes-box">
+        <div class="sheet-checks">
+          <span>&#9744; Discuss eligibility criteria</span>
+          <span>&#9744; Confirm nearest recruiting site</span>
+          <span>&#9744; Molecular / pathology requirements</span>
+        </div>
+        <div>Clinician notes:</div>
+        <div class="sheet-line"></div>
+      </div>
+    </li>`;
+  }).join("");
+
+  return `<div class="sheet-head">
+    <h2>Neuro-Oncology Clinical Trial Discussion Sheet (${rows.length} shortlisted)</h2>
+    <p class="sheet-sub">Prepared ${esc(dateStr)}${summaryParts.length ? " · " + esc(summaryParts.join(" · ")) : ""}</p>
+    <p class="sheet-disclaimer"><strong>For clinic discussion only — not medical advice.</strong> Public register entries can lag behind site openings and closures. Confirm eligibility and current recruitment directly with the treating neuro-oncology team and the listed trial contact.</p>
+  </div>
+  <ol class="sheet-list">${items}</ol>`;
+}
+
+function printClinicSheet(){
+  const rows = sorted(shortlistTrials());
+  if (!rows.length) return;
+  const sheet = $("clinicSheet");
+  sheet.innerHTML = buildClinicSheetHTML(rows);
+  sheet.hidden = false;
+  document.body.classList.add("printing-shortlist");
+  const cleanup = () => {
+    document.body.classList.remove("printing-shortlist");
+    sheet.hidden = true;
+    window.removeEventListener("afterprint", cleanup);
+  };
+  window.addEventListener("afterprint", cleanup);
+  if (typeof window.print === "function"){
+    try { window.print(); } catch (e) { cleanup(); }
+  } else {
+    cleanup();
+  }
 }
 
 /* =========================================================================
@@ -1457,6 +2025,8 @@ async function run(append){
   const intake = readIntake();
   state.intake = intake;
   writeHash();
+  updateKwDirty();
+  syncPresetPills();
   renderRailSummary();
 
   if (!append){
@@ -1505,7 +2075,7 @@ async function run(append){
       const snap = await loadICTRP(ctl.signal);
       if (!live()) return;
       const hits = snap.trials
-        .filter(t => snapshotMatches(intake, (t.title || "") + " " + (t.scientificTitle || "") + " " + (t.conditions || "")))
+        .filter(t => snapshotMatches(intake, (t.title || "") + " " + (t.scientificTitle || "") + " " + (t.conditions || ""), t))
         .map(normaliseICTRP);
       state.trials.push(...hits);
       const age = snapshotAge(snap);
@@ -1521,7 +2091,7 @@ async function run(append){
       const snap = await loadCTIS(ctl.signal);
       if (!live()) return;
       const hits = snap.trials
-        .filter(t => snapshotMatches(intake, (t.title || "") + " " + (t.conditions || "")))
+        .filter(t => snapshotMatches(intake, (t.title || "") + " " + (t.conditions || ""), t))
         .map(normaliseCTIS);
       state.trials.push(...hits);
       const age = snapshotAge(snap);
@@ -1553,6 +2123,11 @@ function refresh(){
     seen.add(key); return true;
   });
   flagDuplicates(state.trials);
+  if (state.intake){
+    for (const t of state.trials) score(t, state.intake);
+  }
+  syncShortlistWithFetched();
+  renderShortlistBar();
   renderSources();
   renderDirect(state.intake);
   renderNotices();
@@ -1657,9 +2232,9 @@ function keywordHit(t, intake){
 function findHit(t, needle){
   if (!needle) return true;
   if (!t.findBlob){
-    t.findBlob = (t.id + " " + t.title + " " + t.acronym + " " + t.sponsor + " " + t.registerName + " " +
-      t.conditions.join(" ") + " " + t.interventions.join(" ") + " " +
-      t.sites.map(s => s.facility + " " + s.city + " " + s.country).join(" ")).toLowerCase();
+    t.findBlob = (t.id + " " + t.title + " " + (t.acronym || "") + " " + (t.sponsor || "") + " " + (t.registerName || "") + " " +
+      (t.conditions || []).join(" ") + " " + (t.interventions || []).join(" ") + " " +
+      (t.sites || []).map(s => (s.facility || "") + " " + (s.city || "") + " " + (s.country || "")).join(" ")).toLowerCase();
   }
   return needle.split(/\s+/).every(w => t.findBlob.includes(w));
 }
@@ -1694,10 +2269,10 @@ function visible(){ return partition().shown; }
 function sorted(list){
   const how = $("sort").value;
   const c = [...list];
-  const byTitle = (a,b) => a.title.localeCompare(b.title);
-  if (how === "score")   c.sort((a,b) => b.score - a.score || byTitle(a,b));
+  const byTitle = (a,b) => (a.title || "").localeCompare(b.title || "");
+  if (how === "score")   c.sort((a,b) => (b.score||0) - (a.score||0) || byTitle(a,b));
   if (how === "updated") c.sort((a,b) => (b.updated||"").localeCompare(a.updated||"") || byTitle(a,b));
-  if (how === "phase")   c.sort((a,b) => phaseRank(b) - phaseRank(a) || b.score - a.score || byTitle(a,b));
+  if (how === "phase")   c.sort((a,b) => phaseRank(b) - phaseRank(a) || (b.score||0) - (a.score||0) || byTitle(a,b));
   if (how === "title")   c.sort(byTitle);
   return c;
 }
@@ -1705,39 +2280,68 @@ function sorted(list){
 function render(){
   if (!state.intake) return;
   for (const t of state.trials) score(t, state.intake);
+  renderShortlistBar();
+
   const {shown, hidden} = partition();
-  const list = sorted(shown);
+  const list = sorted(state.savedOnly ? shortlistVisible() : shown);
   const pending = Object.values(state.report).some(r => r.pending);
   const failed = Object.values(state.report).filter(r => r.ok === false);
 
   const tallies = {CTG:0, ISRCTN:0, CTIS:0, ICTRP:0};
-  for (const t of list) tallies[t.register]++;
+  for (const t of list) if (tallies[t.register] != null) tallies[t.register]++;
   $("tally").innerHTML =
-    `<span class="t-us"><i></i>ClinicalTrials.gov <b>${tallies.CTG}</b></span>` +
-    `<span class="t-uk"><i></i>ISRCTN <b>${tallies.ISRCTN}</b></span>` +
-    `<span class="t-eu"><i></i>EU CTIS <b>${tallies.CTIS}</b></span>` +
-    `<span class="t-who"><i></i>WHO ICTRP <b>${tallies.ICTRP}</b></span>`;
+    `<span class="t-us"><i aria-hidden="true"></i>ClinicalTrials.gov <b>${tallies.CTG}</b></span>` +
+    `<span class="t-uk"><i aria-hidden="true"></i>ISRCTN <b>${tallies.ISRCTN}</b></span>` +
+    `<span class="t-eu"><i aria-hidden="true"></i>EU CTIS <b>${tallies.CTIS}</b></span>` +
+    `<span class="t-who"><i aria-hidden="true"></i>WHO ICTRP <b>${tallies.ICTRP}</b></span>`;
 
-  const regionName = $("region").querySelector(`option[value="${state.intake.region}"]`).textContent;
-  const tail = `<small>· ${esc(state.intake.dxLabel)} · ${esc(regionName)}</small>`;
-  $("count").innerHTML = list.length
-    ? `${list.length} trial${list.length===1?"":"s"}${pending ? " so far" : ""} ${tail}`
-    : pending ? `Searching… ${tail}` : `No matches ${tail}`;
+  const regionOpt = $("region").querySelector(`option[value="${state.intake.region}"]`);
+  const regionName = regionOpt ? regionOpt.textContent : state.intake.region;
+  if (state.savedOnly){
+    $("count").innerHTML = `${list.length} saved trial${list.length===1?"":"s"} <small>· Shortlist${$("find").value.trim() ? " (filtered)" : ""}</small>`;
+    $("hiddenNote").innerHTML = "";
+    $("hiddenNote").hidden = true;
+  } else {
+    const tail = `<small>· ${esc(state.intake.dxLabel)} · ${esc(regionName)}</small>`;
+    $("count").innerHTML = list.length
+      ? `${list.length} trial${list.length===1?"":"s"}${pending ? " so far" : ""} ${tail}`
+      : pending ? `Searching… ${tail}` : `No matches ${tail}`;
 
-  // What was fetched but is not shown, and why.
-  const off = hidden.offtopic || 0;
-  const parts = Object.entries(hidden).filter(([k]) => k !== "offtopic").map(([k,n]) => `${n} ${esc(k)}`);
-  let note = parts.length ? "Fetched but not shown: " + parts.join(" · ") + "." : "";
-  if (off) note += ` ${off} record${off===1?" mentions":"s mention"} the search term only in passing (as an exclusion criterion, say, or “GBM” meaning glomerular basement membrane) and ${off===1?"is":"are"} hidden. <button type="button" class="linkbtn" id="offBtn">Show ${off===1?"it":"them"}</button>`;
-  else if (state.showOffTopic && shown.some(offTopic)) note += ` Showing records that look unrelated. <button type="button" class="linkbtn" id="offBtn">Hide them</button>`;
-  $("hiddenNote").innerHTML = note;
-  $("hiddenNote").hidden = !note;
+    // What was fetched but is not shown, and why.
+    const off = hidden.offtopic || 0;
+    const parts = Object.entries(hidden).filter(([k]) => k !== "offtopic").map(([k,n]) => `${n} ${esc(k)}`);
+    let note = parts.length ? "Fetched but not shown: " + parts.join(" · ") + "." : "";
+    if (off) note += ` ${off} record${off===1?" mentions":"s mention"} the search term only in passing (as an exclusion criterion, say, or “GBM” meaning glomerular basement membrane) and ${off===1?"is":"are"} hidden. <button type="button" class="linkbtn" id="offBtn">Show ${off===1?"it":"them"}</button>`;
+    else if (state.showOffTopic && shown.some(offTopic)) note += ` Showing records that look unrelated. <button type="button" class="linkbtn" id="offBtn">Hide them</button>`;
+    $("hiddenNote").innerHTML = note;
+    $("hiddenNote").hidden = !note;
+  }
 
   const out = $("results");
+  const openSites = new Set(), openElig = new Set();
+  for (const li of out.querySelectorAll(".trial")){
+    if (!li.id) continue;
+    const s = li.querySelector("details.sites");
+    const e = li.querySelector("details.elig");
+    if (s && s.open) openSites.add(li.id);
+    if (e && e.open) openElig.add(li.id);
+  }
+
   state.criteria.clear();
   state.shownIds = new Set(list.map(t => t.id));
   if (list.length){
     out.innerHTML = list.map(card).join("");
+    for (const id of openSites){
+      const s = $(id)?.querySelector("details.sites");
+      if (s) s.open = true;
+    }
+    for (const id of openElig){
+      const e = $(id)?.querySelector("details.elig");
+      if (e){ e.open = true; fillEligibility(e); }
+    }
+  } else if (state.savedOnly){
+    out.innerHTML = `<li class="empty"><p><strong>${state.shortlist.size ? "No saved trials match the filter box." : "Your shortlist has no saved trials yet."}</strong></p>
+      <p><button type="button" class="linkbtn" data-act="all-results">Return to search results</button>${state.shortlist.size && $("find").value.trim() ? ` or <button type="button" class="linkbtn" data-act="clear-find">clear the filter box</button>` : ""}.</p></li>`;
   } else if (pending){
     out.innerHTML = `<li class="skeleton" aria-hidden="true"></li><li class="skeleton" aria-hidden="true"></li><li class="skeleton" aria-hidden="true"></li>`;
   } else if (failed.length === Object.keys(state.report).length){
@@ -1758,7 +2362,7 @@ function render(){
 
   const more = $("moreBtn");
   const shownCTG = state.trials.filter(t => t.register === "CTG").length;
-  if (state.ctgPageToken && shownCTG < state.ctgTotal && !pending){
+  if (!state.savedOnly && state.ctgPageToken && shownCTG < state.ctgTotal && !pending){
     more.hidden = false;
     more.textContent = `Load more from ClinicalTrials.gov (${shownCTG} of ${state.ctgTotal} fetched)`;
   } else {
@@ -1772,7 +2376,7 @@ function linkChips(t){
     const here = state.shownIds.has(id);
     const other = here ? null : state.trials.find(o => o.id === id);
     const href = here ? "#t-" + encodeURIComponent(id) : safeUrl(other ? other.url : idUrl(id));
-    const inner = href ? `<a href="${esc(href)}"${here ? "" : ' target="_blank" rel="noopener"'}>${esc(id)}</a>` : esc(id);
+    const inner = href ? `<a href="${esc(href)}"${here ? "" : ' target="_blank" rel="noopener noreferrer"'}>${esc(id)}</a>` : esc(id);
     return `<li class="${cls}">${lead} ${inner}</li>`;
   };
   return [
@@ -1782,15 +2386,20 @@ function linkChips(t){
 }
 
 function card(t){
-  const inRegion = t.sites.filter(s => REGIONS[state.intake.region](s.country));
-  const shownSites = inRegion.length ? inRegion : t.sites;
+  const regionKey = state.intake ? state.intake.region : "any";
+  const sites = t.sites || [];
+  const inRegion = sites.filter(s => REGIONS[regionKey](s.country));
+  const shownSites = inRegion.length ? inRegion : sites;
   const cities = [...new Set(shownSites.map(s => [s.city, s.country].filter(Boolean).join(", ")).filter(Boolean))];
   const off = offTopic(t);
+  const isSaved = state.shortlist.has(t.id);
   const domId = "t-" + encodeURIComponent(t.id);
+  const regName = t.registerName || t.register || "Register";
 
   const meta = [
+    `<span class="reg-badge reg-${esc(t.register)}">${esc(regName)}</span>`,
     `<span class="id">${esc(t.id)}</span>`,
-    `<span class="${esc(t.tone || (t.recruiting ? "open" : "shut"))}"><span class="dot"></span>${esc(t.status)}${t.statusDerived ? " (derived)" : ""}</span>`,
+    `<span class="${esc(t.tone || (t.recruiting ? "open" : "shut"))}"><span class="dot" aria-hidden="true"></span>${esc(t.status)}${t.statusDerived ? " (derived)" : ""}</span>`,
     phaseLabel(t) ? `<span>${esc(phaseLabel(t))}</span>` : "",
     t.sponsor ? `<span>${esc(t.sponsor.length > 60 ? t.sponsor.slice(0,60) + "…" : t.sponsor)}</span>` : "",
     t.enrollment ? `<span>${esc(t.enrollment)} participants</span>` : "",
@@ -1799,14 +2408,14 @@ function card(t){
 
   const chips = [
     ...(off ? [`<li class="minus">Probably unrelated: its title and condition name no brain or spine tumour</li>`] : []),
-    ...t.plus.map(r => `<li>${esc(r)}</li>`),
-    ...t.minus.map(r => `<li class="minus">${esc(r)}</li>`),
+    ...(t.plus || []).map(r => `<li>${esc(r)}</li>`),
+    ...(t.minus || []).map(r => `<li class="minus">${esc(r)}</li>`),
     ...linkChips(t)
   ].join("");
 
   const siteList = shownSites.length ? `
     <details class="sites">
-      <summary>${shownSites.length} site${shownSites.length===1?"":"s"}${inRegion.length && state.intake.region !== "any"?" in region":""}${cities.length?" — "+esc(cities.slice(0,3).join("; "))+(cities.length>3?"…":""):""}</summary>
+      <summary>${shownSites.length} site${shownSites.length===1?"":"s"}${inRegion.length && regionKey !== "any"?" in region":""}${cities.length?" — "+esc(cities.slice(0,3).join("; "))+(cities.length>3?"…":""):""}</summary>
       <ul>${shownSites.slice(0,80).map(s =>
         `<li>${esc([s.facility, s.city, s.country].filter(Boolean).join(", ")) || "Location not published"}${s.open ? "" : " (" + esc(s.note || "not recruiting") + ")"}</li>`
       ).join("")}${shownSites.length > 80 ? `<li>…and ${shownSites.length - 80} more on the register</li>` : ""}</ul>
@@ -1829,13 +2438,16 @@ function card(t){
 
   const url = safeUrl(t.url);
   const title = esc(t.title || t.id);
-  return `<li class="trial r-${esc(t.register)}${off ? " offtopic" : ""}" id="${esc(domId)}">
-    <h3>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${title}</a>` : title}</h3>
+  return `<li class="trial r-${esc(t.register)}${off ? " offtopic" : ""}${isSaved ? " is-saved" : ""}" id="${esc(domId)}">
+    <div class="trial-top">
+      <h3>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</h3>
+      <button type="button" class="save-btn" data-save="${esc(t.id)}" aria-pressed="${isSaved ? "true" : "false"}" aria-label="${isSaved ? "Remove " + esc(t.id) + " from saved shortlist" : "Save " + esc(t.id) + " to shortlist"}"><span aria-hidden="true">★</span> ${isSaved ? "Saved" : "Save"}</button>
+    </div>
     <p class="meta">${meta}</p>
     <div class="meter">
-      <span class="meter-track"><span class="meter-fill" style="width:${Number(t.score) || 0}%"></span></span>
+      <span class="meter-track" aria-hidden="true"><span class="meter-fill" style="width:${Number(t.score) || 0}%"></span></span>
       <span class="meter-num">${Number(t.score) || 0}</span>
-      <span class="meter-cap">match score · ${esc(t.registerName)}</span>
+      <span class="meter-cap">match score · ${esc(regName)}</span>
     </div>
     <ul class="reasons">${chips}</ul>
     ${siteList}${elig}${contact}
@@ -1852,7 +2464,7 @@ function fillEligibility(details){
   body.innerHTML =
     (rec.facts ? `<p class="elig-facts">${esc(rec.facts)}</p>` : "") +
     (rec.text ? `<pre>${esc(cut ? rec.text.slice(0, 6000) + "…" : rec.text)}</pre>` : `<p>No eligibility text is published in this register's feed.</p>`) +
-    (rec.url ? `<p><a href="${esc(rec.url)}" target="_blank" rel="noopener">${cut ? "Read the full criteria" : "Check"} on the register</a></p>` : "");
+    (rec.url ? `<p><a href="${esc(rec.url)}" target="_blank" rel="noopener noreferrer">${cut ? "Read the full criteria" : "Check"} on the register</a></p>` : "");
 }
 
 function renderSources(){
@@ -1883,7 +2495,7 @@ function renderDirect(intake){
   if (intake.region === "uk" || intake.region === "uk_eu")
     links.splice(2, 0, ["Cancer Research UK", "https://find.cancerresearchuk.org/clinical-trials?q=" + q]);
   $("direct").innerHTML = "Search a register directly: " + links.map(([n,u]) =>
-    `<span><a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)}</a></span>`).join(" · ");
+    `<span><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a></span>`).join(" · ");
 }
 
 function renderNotices(){
@@ -1914,8 +2526,8 @@ function buildCSV(rows){
                 "possibly_same_as","contact","url"];
   const body = rows.map(t => [
     t.registerName, t.id, t.title, t.status, t.statusDerived ? "derived" : "register-stated",
-    phaseLabel(t), t.score, t.plus.join(" | "), t.minus.join(" | "), t.sponsor,
-    t.countries.join(" | "), t.minAge ?? "", t.maxAge ?? "", t.enrollment ?? "", t.updated,
+    phaseLabel(t), t.score, (t.plus || []).join(" | "), (t.minus || []).join(" | "), t.sponsor,
+    (t.countries || []).join(" | "), t.minAge ?? "", t.maxAge ?? "", t.enrollment ?? "", t.updated,
     (t.sameAs || []).join(" | "), (t.alsoIn || []).join(" | "),
     t.contact ? [t.contact.name, t.contact.phone, t.contact.email].filter(Boolean).join(" | ") : "",
     t.url
@@ -1924,12 +2536,13 @@ function buildCSV(rows){
   return "\uFEFF" + [head.join(","), ...body].join("\r\n");
 }
 function toCSV(){
-  const rows = sorted(visible());
+  const rows = sorted(state.savedOnly ? shortlistVisible() : visible());
   if (!rows.length) return;
   const blob = new Blob([buildCSV(rows)], {type:"text/csv;charset=utf-8"});
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = `brain-trials-${state.intake.dxLabel.toLowerCase().replace(/\W+/g,"-")}-${new Date().toISOString().slice(0,10)}.csv`;
+  const slug = state.savedOnly ? "shortlist" : (state.intake ? state.intake.dxLabel : "results").toLowerCase().replace(/\W+/g,"-");
+  a.download = `brain-trials-${slug}-${new Date().toISOString().slice(0,10)}.csv`;
   document.body.appendChild(a);
   a.click();
   a.remove();
@@ -1943,18 +2556,49 @@ async function copyLink(){
   let ok = false;
   try { await navigator.clipboard.writeText(location.href); ok = true; } catch (e) { /* fall through */ }
   btn.textContent = ok ? "Link copied" : "Copy from address bar";
-  setTimeout(() => { btn.textContent = "Copy link"; }, 2200);
+  clearTimeout(copyTimer);
+  copyTimer = setTimeout(() => { btn.textContent = "Copy link"; }, 2200);
 }
 
 /* =========================================================================
-   Wire up
+   Theme & Wire up
    ========================================================================= */
+function effectiveTheme(){
+  const explicit = document.documentElement.dataset.theme;
+  if (explicit === "dark" || explicit === "light") return explicit;
+  return (typeof matchMedia === "function" && matchMedia("(prefers-color-scheme:dark)").matches) ? "dark" : "light";
+}
+function updateThemeButton(){
+  const btn = $("themeBtn"), icon = $("themeIcon"), txt = $("themeText");
+  if (!btn || !icon || !txt) return;
+  const dark = effectiveTheme() === "dark";
+  icon.textContent = dark ? "☀" : "☾";
+  txt.textContent = dark ? "Light" : "Dark";
+  btn.setAttribute("aria-label", dark ? "Switch to light colour theme" : "Switch to dark colour theme");
+}
+function initTheme(){
+  const saved = storageGet(THEME_KEY);
+  if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+  updateThemeButton();
+  if (typeof matchMedia === "function"){
+    const mq = matchMedia("(prefers-color-scheme:dark)");
+    if (mq && typeof mq.addEventListener === "function"){
+      mq.addEventListener("change", updateThemeButton);
+    }
+  }
+}
+
 function debounce(fn, ms){
   let t;
-  return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+  const wrapped = (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+  wrapped.cancel = () => clearTimeout(t);
+  return wrapped;
 }
 
 (function init(){
+  initTheme();
+  loadShortlist();
+
   const dx = $("dx");
   for (const name of Object.keys(DIAGNOSES)){
     const o = document.createElement("option");
@@ -1963,59 +2607,176 @@ function debounce(fn, ms){
   }
   dx.value = DEFAULTS.dx;
   readHash();
+  syncPresetPills();
+  renderShortlistBar();
 
-  const narrow = typeof matchMedia === "function" && matchMedia("(max-width:960px)").matches;
+  $("themeBtn").addEventListener("click", () => {
+    const next = effectiveTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    storageSet(THEME_KEY, next);
+    updateThemeButton();
+  });
+
+  const mqNarrow = typeof matchMedia === "function" ? matchMedia("(max-width:960px)") : null;
   const toggle = $("railToggle");
   const setRail = open => {
     const body = $("railBody");
     if (open) body.removeAttribute("hidden"); else body.setAttribute("hidden","");
+    $("q").classList.toggle("rail-collapsed", !open);
     toggle.setAttribute("aria-expanded", String(open));
     toggle.textContent = open ? "Hide" : "Edit search";
   };
   toggle.addEventListener("click", () => setRail($("railBody").hasAttribute("hidden")));
   // On a phone the form would otherwise fill the first screen and push every
-  // result below the fold.
-  if (narrow) setRail(false);
-
-  $("q").addEventListener("submit", e => {
-    e.preventDefault();
-    run(false);
-    if (typeof matchMedia === "function" && matchMedia("(max-width:960px)").matches) setRail(false);
-  });
-  $("moreBtn").addEventListener("click", () => run(true));
-  $("csvBtn").addEventListener("click", toCSV);
-  $("shareBtn").addEventListener("click", copyLink);
-  $("resetBtn").addEventListener("click", () => {
-    for (const id of FIELD_IDS) setField(id, DEFAULTS[id]);
-    run(false);
-  });
-  $("sort").addEventListener("change", () => { writeHash(); render(); });
-  $("find").addEventListener("input", debounce(() => { writeHash(); render(); }, 150));
-
-  // These change what the registers are asked for, so the search is re-run.
-  for (const id of ["dx","region","onlyRecruiting"]){
-    $(id).addEventListener("change", () => run(false));
+  // result below the fold. Restore it automatically if resized back to desktop.
+  if (mqNarrow && mqNarrow.matches) setRail(false);
+  if (mqNarrow && typeof mqNarrow.addEventListener === "function"){
+    mqNarrow.addEventListener("change", e => { if (!e.matches) setRail(true); });
   }
-  // These only re-rank or narrow what has already been fetched, so they
-  // apply at once without another request. Keywords need a new search.
+
+  const onFind = debounce(() => { writeHash(true); render(); }, 150);
   const rescore = debounce(() => {
     if (!state.intake) return;
     const fresh = readIntake();
     fresh.keywords = state.intake.keywords;
     state.intake = fresh;
-    writeHash();
+    writeHash(true);
     render();
   }, 200);
+
+  $("q").addEventListener("submit", e => {
+    e.preventDefault();
+    onFind.cancel();
+    rescore.cancel();
+    run(false);
+    if (mqNarrow && mqNarrow.matches) setRail(false);
+  });
+  $("moreBtn").addEventListener("click", () => run(true));
+  $("csvBtn").addEventListener("click", toCSV);
+  $("shareBtn").addEventListener("click", copyLink);
+  $("resetBtn").addEventListener("click", () => {
+    onFind.cancel();
+    rescore.cancel();
+    state.savedOnly = false;
+    state.presetAgeAdjusted = false;
+    for (const id of FIELD_IDS) setField(id, DEFAULTS[id]);
+    syncPresetPills();
+    run(false);
+  });
+  $("sort").addEventListener("change", () => { writeHash(true); render(); });
+  $("find").addEventListener("input", onFind);
+  $("find").addEventListener("keydown", e => {
+    if (e.key === "Escape" && $("find").value){
+      e.preventDefault();
+      onFind.cancel();
+      $("find").value = "";
+      writeHash(true);
+      render();
+    }
+  });
+  $("kw").addEventListener("input", () => { updateKwDirty(); syncPresetPills(); });
+
+  // Quick diagnosis presets toolbar (click + roving arrow keys)
+  $("presetBar").addEventListener("click", e => {
+    const btn = e.target.closest ? e.target.closest(".preset-pill") : null;
+    if (!btn) return;
+    onFind.cancel();
+    rescore.cancel();
+    applyPreset(btn.dataset.preset);
+  });
+  $("presetBar").addEventListener("keydown", e => {
+    if (!["ArrowRight","ArrowLeft","Home","End"].includes(e.key)) return;
+    const pills = [...$("presetBar").querySelectorAll(".preset-pill")];
+    const idx = pills.indexOf(document.activeElement);
+    if (idx < 0) return;
+    e.preventDefault();
+    const next = e.key === "Home" ? 0
+      : e.key === "End" ? pills.length - 1
+      : (idx + (e.key === "ArrowRight" ? 1 : -1) + pills.length) % pills.length;
+    pills[next].focus();
+  });
+
+  // Shortlist controls
+  $("savedToggleBtn").addEventListener("click", () => {
+    if (!state.shortlist.size && !state.savedOnly) return;
+    state.savedOnly = !state.savedOnly;
+    render();
+  });
+  $("shortlistCsvBtn").addEventListener("click", exportShortlistCSV);
+  $("printSheetBtn").addEventListener("click", printClinicSheet);
+  $("clearShortlistBtn").addEventListener("click", () => {
+    const btn = $("clearShortlistBtn");
+    if (!btn.dataset.confirm){
+      btn.dataset.confirm = "1";
+      btn.classList.add("danger-confirm");
+      btn.textContent = "Confirm clear?";
+      clearTimeout(clearConfirmTimer);
+      clearConfirmTimer = setTimeout(resetClearConfirm, 3200);
+      return;
+    }
+    state.shortlist.clear();
+    saveShortlist();
+    state.savedOnly = false;
+    resetClearConfirm();
+    render();
+  });
+
+  // These change what the registers are asked for, so the search is re-run.
+  for (const id of ["dx","region","onlyRecruiting"]){
+    $(id).addEventListener("change", () => {
+      onFind.cancel();
+      rescore.cancel();
+      if (id === "dx") state.savedOnly = false;
+      syncPresetPills();
+      run(false);
+    });
+  }
+  // These only re-rank or narrow what has already been fetched, so they
+  // apply at once without another request. Keywords need a new search.
   for (const id of ["interventional","hideIneligible","phase","setting","bev","surg"]){
     $(id).addEventListener("change", rescore);
   }
   for (const id of ["age","kps"]) $(id).addEventListener("input", rescore);
 
-  // Clicks on controls that are re-rendered with the results.
+  // Press "/" outside inputs to jump straight to the instant filter box.
+  document.addEventListener("keydown", e => {
+    if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+    const t = e.target;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    e.preventDefault();
+    $("find").focus();
+    if ($("find").select) $("find").select();
+  });
+
+  // Clicks on controls and in-page links inside the rendered feed.
   document.addEventListener("click", e => {
+    const anchor = e.target.closest ? e.target.closest("a[href^='#']") : null;
+    if (anchor){
+      const href = anchor.getAttribute("href") || "";
+      if (href === "#results" || href.startsWith("#t-")){
+        const target = $(href.slice(1));
+        if (target){
+          e.preventDefault();
+          if (target.scrollIntoView) target.scrollIntoView({behavior:"smooth", block: href === "#results" ? "start" : "center"});
+          if (href.startsWith("#t-")){
+            for (const c of document.querySelectorAll(".trial.flash-target")) c.classList.remove("flash-target");
+            target.classList.add("flash-target");
+            const link = target.querySelector("h3 a");
+            if (link) link.focus({preventScroll:true});
+            setTimeout(() => target.classList.remove("flash-target"), 2400);
+          } else {
+            target.focus({preventScroll:true});
+          }
+          return;
+        }
+      }
+    }
     const el = e.target.closest ? e.target.closest("button") : null;
     if (!el) return;
+    if (el.dataset.save) toggleSaveTrial(el.dataset.save);
     if (el.dataset.act === "retry") run(false);
+    if (el.dataset.act === "all-results"){ state.savedOnly = false; render(); }
+    if (el.dataset.act === "clear-find"){ onFind.cancel(); $("find").value = ""; writeHash(true); render(); }
     if (el.id === "offBtn"){ state.showOffTopic = !state.showOffTopic; render(); }
   });
   // "toggle" does not bubble, so listen in the capture phase.
@@ -2027,6 +2788,7 @@ function debounce(fn, ms){
   window.addEventListener("hashchange", () => {
     const before = JSON.stringify(FIELD_IDS.map(fieldValue));
     readHash();
+    syncPresetPills();
     if (JSON.stringify(FIELD_IDS.map(fieldValue)) !== before) run(false);
   });
 
