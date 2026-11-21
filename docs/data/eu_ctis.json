@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-20T12:53:25+00:00",
+ "generated": "2026-11-21T12:39:27+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -25,7 +25,7 @@
  ],
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
- "count": 164,
+ "count": 165,
  "recruitingCount": 82,
  "detailCarriedForward": 0,
  "trials": [
@@ -5942,7 +5942,7 @@
    "gender": "Female, Male",
    "enrolled": "29",
    "startDate": "2024-09-30",
-   "lastUpdated": "2026-09-18",
+   "lastUpdated": "2026-11-20",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-512373-27-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -5951,18 +5951,13 @@
    "criteria": "Inclusion:\n- Pre-screening phase: Provision of written informed consent for pre-screening.\n- Screening phase: Informed consent and general conditions_Provision of signed and dated, written ICF for screening prior to any mandatory study-specific procedures, sampling, and analyses.\n- Screening phase: Informed consent and general conditions_Provision of written informed consent for pre-screening.\n- Screening phase: Informed consent and general conditions_Age ≥ 18 years\n- Screening phase: Informed consent and general conditions_Newly diagnosed, histologically documented advanced or metastatic SCLC (UICC stage III which is not amenable to curative radiochemotherapy or stage IV). Note: Assignment of stage must be done according to the 8th edition of American Joint Committee on Cancer (AJCC)/Union for Interational Cancer Control (UICC) TNM staging system.\n- Screening phase: Informed consent and general conditions_Patient is willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow-up.\n- Pre-screening phase: Age ≥ 18 years\n- Pre-screening phase: Newly diagnosed, histologically documented advanced or metastatic SCLC (UICC stage III which is not amenable to curative radiochemotherapy or stage IV). Note: Assignment of stage must be done according to the 8th edition of American Joint Committee on Cancer (AJCC)/Union for Interational Cancer Control (UICC) TNM staging system.\n- Pre-screening phase: Either de novo biopsies collected as part of routine clinical practice or archival tumor samples (taken ≤6 months prior to pre-screening) are acceptable. Information on the criteria for the formalin fixed paraffin embedded (FFPE) material to be sent in can be found in the Laboratory manual.\n- Pre-screening phase: Planned or ongoing treatment with carboplatin/cisplatin, etoposide, durvalumab as 1st-line SoC. Pre-screening must begin no later than the start of the 3rd cycle to allow sufficient time for molecular analyses. At a later date, consultation must be sought with the sponsor and central pathology before proceeding.\n- Pre-screening phase: Available radiographic chest and abdominal CT or MRI scans performed up to 42 days before initial first line treatment with carboplatin/cisplatin, etoposide and durvalumab.\n- Pre-screening phase: At least one measurable site of disease as defined by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria.\n- Pre-screening phase: Patient is willing and able to comply with the protocol for the duration of the study including undergoing treatment and scheduled visits and examinations including follow-up.\n- Screening phase: Informed consent and general conditions_Capable of giving signed informed consent, which includes compliance with the requirements and restrictions listed in the informed consent form (ICF) and in this protocol. Written informed consent and any locally required authorization (European Union [EU] Data Privacy Directive in the EU) must be obtained from the patient/legal representative prior to performing any protocol-related procedures, including screening evaluations.\n- Screening phase: Informed consent and general conditions_Completed pre-screening with fulfillment of all inclusion and exclusion criteria of pre-screening. Prescreening must have tested positive for homologous recombination deficiency as defined in this protocol at central testing. Positivity is defined as the presence of a BRCA1/2 or other HRR gene class 4 or class 5 mutation or the presence of a GI-Score above a predefined threshold of ≥ 40. For more information, see the Laboratory Manual\n- Screening phase: Informed consent and general conditions_Eastern Cooperative Oncology Group (ECOG) performance status ≤ 1.\n- Screening phase: Informed consent and general conditions_Body weight >30 kg.\n- Screening phase: Informed consent and general conditions_Patients must have a life expectancy ≥ 12 weeks.\n- Screening phase: Disease characteristics_Patients must not have radiographic or clinical disease progression while on induction therapy and/or prior to start of study treatment.\n- Screening phase: Disease characteristics_Adequate tumor assessment by CT scan or MRI performed within 28 days prior to enrollment. Imaging from the standard of care can be used for inclusion. These must not be older than 28 days prior to planned C5D1. For adequate imaging a slice thickness of 5 mm in CT and 5 mm in MRI with contrast agent should not be exceeded. More detailed information can be found in the Radiology Manual.\n- Screening phase: Prior/concomitant therapy_Patients must have received 4 cycles (21-day cycles) of induction with carboplatin or cisplatin, etoposide and durvalumab completed within 1 to 14 days prior to initiation of study treatment on C5D1. Patients must have received durvalumab at minimum three times during the four induction cycles.\n- Screening phase: Prior/concomitant therapy_Patients who have received a dose reduction of chemotherapy during induction therapy may participate provided that toxicities have recovered at C5D1 as described below.\n- Screening phase: Medical conditions_Adequate organ and marrow function as defined below. a) Haemoglobin ≥10 g/dL b) Absolute neutrophil count (ANC) ≥1.5 × 10E9 /L c) Platelet count ≥100 × 10E9/L d) Serum bilirubin ≤1.5 x institutional upper limit of normal (ULN). This will not apply to patients with confirmed Gilbert’s syndrome (persistent or recurrent hyperbilirubinemia that is predominantly unconjugated in the absence of hemolysis or hepatic pathology), who will be allowed only in consultation with their physician. e) Aspartate aminotransferase (AST) (Serum Glutamic Oxaloacetic Transaminase (SGOT)) / Alanine aminotransferase (ALT) (Serum Glutamic Pyruvate Transaminase (SGPT)) ≤ 2.5 x institutional upper limit of normal unless liver metastases are present in which case they must be ≤ 5x ULN f) Measured creatinine clearance (CL) >51 mL/min",
    "sites": [
     {
-     "facility": "University Hospital Cologne AöR",
-     "city": "Cologne",
-     "country": "Germany"
-    },
-    {
      "facility": "Pius-Hospital Oldenburg",
      "city": "Oldenburg",
      "country": "Germany"
     },
     {
-     "facility": "Lungenklinik Hemer Deutscher Gemeinschafts-Diakonieverband GmbH",
-     "city": "Hemer",
+     "facility": "Evangelische Lungenklinik Berlin Krankenhausbetriebs gGmbH",
+     "city": "Berlin",
      "country": "Germany"
     },
     {
@@ -5971,8 +5966,13 @@
      "country": "Germany"
     },
     {
-     "facility": "Evangelische Lungenklinik Berlin Krankenhausbetriebs gGmbH",
-     "city": "Berlin",
+     "facility": "University Hospital Cologne AöR",
+     "city": "Cologne",
+     "country": "Germany"
+    },
+    {
+     "facility": "Lungenklinik Hemer Deutscher Gemeinschafts-Diakonieverband GmbH",
+     "city": "Hemer",
      "country": "Germany"
     }
    ],
@@ -17169,6 +17169,89 @@
    ],
    "otherIds": [
     "NCT03975647"
+   ]
+  },
+  {
+   "register": "CTIS",
+   "id": "2026-527103-17-00",
+   "title": "REPLAT - A multicenter phase II trial to evaluate rechallenge with platinum-based chemotherapy (carboplatin, etoposide) for progression during tarlatamab therapy in relapsed extensive disease small-cell lung cancer (SCLC)",
+   "conditions": "Relapsed extensive disease small-cell lung cancer (SCLC)",
+   "sponsor": "University Of Cologne",
+   "sponsorType": "Educational Institution",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Germany"
+   ],
+   "statusCode": 2,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "54",
+   "startDate": "",
+   "lastUpdated": "2026-11-20",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-527103-17-00",
+   "recruitment": "not_started",
+   "recruitingCountries": [],
+   "criteria": "Inclusion:\n- Informed consent and general conditions: Patients must have the capacity to provide informed consent at the time of study enrollment and must personally provide written informed consent, including agreement to comply with the requirements and restrictions outlined in the informed consent form (ICF) and this protocol. Written informed consent and any locally required authorization (e.g., under the EU General Data Protection Regulation [GDPR]) must be obtained from the patient prior to any protocol-related procedures, including screening evaluations. Patients lacking the capacity to provide informed consent are not eligible, and consent by a legal representative is not permitted.\n- Informed consent and general conditions: Provision of signed and dated, written ICF prior to any mandatory study-specific procedures, sampling, and analyses.\n- Informed consent and general conditions: Age ≥ 18 years at the time of signing the informed consent.\n- Informed consent and general conditions: Willing and able to comply with the protocol for the duration of the study including treatment and scheduled visits, examinations, and follow-up.\n- Informed consent and general conditions: Eastern Cooperative Oncology Group (ECOG) performance status ≤ 1.\n- Informed consent and general conditions: Patients must have a life expectancy of ≥ 12 weeks.\n- Disease characteristics and prior/concomitant therapy: Histologically or cytologically confirmed locally advanced or metastatic SCLC (UICC stage III not amenable to curative radiochemotherapy or stage IV). Note: Assignment of stage must be done according to the 9th edition of American Joint Committee on Cancer (AJCC)/Union for International Cancer Control (UICC) TNM staging system\n- Disease characteristics and prior/concomitant therapy: Disease progression or relapse after first-line platinum-based therapy with a platinum-free interval (PFI) ≥ 90 days (time between last platinum administration and first documented progression). • Patients who received first-line systemic platinum-based chemotherapy for extensive stage (ES) disease are eligible. • Patients must have failed or be ineligible for PD-L1 inhibitor therapy. • Patients who have previously been treated with chemotherapy as part of a limited stage (LS) disease may participate if there was a period of >6 months between the end of chemotherapy during the LS disease and chemotherapy as part of the ES disease.\n- Disease characteristics and prior/concomitant therapy: Radiological evidence of disease progression while on treatment with tarlatamab. Patients who show progression on tarlatamab in combination with a PD-L1 inhibitor may be included.\n- Disease characteristics and prior/concomitant therapy: Before starting study therapy (C1D1), a new biopsy of the tumor must be performed after progression under tarlatamab. • Lesions that show progression under tarlatamab should be prioritized. Appropriate documentation (e.g., radiological report) must be available to demonstrate progress under tarlatamab. • Patients must be eligible for a biopsy of the tumor tissue in accordance with the guidelines of the treating institution. • The tumor sample must be provided to the sponsor in accordance with the provisions of this protocol. The shipment should be made as soon as possible. • If a tumor sample has already been taken after progression under tarlatmab for other reasons, the archived material can also be used for inclusion, and no new tumor biopsy is required for study inclusion. • If a biopsy is not possible during tarlatamab treatment and no archived tumor sample is available after progression under tarlatamab, inclusion may be possible after discussion with the sponsor.\n- Disease characteristics and prior/concomitant therapy: Availability of a tumor sample obtained prior to the start of first-line treatment. • The tumor sample must be provided to the sponsor in accordance with the provisions of this protocol. The tumor sample should have been sent to the sponsor prior to C1D1. • If unavailable, inclusion may be possible after discussion with the sponsor.\n- Disease characteristics and prior/concomitant therapy: There must be a maximum of 28 days between the last dose of tarlatamab and the first dose of tarlatamab as part of the study treatment. Patients may receive tarlatamab beyond progression as standard therapy during the screening phase. If tarlatamab was last administered with a PD-L1 inhibitor, this therapy may be continued during screening as part of standard of care. No PD-L1 inhibitor may be administered after C1D1.\n- Disease characteristics and prior/concomitant therapy: Adequate tumor imaging (CT or MRI) within 28 days prior to enrollment. Imaging from the standard of care can be used for inclusion. For adequate imaging a slice thickness of 5 mm in CT and 5 mm in MRI with contrast agent should not be exceeded. More detailed information can be found in the Radiology Manual.\n- Disease characteristics and prior/concomitant therapy: Measurable disease as defined per RECIST 1.1 within the 28-day screening period.\n- Medical conditions: Adequate hematologic and organ function: a) Haemoglobin ≥9 g/dL b) Absolute neutrophil count (ANC) ≥1.5 × 10E9 /L c) Platelet count ≥100 × 10E9/L d) Aspartate aminotransferase (AST) / Alanine aminotransferase (ALT) ≤ 2.5 x institutional upper limit of normal unless liver metastases are present in which case they must be ≤ 5x ULN e) Measured creatinine clearance >41 mL/min or Calculated creatinine creatinine clearance >41 mL/min by the Cockcroft-Gault formula (Cockcroft and Gault 1976) or by 24-hour urine collection for determination of creatinine clearance. Estimated creatinine clearance = (140-age [years]) x weight (kg) (x F) serum creatinine (mg/dL) x 72 where F=0.85 for females and F=1 for males.\n- Reproduction: Before enrollment, a woman must be either: a) Not of childbearing potential: premenarchal; postmenopausal (for definition, see section 4.5) b) Of childbearing pot",
+   "sites": [
+    {
+     "facility": "Medizinisches Versorgungszentrum des Bruederkrankenhauses St. Josef Paderborn gGmbH",
+     "city": "Paderborn",
+     "country": "Germany"
+    },
+    {
+     "facility": "Goethe University Frankfurt",
+     "city": "Frankfurt Am Main",
+     "country": "Germany"
+    },
+    {
+     "facility": "Lungenklinik Hemer Deutscher Gemeinschafts-Diakonieverband GmbH",
+     "city": "Hemer",
+     "country": "Germany"
+    },
+    {
+     "facility": "Kliniken Maria Hilf GmbH Moenchengladbach",
+     "city": "Moenchengladbach",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Koeln AöR",
+     "city": "Cologne",
+     "country": "Germany"
+    },
+    {
+     "facility": "Kliniken der Stadt Koeln gGmbH",
+     "city": "Cologne",
+     "country": "Germany"
+    },
+    {
+     "facility": "HELIOS Dr. Horst Schmidt Kliniken Wiesbaden GmbH",
+     "city": "Wiesbaden",
+     "country": "Germany"
+    },
+    {
+     "facility": "Evangelische Lungenklinik Berlin Krankenhausbetriebs gGmbH",
+     "city": "Berlin",
+     "country": "Germany"
+    },
+    {
+     "facility": "LMU Klinikum Muenchen AöR",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Bonn AöR",
+     "city": "Bonn",
+     "country": "Germany"
+    },
+    {
+     "facility": "Technische Universitaet Dresden",
+     "city": "Dresden",
+     "country": "Germany"
+    }
+   ],
+   "otherIds": [
+    "NCT07699237"
    ]
   },
   {
