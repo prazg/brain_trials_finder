@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-23T14:36:38+00:00",
+ "generated": "2026-11-25T14:17:33+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -5736,11 +5736,11 @@
    ],
    "statusCode": 4,
    "statusLabel": "Authorised",
-   "ageGroup": "0-17 years, 18-64 years",
+   "ageGroup": "18-64 years, 0-17 years",
    "gender": "Female, Male",
    "enrolled": "16",
    "startDate": "2021-09-23",
-   "lastUpdated": "2025-07-21",
+   "lastUpdated": "2026-11-23",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510691-20-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -13086,7 +13086,7 @@
    "gender": "Female, Male",
    "enrolled": "10",
    "startDate": "2026-06-17",
-   "lastUpdated": "2026-05-15",
+   "lastUpdated": "2026-11-24",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2026-525543-32-00",
    "recruitment": "not_started",
    "recruitingCountries": [],
@@ -14367,7 +14367,7 @@
    "gender": "Female, Male",
    "enrolled": "150",
    "startDate": "",
-   "lastUpdated": "2026-10-26",
+   "lastUpdated": "2026-11-23",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2025-522985-60-00",
    "recruitment": "not_started",
    "recruitingCountries": [],
@@ -14489,13 +14489,13 @@
      "country": "Spain"
     },
     {
-     "facility": "Universitair Medisch Centrum Utrecht",
-     "city": "Utrecht",
+     "facility": "Academisch Ziekenhuis Maastricht",
+     "city": "Maastricht",
      "country": "Netherlands"
     },
     {
-     "facility": "Academisch Ziekenhuis Maastricht",
-     "city": "Maastricht",
+     "facility": "Universitair Medisch Centrum Utrecht",
+     "city": "Utrecht",
      "country": "Netherlands"
     },
     {
