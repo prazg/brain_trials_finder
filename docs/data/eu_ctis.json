@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-25T14:17:33+00:00",
+ "generated": "2026-11-26T13:52:30+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -26,7 +26,7 @@
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
  "count": 165,
- "recruitingCount": 82,
+ "recruitingCount": 83,
  "detailCarriedForward": 0,
  "trials": [
   {
@@ -720,6 +720,175 @@
    ],
    "otherIds": [
     "NCT06589596"
+   ]
+  },
+  {
+   "register": "CTIS",
+   "id": "2026-526472-23-00",
+   "title": "A Phase 2, Open-label Study of VS-7375, an Oral KRAS G12D (ON/OFF) Inhibitor, in Patients with Previously Treated, Advanced KRAS G12D-Mutated Non-Small Cell Lung Cancer (TARGET-D 202)",
+   "conditions": "Non-Small Cell Lung Cancer",
+   "sponsor": "Verastem Inc.",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Therapeutic exploratory (Phase II)",
+   "countries": [
+    "Belgium",
+    "France",
+    "Germany",
+    "Italy",
+    "Spain"
+   ],
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "37",
+   "startDate": "2026-11-02",
+   "lastUpdated": "2026-10-30",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-526472-23-00",
+   "recruitment": "recruiting",
+   "recruitingCountries": [
+    "Belgium"
+   ],
+   "criteria": "Inclusion:\n- 1. Individuals ≥ 18 years of age.\n- Participants in Part C Only: Received at least 1 and no more than 3 prior systemic lines of therapy for advanced (in the unresectable locally advanced or metastatic setting) NSCLC. Prior adjuvant or neoadjuvant systemic therapy is counted as a line of therapy if progression occurred during treatment or within 6 months of completion.\n- Participants in Part C Only: Have asymptomatic and untreated brain metastases.\n- Participants in Part C Only: At least 1 untreated measurable brain lesion per mRECIST v1.1 with a long axis ≥ 0.5 cm and ≤ 3 cm.\n- Adequate organ function defined by laboratory results listed in the protocol.\n- Recovered from all adverse events (AEs) due to previous therapies to Grade ≤ 1 or baseline, except for alopecia or Grade 2 neuropathy. Participants with endocrine-related AEs Grade ≤ 2 requiring treatment or hormone replacement are eligible. Prior toxicities that resulted in laboratory abnormalities should have resolved to Grade ≤ 1 unless a higher-grade abnormality is allowed by the inclusion criteria. If medical therapy is required for the treatment of a laboratory abnormality, the dose and laboratory value(s) should be stable.\n- Female participants must: Not be a person of childbearing potential (POCBP) (eg, surgically sterilized or postmenopausal), or If a POCBP, the individual must have a negative serum pregnancy test at Screening and within 7 days prior to Study Day 1. The participant must agree not to attempt to become pregnant, must not donate ova, and must agree to use 2 forms of highly effective contraception upon signing consent, during the study, and for at least 6 months after the last dose of study drug, OR use 1 form of highly effective contraception, plus an additional barrier method of contraception upon signing consent, during the study, and for at least 6 months after the last dose of study drug. If a POCBP with same sex partners (abstinence from penile vaginal intercourse), the individual is eligible when this is their preferred and usual lifestyle.\n- Male participants must be willing to not donate sperm and, if engaging in sexual intercourse with a partner who could become pregnant, be willing to use a condom in addition to having the partner use a highly effective contraceptive method upon signing consent, during the study, and for at least 100 days after the last dose of study drug.\n- Must be willing to sign and date an informed consent form (ICF) approved by the Institutional Review Board (IRB)/Independent Ethics Committee (IEC), as appropriate, indicating that they understand the purpose of, and procedures required for, the study and are willing to comply. Consent is to be obtained prior to the performance of any study‑specific procedures or tests that are not part of the standard of care for the participant’s disease.\n- Diagnosis of unresectable locally advanced or metastatic non-small cell lung cancer (NSCLC) based on histopathological evaluation.\n- Measurable disease according to Response Evaluation Criteria in Solid Tumors (RECIST) v1.1. All radiology Screening tests must be performed within 28 days prior to initiation of study treatment.\n- Have a known KRAS G12D mutation. Mutation status should be determined using a validated next generation sequencing (NGS) or polymerase chain reaction (PCR) testing method assessed using fresh biopsy, if feasible. If fresh biopsy is not feasible, KRAS determination from archival tissue or blood will be accepted.\n- Eastern Cooperative Oncology Group performance status (ECOG PS) of 0 or 1.\n- Received prior treatment with a platinum-based chemotherapy regimen and an immune checkpoint inhibitor in the advanced, non-resectable setting.\n- Have documented disease progression during or following their most recent prior line of therapy. Rechallenge of all or part of a regimen following progression or toxicity will not be counted as an additional line of therapy if administered within 6 months of the end of the prior line of therapy.\n- Participants in Part A and B Only: Received at least 1 and no more than 2 prior systemic lines of therapy for advanced (in the unresectable locally advanced or metastatic setting) NSCLC. Prior adjuvant or neoadjuvant systemic therapy is counted as a line of therapy if progression occurred during treatment or within 6 months of completion.\n\nExclusion:\n- 1. NSCLC tumors with any other co-existing common RAS mutation(s).\n- 2. NSCLC tumors harboring known actionable mutation(s), including EGFR, HER2, BRAF, MET (exon 14 skipping)-mutated, or ALK, ROS-1, RET, NTRK-positive NSCLC.\n- 3. History of treatment with direct RAS inhibitors is prohibited in all parts of this study\n- 4. Individuals with a history or current diagnosis of interstitial lung disease (ILD) or pneumonitis that required treatment with systemic steroid or history of drug-induced ILD or pneumonitis. NOTE: A history of prior radiation pneumonitis in the radiation field (fibrosis) is permitted but must have resolved to Grade 1 at least 4 weeks prior to Study Day 1.\n- 5. Underwent major surgical procedure as defined by the Investigator, other than for diagnosis, within 4 weeks prior to Study Day 1, or anticipation of the need for a major surgical procedure during the study. Requires non-major but persistent or repeated procedures for therapeutic or palliative intent (eg, pleural/peritoneal catheter placement or repeat paracentesis for ascites). NOTE: The following procedures are permitted up to 7 days prior to Study Day 1: thoracentesis, paracentesis, laparoscopy, thoracoscopy, tube thoracostomy, bronchoscopy, endoscopic ultrasonographic procedures, mediastinoscopy, skin biopsies, and imaging-guided biopsy.\n- 6. Receipt of chemotherapy, targeted anti-cancer therapy, or radiotherapy (excluding palliative radiation) within 4 weeks or 5 half-lives, whichever is shorter, or immunotherapy within 4 weeks prior to Study Day 1. Palliative radiation of non-target lesions will be allowed up ",
+   "sites": [
+    {
+     "facility": "Centre hospitalier universitaire de Liege",
+     "city": "Liege",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire Dinant Godinne Sainte-Elisabeth-UCL-Namur",
+     "city": "Namur",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Centre Hospitalier Regional De La Citadelle",
+     "city": "Liege",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Universitair Ziekenhuis Gent",
+     "city": "Gent",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Institut Curie",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
+     "facility": "Hopitaux Universitaires Pitie Salpetriere",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
+     "facility": "Centr Georges Francois Leclerc",
+     "city": "Dijon",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Bergonie",
+     "city": "Bordeaux",
+     "country": "France"
+    },
+    {
+     "facility": "Hospital Foch",
+     "city": "Suresnes",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Leon Berard",
+     "city": "Lyon",
+     "country": "France"
+    },
+    {
+     "facility": "KEM I Evang. Kliniken Essen-Mitte gGmbH",
+     "city": "Essen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum Chemnitz gGmbH",
+     "city": "Chemnitz",
+     "country": "Germany"
+    },
+    {
+     "facility": "TUM School Of Medicine And Health",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum Esslingen GmbH",
+     "city": "Esslingen Am Neckar",
+     "country": "Germany"
+    },
+    {
+     "facility": "Azienda Ospedaliero-Universitaria Di Cagliari",
+     "city": "Cagliari",
+     "country": "Italy"
+    },
+    {
+     "facility": "Centro Di Riferimento Oncologico Di Aviano",
+     "city": "Aviano",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Europeo Di Oncologia S.r.l.",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Oncologico Veneto",
+     "city": "Padova",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero Universitaria Careggi",
+     "city": "Florence",
+     "country": "Italy"
+    },
+    {
+     "facility": "Hospital San Pedro",
+     "city": "Logrono",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Fundacion Jimenez Diaz",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Ramon Y Cajal",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital De La Santa Creu I Sant Pau",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Hm Nou Delfos",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitari Vall D Hebron",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Hm Sanchinarro",
+     "city": "Madrid",
+     "country": "Spain"
+    }
+   ],
+   "otherIds": [
+    "NCT07659782"
    ]
   },
   {
@@ -5740,7 +5909,7 @@
    "gender": "Female, Male",
    "enrolled": "16",
    "startDate": "2021-09-23",
-   "lastUpdated": "2026-11-23",
+   "lastUpdated": "2026-11-25",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510691-20-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -10722,173 +10891,6 @@
   },
   {
    "register": "CTIS",
-   "id": "2026-526472-23-00",
-   "title": "A Phase 2, Open-label Study of VS-7375, an Oral KRAS G12D (ON/OFF) Inhibitor, in Patients with Previously Treated, Advanced KRAS G12D-Mutated Non-Small Cell Lung Cancer (TARGET-D 202)",
-   "conditions": "Non-Small Cell Lung Cancer",
-   "sponsor": "Verastem Inc.",
-   "sponsorType": "Pharmaceutical company",
-   "phase": "Therapeutic exploratory (Phase II)",
-   "countries": [
-    "Belgium",
-    "France",
-    "Germany",
-    "Italy",
-    "Spain"
-   ],
-   "statusCode": 3,
-   "statusLabel": "Authorised",
-   "ageGroup": "18-64 years, 65+ years",
-   "gender": "Female, Male",
-   "enrolled": "37",
-   "startDate": "2026-11-02",
-   "lastUpdated": "2026-10-30",
-   "url": "https://euclinicaltrials.eu/ctis-public/view/2026-526472-23-00",
-   "recruitment": "not_started",
-   "recruitingCountries": [],
-   "criteria": "Inclusion:\n- 1. Individuals ≥ 18 years of age.\n- Participants in Part C Only: Received at least 1 and no more than 3 prior systemic lines of therapy for advanced (in the unresectable locally advanced or metastatic setting) NSCLC. Prior adjuvant or neoadjuvant systemic therapy is counted as a line of therapy if progression occurred during treatment or within 6 months of completion.\n- Participants in Part C Only: Have asymptomatic and untreated brain metastases.\n- Participants in Part C Only: At least 1 untreated measurable brain lesion per mRECIST v1.1 with a long axis ≥ 0.5 cm and ≤ 3 cm.\n- Adequate organ function defined by laboratory results listed in the protocol.\n- Recovered from all adverse events (AEs) due to previous therapies to Grade ≤ 1 or baseline, except for alopecia or Grade 2 neuropathy. Participants with endocrine-related AEs Grade ≤ 2 requiring treatment or hormone replacement are eligible. Prior toxicities that resulted in laboratory abnormalities should have resolved to Grade ≤ 1 unless a higher-grade abnormality is allowed by the inclusion criteria. If medical therapy is required for the treatment of a laboratory abnormality, the dose and laboratory value(s) should be stable.\n- Female participants must: Not be a person of childbearing potential (POCBP) (eg, surgically sterilized or postmenopausal), or If a POCBP, the individual must have a negative serum pregnancy test at Screening and within 7 days prior to Study Day 1. The participant must agree not to attempt to become pregnant, must not donate ova, and must agree to use 2 forms of highly effective contraception upon signing consent, during the study, and for at least 6 months after the last dose of study drug, OR use 1 form of highly effective contraception, plus an additional barrier method of contraception upon signing consent, during the study, and for at least 6 months after the last dose of study drug. If a POCBP with same sex partners (abstinence from penile vaginal intercourse), the individual is eligible when this is their preferred and usual lifestyle.\n- Male participants must be willing to not donate sperm and, if engaging in sexual intercourse with a partner who could become pregnant, be willing to use a condom in addition to having the partner use a highly effective contraceptive method upon signing consent, during the study, and for at least 100 days after the last dose of study drug.\n- Must be willing to sign and date an informed consent form (ICF) approved by the Institutional Review Board (IRB)/Independent Ethics Committee (IEC), as appropriate, indicating that they understand the purpose of, and procedures required for, the study and are willing to comply. Consent is to be obtained prior to the performance of any study‑specific procedures or tests that are not part of the standard of care for the participant’s disease.\n- Diagnosis of unresectable locally advanced or metastatic non-small cell lung cancer (NSCLC) based on histopathological evaluation.\n- Measurable disease according to Response Evaluation Criteria in Solid Tumors (RECIST) v1.1. All radiology Screening tests must be performed within 28 days prior to initiation of study treatment.\n- Have a known KRAS G12D mutation. Mutation status should be determined using a validated next generation sequencing (NGS) or polymerase chain reaction (PCR) testing method assessed using fresh biopsy, if feasible. If fresh biopsy is not feasible, KRAS determination from archival tissue or blood will be accepted.\n- Eastern Cooperative Oncology Group performance status (ECOG PS) of 0 or 1.\n- Received prior treatment with a platinum-based chemotherapy regimen and an immune checkpoint inhibitor in the advanced, non-resectable setting.\n- Have documented disease progression during or following their most recent prior line of therapy. Rechallenge of all or part of a regimen following progression or toxicity will not be counted as an additional line of therapy if administered within 6 months of the end of the prior line of therapy.\n- Participants in Part A and B Only: Received at least 1 and no more than 2 prior systemic lines of therapy for advanced (in the unresectable locally advanced or metastatic setting) NSCLC. Prior adjuvant or neoadjuvant systemic therapy is counted as a line of therapy if progression occurred during treatment or within 6 months of completion.\n\nExclusion:\n- 1. NSCLC tumors with any other co-existing common RAS mutation(s).\n- 2. NSCLC tumors harboring known actionable mutation(s), including EGFR, HER2, BRAF, MET (exon 14 skipping)-mutated, or ALK, ROS-1, RET, NTRK-positive NSCLC.\n- 3. History of treatment with direct RAS inhibitors is prohibited in all parts of this study\n- 4. Individuals with a history or current diagnosis of interstitial lung disease (ILD) or pneumonitis that required treatment with systemic steroid or history of drug-induced ILD or pneumonitis. NOTE: A history of prior radiation pneumonitis in the radiation field (fibrosis) is permitted but must have resolved to Grade 1 at least 4 weeks prior to Study Day 1.\n- 5. Underwent major surgical procedure as defined by the Investigator, other than for diagnosis, within 4 weeks prior to Study Day 1, or anticipation of the need for a major surgical procedure during the study. Requires non-major but persistent or repeated procedures for therapeutic or palliative intent (eg, pleural/peritoneal catheter placement or repeat paracentesis for ascites). NOTE: The following procedures are permitted up to 7 days prior to Study Day 1: thoracentesis, paracentesis, laparoscopy, thoracoscopy, tube thoracostomy, bronchoscopy, endoscopic ultrasonographic procedures, mediastinoscopy, skin biopsies, and imaging-guided biopsy.\n- 6. Receipt of chemotherapy, targeted anti-cancer therapy, or radiotherapy (excluding palliative radiation) within 4 weeks or 5 half-lives, whichever is shorter, or immunotherapy within 4 weeks prior to Study Day 1. Palliative radiation of non-target lesions will be allowed up ",
-   "sites": [
-    {
-     "facility": "Centre hospitalier universitaire de Liege",
-     "city": "Liege",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Centre Hospitalier Universitaire Dinant Godinne Sainte-Elisabeth-UCL-Namur",
-     "city": "Namur",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Centre Hospitalier Regional De La Citadelle",
-     "city": "Liege",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Universitair Ziekenhuis Gent",
-     "city": "Gent",
-     "country": "Belgium"
-    },
-    {
-     "facility": "Institut Curie",
-     "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Hopitaux Universitaires Pitie Salpetriere",
-     "city": "Paris",
-     "country": "France"
-    },
-    {
-     "facility": "Centr Georges Francois Leclerc",
-     "city": "Dijon",
-     "country": "France"
-    },
-    {
-     "facility": "Institut Bergonie",
-     "city": "Bordeaux",
-     "country": "France"
-    },
-    {
-     "facility": "Hospital Foch",
-     "city": "Suresnes",
-     "country": "France"
-    },
-    {
-     "facility": "Centre Leon Berard",
-     "city": "Lyon",
-     "country": "France"
-    },
-    {
-     "facility": "KEM I Evang. Kliniken Essen-Mitte gGmbH",
-     "city": "Essen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum Chemnitz gGmbH",
-     "city": "Chemnitz",
-     "country": "Germany"
-    },
-    {
-     "facility": "TUM School Of Medicine And Health",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum Esslingen GmbH",
-     "city": "Esslingen Am Neckar",
-     "country": "Germany"
-    },
-    {
-     "facility": "Azienda Ospedaliero-Universitaria Di Cagliari",
-     "city": "Cagliari",
-     "country": "Italy"
-    },
-    {
-     "facility": "Centro Di Riferimento Oncologico Di Aviano",
-     "city": "Aviano",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Europeo Di Oncologia S.r.l.",
-     "city": "Milan",
-     "country": "Italy"
-    },
-    {
-     "facility": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
-     "city": "Milan",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Oncologico Veneto",
-     "city": "Padova",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Ospedaliero Universitaria Careggi",
-     "city": "Florence",
-     "country": "Italy"
-    },
-    {
-     "facility": "Hospital San Pedro",
-     "city": "Logrono",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Fundacion Jimenez Diaz",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Ramon Y Cajal",
-     "city": "Madrid",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital De La Santa Creu I Sant Pau",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Hm Nou Delfos",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitari Vall D Hebron",
-     "city": "Barcelona",
-     "country": "Spain"
-    },
-    {
-     "facility": "Hospital Universitario Hm Sanchinarro",
-     "city": "Madrid",
-     "country": "Spain"
-    }
-   ],
-   "otherIds": [
-    "NCT07659782"
-   ]
-  },
-  {
-   "register": "CTIS",
    "id": "2024-512961-15-00",
    "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-Controlled Study of AG-881 in Subjects With Residual or Recurrent Grade 2 Glioma With an IDH1 or IDH2 Mutation",
    "conditions": "Residual or Recurrent Grade 2 Glioma With an IDH1 or IDH2 Mutation",
@@ -11028,7 +11030,7 @@
    "gender": "Female, Male",
    "enrolled": "1124",
    "startDate": "2021-04-19",
-   "lastUpdated": "2026-10-28",
+   "lastUpdated": "2026-11-25",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2023-507961-24-00",
    "recruitment": "closed",
    "recruitingCountries": [],
@@ -11213,166 +11215,6 @@
      "facility": "Institutul Oncologic Prof. Dr. Alexandru Trestioreanu Bucuresti",
      "city": "Bucharest",
      "country": "Romania"
-    },
-    {
-     "facility": "Goethe University Frankfurt",
-     "city": "Frankfurt Am Main",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum Suedstadt Rostock",
-     "city": "Rostock",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum der Universitaet Muenchen AöR",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Kath. St. Paulus GmbH",
-     "city": "Dortmund",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Carl Gustav Carus Dresden an der Technischen Universitaet Dresden AöR",
-     "city": "Dresden",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Erlangen AöR",
-     "city": "Erlangen",
-     "country": "Germany"
-    },
-    {
-     "facility": "HELIOS Klinikum Berlin-Buch GmbH",
-     "city": "Berlin",
-     "country": "Germany"
-    },
-    {
-     "facility": "Rotkreuzklinikum Muenchen gGmbH",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Haematologie-Onkologie im Zentrum MVZ GmbH",
-     "city": "Augsburg",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Ulm AöR",
-     "city": "Ulm",
-     "country": "Germany"
-    },
-    {
-     "facility": "Brustzentrum Rhein-Ruhr Servicegesellschaft mbH",
-     "city": "Moenchengladbach",
-     "country": "Germany"
-    },
-    {
-     "facility": "Mammazentrum Hamburg MVZ GbR",
-     "city": "Hamburg",
-     "country": "Germany"
-    },
-    {
-     "facility": "MVZ fuer Haematologie und Onkologie Ravensburg GmbH",
-     "city": "Ravensburg",
-     "country": "Germany"
-    },
-    {
-     "facility": "Romed Klinikum Rosenheim",
-     "city": "Rosenheim",
-     "country": "Germany"
-    },
-    {
-     "facility": "Onkologische Schwerpunktpraxis Bielefeld",
-     "city": "Bielefeld",
-     "country": "Germany"
-    },
-    {
-     "facility": "Klinikum Worms gGmbH",
-     "city": "Worms",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Essen AöR",
-     "city": "Essen",
-     "country": "Germany"
-    },
-    {
-     "facility": "Medizinisches Zentrum Fuer Haematologie Und Onkologie Muenchen MVZ GmbH",
-     "city": "Munich",
-     "country": "Germany"
-    },
-    {
-     "facility": "Medical Center - University Of Freiburg",
-     "city": "Freiburg Im Breisgau",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsklinikum Duesseldorf AöR",
-     "city": "Duesseldorf",
-     "country": "Germany"
-    },
-    {
-     "facility": "DIAKOVERE Krankenhaus gGmbH",
-     "city": "Hanover",
-     "country": "Germany"
-    },
-    {
-     "facility": "Gynäkologie Kompetenzzentrum Stralsund",
-     "city": "Stralsund",
-     "country": "Germany"
-    },
-    {
-     "facility": "St. Elisabeth Krankenhaus GmbH",
-     "city": "Cologne",
-     "country": "Germany"
-    },
-    {
-     "facility": "Studien GbR Braunschweig",
-     "city": "Braunschweig",
-     "country": "Germany"
-    },
-    {
-     "facility": "Institut Fuer Versorgungsforschung In Der Onkologie GbR",
-     "city": "Koblenz",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaet Des Saarlandes",
-     "city": "Homburg",
-     "country": "Germany"
-    },
-    {
-     "facility": "Gynaekologisch-Onkologische Schwerpunktpraxis",
-     "city": "Hannover",
-     "country": "Germany"
-    },
-    {
-     "facility": "Onkozentrum Dresden Freiberg Meissen",
-     "city": "Dresden",
-     "country": "Germany"
-    },
-    {
-     "facility": "Frauenaerzte am Bahnhofsplatz",
-     "city": "Hildeshim",
-     "country": "Germany"
-    },
-    {
-     "facility": "Vincentius-Diakonissen-Kliniken gAG",
-     "city": "Karlsruhe",
-     "country": "Germany"
-    },
-    {
-     "facility": "Universitaetsmedizin der Johannes Gutenberg-Universitaet Mainz KöR",
-     "city": "Mainz",
-     "country": "Germany"
-    },
-    {
-     "facility": "Franziskus Hospital Harderberg",
-     "city": "Georgsmarienhuette",
-     "country": "Germany"
     },
     {
      "facility": "MD Anderson Cancer Center",
@@ -11833,6 +11675,166 @@
      "facility": "Cliniques Universitaires Saint-Luc",
      "city": "Sint-Lambrechts-Woluwe",
      "country": "Belgium"
+    },
+    {
+     "facility": "Goethe University Frankfurt",
+     "city": "Frankfurt Am Main",
+     "country": "Germany"
+    },
+    {
+     "facility": "HELIOS Klinikum Berlin-Buch GmbH",
+     "city": "Berlin",
+     "country": "Germany"
+    },
+    {
+     "facility": "Brustzentrum Rhein-Ruhr Servicegesellschaft mbH",
+     "city": "Moenchengladbach",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum der Universitaet Muenchen AöR",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Ulm AöR",
+     "city": "Ulm",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum Suedstadt Rostock",
+     "city": "Rostock",
+     "country": "Germany"
+    },
+    {
+     "facility": "Gynaekologisch-Onkologische Schwerpunktpraxis",
+     "city": "Hannover",
+     "country": "Germany"
+    },
+    {
+     "facility": "Frauenaerzte am Bahnhofsplatz",
+     "city": "Hildeshim",
+     "country": "Germany"
+    },
+    {
+     "facility": "Rotkreuzklinikum Muenchen gGmbH",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "St. Elisabeth Krankenhaus GmbH",
+     "city": "Cologne",
+     "country": "Germany"
+    },
+    {
+     "facility": "Vincentius-Diakonissen-Kliniken gAG",
+     "city": "Karlsruhe",
+     "country": "Germany"
+    },
+    {
+     "facility": "Onkologische Schwerpunktpraxis Bielefeld",
+     "city": "Bielefeld",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Carl Gustav Carus Dresden an der Technischen Universitaet Dresden AöR",
+     "city": "Dresden",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Erlangen AöR",
+     "city": "Erlangen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaet Des Saarlandes",
+     "city": "Homburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Medical Center - University Of Freiburg",
+     "city": "Freiburg Im Breisgau",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsmedizin der Johannes Gutenberg-Universitaet Mainz KöR",
+     "city": "Mainz",
+     "country": "Germany"
+    },
+    {
+     "facility": "Gynäkologie Kompetenzzentrum Stralsund",
+     "city": "Stralsund",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Essen AöR",
+     "city": "Essen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Franziskus Hospital Harderberg",
+     "city": "Georgsmarienhuette",
+     "country": "Germany"
+    },
+    {
+     "facility": "DIAKOVERE Krankenhaus gGmbH",
+     "city": "Hanover",
+     "country": "Germany"
+    },
+    {
+     "facility": "MVZ fuer Haematologie und Onkologie Ravensburg GmbH",
+     "city": "Ravensburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Medizinisches Zentrum Fuer Haematologie Und Onkologie Muenchen MVZ GmbH",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Haematologie-Onkologie im Zentrum MVZ GmbH",
+     "city": "Augsburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum Worms gGmbH",
+     "city": "Worms",
+     "country": "Germany"
+    },
+    {
+     "facility": "Institut Fuer Versorgungsforschung In Der Onkologie GbR",
+     "city": "Koblenz",
+     "country": "Germany"
+    },
+    {
+     "facility": "Romed Klinikum Rosenheim",
+     "city": "Rosenheim",
+     "country": "Germany"
+    },
+    {
+     "facility": "Kath. St. Paulus GmbH",
+     "city": "Dortmund",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Duesseldorf AöR",
+     "city": "Duesseldorf",
+     "country": "Germany"
+    },
+    {
+     "facility": "Onkozentrum Dresden Freiberg Meissen",
+     "city": "Dresden",
+     "country": "Germany"
+    },
+    {
+     "facility": "Mammazentrum Hamburg MVZ GbR",
+     "city": "Hamburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Studien GbR Braunschweig",
+     "city": "Braunschweig",
+     "country": "Germany"
     }
    ],
    "otherIds": [

@@ -2,8 +2,8 @@
  "schema": 2,
  "source": "WHO International Clinical Trials Registry Platform (ICTRP)",
  "sourceUrl": "https://trialsearch.who.int/",
- "generated": "2026-11-25T14:50:41+00:00",
- "oldestRecord": "2026-11-20",
+ "generated": "2026-11-26T14:01:35+00:00",
+ "oldestRecord": "2026-11-23",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -21,13 +21,13 @@
   "brain neoplasms"
  ],
  "note": "National registries that feed WHO ICTRP. ClinicalTrials.gov and ISRCTN records are excluded because the page queries those live; EUCTR is excluded as the retired EU register superseded by CTIS. ICTRP mirrors national registries on their own schedule, so a very new CTRI or ChiCTR entry may appear on the national site first.",
- "count": 162,
- "recruitingCount": 111,
+ "count": 163,
+ "recruitingCount": 112,
  "byRegistry": {
   "JPRN (Japan)": 39,
   "CTRI (India)": 37,
+  "ChiCTR (China)": 26,
   "NTR/OMON (Netherlands)": 26,
-  "ChiCTR (China)": 25,
   "ANZCTR (Australia/NZ)": 13,
   "DRKS (Germany)": 10,
   "IRCT (Iran)": 4,
@@ -2203,6 +2203,32 @@
    "lastUpdated": "2023-11-27",
    "otherIds": [],
    "url": "https://trialsearch.who.int/Trial2.aspx?TrialID=ACTRN12623000104651"
+  },
+  {
+   "register": "ICTRP",
+   "registry": "ChiCTR",
+   "registryName": "ChiCTR (China)",
+   "id": "ChiCTR2600137374",
+   "title": "Phase I/II clinical study of bemarituzumab as monotherapy or in combination with anlotinib for the treatment of relapsed/refractory rare pediatric tumors",
+   "scientificTitle": "Phase I/II clinical study of bemarituzumab as monotherapy or in combination with anlotinib for the treatment of relapsed/refractory rare pediatric tumors",
+   "conditions": "Rare Pediatric Tumors, including alveolar soft part sarcoma, nasopharyngeal carcinoma,lymphoepithelioma-like carcinoma, rhabdoid tumor, desmoplastic small round cell tumor, epithelioid sarcoma, spinal cord tumor,SMARCA4-deficient tumor, soft tissue clear cell sarcoma, INI-1-deficient tumor,adrenal cortical carcinoma, etc.",
+   "interventions": "Phase I Study:Treatment with doseescalation intravenous infusion of Bemotubartumab. Bemarituzumab: 4 dose levels (10/15/20/30 mg/kg; max actual dose < =1200 mg), IV infusion Q3W × 2–6 cycles. ;Phase II Study:Bemarituzumab will be administered at the maximum tolerated dose (MTD) by intravenous infusion, with each treatment cycle lasting 3 weeks. ;",
+   "sponsor": "Sun Yat-Sen University Cancer Center",
+   "phase": "1-2",
+   "studyType": "Interventional study",
+   "status": "Recruiting",
+   "recruiting": true,
+   "countries": [
+    "China"
+   ],
+   "criteria": "Inclusion criteria: 1. Patients enrolled in Phase I must be aged >= 2 years and < 18 years; patients enrolled in Phase II must be aged >= 5 years and < 18 years, regardless of sex. 2. ECOG performance status (PS) of 0–1; 3. Expected survival of no less than 12 weeks; 4. Patients with rare pediatric tumors confirmed by histopathology, including alveolar soft part sarcoma, nasopharyngeal carcinoma, lymphoepithelioma-like carcinoma, rhabdoid tumor, desmoplastic small round cell tumor, epithelioid sarcoma, chordoma, SMARCA4-deficient tumor, clear cell sarcoma of soft tissue, INI-1-deficient tumor, adrenocortical carcinoma, etc.; 5. Patients with advanced unresectable or metastatic disease that has progressed, recurred, or is refractory (i.e., no complete response or partial response achieved after the most recent treatment) following first-line therapy; for tumors with a standard second-line regimen, such as nasopharyngeal carcinoma, patients must have failed standard second-line therapy; patients with alveolar soft part sarcoma may be enrolled at initial diagnosis of locally advanced or metastatic disease. 6. Must have at least one measurable lesion (per RECIST 1.1: tumor lesions with a longest diameter of >= 10 mm on CT scan, and lymph node lesions with a short axis of >= 15 mm on CT scan). 7. No history of severe immune-related adverse events (CTCAE V4.03 Grade 3 or Grade 4); 8. Patients must have fully recovered from the acute toxic effects of all prior anticancer chemotherapy: (1) Myelosuppressive chemotherapy: at least 21 days after the last dose of myelosuppressive chemotherapy (42 days if prior nitrosourea was used); (2) Investigational drugs or anticancer therapy other than chemotherapy: must not be used within 28 days prior to the planned start of anlotinib, and the patient must have fully recovered from the clinically significant toxicity of that therapy; (3) Hematopoietic growth factors: at least 14 days after the last dose of a long-acting growth factor, or 3 days after the last dose of a short-acting growth factor; (4) Immunotherapy: at least 2 weeks after completion of any type of immunotherapy (excluding steroids), such as immune checkpoint inhibitors and tumor vaccines; (5) X-ray therapy (XRT): at least 14 days after local palliative XRT (small port); if other substantial bone marrow (BM) irradiation was given, including prior radioactive iodine-labeled metaiodobenzylguanidine (131I-MIBG) therapy, at least 42 days must have elapsed; (6) Stem cell infusion without total body irradiation (TBI): no evidence of active graft-versus-host disease, and at least 56 days must have elapsed after transplant or stem cell infusion; 9. Cardiac function: (1) LVEF >= 50% as assessed by echocardiography; (2) No evidence of myocardial ischemia on ECG; (3) No history of arrhythmia requiring pharmacologic intervention prior to enrollment; 10. Laboratory tests during the screening period must meet the following criteria: (1) Hemoglobin (Hb) >= 80 g/L (without blood transfusion within 14 days); absolute neutrophil count (ANC) >= 1.5 × 10?/L (ANC >= 1.0 × 10?/L in the case of bone marrow involvement); (2) Platelet count (PLT) >= 75 × 10?/L (PLT >= 50 × 10?/L in the case of bone marrow involvement); (3) Bilirubin < = 1.5 × ULN; (4) Creatinine < = 1.5 × ULN (calculated using the standard Cockcroft-Gault formula); (5) ALT/AST < = 2.5 × ULN (may be relaxed to 5 × ULN in the presence of liver metastases); (6) Thyroid-stimulating hormon\n\nExclusion criteria: 1. Patients who have previously received VEGFR-targeted inhibitor drugs (including Anlotinib Hydrochloride Capsules) for treatment (for stage II); 2. Patients who experienced severe hypersensitivity reactions after administration of other monoclonal antibodies; 3. Patients with any active autoimmune diseases or a history of autoimmune diseases (such as autoimmune hepatitis, interstitial pneumonia, enteritis, vasculitis, nephritis; Patients with asthma requiring bronchodilator medical intervention cannot be included), but the following patients are allowed to be enrolled: vitiligo, psoriasis, alopecia, type I diabetes that does not require systemic treatment, hypothyroidism with normal thyroid function after replacement therapy; 4. Patients with a history of immunodeficiency, including HIV-positive, other acquired or congenital immune deficiency diseases or history of organ transplantation; 5. Patients who need to use immunosuppressants, or systemic, or absorbable local hormones to achieve immunosuppression purposes (dose > 10mg/day prednisone or other equivalent efficacy hormones), and still continue to use within 2 weeks after the first administration; 6. Patients with symptomatic brain metastases (patients who have completed treatment and have stable brain metastases within 21 days before enrollment can be included, but need to be confirmed by cranial MRI, CT or venography as having no cerebral hemorrhage symptoms); 7. Patients with hypertension who are receiving treatment with two or more antihypertensive drugs in combination; 8. Patients with the following cardiovascular diseases: grade II or above myocardial ischemia or myocardial infarction, poorly controlled arrhythmias (including QTc interval in males >= 450 ms, females >= 470 ms); According to NYHA standards, grade III-IV cardiac insufficiency, or cardiac ultrasound examination indicating left ventricular ejection fraction (LVEF) < 50%; 9. Patients with a history of interstitial lung disease or currently suffering from interstitial lung disease; 10. Patients with abnormal coagulation function (INR > 1.5 or prothrombin time (PT) > ULN + 4 seconds or activated partial thromboplastin time (APTT) > 1.5 ULN), with a bleeding tendency or undergoing thrombolysis or anticoagulation treatment; 11. Daily hemoptysis volume of two teaspoons or more before enrollment; 12. Significant clinical significance of bleeding symptoms or having a clear bleeding tendency before enrollment, such as gastrointestinal ",
+   "enrolled": 49,
+   "enrolledRaw": "Phase I Study:12;Phase II Study:37;",
+   "registered": "2026-11-21",
+   "firstEnrolment": "2025-11-28",
+   "lastUpdated": "2026-11-23",
+   "otherIds": [],
+   "url": "https://trialsearch.who.int/Trial2.aspx?TrialID=ChiCTR2600137374"
   },
   {
    "register": "ICTRP",
