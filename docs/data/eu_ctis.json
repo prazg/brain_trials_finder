@@ -2,7 +2,7 @@
  "schema": 2,
  "source": "EU Clinical Trials Information System (CTIS)",
  "sourceUrl": "https://euclinicaltrials.eu/ctis-public/search",
- "generated": "2026-11-26T13:52:30+00:00",
+ "generated": "2026-11-28T12:58:13+00:00",
  "terms": [
   "glioblastoma",
   "glioma",
@@ -25,7 +25,7 @@
  ],
  "failedTerms": [],
  "note": "Recruitment state is derived per member state from dated notification events (latest of start/restart versus end/halt/termination) and the recorded recruitment end date. CTIS does not publish a single recruitment field. 'uncertain' means the notifications and the trial-level status disagree.",
- "count": 165,
+ "count": 166,
  "recruitingCount": 83,
  "detailCarriedForward": 0,
  "trials": [
@@ -743,7 +743,7 @@
    "gender": "Female, Male",
    "enrolled": "37",
    "startDate": "2026-11-02",
-   "lastUpdated": "2026-10-30",
+   "lastUpdated": "2026-11-27",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2026-526472-23-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -822,36 +822,6 @@
      "country": "Germany"
     },
     {
-     "facility": "Azienda Ospedaliero-Universitaria Di Cagliari",
-     "city": "Cagliari",
-     "country": "Italy"
-    },
-    {
-     "facility": "Centro Di Riferimento Oncologico Di Aviano",
-     "city": "Aviano",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Europeo Di Oncologia S.r.l.",
-     "city": "Milan",
-     "country": "Italy"
-    },
-    {
-     "facility": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
-     "city": "Milan",
-     "country": "Italy"
-    },
-    {
-     "facility": "Istituto Oncologico Veneto",
-     "city": "Padova",
-     "country": "Italy"
-    },
-    {
-     "facility": "Azienda Ospedaliero Universitaria Careggi",
-     "city": "Florence",
-     "country": "Italy"
-    },
-    {
      "facility": "Hospital San Pedro",
      "city": "Logrono",
      "country": "Spain"
@@ -885,6 +855,36 @@
      "facility": "Hospital Universitario Hm Sanchinarro",
      "city": "Madrid",
      "country": "Spain"
+    },
+    {
+     "facility": "Istituto Europeo Di Oncologia S.r.l.",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Centro Di Riferimento Oncologico Di Aviano",
+     "city": "Aviano",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero-Universitaria Di Cagliari",
+     "city": "Cagliari",
+     "country": "Italy"
+    },
+    {
+     "facility": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Oncologico Veneto",
+     "city": "Padova",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero Universitaria Careggi",
+     "city": "Florence",
+     "country": "Italy"
     }
    ],
    "otherIds": [
@@ -5909,7 +5909,7 @@
    "gender": "Female, Male",
    "enrolled": "16",
    "startDate": "2021-09-23",
-   "lastUpdated": "2026-11-25",
+   "lastUpdated": "2026-11-27",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-510691-20-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -7596,7 +7596,7 @@
    "gender": "Female, Male",
    "enrolled": "33",
    "startDate": "2022-10-28",
-   "lastUpdated": "2026-06-18",
+   "lastUpdated": "2026-11-26",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2024-517651-12-00",
    "recruitment": "recruiting",
    "recruitingCountries": [
@@ -13168,6 +13168,597 @@
   },
   {
    "register": "CTIS",
+   "id": "2025-524498-17-00",
+   "title": "A two-part, seamless, multicenter, RANDOMIZED, open-label, ADAPTIVE Phase ii/III STUDY OF THE BLOOD-BRAIN barrier PENETRANT RO7771950 versus Tucatinib, both in combination with trastuzumab and capecitabine, in patients with Pretreated unresectable locally advanced or metastatic HER2-positive breast cancer, with or without central nervous system metastases",
+   "conditions": "Pretreated Unresectable Locally Advanced or Metastatic human epidermal growth factor receptor 2 (HER2)-Positive Breast Cancer, with or without Central Nervous System (CNS) Metastases",
+   "sponsor": "F. Hoffmann-La Roche AG",
+   "sponsorType": "Pharmaceutical company",
+   "phase": "Phase II and Phase III (Integrated)",
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Czechia",
+    "France",
+    "Germany",
+    "Hungary",
+    "Italy",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Spain"
+   ],
+   "statusCode": 4,
+   "statusLabel": "Authorised",
+   "ageGroup": "18-64 years, 65+ years",
+   "gender": "Female, Male",
+   "enrolled": "237",
+   "startDate": "2026-10-21",
+   "lastUpdated": "2026-11-16",
+   "url": "https://euclinicaltrials.eu/ctis-public/view/2025-524498-17-00",
+   "recruitment": "closed",
+   "recruitingCountries": [],
+   "criteria": "Inclusion:\n- Pathologically documented breast cancer that is locally advanced inoperable (LAI) or metastatic breast cancer (MBC)\n- Confirmed HER2-positive status by central laboratory testing of formalin-fixed, paraffin-embedded (FFPE) tumor tissue sample. HER2-positive status will be defined as 3+ by IHC and/or positive by HER2 amplification by in situ hybridization (ISH) with a ratio of ≥ 2 for the number of HER2 gene copies to the number of signals for chromosome 17 copies\n- Stage 1 participants: Measurable disease assessable by Response Evaluation Criteria in Solid Tumors (RECIST) v1.1 . At least one measurable lesion is mandatory. Stage 2 participants: Measurable or non-measurable disease assessable by RECIST v1.1. For both stages: Lytic or mixed lytic bone lesions that can be assessed by CT, magnetic resonance imaging (MRI), or X-ray can be accepted as measurable disease in the absence of other measurable lesions.\n- Participants must have received at least one prior line of anti-HER2-based therapy for LAI or metastatic disease\n- Participants must have received prior treatment with an anti-HER2 antibody-drug conjugate (ADC), such as trastuzumab-deruxtecan (T-DXd) or trastuzumab emtansine (T-DM1), administered in the neoadjuvant, adjuvant, or metastatic setting. – Participants without prior anti-HER2 ADC exposure may only be enrolled if approved standard-of-care anti-HER2 ADC therapy is not locally accessible to the participant at the time of screening, or if there is a documented clinical contraindication rendering such therapy medically inappropriate. The specific justification for the lack of prior ADC exposure must be prospectively captured in the participant's source medical records and the appropriate electronic Case Report Form (eCRF).\n- Prior treatment with a tyrosine kinase inhibitor (TKI) in the neoadjuvant/adjuvant setting is acceptable, provided that the interval between the completion of TKI treatment and development of locally advanced inoperable (LAI) or metastatic disease is > 12 months. Prior treatment with TKIs for LAI/metastatic breast cancer (MBC) is not permitted.\n\nExclusion:\n- Treatment with investigational therapy within 28 days prior to initiation of study treatment\n- Concurrent anti-cancer treatment. Concurrent use of hormonal therapy for noncancer-related conditions (i.e., hormone replacement therapy for hypothyroidism) or for ovarian function suppression is allowed. Ongoing or planned bisphosphonate treatment is allowed in participants with bone metastases.\n- Based on screening brain MRI, any of the following criteria for participants with brain metastasis: – Progressive neurologic impairment or increased intracranial pressure, which is symptomatic (including nausea, vomiting, blurred vision, headache, epilepsy, etc.) – Any intracranial lesion that is expected to require immediate local therapy. After local therapy, the participant can be re-screened for the protocol. – Requirement for systemic corticosteroids for management of CNS symptoms at a total daily dose of 2 mg of dexamethasone (or equivalent). A stable or tapering dose of 2 mg is permitted. – Requirement for anti-epileptic medication for seizure control, with the exception of stable-dose levetiracetam\n- Participants who meet one of the following cardiac criteria: – Congestive heart failure (CHF; New York Heart Association [NYHA] functional classification) of 2 – Clinically significant peripheral arterial disease, like coronary artery disease, hypertrophic cardiomyopathy, or dilated cardiomyopathy – Abnormalities in the ECG measurements: such as first-degree heart block, second degree heart block, third-degree heart block, prolonged PR interval: 0.20 s – Any clinically significant supraventricular arrhythmia or ventricular arrhythmia requiring treatment or intervention – Unstable angina – Myocardial infarction within the past 6 months – Percutaneous transluminal coronary angioplasty/stenting, coronary artery bypass graft within 6 months of the first dose of the study treatment – QT interval corrected through use of Fridericia's formula (QTcF) prolongation (470 ms for women and 450 ms for men), a known history of QTcF prolongation or Torsade de Pointes; or is on drugs that are required for existing medical conditions and that may result in QT prolongation (e.g., anti-arrhythmic drugs) – Poorly controlled hypertension (e.g., systolic  180 mm Hg or diastolic  100 mmHg) – History of ventricular dysrhythmias or risk factors for ventricular dysrhythmias such as structural heart disease (e.g., severe left ventricular systolic dysfunction [LVSD], left ventricular hypertrophy) – Coronary heart disease (symptomatic or with ischemia demonstrated by diagnostic testing) – Clinically significant electrolyte abnormalities (e.g., hypokalemia, hypomagnesemia, hypocalcemia), or family history of sudden unexplained death or long QT syndrome\n- Participants with known active and/or untreated hepatitis B or hepatitis C or chronic liver disease are ineligible. Participants with a diagnosis of hepatitis B or C that has been treated and cleared (viral genetic test should fulfil the local laboratory definition for \"cleared\"), and normal liver function are eligible to participate in the study if the other eligibility parameters are met.",
+   "sites": [
+    {
+     "facility": "Hospital Universitario Clinico San Cecilio",
+     "city": "Granada",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Basurto",
+     "city": "Bilbao",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Clinic De Barcelona",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital General Universitario Gregorio Maranon",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "University Clinical Hospital Virgen De La Arrixaca",
+     "city": "Murcia",
+     "country": "Spain"
+    },
+    {
+     "facility": "University Hospital Virgen Del Rocio S.L.",
+     "city": "Sevilla",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario 12 De Octubre",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario De Jaen",
+     "city": "Jaen",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Ramon Y Cajal",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario Virgen De La Victoria",
+     "city": "Malaga",
+     "country": "Spain"
+    },
+    {
+     "facility": "Institut Catala D'oncologia",
+     "city": "L'hospitalet De Llobregat",
+     "country": "Spain"
+    },
+    {
+     "facility": "Fundacion Instituto Valenciano De Oncologia",
+     "city": "Valencia",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Beata Maria Ana",
+     "city": "Madrid",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitario De Canarias",
+     "city": "San Cristobal De La Laguna",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitari Dexeus Grupo Quironsalud",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Hospital Universitari Vall D Hebron",
+     "city": "Barcelona",
+     "country": "Spain"
+    },
+    {
+     "facility": "Cliniques Universitaires Saint-Luc",
+     "city": "Sint-Lambrechts-Woluwe",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Algemeen Ziekenhuis Groeninge",
+     "city": "Kortrijk",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire Dinant Godinne Sainte-Elisabeth-UCL-Namur",
+     "city": "Namur",
+     "country": "Belgium"
+    },
+    {
+     "facility": "UZ Leuven",
+     "city": "Leuven",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Emmaues",
+     "city": "Mechelen",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Ziekenhuis Aan De Stroom",
+     "city": "Antwerp",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Jessa Ziekenhuis",
+     "city": "Hasselt",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Institut Jules Bordet",
+     "city": "Anderlecht",
+     "country": "Belgium"
+    },
+    {
+     "facility": "Institut Fuer Versorgungsforschung In Der Onkologie GbR",
+     "city": "Koblenz",
+     "country": "Germany"
+    },
+    {
+     "facility": "Charite Universitaetsmedizin Berlin KöR",
+     "city": "Berlin",
+     "country": "Germany"
+    },
+    {
+     "facility": "Klinikum St Marien Amberg",
+     "city": "Amberg",
+     "country": "Germany"
+    },
+    {
+     "facility": "St. Elisabethgruppe katholische Kliniken Rhein Ruhr GmbH, Betriebsstätte Marien Hospital",
+     "city": "Witten",
+     "country": "Germany"
+    },
+    {
+     "facility": "Technische Universitaet Dresden",
+     "city": "Dresden",
+     "country": "Germany"
+    },
+    {
+     "facility": "National Center For Tumor Diseases (NCT) Heidelberg",
+     "city": "Heidelberg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Luisenkrankenhaus GmbH & Co. KG",
+     "city": "Duesseldorf",
+     "country": "Germany"
+    },
+    {
+     "facility": "Gemeinschaftspraxis Fuer Haematologie Und Onkologie",
+     "city": "Langen (Hessen)",
+     "country": "Germany"
+    },
+    {
+     "facility": "Helios Universitaetsklinikum Wuppertal",
+     "city": "Wuppertal",
+     "country": "Germany"
+    },
+    {
+     "facility": "University Medical Center Hamburg-Eppendorf",
+     "city": "Hamburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Erlangen AöR",
+     "city": "Erlangen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Schleswig-Holstein AöR",
+     "city": "Kiel",
+     "country": "Germany"
+    },
+    {
+     "facility": "Medizinische Hochschule Hannover",
+     "city": "Hanover",
+     "country": "Germany"
+    },
+    {
+     "facility": "KEM I Evang. Kliniken Essen-Mitte gGmbH",
+     "city": "Essen",
+     "country": "Germany"
+    },
+    {
+     "facility": "Rotkreuzklinikum Muenchen gGmbH",
+     "city": "Munich",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Ulm AöR",
+     "city": "Ulm",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Regensburg AöR",
+     "city": "Regensburg",
+     "country": "Germany"
+    },
+    {
+     "facility": "Staedtisches Klinikum Dessau",
+     "city": "Dessau-Rosslau",
+     "country": "Germany"
+    },
+    {
+     "facility": "Knappschaft Kliniken Bottrop GmbH",
+     "city": "Bottrop",
+     "country": "Germany"
+    },
+    {
+     "facility": "St. Vincenz-Krankenhaus GmbH",
+     "city": "Paderborn",
+     "country": "Germany"
+    },
+    {
+     "facility": "Universitaetsklinikum Muenster AöR",
+     "city": "Muenster",
+     "country": "Germany"
+    },
+    {
+     "facility": "Kath. St. Paulus GmbH",
+     "city": "Dortmund",
+     "country": "Germany"
+    },
+    {
+     "facility": "Azienda Ospedaliero Universitaria Parma",
+     "city": "Parma",
+     "country": "Italy"
+    },
+    {
+     "facility": "Fondazione IRCCS Istituto Nazionale Dei Tumori",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Humanitas Mirasole S.p.A.",
+     "city": "Rozzano",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Romagnolo Per Lo Studio Dei Tumori Dino Amadori IRST S.r.l.",
+     "city": "Meldola",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Socio Sanitaria Territoriale Papa Giovanni Xxiii",
+     "city": "Bergamo",
+     "country": "Italy"
+    },
+    {
+     "facility": "Ospedale San Raffaele S.r.l.",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Ospedaliero Universitaria Di Modena",
+     "city": "Modena",
+     "country": "Italy"
+    },
+    {
+     "facility": "ASST Grande Ospedale Metropolitano Niguarda",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Europeo Di Oncologia S.r.l.",
+     "city": "Milan",
+     "country": "Italy"
+    },
+    {
+     "facility": "IRCCS Istituto Nazionale Tumori Fondazione Pascale",
+     "city": "Naples",
+     "country": "Italy"
+    },
+    {
+     "facility": "Azienda Socio Sanitaria Territoriale Degli Spedali Civili Di Brescia",
+     "city": "Brescia",
+     "country": "Italy"
+    },
+    {
+     "facility": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS",
+     "city": "Rome",
+     "country": "Italy"
+    },
+    {
+     "facility": "Humanitas Istituto Clinico Catanese S.p.A.",
+     "city": "Misterbianco",
+     "country": "Italy"
+    },
+    {
+     "facility": "Fondazione Policlinico Universitario Campus Bio-medico In Forma A Bbreviata Fon",
+     "city": "Rome",
+     "country": "Italy"
+    },
+    {
+     "facility": "Centro Di Riferimento Oncologico Di Aviano",
+     "city": "Aviano",
+     "country": "Italy"
+    },
+    {
+     "facility": "Istituto Oncologico Veneto",
+     "city": "Padova",
+     "country": "Italy"
+    },
+    {
+     "facility": "Spitalul Clinic Filantropia",
+     "city": "Bucharest",
+     "country": "Romania"
+    },
+    {
+     "facility": "Institute Of Oncology Prof. Dr. Ion Chiricuta Cluj-Napoca",
+     "city": "Cluj-Napoca",
+     "country": "Romania"
+    },
+    {
+     "facility": "Asociatia Oncohelp",
+     "city": "Timisoara",
+     "country": "Romania"
+    },
+    {
+     "facility": "Institutul Oncologic Prof. Dr. Alexandru Trestioreanu Bucuresti",
+     "city": "Bucharest",
+     "country": "Romania"
+    },
+    {
+     "facility": "Instituto Portugues De Oncologia Do Porto Francisco Gentil E.P.E.",
+     "city": "Porto",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Unidade Local De Saude De Loures-Odivelas EPE",
+     "city": "Loures",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Hospital Da Luz S.A.",
+     "city": "Lisbon",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Unidade Local De Saude De Amadora Sintra E.P.E.",
+     "city": "Amadora",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Instituto Portugues De Oncologia De Lisboa Francisco Gentil E.P.E.",
+     "city": "Lisbon",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Unidade Local De Saude De Gaia/Espinho E.P.E.",
+     "city": "Vila Nova De Gaia",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Unidade Local De Saude De Santa Maria E.P.E.",
+     "city": "Lisbon",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Unidade Local De Saude De Matosinhos E.P.E.",
+     "city": "Senhora Da Hora",
+     "country": "Portugal"
+    },
+    {
+     "facility": "Uniwersytecki Szpital Kliniczny W Poznaniu",
+     "city": "Poznan",
+     "country": "Poland"
+    },
+    {
+     "facility": "Opolskie Centrum Onkologii Im. Prof. Tadeusza Koszarowskiego W Opolu Samodzielny Publiczny Zaklad Opieki Zdrowotnej",
+     "city": "Opole",
+     "country": "Poland"
+    },
+    {
+     "facility": "Szpital Kliniczny Ministerstwa Spraw Wewnetrznych I Administracji Z Warminsko-Mazurskim Centrum Onkologii W Olsztynie",
+     "city": "Olsztyn",
+     "country": "Poland"
+    },
+    {
+     "facility": "Uniwersyteckie Centrum Kliniczne",
+     "city": "Gdansk",
+     "country": "Poland"
+    },
+    {
+     "facility": "Samodzielny Publiczny Zaklad Opieki Zdrowotnej Szpital Uniwersytecki W Krakowie",
+     "city": "Cracow",
+     "country": "Poland"
+    },
+    {
+     "facility": "Specjalistyczny Szpital Onkologiczny Nu-Med Sp. z o.o.",
+     "city": "Tomaszow Mazowiecki",
+     "country": "Poland"
+    },
+    {
+     "facility": "Uniwersyteckie Centrum Kliniczne Im. Prof. K. Gibinskiego Slaskiego Uniwersytetu Medycznego W Katowicach",
+     "city": "Katowice",
+     "country": "Poland"
+    },
+    {
+     "facility": "Instytut Centrum Zdrowia Matki Polki",
+     "city": "Lodz",
+     "country": "Poland"
+    },
+    {
+     "facility": "Dolnoslaskie Centrum Onkologii Pulmonologii I Hematologii",
+     "city": "Wroclaw",
+     "country": "Poland"
+    },
+    {
+     "facility": "Masarykuv Onkologicky Ustav",
+     "city": "Brno-Stred",
+     "country": "Czechia"
+    },
+    {
+     "facility": "Fakultni Nemocnice V Motole",
+     "city": "Prague",
+     "country": "Czechia"
+    },
+    {
+     "facility": "Fakultni Nemocnice Hradec Kralove",
+     "city": "Hradec Kralove",
+     "country": "Czechia"
+    },
+    {
+     "facility": "Nemocnice AGEL Novy Jicin a.s.",
+     "city": "Novy Jicin",
+     "country": "Czechia"
+    },
+    {
+     "facility": "Ordensklinikum Linz GmbH",
+     "city": "Linz",
+     "country": "Austria"
+    },
+    {
+     "facility": "Medical University Of Graz",
+     "city": "Graz",
+     "country": "Austria"
+    },
+    {
+     "facility": "Gemeinnuetzige Salzburger Landeskliniken Betriebsgesellschaft mbH",
+     "city": "Salzburg",
+     "country": "Austria"
+    },
+    {
+     "facility": "Medical University Of Vienna",
+     "city": "Vienna",
+     "country": "Austria"
+    },
+    {
+     "facility": "Orszagos Onkologiai Intezet",
+     "city": "Budapest XII",
+     "country": "Hungary"
+    },
+    {
+     "facility": "University Of Debrecen",
+     "city": "Debrecen",
+     "country": "Hungary"
+    },
+    {
+     "facility": "Bekes Varmegyei Koezponti Korhaz",
+     "city": "Gyula",
+     "country": "Hungary"
+    },
+    {
+     "facility": "Budapesti Uzsoki Utcai Korhaz",
+     "city": "Budapest XIV",
+     "country": "Hungary"
+    },
+    {
+     "facility": "Semmelweis Egyetem",
+     "city": "Budapest",
+     "country": "Hungary"
+    },
+    {
+     "facility": "Bacs-Kiskun Varmegyei Oktatokorhaz",
+     "city": "Kecskemet",
+     "country": "Hungary"
+    },
+    {
+     "facility": "Institut Regional Du Cancer De Montpellier",
+     "city": "Montpellier",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Paoli Calmettes",
+     "city": "Marseille",
+     "country": "France"
+    },
+    {
+     "facility": "Centre De Lutte Contre Le Cancer Eugene Marquis",
+     "city": "Rennes Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Bergonie",
+     "city": "Bordeaux",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire De Poitiers",
+     "city": "Poitiers",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Curie",
+     "city": "Saint-Cloud",
+     "country": "France"
+    },
+    {
+     "facility": "Oncopole Claudius Regaud",
+     "city": "Toulouse",
+     "country": "France"
+    },
+    {
+     "facility": "Institut De Cancerologie De L Ouest",
+     "city": "Saint-Herblain Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Institut De Cancerologie De L Ouest",
+     "city": "Angers",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Gustave Roussy",
+     "city": "Villejuif Cedex",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Leon Berard",
+     "city": "Lyon",
+     "country": "France"
+    },
+    {
+     "facility": "Institut Curie",
+     "city": "Paris",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Antoine Lacassagne",
+     "city": "Nice Cedex 2",
+     "country": "France"
+    },
+    {
+     "facility": "Centre Hospitalier Universitaire Grenoble Alpes",
+     "city": "Grenoble Cedex 9",
+     "country": "France"
+    }
+   ],
+   "otherIds": []
+  },
+  {
+   "register": "CTIS",
    "id": "2024-515291-13-00",
    "title": "Adjuvant dendritic-cell immunotherapy plus temozolomide following surgery and chemoradiation in patients with newly diagnosed glioblastoma",
    "conditions": "Glioblastoma grade IV",
@@ -16306,11 +16897,11 @@
    ],
    "statusCode": 5,
    "statusLabel": "Authorised",
-   "ageGroup": "65+ years, 18-64 years",
+   "ageGroup": "18-64 years, 65+ years",
    "gender": "Female, Male",
    "enrolled": "34",
    "startDate": "2024-05-15",
-   "lastUpdated": "2026-10-14",
+   "lastUpdated": "2026-11-26",
    "url": "https://euclinicaltrials.eu/ctis-public/view/2022-502134-10-00",
    "recruitment": "closed",
    "recruitingCountries": [],
@@ -16372,13 +16963,13 @@
      "country": "Spain"
     },
     {
-     "facility": "Universitaetsklinikum Essen AöR",
-     "city": "Essen",
+     "facility": "Klinikum rechts der Isar der TU Muenchen AöR",
+     "city": "Munich",
      "country": "Germany"
     },
     {
-     "facility": "Klinikum rechts der Isar der TU Muenchen AöR",
-     "city": "Munich",
+     "facility": "Universitaetsklinikum Essen AöR",
+     "city": "Essen",
      "country": "Germany"
     }
    ],
